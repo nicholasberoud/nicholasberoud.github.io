@@ -27,17 +27,13 @@ main { width: min(680px, calc(100% - 44px)); margin: 0 auto; }
 .portrait { position: absolute; width: 108%; height: auto; max-width: none; left: -4%; top: -24%; display: block; }
 h1 { font-family: var(--serif); font-weight: 400; font-size: 40px; line-height: 1.2; letter-spacing: -.9px; margin: 22px 0 13px; }
 .social-links { display: flex; justify-content: center; align-items: center; gap: 15px; }
-.social-links a, .resume-control summary { color: #656c70; display: flex; width: 32px; height: 38px; align-items: center; justify-content: center; }
-.social-links a:hover, .resume-control summary:hover, .resume-control summary:focus-visible { color: var(--blue); }
+.social-links a { color: #656c70; display: flex; width: 32px; height: 38px; align-items: center; justify-content: center; }
+.social-links a:hover, .social-links a:focus-visible { color: var(--blue); }
 .icon { width: 21px; height: 21px; fill: currentColor; }
-.resume-control { position: relative; }
-.resume-control summary { list-style: none; cursor: pointer; position: relative; }
-.resume-control summary::-webkit-details-marker { display: none; }
+.resume-link { position: relative; }
 .resume-icon { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .icon-tip { position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: var(--ink); color: white; font: 12px/1.4 var(--sans); padding: 5px 9px; border-radius: 3px; visibility: hidden; pointer-events: none; white-space: nowrap; z-index: 6; }
-.resume-control summary:hover .icon-tip, .resume-control summary:focus-visible .icon-tip { visibility: visible; }
-.resume-control[open] .icon-tip { visibility: hidden; }
-.resume-message { position: absolute; width: 235px; top: 44px; right: -22px; padding: 14px 17px; background: var(--paper); border: 1px solid var(--rule); box-shadow: 0 5px 20px #24262215; color: var(--muted); font-size: 13px; line-height: 1.6; text-align: left; z-index: 7; }
+.resume-link:hover .icon-tip, .resume-link:focus-visible .icon-tip { visibility: visible; }
 .accent { height: 2px; width: 48px; background: var(--blue); margin: 19px auto 26px; animation: rule-in .6s .18s ease-out both; }
 .bio { animation: arrive .8s .14s ease-out both; }
 .bio p { margin: 0 0 21px; }
