@@ -59,6 +59,12 @@
         "n": 541,
         "t": 3.552,
         "p": 0.00038
+      },
+      "debt_gdp_coef": {
+        "pre": -5.521,
+        "post": -6.3268,
+        "se_pre": 1.0317,
+        "se_post": 0.8446
       }
     },
     "baseline_monthly_hac36": {
@@ -112,6 +118,12 @@
         "n": 541,
         "t": 3.001,
         "p": 0.00269
+      },
+      "debt_gdp_coef": {
+        "pre": -5.521,
+        "post": -6.3268,
+        "se_pre": 1.353,
+        "se_post": 0.902
       }
     },
     "fyaligned_monthly_hac12": {
@@ -165,6 +177,12 @@
         "n": 549,
         "t": 3.675,
         "p": 0.00024
+      },
+      "debt_gdp_coef": {
+        "pre": -5.2757,
+        "post": -5.6724,
+        "se_pre": 1.0209,
+        "se_post": 0.8692
       }
     },
     "fyaligned_monthly_hac36": {
@@ -218,6 +236,12 @@
         "n": 549,
         "t": 3.21,
         "p": 0.00133
+      },
+      "debt_gdp_coef": {
+        "pre": -5.2757,
+        "post": -5.6724,
+        "se_pre": 1.3771,
+        "se_post": 0.9726
       }
     },
     "fyaligned_monthly_hac12_macro": {
@@ -271,6 +295,12 @@
         "n": 549,
         "t": 3.839,
         "p": 0.00012
+      },
+      "debt_gdp_coef": {
+        "pre": -4.9108,
+        "post": -4.9787,
+        "se_pre": 1.9751,
+        "se_post": 0.9444
       }
     },
     "fy_annual_hc1": {
@@ -324,6 +354,12 @@
         "n": 45,
         "t": 3.081,
         "p": 0.00206
+      },
+      "debt_gdp_coef": {
+        "pre": -5.4255,
+        "post": -5.4486,
+        "se_pre": 1.1755,
+        "se_post": 1.1303
       }
     },
     "fy_annual_hac2": {
@@ -377,6 +413,12 @@
         "n": 45,
         "t": 2.763,
         "p": 0.00574
+      },
+      "debt_gdp_coef": {
+        "pre": -5.4255,
+        "post": -5.4486,
+        "se_pre": 1.57,
+        "se_post": 1.1481
       }
     }
   },
@@ -432,6 +474,12 @@
         "n": 429,
         "t": 3.437,
         "p": 0.00059
+      },
+      "debt_gdp_coef": {
+        "pre": -4.0144,
+        "post": -5.6724,
+        "se_pre": 2.6538,
+        "se_post": 0.8706
       }
     },
     "kw_tp10": {
@@ -485,6 +533,12 @@
         "n": 429,
         "t": 2.668,
         "p": 0.00762
+      },
+      "debt_gdp_coef": {
+        "pre": -1.2574,
+        "post": -1.5134,
+        "se_pre": 2.39,
+        "se_post": 0.446
       }
     }
   },
@@ -540,6 +594,12 @@
         "n": 35,
         "t": 3.105,
         "p": 0.0019
+      },
+      "debt_gdp_coef": {
+        "pre": -5.8191,
+        "post": -5.4486,
+        "se_pre": 3.0912,
+        "se_post": 1.156
       }
     },
     "kw_tp10": {
@@ -593,6 +653,12 @@
         "n": 35,
         "t": 1.826,
         "p": 0.06781
+      },
+      "debt_gdp_coef": {
+        "pre": 1.0704,
+        "post": -1.4451,
+        "se_pre": 3.1054,
+        "se_post": 0.4694
       }
     }
   },
@@ -610,106 +676,94 @@
     "by_fiscal_year": {
       "1981": {
         "annual_pct": -2.462,
-        "mts_over_panel_gdp_pct": -1.769,
-        "mts_over_fy_gdp_pct": -1.849,
+        "mts_pct_calendar_gdp": -1.806,
         "mts_bn": -57.9,
-        "annual_implied_bn": -77.2,
-        "gap_pct_panel": 0.693,
-        "gap_pct_fy_gdp": 0.613,
-        "gap_bn": 19.3
+        "annual_implied_bn": -79.0,
+        "gap_bn": 21.0,
+        "gap_pct": 0.656,
+        "off_budget_bn": -21.0,
+        "residual_after_off_budget_bn": 0.04
       },
       "1982": {
         "annual_pct": -3.827,
-        "mts_over_panel_gdp_pct": -3.264,
-        "mts_over_fy_gdp_pct": -3.34,
+        "mts_pct_calendar_gdp": -3.309,
         "mts_bn": -110.7,
-        "annual_implied_bn": -126.8,
-        "gap_pct_panel": 0.563,
-        "gap_pct_fy_gdp": 0.487,
-        "gap_bn": 16.1
+        "annual_implied_bn": -128.0,
+        "gap_bn": 17.3,
+        "gap_pct": 0.518,
+        "off_budget_bn": -17.3,
+        "residual_after_off_budget_bn": 0.02
       },
       "1983": {
         "annual_pct": -5.718,
-        "mts_over_panel_gdp_pct": -5.197,
-        "mts_over_fy_gdp_pct": -5.525,
+        "mts_pct_calendar_gdp": -5.376,
         "mts_bn": -195.4,
-        "annual_implied_bn": -202.2,
-        "gap_pct_panel": 0.521,
-        "gap_pct_fy_gdp": 0.193,
-        "gap_bn": 6.8
+        "annual_implied_bn": -207.8,
+        "gap_bn": 12.4,
+        "gap_pct": 0.342,
+        "off_budget_bn": -12.357,
+        "residual_after_off_budget_bn": 0.09
       },
       "1984": {
         "annual_pct": -4.591,
-        "mts_over_panel_gdp_pct": -4.249,
-        "mts_over_fy_gdp_pct": -4.44,
+        "mts_pct_calendar_gdp": -4.343,
         "mts_bn": -175.3,
-        "annual_implied_bn": -181.3,
-        "gap_pct_panel": 0.342,
-        "gap_pct_fy_gdp": 0.151,
-        "gap_bn": 6.0
+        "annual_implied_bn": -185.4,
+        "gap_bn": 10.0,
+        "gap_pct": 0.248,
+        "off_budget_bn": -9.996,
+        "residual_after_off_budget_bn": 0.03
       },
       "1985": {
         "annual_pct": -4.893,
-        "mts_over_panel_gdp_pct": -4.79,
-        "mts_over_fy_gdp_pct": -4.969,
+        "mts_pct_calendar_gdp": -4.884,
         "mts_bn": -211.9,
-        "annual_implied_bn": -208.7,
-        "gap_pct_panel": 0.103,
-        "gap_pct_fy_gdp": -0.076,
-        "gap_bn": -3.2
+        "annual_implied_bn": -212.3,
+        "gap_bn": 0.4,
+        "gap_pct": 0.009
       },
       "1986": {
         "annual_pct": -4.831,
-        "mts_over_panel_gdp_pct": -4.765,
-        "mts_over_fy_gdp_pct": -4.886,
+        "mts_pct_calendar_gdp": -4.829,
         "mts_bn": -221.1,
-        "annual_implied_bn": -218.6,
-        "gap_pct_panel": 0.066,
-        "gap_pct_fy_gdp": -0.055,
-        "gap_bn": -2.5
+        "annual_implied_bn": -221.2,
+        "gap_bn": 0.1,
+        "gap_pct": 0.002
       },
       "1987": {
         "annual_pct": -3.084,
-        "mts_over_panel_gdp_pct": -3.013,
-        "mts_over_fy_gdp_pct": -3.139,
+        "mts_pct_calendar_gdp": -3.082,
         "mts_bn": -149.7,
-        "annual_implied_bn": -147.0,
-        "gap_pct_panel": 0.071,
-        "gap_pct_fy_gdp": -0.055,
-        "gap_bn": -2.7
+        "annual_implied_bn": -149.7,
+        "gap_bn": 0.1,
+        "gap_pct": 0.002
       },
       "1988": {
         "annual_pct": -2.963,
-        "mts_over_panel_gdp_pct": -2.895,
-        "mts_over_fy_gdp_pct": -3.019,
+        "mts_pct_calendar_gdp": -2.963,
         "mts_bn": -155.2,
-        "annual_implied_bn": -152.3,
-        "gap_pct_panel": 0.068,
-        "gap_pct_fy_gdp": -0.056,
-        "gap_bn": -2.9
+        "annual_implied_bn": -155.2,
+        "gap_bn": 0.0,
+        "gap_pct": 0.0
       },
       "1989": {
         "annual_pct": -2.706,
-        "mts_over_panel_gdp_pct": -2.676,
-        "mts_over_fy_gdp_pct": -2.76,
+        "mts_pct_calendar_gdp": -2.718,
         "mts_bn": -153.3,
-        "annual_implied_bn": -150.3,
-        "gap_pct_panel": 0.03,
-        "gap_pct_fy_gdp": -0.054,
-        "gap_bn": -3.0
+        "annual_implied_bn": -152.6,
+        "gap_bn": -0.7,
+        "gap_pct": -0.012
       },
       "1990": {
         "annual_pct": -3.707,
-        "mts_over_panel_gdp_pct": -3.669,
-        "mts_over_fy_gdp_pct": -3.738,
+        "mts_pct_calendar_gdp": -3.697,
         "mts_bn": -220.5,
-        "annual_implied_bn": -218.6,
-        "gap_pct_panel": 0.038,
-        "gap_pct_fy_gdp": -0.031,
-        "gap_bn": -1.9
+        "annual_implied_bn": -221.0,
+        "gap_bn": 0.6,
+        "gap_pct": 0.01
       }
     },
-    "reading": "Using fiscal-year GDP removes part of the gap (FY1983 falls below 0.5 points); the rest is in dollars. The MTS series gives -57.9bn for FY1981, -110.7bn for FY1982 and -195.4bn for FY1983, against about -77bn, -127bn and -202bn implied by the annual series. That pattern is consistent with the MTS figures excluding off-budget federal entities (such as the Federal Financing Bank), which were brought into budget totals in 1985 and are included in the restated annual series. Candidate explanation, to verify against the September MTS releases of 1981-1984; the gate tolerance is unchanged."
+    "reading": "Confirmed from primary sources. Through September 1984 the monthly series is the budget deficit as reported at the time, which excluded off-budget federal entities (mainly the Federal Financing Bank); the 1985 budget law brought them into the totals and the restated annual series includes them. Adding the reported off-budget deficits closes the FY1981-84 gap to under $0.1bn in each year. The GDP denominator is not part of the gap once both series use calendar-year GDP, as FRED does. FY1984 is affected too, by about 0.25 points. The gate tolerance is unchanged."
   },
   "data_through": {
     "acm_monthly": "2026-09-30",
@@ -742,10 +796,10 @@
   },
   "provenance": {
     "generated": "2026-10-20",
-    "code_commit": "4356876",
+    "code_commit": "9a12f45",
     "acm_file": "ACMTermPremium_2026-10-09.xls",
     "acm_sha256_12": "76736228b4e6",
-    "fred_files": "data/raw (fetch dates in data/raw/MANIFEST.json); revised, not real-time vintages",
+    "fred_files": "THREEFYTP10 fetched 2026-10-09; macro series (FYFSGDA188S, GFDEBTN, NGDPSAXDCUSQ, PCEPILFE, GDPC1, GDPPOT) pulled about June 2026, exact date unknown, hashes in the data manifest; revised, not real-time vintages",
     "inputs_refreshed": false
   },
   "context_2026": {

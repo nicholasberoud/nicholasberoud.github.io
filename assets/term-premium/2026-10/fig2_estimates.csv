@@ -1,10 +1,10 @@
 spec,period,bp,lo,hi,n,change_p,covariance
-"Saved baseline: monthly, January-stamped balance",1980-2007,29.5,19.9,39.2,336,0.00038,HAC(12)
-"Saved baseline: monthly, January-stamped balance",2008 onward,7.6,0.2,14.9,205,0.00038,HAC(12)
+"Saved baseline: monthly, calendar-year timing",1980-2007,29.5,19.9,39.2,336,0.00038,HAC(12)
+"Saved baseline: monthly, calendar-year timing",2008 onward,7.6,0.2,14.9,205,0.00038,HAC(12)
 "Fiscal-year timing corrected, monthly",1980-2007,30.3,20.7,39.9,336,0.00024,HAC(12)
 "Fiscal-year timing corrected, monthly",2008 onward,5.1,-4.4,14.5,213,0.00024,HAC(12)
-"Same, longer HAC window (36 months)",1980-2007,30.3,18.7,41.9,336,0.00133,HAC(36)
-"Same, longer HAC window (36 months)",2008 onward,5.1,-5.1,15.2,213,0.00133,HAC(36)
+"Same, 36-month uncertainty window",1980-2007,30.3,18.7,41.9,336,0.00133,HAC(36)
+"Same, 36-month uncertainty window",2008 onward,5.1,-5.1,15.2,213,0.00133,HAC(36)
 One row per fiscal year,1980-2007,30.2,20.1,40.3,27,0.00206,HC1
 One row per fiscal year,2008 onward,5.4,-6.7,17.5,18,0.00206,HC1
 Adding core inflation and the output gap,1980-2007,25.9,16.2,35.5,336,0.00012,HAC(12)
