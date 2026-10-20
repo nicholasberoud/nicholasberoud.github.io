@@ -117,3 +117,7 @@ h1 { font-family: var(--serif); font-weight: 400; font-size: 40px; line-height: 
   .subtitle { font-size: 17px; }
   .data-table { font-size: 12px; }
 }
+.epigraph { margin: 28px 0 8px; padding: 2px 0 2px 18px; border-left: 3px solid var(--blue); }
+.epigraph p { font-family: var(--serif); font-size: 19px; line-height: 1.55; font-style: italic; margin: 0 0 8px; }
+.epigraph footer { font-size: 14px; color: var(--muted); }
+@media (max-width: 640px) { .epigraph p { font-size: 17px; } .formula { white-space: normal; } }
