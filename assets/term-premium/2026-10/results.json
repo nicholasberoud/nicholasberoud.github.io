@@ -796,7 +796,7 @@
   },
   "provenance": {
     "generated": "2026-10-20",
-    "code_commit": "9a12f45",
+    "code_commit": "917bf4d",
     "acm_file": "ACMTermPremium_2026-10-09.xls",
     "acm_sha256_12": "76736228b4e6",
     "fred_files": "THREEFYTP10 fetched 2026-10-09; macro series (FYFSGDA188S, GFDEBTN, NGDPSAXDCUSQ, PCEPILFE, GDPC1, GDPPOT) pulled about June 2026, exact date unknown, hashes in the data manifest; revised, not real-time vintages",

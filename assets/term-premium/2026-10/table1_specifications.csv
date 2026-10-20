@@ -1,6 +1,7 @@
-specification,covariance,rows_pre,rows_post,pre_bp,pre_bp_ci95,post_bp,post_bp_ci95,change_p
-"Saved baseline: monthly, calendar-year timing",HAC(12),336,205,29.5,"[19.9, 39.2]",7.6,"[0.2, 14.9]",0.00038
-"Fiscal-year timing corrected, monthly",HAC(12),336,213,30.3,"[20.7, 39.9]",5.1,"[-4.4, 14.5]",0.00024
-"Same, 36-month uncertainty window",HAC(36),336,213,30.3,"[18.7, 41.9]",5.1,"[-5.1, 15.2]",0.00133
-One row per fiscal year,HC1,27,18,30.2,"[20.1, 40.3]",5.4,"[-6.7, 17.5]",0.00206
-Adding core inflation and the output gap,HAC(12),336,213,25.9,"[16.2, 35.5]",0.9,"[-7.4, 9.2]",0.00012
+specification,results_key,covariance,sample_first,sample_last,earlier_period,rows_pre,rows_post,pre_bp,pre_bp_ci95,post_bp,post_bp_ci95,change_p
+"Saved baseline: monthly, calendar-year timing",specs.baseline_monthly_hac12,HAC(12),1980-01-31,2025-01-31,1980-2007,336,205,29.5,"[19.9, 39.2]",7.6,"[0.2, 14.9]",0.00038
+"Fiscal-year timing corrected, monthly",specs.fyaligned_monthly_hac12,HAC(12),1980-01-31,2025-09-30,1980-2007,336,213,30.3,"[20.7, 39.9]",5.1,"[-4.4, 14.5]",0.00024
+"Same, 36-month uncertainty window",specs.fyaligned_monthly_hac36,HAC(36),1980-01-31,2025-09-30,1980-2007,336,213,30.3,"[18.7, 41.9]",5.1,"[-5.1, 15.2]",0.00133
+One row per fiscal year,specs.fy_annual_hc1,HC1,FY1981,FY2025,FY1981-2007,27,18,30.2,"[20.1, 40.3]",5.4,"[-6.7, 17.5]",0.00206
+Adding core inflation and the output gap,specs.fyaligned_monthly_hac12_macro,HAC(12),1980-01-31,2025-09-30,1980-2007,336,213,25.9,"[16.2, 35.5]",0.9,"[-7.4, 9.2]",0.00012
+Kim-Wright premium instead of ACM (1990 onward),model_comparison_monthly_1990.kw_tp10,HAC(12),1990-01-31,2025-09-30,1990-2007,216,213,12.2,"[3.2, 21.3]",-1.2,"[-5.1, 2.7]",0.00762

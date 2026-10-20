@@ -5,7 +5,7 @@ spec,period,bp,lo,hi,n,change_p,covariance
 "Fiscal-year timing corrected, monthly",2008 onward,5.1,-4.4,14.5,213,0.00024,HAC(12)
 "Same, 36-month uncertainty window",1980-2007,30.3,18.7,41.9,336,0.00133,HAC(36)
 "Same, 36-month uncertainty window",2008 onward,5.1,-5.1,15.2,213,0.00133,HAC(36)
-One row per fiscal year,1980-2007,30.2,20.1,40.3,27,0.00206,HC1
+One row per fiscal year,FY1981-2007,30.2,20.1,40.3,27,0.00206,HC1
 One row per fiscal year,2008 onward,5.4,-6.7,17.5,18,0.00206,HC1
 Adding core inflation and the output gap,1980-2007,25.9,16.2,35.5,336,0.00012,HAC(12)
 Adding core inflation and the output gap,2008 onward,0.9,-7.4,9.2,213,0.00012,HAC(12)
