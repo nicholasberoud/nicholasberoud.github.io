@@ -17,6 +17,7 @@ The two older note outlines remain in source for future writing and are excluded
 ## Content
 
 - The résumé icon opens the supplied October 2026 PDF in a new tab. `assets/nicholas-beroud-resume.pdf` is unchanged from the supplied file; the link has no download attribute.
-- Notes include a short team hackathon recap and a sourced thesis explainer.
-- The thesis page uses its full title, an existing research figure (9 October 2026 vintage), and an institutional hypothesis with limitations. Its private research repository is not linked.
+- Projects, in homepage order: the FIMA Repo Facility (undergraduate thesis direction, no findings), the Term Premium Research Journal, and the Repo Market Model collaboration.
+- The journal lives at `projects/term-premium.html` (stable route) with dated articles under `projects/term-premium/`. Each article's figures, chart data and generated results file are in `assets/term-premium/<yyyy-mm>/`, copied from the private research repository's generated outputs; numbers on the page come from that results file. The research repository itself is not linked.
+- Notes include a short team hackathon recap and a standalone explainer on Treasury holders and price sensitivity.
 - The repo-model page credits Eleonora Björnberg and links to her original public project.

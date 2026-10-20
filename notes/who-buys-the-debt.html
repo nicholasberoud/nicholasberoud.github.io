@@ -1,12 +1,47 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Who Buys the Debt? | Nicholas Beroud</title><meta name="description" content="Nicholas Beroud: projects and notes on markets, policy, and technology.">
-<meta name="theme-color" content="#fdfcf9"><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=20261012-3"></head>
+<title>Who Buys the Debt? | Nicholas Beroud</title><meta name="description" content="An explainer on who holds US Treasuries, why holdings are not the same as price sensitivity, and what a recent Federal Reserve paper says about how the investor base changes yield responses.">
+<meta name="theme-color" content="#fdfcf9"><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=20261020-1"></head>
 <body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="nav-inner"><a class="wordmark" href="../index.html">Nicholas Beroud</a><nav aria-label="Main navigation"><a href="../index.html#projects">Projects</a><a href="../index.html#notes">Notes</a></nav></div></header>
-<main id="main"><article class="article"><a class="back" href="../index.html#notes">← All notes</a><p class="eyebrow">Research note · Work in progress</p><h1>Who Buys the Debt?</h1><p class="meta">Updated 12 October 2026</p><p class="lead">A question about government borrowing quickly becomes a question about who is buying the debt.</p>
-<p>My thesis began with the relationship between US fiscal deficits and Treasury term premium. Looking at that relationship raised another question: if the buyers change, should we expect the market’s response to stay the same?</p>
-<h2>The Institution Behind the Buyer</h2><p>For the Federal Reserve, buying securities is a monetary-policy tool. Its purchases need to be understood in terms of policy objectives, not only the return on a particular bond. The Fed describes how its purchases during and after the financial crisis were used to put downward pressure on longer-term interest rates. <a href="https://www.federalreserve.gov/monetarypolicy/bst_openmarketops.htm">Read the Fed’s explanation ↗</a></p>
-<p>That distinction is what brings my International Relations background into this project. I’m interested in how an institution’s mandate and decision-making arrangements influence its actions, and how those actions affect markets beyond the institution itself.</p>
-<h2>The Question I’m Working Through</h2><p>My working hypothesis is that changes in demand from policy-driven buyers may help explain changes in the relationship between fiscal deficits and term premium. Testing it means looking at ownership alongside other possible explanations, not treating the buyer base as an answer in advance.</p>
-<p>A chart can show that two things moved together. Explaining why, and whether the explanation holds up in other periods, is the harder part.</p><p><a href="../projects/term-premium.html">More about the thesis →</a></p></article></main>
+<main id="main"><article class="article"><a class="back" href="../index.html#notes">← All notes</a><p class="eyebrow">Explainer</p><h1>Who Buys the Debt?</h1><p class="meta">Updated 20 October 2026</p><p class="lead">When the US government borrows more, someone has to buy the extra bonds. Who that buyer is, and how much they care about price, can change how far yields move.</p>
+
+<h2>Who holds Treasuries</h2>
+<p>US Treasury debt held by the public is spread across very different investors:</p>
+<ul>
+<li><strong>The Federal Reserve</strong>, which buys and sells for monetary-policy reasons, not for return.</li>
+<li><strong>Foreign official investors</strong>, such as central banks managing reserves, which care about safety and liquidity more than small differences in yield.</li>
+<li><strong>Foreign private investors</strong>, such as banks, insurers and funds abroad.</li>
+<li><strong>US banks, insurers, pension funds and money-market funds</strong>, often bound by regulation or by the liabilities they need to match.</li>
+<li><strong>Hedge funds, other asset managers and households</strong>, which tend to buy or sell quickly when prices change.</li>
+</ul>
+
+<h2>Three things that are easy to confuse</h2>
+<ul>
+<li><strong>Holdings</strong>: how much of the stock each group owns at a point in time.</li>
+<li><strong>Purchases</strong>: how much each group adds or sells over a period.</li>
+<li><strong>Price sensitivity (elasticity)</strong>: how much a group changes its holdings when yields move. A price-inelastic buyer, like a reserve manager or the Fed, buys roughly the same amount whatever the price. A price-elastic buyer, like a hedge fund, buys a lot more when yields rise a little.</li>
+</ul>
+<p>A large holder is not necessarily a price-setter. What matters for how far yields move is the price sensitivity of the investors who have to absorb new supply.</p>
+
+<h2>What a recent Federal Reserve paper finds</h2>
+<p>Daniel Beltran and Canlin Li (<a href="https://www.federalreserve.gov/econres/ifdp/estimating-yield-impacts-of-treasury-demand-and-supply-changes.htm">IFDP 1447, September 2026</a>) estimate how price-sensitive each investor group is, then combine those estimates with each group’s share of the market. Their findings, in plain terms:</p>
+<ul>
+<li>The Treasury market as a whole has become <strong>more</strong> price-sensitive since the early 2000s, mainly because price-inelastic foreign official investors now hold a smaller share and more price-elastic hedge funds and households a larger one.</li>
+<li>In normal times, a more price-sensitive market means <strong>smaller</strong> yield moves for a given change in supply: elastic investors step in after a small move in price.</li>
+<li>They estimate that an extra $100 billion of supply raises yields by about 3 basis points today, against around 65 in the early 2000s. Most of that fall is because the market is far bigger ($23.8 trillion of bonds held by the public in early 2026, against $2.5 trillion in 2000); scaled to 1% of the market, the effect is about 8 basis points now, against about 15 from 2000 to 2015.</li>
+<li>The flip side is fragility. When elastic investors step back in stress, as in March 2020, the market suddenly becomes much less elastic and the same shock moves yields much more.</li>
+</ul>
+<p>So the common story that “price-inelastic buyers absorbing supply” keeps yields calm has the logic backwards for normal times in this framework: it is the elastic buyers who dampen the response, and their absence in stress that amplifies it.</p>
+
+<h2>Why this matters for fiscal risk</h2>
+<p>In my <a href="../projects/term-premium/deficits-and-the-term-premium.html">first journal article</a>, the link between deficits and the term premium is much weaker after 2008 than before. A natural question is whether changes in who holds the debt help explain that. I have <strong>not</strong> tested this. Doing it properly needs a design that separates holder composition from the crises and Fed purchases that changed at the same time; it is on the list of <a href="../projects/term-premium.html">questions I’m exploring next</a>.</p>
+
+<h2>Caveats about the data</h2>
+<ul>
+<li>Foreign holdings in the Treasury’s <a href="https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/mfh.txt">TIC data</a> are recorded by the country of the custodian, so holdings in custody centres such as Belgium or the Cayman Islands may belong to investors elsewhere.</li>
+<li>In the Fed’s <a href="https://www.federalreserve.gov/releases/z1/">Financial Accounts</a>, the household sector, which includes hedge funds, is largely a residual: what is left after other sectors are measured.</li>
+<li>Elasticity estimates depend on the model and the instruments used; different studies give different numbers.</li>
+</ul>
+<p class="source-note">Research and education only. Nothing here is investment advice.</p>
+</article></main>
 <footer class="site-footer"><span>© 2026 Nicholas Beroud</span><span><a href="mailto:nicholasberoud@gmail.com">Get in touch</a> · <a href="../index.html">Back to top ↑</a></span></footer></body></html>

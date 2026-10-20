@@ -1,0 +1,761 @@
+{
+  "article": "How stable is the link between deficits and the term premium?",
+  "sample_start": "1980-01-01",
+  "comparison_date": "2008-01-01",
+  "comparison_fiscal_year": 2008,
+  "comparison_date_status": "configured comparison date, not an estimated break",
+  "dependent": "ACM 10-year term premium, percent (NY Fed vintage 2026-10-09); Kim-Wright where stated",
+  "fiscal_variable": "federal fiscal balance, % of GDP, surplus positive (FRED FYFSGDA188S)",
+  "sign_convention": "a negative coefficient means a larger deficit goes with a higher premium; bp_per_1pt_deterioration = -100 x coefficient",
+  "specs": {
+    "baseline_monthly_hac12": {
+      "covariance": "HAC(12)",
+      "rows": {
+        "pre": 336,
+        "post": 205,
+        "first": "1980-01-31",
+        "last": "2025-01-31"
+      },
+      "pre": {
+        "coef": -0.295317,
+        "se": 0.049115,
+        "ci95": [
+          -0.39158,
+          -0.199054
+        ],
+        "bp_per_1pt_deterioration": 29.5,
+        "bp_ci95": [
+          19.9,
+          39.2
+        ],
+        "n": 336
+      },
+      "post": {
+        "coef": -0.075768,
+        "se": 0.037549,
+        "ci95": [
+          -0.149363,
+          -0.002173
+        ],
+        "bp_per_1pt_deterioration": 7.6,
+        "bp_ci95": [
+          0.2,
+          14.9
+        ],
+        "n": 205
+      },
+      "change_post_minus_pre": {
+        "coef": 0.219549,
+        "se": 0.061803,
+        "ci95": [
+          0.098418,
+          0.34068
+        ],
+        "bp_per_1pt_deterioration": -22.0,
+        "bp_ci95": [
+          -34.1,
+          -9.8
+        ],
+        "n": 541,
+        "t": 3.552,
+        "p": 0.00038
+      }
+    },
+    "baseline_monthly_hac36": {
+      "covariance": "HAC(36)",
+      "rows": {
+        "pre": 336,
+        "post": 205,
+        "first": "1980-01-31",
+        "last": "2025-01-31"
+      },
+      "pre": {
+        "coef": -0.295317,
+        "se": 0.060861,
+        "ci95": [
+          -0.414602,
+          -0.176032
+        ],
+        "bp_per_1pt_deterioration": 29.5,
+        "bp_ci95": [
+          17.6,
+          41.5
+        ],
+        "n": 336
+      },
+      "post": {
+        "coef": -0.075768,
+        "se": 0.041051,
+        "ci95": [
+          -0.156226,
+          0.00469
+        ],
+        "bp_per_1pt_deterioration": 7.6,
+        "bp_ci95": [
+          -0.5,
+          15.6
+        ],
+        "n": 205
+      },
+      "change_post_minus_pre": {
+        "coef": 0.219549,
+        "se": 0.073158,
+        "ci95": [
+          0.076162,
+          0.362936
+        ],
+        "bp_per_1pt_deterioration": -22.0,
+        "bp_ci95": [
+          -36.3,
+          -7.6
+        ],
+        "n": 541,
+        "t": 3.001,
+        "p": 0.00269
+      }
+    },
+    "fyaligned_monthly_hac12": {
+      "covariance": "HAC(12)",
+      "rows": {
+        "pre": 336,
+        "post": 213,
+        "first": "1980-01-31",
+        "last": "2025-09-30"
+      },
+      "pre": {
+        "coef": -0.303279,
+        "se": 0.048945,
+        "ci95": [
+          -0.39921,
+          -0.207348
+        ],
+        "bp_per_1pt_deterioration": 30.3,
+        "bp_ci95": [
+          20.7,
+          39.9
+        ],
+        "n": 336
+      },
+      "post": {
+        "coef": -0.050758,
+        "se": 0.0481,
+        "ci95": [
+          -0.145033,
+          0.043517
+        ],
+        "bp_per_1pt_deterioration": 5.1,
+        "bp_ci95": [
+          -4.4,
+          14.5
+        ],
+        "n": 213
+      },
+      "change_post_minus_pre": {
+        "coef": 0.25252,
+        "se": 0.068717,
+        "ci95": [
+          0.117838,
+          0.387203
+        ],
+        "bp_per_1pt_deterioration": -25.3,
+        "bp_ci95": [
+          -38.7,
+          -11.8
+        ],
+        "n": 549,
+        "t": 3.675,
+        "p": 0.00024
+      }
+    },
+    "fyaligned_monthly_hac36": {
+      "covariance": "HAC(36)",
+      "rows": {
+        "pre": 336,
+        "post": 213,
+        "first": "1980-01-31",
+        "last": "2025-09-30"
+      },
+      "pre": {
+        "coef": -0.303279,
+        "se": 0.05924,
+        "ci95": [
+          -0.419386,
+          -0.187171
+        ],
+        "bp_per_1pt_deterioration": 30.3,
+        "bp_ci95": [
+          18.7,
+          41.9
+        ],
+        "n": 336
+      },
+      "post": {
+        "coef": -0.050758,
+        "se": 0.051788,
+        "ci95": [
+          -0.15226,
+          0.050744
+        ],
+        "bp_per_1pt_deterioration": 5.1,
+        "bp_ci95": [
+          -5.1,
+          15.2
+        ],
+        "n": 213
+      },
+      "change_post_minus_pre": {
+        "coef": 0.25252,
+        "se": 0.078668,
+        "ci95": [
+          0.098335,
+          0.406706
+        ],
+        "bp_per_1pt_deterioration": -25.3,
+        "bp_ci95": [
+          -40.7,
+          -9.8
+        ],
+        "n": 549,
+        "t": 3.21,
+        "p": 0.00133
+      }
+    },
+    "fyaligned_monthly_hac12_macro": {
+      "covariance": "HAC(12)",
+      "rows": {
+        "pre": 336,
+        "post": 213,
+        "first": "1980-01-31",
+        "last": "2025-09-30"
+      },
+      "pre": {
+        "coef": -0.258505,
+        "se": 0.049358,
+        "ci95": [
+          -0.355246,
+          -0.161765
+        ],
+        "bp_per_1pt_deterioration": 25.9,
+        "bp_ci95": [
+          16.2,
+          35.5
+        ],
+        "n": 336
+      },
+      "post": {
+        "coef": -0.009008,
+        "se": 0.042393,
+        "ci95": [
+          -0.092098,
+          0.074082
+        ],
+        "bp_per_1pt_deterioration": 0.9,
+        "bp_ci95": [
+          -7.4,
+          9.2
+        ],
+        "n": 213
+      },
+      "change_post_minus_pre": {
+        "coef": 0.249497,
+        "se": 0.064988,
+        "ci95": [
+          0.122123,
+          0.376872
+        ],
+        "bp_per_1pt_deterioration": -24.9,
+        "bp_ci95": [
+          -37.7,
+          -12.2
+        ],
+        "n": 549,
+        "t": 3.839,
+        "p": 0.00012
+      }
+    },
+    "fy_annual_hc1": {
+      "covariance": "HC1",
+      "rows": {
+        "pre": 27,
+        "post": 18,
+        "first": "1981",
+        "last": "2025"
+      },
+      "pre": {
+        "coef": -0.301723,
+        "se": 0.051643,
+        "ci95": [
+          -0.402942,
+          -0.200504
+        ],
+        "bp_per_1pt_deterioration": 30.2,
+        "bp_ci95": [
+          20.1,
+          40.3
+        ],
+        "n": 27
+      },
+      "post": {
+        "coef": -0.054008,
+        "se": 0.061625,
+        "ci95": [
+          -0.174791,
+          0.066775
+        ],
+        "bp_per_1pt_deterioration": 5.4,
+        "bp_ci95": [
+          -6.7,
+          17.5
+        ],
+        "n": 18
+      },
+      "change_post_minus_pre": {
+        "coef": 0.247715,
+        "se": 0.080403,
+        "ci95": [
+          0.090127,
+          0.405302
+        ],
+        "bp_per_1pt_deterioration": -24.8,
+        "bp_ci95": [
+          -40.5,
+          -9.0
+        ],
+        "n": 45,
+        "t": 3.081,
+        "p": 0.00206
+      }
+    },
+    "fy_annual_hac2": {
+      "covariance": "HAC(2)",
+      "rows": {
+        "pre": 27,
+        "post": 18,
+        "first": "1981",
+        "last": "2025"
+      },
+      "pre": {
+        "coef": -0.301723,
+        "se": 0.065482,
+        "ci95": [
+          -0.430065,
+          -0.173381
+        ],
+        "bp_per_1pt_deterioration": 30.2,
+        "bp_ci95": [
+          17.3,
+          43.0
+        ],
+        "n": 27
+      },
+      "post": {
+        "coef": -0.054008,
+        "se": 0.062116,
+        "ci95": [
+          -0.175753,
+          0.067737
+        ],
+        "bp_per_1pt_deterioration": 5.4,
+        "bp_ci95": [
+          -6.8,
+          17.6
+        ],
+        "n": 18
+      },
+      "change_post_minus_pre": {
+        "coef": 0.247715,
+        "se": 0.089669,
+        "ci95": [
+          0.071968,
+          0.423462
+        ],
+        "bp_per_1pt_deterioration": -24.8,
+        "bp_ci95": [
+          -42.3,
+          -7.2
+        ],
+        "n": 45,
+        "t": 2.763,
+        "p": 0.00574
+      }
+    }
+  },
+  "model_comparison_monthly_1990": {
+    "acm_tp10": {
+      "covariance": "HAC(12)",
+      "rows": {
+        "pre": 216,
+        "post": 213,
+        "first": "1990-01-31",
+        "last": "2025-09-30"
+      },
+      "pre": {
+        "coef": -0.306118,
+        "se": 0.056464,
+        "ci95": [
+          -0.416785,
+          -0.195451
+        ],
+        "bp_per_1pt_deterioration": 30.6,
+        "bp_ci95": [
+          19.5,
+          41.7
+        ],
+        "n": 216
+      },
+      "post": {
+        "coef": -0.050758,
+        "se": 0.048175,
+        "ci95": [
+          -0.145179,
+          0.043663
+        ],
+        "bp_per_1pt_deterioration": 5.1,
+        "bp_ci95": [
+          -4.4,
+          14.5
+        ],
+        "n": 213
+      },
+      "change_post_minus_pre": {
+        "coef": 0.25536,
+        "se": 0.074296,
+        "ci95": [
+          0.109742,
+          0.400977
+        ],
+        "bp_per_1pt_deterioration": -25.5,
+        "bp_ci95": [
+          -40.1,
+          -11.0
+        ],
+        "n": 429,
+        "t": 3.437,
+        "p": 0.00059
+      }
+    },
+    "kw_tp10": {
+      "covariance": "HAC(12)",
+      "rows": {
+        "pre": 216,
+        "post": 213,
+        "first": "1990-01-31",
+        "last": "2025-09-30"
+      },
+      "pre": {
+        "coef": -0.122154,
+        "se": 0.046236,
+        "ci95": [
+          -0.212774,
+          -0.031534
+        ],
+        "bp_per_1pt_deterioration": 12.2,
+        "bp_ci95": [
+          3.2,
+          21.3
+        ],
+        "n": 216
+      },
+      "post": {
+        "coef": 0.011985,
+        "se": 0.019679,
+        "ci95": [
+          -0.026584,
+          0.050554
+        ],
+        "bp_per_1pt_deterioration": -1.2,
+        "bp_ci95": [
+          -5.1,
+          2.7
+        ],
+        "n": 213
+      },
+      "change_post_minus_pre": {
+        "coef": 0.134139,
+        "se": 0.05027,
+        "ci95": [
+          0.035612,
+          0.232666
+        ],
+        "bp_per_1pt_deterioration": -13.4,
+        "bp_ci95": [
+          -23.3,
+          -3.6
+        ],
+        "n": 429,
+        "t": 2.668,
+        "p": 0.00762
+      }
+    }
+  },
+  "model_comparison_annual_fy": {
+    "acm_tp10": {
+      "covariance": "HC1",
+      "rows": {
+        "pre": 17,
+        "post": 18,
+        "first": "1991",
+        "last": "2025"
+      },
+      "pre": {
+        "coef": -0.328431,
+        "se": 0.061957,
+        "ci95": [
+          -0.449864,
+          -0.206998
+        ],
+        "bp_per_1pt_deterioration": 32.8,
+        "bp_ci95": [
+          20.7,
+          45.0
+        ],
+        "n": 17
+      },
+      "post": {
+        "coef": -0.054008,
+        "se": 0.063026,
+        "ci95": [
+          -0.177537,
+          0.06952
+        ],
+        "bp_per_1pt_deterioration": 5.4,
+        "bp_ci95": [
+          -7.0,
+          17.8
+        ],
+        "n": 18
+      },
+      "change_post_minus_pre": {
+        "coef": 0.274423,
+        "se": 0.088379,
+        "ci95": [
+          0.101202,
+          0.447643
+        ],
+        "bp_per_1pt_deterioration": -27.4,
+        "bp_ci95": [
+          -44.8,
+          -10.1
+        ],
+        "n": 35,
+        "t": 3.105,
+        "p": 0.0019
+      }
+    },
+    "kw_tp10": {
+      "covariance": "HC1",
+      "rows": {
+        "pre": 17,
+        "post": 18,
+        "first": "1991",
+        "last": "2025"
+      },
+      "pre": {
+        "coef": -0.106223,
+        "se": 0.059753,
+        "ci95": [
+          -0.223338,
+          0.010891
+        ],
+        "bp_per_1pt_deterioration": 10.6,
+        "bp_ci95": [
+          -1.1,
+          22.3
+        ],
+        "n": 17
+      },
+      "post": {
+        "coef": 0.01167,
+        "se": 0.024429,
+        "ci95": [
+          -0.036209,
+          0.059549
+        ],
+        "bp_per_1pt_deterioration": -1.2,
+        "bp_ci95": [
+          -6.0,
+          3.6
+        ],
+        "n": 18
+      },
+      "change_post_minus_pre": {
+        "coef": 0.117893,
+        "se": 0.064554,
+        "ci95": [
+          -0.00863,
+          0.244417
+        ],
+        "bp_per_1pt_deterioration": -11.8,
+        "bp_ci95": [
+          -24.4,
+          0.9
+        ],
+        "n": 35,
+        "t": 1.826,
+        "p": 0.06781
+      }
+    }
+  },
+  "annual_fy_years": {
+    "pre": [
+      1981,
+      2007
+    ],
+    "post": [
+      2008,
+      2025
+    ]
+  },
+  "fy1981_83_reconciliation": {
+    "by_fiscal_year": {
+      "1981": {
+        "annual_pct": -2.462,
+        "mts_over_panel_gdp_pct": -1.769,
+        "mts_over_fy_gdp_pct": -1.849,
+        "mts_bn": -57.9,
+        "annual_implied_bn": -77.2,
+        "gap_pct_panel": 0.693,
+        "gap_pct_fy_gdp": 0.613,
+        "gap_bn": 19.3
+      },
+      "1982": {
+        "annual_pct": -3.827,
+        "mts_over_panel_gdp_pct": -3.264,
+        "mts_over_fy_gdp_pct": -3.34,
+        "mts_bn": -110.7,
+        "annual_implied_bn": -126.8,
+        "gap_pct_panel": 0.563,
+        "gap_pct_fy_gdp": 0.487,
+        "gap_bn": 16.1
+      },
+      "1983": {
+        "annual_pct": -5.718,
+        "mts_over_panel_gdp_pct": -5.197,
+        "mts_over_fy_gdp_pct": -5.525,
+        "mts_bn": -195.4,
+        "annual_implied_bn": -202.2,
+        "gap_pct_panel": 0.521,
+        "gap_pct_fy_gdp": 0.193,
+        "gap_bn": 6.8
+      },
+      "1984": {
+        "annual_pct": -4.591,
+        "mts_over_panel_gdp_pct": -4.249,
+        "mts_over_fy_gdp_pct": -4.44,
+        "mts_bn": -175.3,
+        "annual_implied_bn": -181.3,
+        "gap_pct_panel": 0.342,
+        "gap_pct_fy_gdp": 0.151,
+        "gap_bn": 6.0
+      },
+      "1985": {
+        "annual_pct": -4.893,
+        "mts_over_panel_gdp_pct": -4.79,
+        "mts_over_fy_gdp_pct": -4.969,
+        "mts_bn": -211.9,
+        "annual_implied_bn": -208.7,
+        "gap_pct_panel": 0.103,
+        "gap_pct_fy_gdp": -0.076,
+        "gap_bn": -3.2
+      },
+      "1986": {
+        "annual_pct": -4.831,
+        "mts_over_panel_gdp_pct": -4.765,
+        "mts_over_fy_gdp_pct": -4.886,
+        "mts_bn": -221.1,
+        "annual_implied_bn": -218.6,
+        "gap_pct_panel": 0.066,
+        "gap_pct_fy_gdp": -0.055,
+        "gap_bn": -2.5
+      },
+      "1987": {
+        "annual_pct": -3.084,
+        "mts_over_panel_gdp_pct": -3.013,
+        "mts_over_fy_gdp_pct": -3.139,
+        "mts_bn": -149.7,
+        "annual_implied_bn": -147.0,
+        "gap_pct_panel": 0.071,
+        "gap_pct_fy_gdp": -0.055,
+        "gap_bn": -2.7
+      },
+      "1988": {
+        "annual_pct": -2.963,
+        "mts_over_panel_gdp_pct": -2.895,
+        "mts_over_fy_gdp_pct": -3.019,
+        "mts_bn": -155.2,
+        "annual_implied_bn": -152.3,
+        "gap_pct_panel": 0.068,
+        "gap_pct_fy_gdp": -0.056,
+        "gap_bn": -2.9
+      },
+      "1989": {
+        "annual_pct": -2.706,
+        "mts_over_panel_gdp_pct": -2.676,
+        "mts_over_fy_gdp_pct": -2.76,
+        "mts_bn": -153.3,
+        "annual_implied_bn": -150.3,
+        "gap_pct_panel": 0.03,
+        "gap_pct_fy_gdp": -0.054,
+        "gap_bn": -3.0
+      },
+      "1990": {
+        "annual_pct": -3.707,
+        "mts_over_panel_gdp_pct": -3.669,
+        "mts_over_fy_gdp_pct": -3.738,
+        "mts_bn": -220.5,
+        "annual_implied_bn": -218.6,
+        "gap_pct_panel": 0.038,
+        "gap_pct_fy_gdp": -0.031,
+        "gap_bn": -1.9
+      }
+    },
+    "reading": "Using fiscal-year GDP removes part of the gap (FY1983 falls below 0.5 points); the rest is in dollars. The MTS series gives -57.9bn for FY1981, -110.7bn for FY1982 and -195.4bn for FY1983, against about -77bn, -127bn and -202bn implied by the annual series. That pattern is consistent with the MTS figures excluding off-budget federal entities (such as the Federal Financing Bank), which were brought into budget totals in 1985 and are included in the restated annual series. Candidate explanation, to verify against the September MTS releases of 1981-1984; the gate tolerance is unchanged."
+  },
+  "data_through": {
+    "acm_monthly": "2026-09-30",
+    "kim_wright": "2026-09-30",
+    "balance_baseline_rows": "2025-01-31",
+    "balance_fy_rows": "2025-09-30"
+  },
+  "frozen_baseline": {
+    "reproduced": true,
+    "source": "outputs/results.json -> thesis.headline_prepost",
+    "pre_coef": -0.295317,
+    "post_coef": -0.075768,
+    "pre_se_separate_hac12": 0.049061,
+    "post_se_separate_hac12": 0.037616,
+    "note": "the pooled interaction model reproduces the coefficients exactly; its HAC standard errors use the pooled residuals and so differ slightly from the separate regressions",
+    "baseline_main_commit": "2ec0dc1"
+  },
+  "saved_break_search": {
+    "source": "outputs/results.json -> thesis.bai_perron (frozen; not re-estimated for this article)",
+    "one_break": [
+      "2004-08-31"
+    ],
+    "two_breaks": [
+      "2004-08-31",
+      "2020-01-31"
+    ],
+    "bic_selected_breaks": 4,
+    "max_breaks_allowed": 4,
+    "min_segment_frac": 0.1
+  },
+  "provenance": {
+    "generated": "2026-10-20",
+    "code_commit": "4356876",
+    "acm_file": "ACMTermPremium_2026-10-09.xls",
+    "acm_sha256_12": "76736228b4e6",
+    "fred_files": "data/raw (fetch dates in data/raw/MANIFEST.json); revised, not real-time vintages",
+    "inputs_refreshed": false
+  },
+  "context_2026": {
+    "source": "outputs/results.json -> phase0.e6 (frozen ACM vintage 2026-10-09)",
+    "acm_monthly_last": "2026-09-30",
+    "acm_tp10_latest_month_end_pct": 0.885,
+    "last_earlier_month_end_at_or_above": "2014-04-30",
+    "note": "a level, on one model; it says nothing by itself about the premium's sensitivity to deficits"
+  },
+  "not_implemented": [
+    "fiscal balance x holder-share interaction (future question)"
+  ]
+}

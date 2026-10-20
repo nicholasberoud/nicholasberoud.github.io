@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Stable Is the Link Between Deficits and the Term Premium? | Nicholas Beroud</title><meta name="description" content="Term Premium Research Journal, article 1: from 1980 to 2007 a wider US deficit went with a noticeably higher 10-year term premium; since 2008 the link has been much weaker.">
+<meta name="theme-color" content="#fdfcf9"><link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../../assets/style.css?v=20261020-1"></head>
+<body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="nav-inner"><a class="wordmark" href="../../index.html">Nicholas Beroud</a><nav aria-label="Main navigation"><a href="../../index.html#projects">Projects</a><a href="../../index.html#notes">Notes</a></nav></div></header>
+<main id="main"><article class="article"><a class="back" href="../term-premium.html">← Term Premium Research Journal</a>
+<p class="eyebrow">Term Premium Research Journal · Article 1</p>
+<h1>How Stable Is the Link Between Deficits and the Term Premium?</h1>
+<dl class="dates"><dt>Published</dt><dd>20 October 2026</dd><dt>Observation period</dt><dd>January 1980 to September 2025 for the estimates (fiscal years 1981 to 2025); the premium is shown to September 2026</dd><dt>Data vintage</dt><dd>New York Fed ACM file of 9 October 2026; FRED series downloaded October 2026 (revised data, not real-time)</dd></dl>
+<p class="lead">From 1980 to 2007, a wider US deficit went with a noticeably higher 10-year term premium. Since 2008 that link has been much weaker, and in most versions I tested it cannot be told apart from zero.</p>
+
+<div class="findings">
+<p><strong>In short</strong></p>
+<ul>
+<li>Before 2008, a fiscal balance one point of GDP worse went with about <strong>30 basis points</strong> more term premium, holding the debt level fixed.</li>
+<li>From 2008 on, the same association is about <strong>5 to 8 basis points</strong>, and its 95% interval includes zero in most versions.</li>
+<li>The change between the two periods is statistically clear in every version on the New York Fed's ACM estimate. On a second estimate (Kim-Wright) the link is smaller throughout.</li>
+<li>This is an association, not a measured cause, and January 2008 is a date I chose to compare around, not one the data picked.</li>
+</ul>
+<p class="source-note">Numbers: <a href="../../assets/term-premium/2026-10/results.json">results file</a> and <a href="../../assets/term-premium/2026-10/table1_specifications.csv">table of specifications</a>.</p>
+</div>
+
+<h2>The question and why it matters now</h2>
+<p>When a government borrows more, should investors ask to be paid more for lending to it for ten years? Part of a long-term yield reflects where investors expect short-term interest rates to go. The rest, the <em>term premium</em>, is what they ask for bearing the risk of locking money up for a long time. If fiscal risk is priced anywhere, it should show up there.</p>
+<p>The question feels live. The US ran a deficit of about 5.8% of GDP in fiscal 2025, and in September 2026 the ACM estimate of the 10-year term premium closed the month at 0.89%, its highest month-end since April 2014. But a higher premium is a level. It does not tell you whether the premium has become more responsive to deficits. That is the question here: has the link between the fiscal balance and the term premium stayed stable over time?</p>
+<p>One point before the numbers: the term premium is <strong>not observed</strong>. It is estimated by a model that splits yields into expected rates and compensation for risk. I use the New York Fed's ACM estimate and check it against the Federal Reserve Board's Kim-Wright estimate. Different models give different premia.</p>
+
+<h2>How I looked at it</h2>
+<p>I compared the monthly 10-year term premium with the federal fiscal balance (as a share of GDP), holding the level of federal debt relative to GDP fixed. I let that relationship differ before and after January 2008, a comparison date I chose because it is when large-scale Federal Reserve bond buying began; it is not a break the model found. Then I tested whether the fiscal link really changed, rather than just comparing two numbers by eye.</p>
+<p>The fiscal balance is recorded with surpluses as positive numbers and deficits as negative ones, so "worse by one point" means a deficit one percentage point of GDP larger. I report everything in basis points of premium per point of GDP.</p>
+<p>I checked the result five ways, because the first version had known weaknesses:</p>
+<ul>
+<li><strong>Timing.</strong> The annual fiscal balance had been carried over the calendar year. Fiscal years run October to September, so I moved each year's figure to its own months.</li>
+<li><strong>Repeated values.</strong> A yearly number copied across twelve months is not twelve observations. I re-ran the comparison with one row per fiscal year: 27 years before 2008 and 18 after.</li>
+<li><strong>Uncertainty.</strong> The term premium moves slowly, so neighbouring months are not independent. I widened the window used to estimate uncertainty from 12 to 36 months.</li>
+<li><strong>The business cycle.</strong> I added core inflation and the output gap, both allowed to matter differently after 2008.</li>
+<li><strong>The model.</strong> I re-ran it with the Kim-Wright premium from 1990, on exactly the same months.</li>
+</ul>
+
+<h2>What I found</h2>
+<figure class="research-figure"><a href="../../assets/term-premium/2026-10/fig1_premium_and_balance.png" aria-label="Open figure 1 at full size"><img src="../../assets/term-premium/2026-10/fig1_premium_and_balance.png" width="1441" height="1059" alt="Two stacked panels from 1980 to 2026. Top: the ACM 10-year term premium, from about 3 to 5 percent in the early 1980s down to below minus 1 percent in 2020, and back to about 0.9 percent in 2026. Bottom: the federal fiscal balance as a share of GDP, a surplus around 2000 and deficits near 10 and 15 percent of GDP in 2009 and 2020. A dashed line marks January 2008." loading="lazy"></a><figcaption><strong>Figure 1.</strong> The two series. The premium fell over four decades while deficits widened sharply in 2009 and 2020. The dashed line marks the comparison date I chose, not an estimated break. Sources: New York Fed (ACM, 9 October 2026 file); FRED FYFSGDA188S. <a href="../../assets/term-premium/2026-10/fig1_premium_and_balance.csv">Chart data (CSV)</a></figcaption></figure>
+<p>Across every version, the earlier link is clearly positive and the later one is small. The table and figure 2 show each version with its 95% interval.</p>
+<div class="table-wrap"><table class="data-table"><caption>Basis points of term premium per one point of GDP wider deficit (95% interval), and the test of the change</caption>
+<thead><tr><th scope="col">Version</th><th scope="col">1980-2007</th><th scope="col">2008 onward</th><th scope="col">Change: p-value</th></tr></thead>
+<tbody>
+<tr><td>Saved baseline (monthly, calendar-year timing)</td><td>29.5 (19.9 to 39.2)</td><td>7.6 (0.2 to 14.9)</td><td>0.0004</td></tr>
+<tr><td>Fiscal-year timing corrected</td><td>30.3 (20.7 to 39.9)</td><td>5.1 (-4.4 to 14.5)</td><td>0.0002</td></tr>
+<tr><td>Same, 36-month uncertainty window</td><td>30.3 (18.7 to 41.9)</td><td>5.1 (-5.1 to 15.2)</td><td>0.001</td></tr>
+<tr><td>One row per fiscal year</td><td>30.2 (20.1 to 40.3)</td><td>5.4 (-6.7 to 17.5)</td><td>0.002</td></tr>
+<tr><td>With core inflation and the output gap</td><td>25.9 (16.2 to 35.5)</td><td>0.9 (-7.4 to 9.2)</td><td>0.0001</td></tr>
+<tr><td>Kim-Wright premium, 1990 onward</td><td>12.2 (3.2 to 21.3)</td><td>-1.2 (-5.1 to 2.7)</td><td>0.008</td></tr>
+</tbody></table></div>
+<figure class="research-figure"><a href="../../assets/term-premium/2026-10/fig2_estimates.png" aria-label="Open figure 2 at full size"><img src="../../assets/term-premium/2026-10/fig2_estimates.png" width="1484" height="897" alt="Dot-and-interval chart of six versions. In each, the before-2008 estimate sits between about 12 and 30 basis points with an interval above zero, and the 2008-onward estimate sits near zero with an interval that crosses zero in five of the six versions." loading="lazy"></a><figcaption><strong>Figure 2.</strong> The before-2008 estimate (circles) and the 2008-onward estimate (squares) in each version, with 95% intervals. The Kim-Wright row starts in 1990. <a href="../../assets/term-premium/2026-10/fig2_estimates.csv">Chart data (CSV)</a></figcaption></figure>
+<p>Figure 3 shows the fiscal-year version directly: each point is one fiscal year. Before 2008 the points slope down from left to right, so wider deficits came with a higher premium. After 2008 the slope is close to flat, and the two biggest deficits, 2020 and 2021, sit at some of the lowest premia.</p>
+<figure class="research-figure"><a href="../../assets/term-premium/2026-10/fig3_fiscal_years.png" aria-label="Open figure 3 at full size"><img src="../../assets/term-premium/2026-10/fig3_fiscal_years.png" width="1408" height="897" alt="Scatter of fiscal years. Blue circles for 1981 to 2007 slope steeply downward from about 3.5 percent premium at deficits of 5 percent of GDP to about 1 percent at surpluses. Orange squares for 2008 to 2025 lie between about minus 0.7 and 1.4 percent with a nearly flat fitted line, even at deficits of 10 to 15 percent of GDP." loading="lazy"></a><figcaption><strong>Figure 3.</strong> One point per fiscal year. The premium is adjusted to each period's average debt level using that period's own debt coefficient, so each fitted line has the slope reported in the table. <a href="../../assets/term-premium/2026-10/fig3_fiscal_years.csv">Chart data (CSV)</a></figcaption></figure>
+
+<h2>My interpretation</h2>
+<p>The link between the fiscal balance and the term premium was real and sizeable in the 1980s, 1990s and early 2000s, and it is much weaker in the data since 2008. That pattern survives the fixes I could make with the data I have: correct fiscal-year timing, one observation per year, wider uncertainty bands and business-cycle controls. The size of the change depends on how the premium is measured, but the direction does not.</p>
+<p>What I do not conclude is that fiscal risk stopped mattering, or that any one institution caused the change. The finding is narrower: over this period, the average co-movement between deficits and the estimated premium became much weaker.</p>
+
+<h2>A competing explanation</h2>
+<p>The strongest alternative is timing. The largest deficits after 2008 arrived in recessions and crises, in 2009 and 2020, exactly when investors rushed into Treasuries and the Federal Reserve bought bonds at scale. Those forces push the premium down at the same moment deficits balloon. A weaker average link could therefore reflect <em>when</em> deficits happened rather than a change in how investors treat them. Adding the output gap only partly addresses this, because crises are more than a low output gap.</p>
+<p>A second alternative sits in the earlier period. The early 1980s combined high deficits with very high premia during the fight against inflation. Part of the earlier link may reflect that era's inflation risk rather than fiscal risk as such.</p>
+
+<h2>What the evidence cannot establish</h2>
+<ul>
+<li><strong>Cause.</strong> These are associations in slow-moving series. They do not show that deficits raised the premium, or that anything specific weakened that effect.</li>
+<li><strong>The break date.</strong> I chose January 2008. A search that lets the data pick breaks places one at August 2004 when only one is allowed, and August 2004 and January 2020 when two are; a criterion that picks the number of breaks chooses the maximum allowed (four). The answer depends on the setup, so no single date is established.</li>
+<li><strong>Precision.</strong> There are only 27 and 18 fiscal-year observations. A wide interval after 2008 means the data are inconclusive about the size of the later link, not that it is exactly zero.</li>
+<li><strong>Who holds the debt.</strong> A popular explanation is that more Treasuries are now held by buyers who care less about price, such as central banks. I have not tested that here; it needs its own design (see <a href="../../notes/who-buys-the-debt.html">Who Buys the Debt?</a>).</li>
+<li><strong>Real-time information.</strong> The data are today's revised figures, and the ACM model is estimated on the full sample, so this is not what investors could see at the time.</li>
+</ul>
+
+<h2>What would change my mind</h2>
+<ul>
+<li>If the later link reappeared once crisis years are handled explicitly, for example by excluding or modelling 2009 and 2020, the "weaker link" would look like a timing artefact.</li>
+<li>If fiscal news itself, such as debt-limit standoffs or rating downgrades, moved the premium as much after 2008 as before, the weaker annual link would say little about how markets treat fiscal risk.</li>
+<li>If a longer history, back to the 1960s, gave a very different earlier link, the 1980-2007 benchmark would need rethinking. With older data the earlier link looks larger, not smaller, but I have not adopted that sample yet.</li>
+</ul>
+
+<h2>Sources and reproducibility</h2>
+<ul>
+<li><strong>Term premium:</strong> New York Fed, <a href="https://www.newyorkfed.org/research/data_indicators/term-premia-tabs">ACM term premia</a> (file of 9 October 2026); Federal Reserve Board Kim-Wright estimate via <a href="https://fred.stlouisfed.org/series/THREEFYTP10">FRED THREEFYTP10</a>.</li>
+<li><strong>Fiscal balance:</strong> <a href="https://fred.stlouisfed.org/series/FYFSGDA188S">FRED FYFSGDA188S</a> (federal surplus or deficit, % of GDP, fiscal years).</li>
+<li><strong>Debt and controls:</strong> FRED GFDEBTN (federal debt), NGDPSAXDCUSQ (nominal GDP), PCEPILFE (core PCE prices), GDPC1 and GDPPOT (output gap).</li>
+<li><strong>Method reference:</strong> Adrian, Crump and Moench (2013), "Pricing the Term Structure with Linear Regressions," <em>Journal of Financial Economics</em>; Kim and Wright (2005), Federal Reserve FEDS 2005-33.</li>
+<li><strong>Results:</strong> every number on this page comes from the <a href="../../assets/term-premium/2026-10/results.json">generated results file</a>, with chart data linked under each figure. The code is in a private research repository; the results file records the code version and the ACM file's fingerprint.</li>
+</ul>
+<p class="source-note">Research and education only. Nothing here is investment advice.</p>
+
+<details class="appendix"><summary>Technical appendix</summary>
+<h3>Model</h3>
+<p>Monthly, with separate intercepts and slopes after the comparison date:</p>
+<p class="formula">TP<sub>t</sub> = a + b·FB<sub>t</sub> + c·Debt<sub>t</sub> + d·Post<sub>t</sub> + e·(Post<sub>t</sub>·FB<sub>t</sub>) + f·(Post<sub>t</sub>·Debt<sub>t</sub>) + u<sub>t</sub></p>
+<p>TP is the 10-year term premium (percent), FB the fiscal balance (% of GDP, surplus positive), Debt federal debt over annualized nominal GDP, and Post equals 1 from January 2008 (fiscal year 2008 for annual rows). The fiscal slope is b before and b + e after; the test of the change is the test of e = 0. Reported basis points are -100 times the slope. Because every coefficient can change, the period slopes equal those from two separate regressions; testing e inside one model uses a single covariance estimate.</p>
+<h3>Uncertainty</h3>
+<p>Monthly versions use Newey-West standard errors with 12 or 36 lags. Fiscal-year versions use heteroskedasticity-robust (HC1) errors; Newey-West with 2 lags gives p = 0.006 for the change. Intervals are 95%.</p>
+<h3>Sample</h3>
+<p>Monthly rows from January 1980, the first month with all inputs in the frozen data files (a start set by data coverage, now stated explicitly), to January 2025 with calendar-year timing and September 2025 with fiscal-year timing: 336 rows before 2008 and 205 or 213 after. Fiscal-year rows cover complete fiscal years 1981-2007 and 2008-2025.</p>
+<h3>What changed from the saved baseline</h3>
+<p>The saved baseline is reproduced exactly before anything else is run. The corrections are the fiscal-year timing, the fiscal-year rows, the joint test of the change and the added controls. No data were refreshed for this article.</p>
+<h3>Two term premium models</h3>
+<p>On identical months from 1990, the ACM link is 30.6 basis points before 2008 and 5.1 after (change p = 0.0006); Kim-Wright gives 12.2 and -1.2 (p = 0.008). With one row per fiscal year, the Kim-Wright change is weaker (p = 0.07). The two estimates track each other closely in some periods and diverge in others.</p>
+<figure class="research-figure"><a href="../../assets/term-premium/2026-10/fig4_two_models.png" aria-label="Open figure 4 at full size"><img src="../../assets/term-premium/2026-10/fig4_two_models.png" width="1416" height="659" alt="Two lines from 1990 to 2026: the ACM and Kim-Wright 10-year term premium estimates. They move together broadly but ACM is more volatile, higher in the early 1990s and around 2008 to 2011, and lower from 2016 to 2022." loading="lazy"></a><figcaption><strong>Figure 4.</strong> Two estimates of the same unobserved quantity. <a href="../../assets/term-premium/2026-10/fig4_two_models.csv">Chart data (CSV)</a></figcaption></figure>
+<h3>A data note</h3>
+<p>A monthly Treasury Statement measure of the deficit is also available from 1980, but its 12-month totals miss the annual series in fiscal years 1981-1983. Part of that gap comes from the GDP denominator; the rest is in dollars and looks consistent with off-budget items that were later folded into the official totals. I am still verifying that, so this article uses the annual series.</p>
+</details>
+</article></main>
+<footer class="site-footer"><span>© 2026 Nicholas Beroud</span><span><a href="mailto:nicholasberoud@gmail.com">Get in touch</a> · <a href="../../index.html">Back to top ↑</a></span></footer></body></html>

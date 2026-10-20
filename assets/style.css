@@ -86,3 +86,34 @@ h1 { font-family: var(--serif); font-weight: 400; font-size: 40px; line-height: 
   .draft-tag { margin-left: 5px; }
   .site-footer { flex-wrap: wrap; gap: 5px 20px; }
 }
+
+/* Journal articles (added 20 October 2026) */
+.subtitle { font-family: var(--serif); font-size: 19px; color: var(--muted); margin: -6px 0 18px; }
+.article h3 { font-family: var(--serif); font-weight: 400; font-size: 19px; margin-top: 26px; }
+.findings { padding: 16px 20px; border-left: 2px solid var(--blue); background: #f0f3f8; margin: 26px 0; }
+.findings p, .findings li { color: var(--ink); font-size: 15px; }
+.findings p:first-child { margin-top: 0; }
+.findings ul { margin-bottom: 0; }
+.dates { display: grid; grid-template-columns: max-content 1fr; gap: 2px 14px; font-size: 12px; color: var(--muted); margin: 6px 0 0; }
+.dates dt { font-weight: 600; }
+.dates dd { margin: 0; }
+.table-wrap { overflow-x: auto; margin: 22px 0; }
+.data-table { border-collapse: collapse; width: 100%; font-size: 13px; line-height: 1.5; }
+.data-table caption { text-align: left; color: var(--muted); font-size: 12px; padding-bottom: 8px; }
+.data-table th, .data-table td { padding: 7px 10px; border-bottom: 1px solid var(--rule); text-align: right; vertical-align: top; }
+.data-table th:first-child, .data-table td:first-child { text-align: left; }
+.data-table th { font-weight: 600; color: var(--ink); }
+.data-table td { color: #4c524d; }
+.appendix { border-top: 1px solid var(--rule); margin-top: 40px; padding-top: 6px; }
+.appendix summary { cursor: pointer; font-family: var(--serif); font-size: 22px; padding: 10px 0; color: var(--ink); }
+.article-list { list-style: none; padding-left: 0 !important; }
+.article-list li { margin: 0 0 18px; }
+.article-list a { font-family: var(--serif); font-size: 19px; text-decoration: none; }
+.article-list a:hover { text-decoration: underline; }
+.article-list .meta { display: block; }
+.status-tag { display: inline-block; font-size: 11px; letter-spacing: .4px; text-transform: uppercase; color: #53657b; }
+.formula { font-family: var(--serif); font-size: 16px; background: #f6f6f2; padding: 10px 14px; overflow-x: auto; white-space: nowrap; }
+@media (max-width: 520px) {
+  .subtitle { font-size: 17px; }
+  .data-table { font-size: 12px; }
+}

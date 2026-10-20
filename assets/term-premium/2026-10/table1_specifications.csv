@@ -1,0 +1,6 @@
+specification,covariance,rows_pre,rows_post,pre_bp,pre_bp_ci95,post_bp,post_bp_ci95,change_p
+"Saved baseline: monthly, January-stamped balance",HAC(12),336,205,29.5,"[19.9, 39.2]",7.6,"[0.2, 14.9]",0.00038
+"Fiscal-year timing corrected, monthly",HAC(12),336,213,30.3,"[20.7, 39.9]",5.1,"[-4.4, 14.5]",0.00024
+"Same, longer HAC window (36 months)",HAC(36),336,213,30.3,"[18.7, 41.9]",5.1,"[-5.1, 15.2]",0.00133
+One row per fiscal year,HC1,27,18,30.2,"[20.1, 40.3]",5.4,"[-6.7, 17.5]",0.00206
+Adding core inflation and the output gap,HAC(12),336,213,25.9,"[16.2, 35.5]",0.9,"[-7.4, 9.2]",0.00012

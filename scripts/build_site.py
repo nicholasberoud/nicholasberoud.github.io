@@ -8,7 +8,9 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / '_site'
 PAGES = (
     'index.html',
+    'projects/fima.html',
     'projects/term-premium.html',
+    'projects/term-premium/deficits-and-the-term-premium.html',
     'projects/repo-market.html',
     'notes/climate-resilience.html',
     'notes/who-buys-the-debt.html',
