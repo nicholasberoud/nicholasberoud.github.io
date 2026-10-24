@@ -1,0 +1,7926 @@
+{
+ "experiment": "Lab experiment 2b: fiscal sensitivity with inflation controlled",
+ "label": "Lab experiment",
+ "status": "associations in a model-estimated term premium; not causal; controlling for inflation can understate the fiscal link",
+ "provenance": {
+  "code_commit": "e444317",
+  "generated": "2026-10-23",
+  "settings_yaml_sha256": "e524f9a44271c681f721ae496ad0cf7e669fe7effbd7af080724eab2a9cf224f",
+  "data": "data/lab/2026-10",
+  "data_manifest": "data/lab/2026-10/MANIFEST.json",
+  "inputs": {
+   "ACMTermPremium_2026-10-22.xls": {
+    "sha256": "e930c516d7e4f39273a2d2e67c55a521939b46493b07863c54a57024f9e448c5",
+    "first_obs": "1961-06-30",
+    "last_obs": "2026-09-30"
+   },
+   "FYFSD.csv": {
+    "sha256": "f4e5b30165d969da81b40df3618399e7f68746e2594b07e8e3515ae8deaf4e5a",
+    "first_obs": "1901-06-30",
+    "last_obs": "2025-09-30"
+   },
+   "FYFSGDA188S.csv": {
+    "sha256": "7e4f6b2c7cbd936f5dfae40256a292db74b24709e1d4f1780dad0732e49439e8",
+    "first_obs": "1929-01-01",
+    "last_obs": "2025-01-01"
+   },
+   "FYGFDPUN.csv": {
+    "sha256": "829270267f4e348319fded79083c78543b4607fcd6863a52e651edd15c044f3d",
+    "first_obs": "1970-01-01",
+    "last_obs": "2026-04-01"
+   },
+   "FYOINT.csv": {
+    "sha256": "8acff37cf53b22e1383c2f5b5e61181cefe725e5a7c1a3efdc9d9c16363320ff",
+    "first_obs": "1940-06-30",
+    "last_obs": "2025-09-30"
+   },
+   "GDP.csv": {
+    "sha256": "5d2a8770ac8661e0989113aad8be4b2ea4a0f5fa4549dc7f372ce6279a95c818",
+    "first_obs": "1947-01-01",
+    "last_obs": "2026-04-01"
+   },
+   "GDPA.csv": {
+    "sha256": "bfab3d233f383e8fa2e52eff0e3cc4e699c288326427ce851ad20abc99977a60",
+    "first_obs": "1929-01-01",
+    "last_obs": "2025-01-01"
+   },
+   "GDPC1.csv": {
+    "sha256": "5e235cef633b1033da0967311efa89a47845f42e9d6ad8d60b4babed32ae6f08",
+    "first_obs": "1947-01-01",
+    "last_obs": "2026-04-01"
+   },
+   "GDPPOT.csv": {
+    "sha256": "4902611191d6df6cf8bffba4025c31d0aedfc878a47acc6e9ed1c7da48112b22",
+    "first_obs": "1949-01-01",
+    "last_obs": "2036-10-01"
+   },
+   "GFDEBTN.csv": {
+    "sha256": "8f5f0b4259d5208e51ec47eb50e66b528cf9ee48c558875030d2044449d9281c",
+    "first_obs": "1966-01-01",
+    "last_obs": "2026-04-01"
+   },
+   "MTSDS133FMS.csv": {
+    "sha256": "4f11c1579998a142667221f789d7cb28a00f13d241087a1f932aa3b5cb9da83d",
+    "first_obs": "1980-10-01",
+    "last_obs": "2026-09-01"
+   },
+   "MTS_table1_monthly.csv": {
+    "sha256": "8d6dc91c9ac21c41a4564c8f314f002cb987d4cd1d3e60a8ae165ba8ad85f092",
+    "first_obs": "2015-03-31",
+    "last_obs": "2026-09-30"
+   },
+   "PCEPILFE.csv": {
+    "sha256": "9f8d0f8e100cff9d9ee2e024557c8aa253c9aed7eade47ac5539c5860c36f616",
+    "first_obs": "1959-01-01",
+    "last_obs": "2026-08-01"
+   },
+   "THREEFYTP10.csv": {
+    "sha256": "b67a729281dd2d559968768dfb059be1887065100e07cff8786ee6d1f4fb8621",
+    "first_obs": "1990-01-02",
+    "last_obs": "2026-10-16"
+   }
+  }
+ },
+ "reporting_units": "basis points of premium per 1 point of GDP of fiscal deterioration (bp = -100 x coefficient on the balance, surplus positive); positive = larger deficits go with a higher premium",
+ "sample_end": {
+  "fiscal_year": 2025,
+  "month": "2025-09-30"
+ },
+ "answer_rule": {
+  "text": [
+   "3. **Declared answer, written before any result** (applied to V1, reported for every version):",
+   "   - \"**mostly inflation**\": the FY1982 smoothed fiscal slope falls by more than half relative to V0 **and** its 95% band includes zero;",
+   "   - \"**mostly separate from inflation**\": it falls by less than a quarter **and** its band excludes zero;",
+   "   - otherwise \"**mixed**\"."
+  ],
+  "primary_version": "V1",
+  "primary_answer": "mostly separate from inflation",
+  "others": {
+   "V2": "mixed",
+   "V3": "mostly separate from inflation",
+   "V4": "mostly separate from inflation",
+   "V5": "mixed"
+  },
+  "others_agree_with_primary": false
+ },
+ "coming_back_rule_text": "The link counts as reappearing only if the latest filtered estimate's 95% interval lies entirely above the post-2008 range of the filtered path, that is, its lower bound is above the highest filtered point estimate from fiscal year 2009 to the year before the latest. Otherwise it does not count as reappearing, however much the line has risen.",
+ "anchor": {
+  "source": "outputs/lab/fiscal-sensitivity/results.json",
+  "source_code_commit": "344ed98",
+  "paths_identical": true,
+  "q_identical": true,
+  "h_identical": true,
+  "q_rel_diff": 0.0,
+  "h_rel_diff": 0.0,
+  "rule_identical": true
+ },
+ "versions": {
+  "V0": {
+   "controls": [
+    "debt_gdp"
+   ],
+   "drifting": [],
+   "role": "no inflation control; must reproduce Experiment 2's main version (ACM + debt) exactly: the anchor",
+   "control_coverage": {
+    "debt_gdp": [
+     1967,
+     2025
+    ]
+   },
+   "time_varying": {
+    "rows": {
+     "first": 1967,
+     "last": 2025,
+     "n": 59,
+     "nobs_diffuse": 3
+    },
+    "drift_variance_q": 0.00763488407539236,
+    "drift_sd_bp_per_year": 8.738,
+    "obs_variance_h": 0.22518570192927148,
+    "loglik_time_varying": -61.773,
+    "loglik_fixed_slope": -84.2734,
+    "lr_stat": 45.0008,
+    "lr_p_boundary_mixture": 0.0,
+    "lr_mixture": "chi2(0):chi2(1) 50:50",
+    "converged": true,
+    "fixed_slope": {
+     "bp": 16.47,
+     "bp_lo": 6.77,
+     "bp_hi": 26.18,
+     "coef": -0.164719,
+     "se": 0.049515
+    },
+    "controls": {
+     "debt_gdp": {
+      "drifting": false,
+      "coef": -1.143969,
+      "se": 0.680882,
+      "lo": -2.478473,
+      "hi": 0.190534
+     }
+    },
+    "params": [
+     -1.4908298752771874,
+     -4.875027523741497
+    ],
+    "paths": [
+     {
+      "fiscal_year": 1970,
+      "filtered_bp": 6.52,
+      "filtered_bp_lo": -52.53,
+      "filtered_bp_hi": 65.57,
+      "filtered_coef": -0.065202,
+      "filtered_se": 0.301305,
+      "smoothed_bp": -1.23,
+      "smoothed_bp_lo": -31.09,
+      "smoothed_bp_hi": 28.62,
+      "smoothed_coef": 0.012342,
+      "smoothed_se": 0.152333
+     },
+     {
+      "fiscal_year": 1971,
+      "filtered_bp": 23.43,
+      "filtered_bp_lo": -19.39,
+      "filtered_bp_hi": 66.24,
+      "filtered_coef": -0.234264,
+      "filtered_se": 0.218437,
+      "smoothed_bp": 3.74,
+      "smoothed_bp_lo": -24.62,
+      "smoothed_bp_hi": 32.1,
+      "smoothed_coef": -0.037366,
+      "smoothed_se": 0.144697
+     },
+     {
+      "fiscal_year": 1972,
+      "filtered_bp": 22.16,
+      "filtered_bp_lo": -19.73,
+      "filtered_bp_hi": 64.05,
+      "filtered_coef": -0.221596,
+      "filtered_se": 0.213734,
+      "smoothed_bp": 6.24,
+      "smoothed_bp_lo": -21.6,
+      "smoothed_bp_hi": 34.08,
+      "smoothed_coef": -0.062398,
+      "smoothed_se": 0.142051
+     },
+     {
+      "fiscal_year": 1973,
+      "filtered_bp": 21.69,
+      "filtered_bp_lo": -23.56,
+      "filtered_bp_hi": 66.93,
+      "filtered_coef": -0.216858,
+      "filtered_se": 0.230853,
+      "smoothed_bp": 8.25,
+      "smoothed_bp_lo": -19.34,
+      "smoothed_bp_hi": 35.85,
+      "smoothed_coef": -0.082541,
+      "smoothed_se": 0.140782
+     },
+     {
+      "fiscal_year": 1974,
+      "filtered_bp": 25.75,
+      "filtered_bp_lo": -21.64,
+      "filtered_bp_hi": 73.13,
+      "filtered_coef": -0.257458,
+      "filtered_se": 0.241779,
+      "smoothed_bp": 11.36,
+      "smoothed_bp_lo": -14.59,
+      "smoothed_bp_hi": 37.31,
+      "smoothed_coef": -0.113615,
+      "smoothed_se": 0.132411
+     },
+     {
+      "fiscal_year": 1975,
+      "filtered_bp": 17.08,
+      "filtered_bp_lo": -16.41,
+      "filtered_bp_hi": 50.57,
+      "filtered_coef": -0.170766,
+      "filtered_se": 0.170878,
+      "smoothed_bp": 15.0,
+      "smoothed_bp_lo": -7.16,
+      "smoothed_bp_hi": 37.16,
+      "smoothed_coef": -0.14996,
+      "smoothed_se": 0.113062
+     },
+     {
+      "fiscal_year": 1976,
+      "filtered_bp": 24.25,
+      "filtered_bp_lo": -1.41,
+      "filtered_bp_hi": 49.9,
+      "filtered_coef": -0.242462,
+      "filtered_se": 0.130891,
+      "smoothed_bp": 21.11,
+      "smoothed_bp_lo": 0.94,
+      "smoothed_bp_hi": 41.28,
+      "smoothed_coef": -0.21109,
+      "smoothed_se": 0.102901
+     },
+     {
+      "fiscal_year": 1977,
+      "filtered_bp": 31.64,
+      "filtered_bp_lo": 3.61,
+      "filtered_bp_hi": 59.67,
+      "filtered_coef": -0.316397,
+      "filtered_se": 0.142989,
+      "smoothed_bp": 28.19,
+      "smoothed_bp_lo": 6.52,
+      "smoothed_bp_hi": 49.85,
+      "smoothed_coef": -0.28187,
+      "smoothed_se": 0.110544
+     },
+     {
+      "fiscal_year": 1978,
+      "filtered_bp": 32.48,
+      "filtered_bp_lo": 2.63,
+      "filtered_bp_hi": 62.34,
+      "filtered_coef": -0.32482,
+      "filtered_se": 0.152333,
+      "smoothed_bp": 33.64,
+      "smoothed_bp_lo": 11.07,
+      "smoothed_bp_hi": 56.21,
+      "smoothed_coef": -0.336422,
+      "smoothed_se": 0.115153
+     },
+     {
+      "fiscal_year": 1979,
+      "filtered_bp": 32.4,
+      "filtered_bp_lo": -1.84,
+      "filtered_bp_hi": 66.64,
+      "filtered_coef": -0.323962,
+      "filtered_se": 0.174695,
+      "smoothed_bp": 41.39,
+      "smoothed_bp_lo": 18.05,
+      "smoothed_bp_hi": 64.72,
+      "smoothed_coef": -0.41388,
+      "smoothed_se": 0.119053
+     },
+     {
+      "fiscal_year": 1980,
+      "filtered_bp": 46.31,
+      "filtered_bp_lo": 12.67,
+      "filtered_bp_hi": 79.95,
+      "filtered_coef": -0.463105,
+      "filtered_se": 0.171651,
+      "smoothed_bp": 50.9,
+      "smoothed_bp_lo": 28.91,
+      "smoothed_bp_hi": 72.9,
+      "smoothed_coef": -0.509012,
+      "smoothed_se": 0.112223
+     },
+     {
+      "fiscal_year": 1981,
+      "filtered_bp": 59.37,
+      "filtered_bp_lo": 24.74,
+      "filtered_bp_hi": 94.0,
+      "filtered_coef": -0.593704,
+      "filtered_se": 0.176691,
+      "smoothed_bp": 57.97,
+      "smoothed_bp_lo": 37.55,
+      "smoothed_bp_hi": 78.4,
+      "smoothed_coef": -0.579733,
+      "smoothed_se": 0.104227
+     },
+     {
+      "fiscal_year": 1982,
+      "filtered_bp": 76.47,
+      "filtered_bp_lo": 50.58,
+      "filtered_bp_hi": 102.36,
+      "filtered_coef": -0.764729,
+      "filtered_se": 0.132086,
+      "smoothed_bp": 59.67,
+      "smoothed_bp_lo": 42.44,
+      "smoothed_bp_hi": 76.91,
+      "smoothed_coef": -0.596738,
+      "smoothed_se": 0.08793
+     },
+     {
+      "fiscal_year": 1983,
+      "filtered_bp": 60.28,
+      "filtered_bp_lo": 43.38,
+      "filtered_bp_hi": 77.18,
+      "filtered_coef": -0.602767,
+      "filtered_se": 0.086225,
+      "smoothed_bp": 53.08,
+      "smoothed_bp_lo": 39.06,
+      "smoothed_bp_hi": 67.1,
+      "smoothed_coef": -0.530788,
+      "smoothed_se": 0.071548
+     },
+     {
+      "fiscal_year": 1984,
+      "filtered_bp": 73.0,
+      "filtered_bp_lo": 54.27,
+      "filtered_bp_hi": 91.72,
+      "filtered_coef": -0.729953,
+      "filtered_se": 0.09552,
+      "smoothed_bp": 57.16,
+      "smoothed_bp_lo": 42.81,
+      "smoothed_bp_hi": 71.52,
+      "smoothed_coef": -0.571645,
+      "smoothed_se": 0.07325
+     },
+     {
+      "fiscal_year": 1985,
+      "filtered_bp": 76.95,
+      "filtered_bp_lo": 56.17,
+      "filtered_bp_hi": 97.74,
+      "filtered_coef": -0.769523,
+      "filtered_se": 0.106046,
+      "smoothed_bp": 53.95,
+      "smoothed_bp_lo": 39.93,
+      "smoothed_bp_hi": 67.97,
+      "smoothed_coef": -0.539516,
+      "smoothed_se": 0.071535
+     },
+     {
+      "fiscal_year": 1986,
+      "filtered_bp": 71.54,
+      "filtered_bp_lo": 46.92,
+      "filtered_bp_hi": 96.17,
+      "filtered_coef": -0.715435,
+      "filtered_se": 0.125625,
+      "smoothed_bp": 46.28,
+      "smoothed_bp_lo": 31.93,
+      "smoothed_bp_hi": 60.64,
+      "smoothed_coef": -0.46284,
+      "smoothed_se": 0.073255
+     },
+     {
+      "fiscal_year": 1987,
+      "filtered_bp": 71.32,
+      "filtered_bp_lo": 41.33,
+      "filtered_bp_hi": 101.31,
+      "filtered_coef": -0.713214,
+      "filtered_se": 0.15302,
+      "smoothed_bp": 49.33,
+      "smoothed_bp_lo": 32.81,
+      "smoothed_bp_hi": 65.85,
+      "smoothed_coef": -0.493324,
+      "smoothed_se": 0.084287
+     },
+     {
+      "fiscal_year": 1988,
+      "filtered_bp": 75.11,
+      "filtered_bp_lo": 40.82,
+      "filtered_bp_hi": 109.39,
+      "filtered_coef": -0.751083,
+      "filtered_se": 0.174927,
+      "smoothed_bp": 50.44,
+      "smoothed_bp_lo": 33.17,
+      "smoothed_bp_hi": 67.71,
+      "smoothed_coef": -0.504359,
+      "smoothed_se": 0.088118
+     },
+     {
+      "fiscal_year": 1989,
+      "filtered_bp": 73.62,
+      "filtered_bp_lo": 35.59,
+      "filtered_bp_hi": 111.65,
+      "filtered_coef": -0.736229,
+      "filtered_se": 0.194039,
+      "smoothed_bp": 44.83,
+      "smoothed_bp_lo": 27.53,
+      "smoothed_bp_hi": 62.14,
+      "smoothed_coef": -0.448345,
+      "smoothed_se": 0.088272
+     },
+     {
+      "fiscal_year": 1990,
+      "filtered_bp": 64.28,
+      "filtered_bp_lo": 26.08,
+      "filtered_bp_hi": 102.49,
+      "filtered_coef": -0.642849,
+      "filtered_se": 0.194908,
+      "smoothed_bp": 41.6,
+      "smoothed_bp_lo": 25.74,
+      "smoothed_bp_hi": 57.46,
+      "smoothed_coef": -0.416015,
+      "smoothed_se": 0.080905
+     },
+     {
+      "fiscal_year": 1991,
+      "filtered_bp": 66.28,
+      "filtered_bp_lo": 27.28,
+      "filtered_bp_hi": 105.27,
+      "filtered_coef": -0.662762,
+      "filtered_se": 0.198948,
+      "smoothed_bp": 44.5,
+      "smoothed_bp_lo": 29.77,
+      "smoothed_bp_hi": 59.22,
+      "smoothed_coef": -0.444962,
+      "smoothed_se": 0.075129
+     },
+     {
+      "fiscal_year": 1992,
+      "filtered_bp": 72.38,
+      "filtered_bp_lo": 31.16,
+      "filtered_bp_hi": 113.61,
+      "filtered_coef": -0.72383,
+      "filtered_se": 0.21033,
+      "smoothed_bp": 48.93,
+      "smoothed_bp_lo": 34.18,
+      "smoothed_bp_hi": 63.68,
+      "smoothed_coef": -0.489271,
+      "smoothed_se": 0.075253
+     },
+     {
+      "fiscal_year": 1993,
+      "filtered_bp": 72.35,
+      "filtered_bp_lo": 27.71,
+      "filtered_bp_hi": 116.99,
+      "filtered_coef": -0.723493,
+      "filtered_se": 0.227757,
+      "smoothed_bp": 48.23,
+      "smoothed_bp_lo": 32.02,
+      "smoothed_bp_hi": 64.45,
+      "smoothed_coef": -0.482347,
+      "smoothed_se": 0.082718
+     },
+     {
+      "fiscal_year": 1994,
+      "filtered_bp": 69.64,
+      "filtered_bp_lo": 22.71,
+      "filtered_bp_hi": 116.58,
+      "filtered_coef": -0.696433,
+      "filtered_se": 0.239479,
+      "smoothed_bp": 45.89,
+      "smoothed_bp_lo": 27.49,
+      "smoothed_bp_hi": 64.29,
+      "smoothed_coef": -0.458907,
+      "smoothed_se": 0.093875
+     },
+     {
+      "fiscal_year": 1995,
+      "filtered_bp": 69.6,
+      "filtered_bp_lo": 20.99,
+      "filtered_bp_hi": 118.21,
+      "filtered_coef": -0.695997,
+      "filtered_se": 0.248035,
+      "smoothed_bp": 41.63,
+      "smoothed_bp_lo": 21.06,
+      "smoothed_bp_hi": 62.2,
+      "smoothed_coef": -0.416323,
+      "smoothed_se": 0.10496
+     },
+     {
+      "fiscal_year": 1996,
+      "filtered_bp": 64.72,
+      "filtered_bp_lo": 16.38,
+      "filtered_bp_hi": 113.05,
+      "filtered_coef": -0.647151,
+      "filtered_se": 0.246616,
+      "smoothed_bp": 37.75,
+      "smoothed_bp_lo": 15.11,
+      "smoothed_bp_hi": 60.38,
+      "smoothed_coef": -0.377456,
+      "smoothed_se": 0.115491
+     },
+     {
+      "fiscal_year": 1997,
+      "filtered_bp": 49.11,
+      "filtered_bp_lo": 5.39,
+      "filtered_bp_hi": 92.82,
+      "filtered_coef": -0.491068,
+      "filtered_se": 0.223038,
+      "smoothed_bp": 33.33,
+      "smoothed_bp_lo": 9.42,
+      "smoothed_bp_hi": 57.24,
+      "smoothed_coef": -0.333278,
+      "smoothed_se": 0.121999
+     },
+     {
+      "fiscal_year": 1998,
+      "filtered_bp": 44.55,
+      "filtered_bp_lo": 7.17,
+      "filtered_bp_hi": 81.93,
+      "filtered_coef": -0.445493,
+      "filtered_se": 0.190703,
+      "smoothed_bp": 28.55,
+      "smoothed_bp_lo": 4.79,
+      "smoothed_bp_hi": 52.3,
+      "smoothed_coef": -0.285452,
+      "smoothed_se": 0.121196
+     },
+     {
+      "fiscal_year": 1999,
+      "filtered_bp": 31.59,
+      "filtered_bp_lo": -2.25,
+      "filtered_bp_hi": 65.43,
+      "filtered_coef": -0.315876,
+      "filtered_se": 0.172659,
+      "smoothed_bp": 23.86,
+      "smoothed_bp_lo": 1.23,
+      "smoothed_bp_hi": 46.49,
+      "smoothed_coef": -0.238641,
+      "smoothed_se": 0.115463
+     },
+     {
+      "fiscal_year": 2000,
+      "filtered_bp": 19.38,
+      "filtered_bp_lo": -8.72,
+      "filtered_bp_hi": 47.49,
+      "filtered_coef": -0.193847,
+      "filtered_se": 0.143387,
+      "smoothed_bp": 21.17,
+      "smoothed_bp_lo": 0.15,
+      "smoothed_bp_hi": 42.19,
+      "smoothed_coef": -0.211655,
+      "smoothed_se": 0.107244
+     },
+     {
+      "fiscal_year": 2001,
+      "filtered_bp": 15.54,
+      "filtered_bp_lo": -15.51,
+      "filtered_bp_hi": 46.59,
+      "filtered_coef": -0.15538,
+      "filtered_se": 0.158437,
+      "smoothed_bp": 22.48,
+      "smoothed_bp_lo": 1.43,
+      "smoothed_bp_hi": 43.52,
+      "smoothed_coef": -0.224787,
+      "smoothed_se": 0.107369
+     },
+     {
+      "fiscal_year": 2002,
+      "filtered_bp": 27.65,
+      "filtered_bp_lo": -2.78,
+      "filtered_bp_hi": 58.07,
+      "filtered_coef": -0.276459,
+      "filtered_se": 0.155239,
+      "smoothed_bp": 26.0,
+      "smoothed_bp_lo": 5.93,
+      "smoothed_bp_hi": 46.08,
+      "smoothed_coef": -0.260029,
+      "smoothed_se": 0.102428
+     },
+     {
+      "fiscal_year": 2003,
+      "filtered_bp": 26.69,
+      "filtered_bp_lo": 4.12,
+      "filtered_bp_hi": 49.27,
+      "filtered_coef": -0.266928,
+      "filtered_se": 0.115187,
+      "smoothed_bp": 25.59,
+      "smoothed_bp_lo": 7.78,
+      "smoothed_bp_hi": 43.41,
+      "smoothed_coef": -0.255929,
+      "smoothed_se": 0.090899
+     },
+     {
+      "fiscal_year": 2004,
+      "filtered_bp": 24.31,
+      "filtered_bp_lo": 3.34,
+      "filtered_bp_hi": 45.28,
+      "filtered_coef": -0.243068,
+      "filtered_se": 0.106986,
+      "smoothed_bp": 21.39,
+      "smoothed_bp_lo": 3.76,
+      "smoothed_bp_hi": 39.01,
+      "smoothed_coef": -0.213851,
+      "smoothed_se": 0.089923
+     },
+     {
+      "fiscal_year": 2005,
+      "filtered_bp": 10.31,
+      "filtered_bp_lo": -13.15,
+      "filtered_bp_hi": 33.77,
+      "filtered_coef": -0.103095,
+      "filtered_se": 0.119696,
+      "smoothed_bp": 12.95,
+      "smoothed_bp_lo": -6.13,
+      "smoothed_bp_hi": 32.04,
+      "smoothed_coef": -0.129519,
+      "smoothed_se": 0.097378
+     },
+     {
+      "fiscal_year": 2006,
+      "filtered_bp": -1.44,
+      "filtered_bp_lo": -28.25,
+      "filtered_bp_hi": 25.37,
+      "filtered_coef": 0.014391,
+      "filtered_se": 0.136794,
+      "smoothed_bp": 8.92,
+      "smoothed_bp_lo": -11.13,
+      "smoothed_bp_hi": 28.97,
+      "smoothed_coef": -0.089174,
+      "smoothed_se": 0.102303
+     },
+     {
+      "fiscal_year": 2007,
+      "filtered_bp": -7.42,
+      "filtered_bp_lo": -38.4,
+      "filtered_bp_hi": 23.56,
+      "filtered_coef": 0.074199,
+      "filtered_se": 0.158078,
+      "smoothed_bp": 9.52,
+      "smoothed_bp_lo": -9.97,
+      "smoothed_bp_hi": 29.01,
+      "smoothed_coef": -0.095211,
+      "smoothed_se": 0.099438
+     },
+     {
+      "fiscal_year": 2008,
+      "filtered_bp": 1.13,
+      "filtered_bp_lo": -24.4,
+      "filtered_bp_hi": 26.66,
+      "filtered_coef": -0.011309,
+      "filtered_se": 0.130268,
+      "smoothed_bp": 12.65,
+      "smoothed_bp_lo": -3.2,
+      "smoothed_bp_hi": 28.5,
+      "smoothed_coef": -0.126537,
+      "smoothed_se": 0.080866
+     },
+     {
+      "fiscal_year": 2009,
+      "filtered_bp": 9.19,
+      "filtered_bp_lo": -2.1,
+      "filtered_bp_hi": 20.49,
+      "filtered_coef": -0.091937,
+      "filtered_se": 0.057631,
+      "smoothed_bp": 14.36,
+      "smoothed_bp_lo": 4.84,
+      "smoothed_bp_hi": 23.87,
+      "smoothed_coef": -0.143568,
+      "smoothed_se": 0.04856
+     },
+     {
+      "fiscal_year": 2010,
+      "filtered_bp": 9.27,
+      "filtered_bp_lo": -3.34,
+      "filtered_bp_hi": 21.88,
+      "filtered_coef": -0.092693,
+      "filtered_se": 0.064328,
+      "smoothed_bp": 14.86,
+      "smoothed_bp_lo": 4.5,
+      "smoothed_bp_hi": 25.22,
+      "smoothed_coef": -0.148605,
+      "smoothed_se": 0.05284
+     },
+     {
+      "fiscal_year": 2011,
+      "filtered_bp": 7.55,
+      "filtered_bp_lo": -6.28,
+      "filtered_bp_hi": 21.38,
+      "filtered_coef": -0.075492,
+      "filtered_se": 0.070568,
+      "smoothed_bp": 12.23,
+      "smoothed_bp_lo": 0.78,
+      "smoothed_bp_hi": 23.68,
+      "smoothed_coef": -0.122321,
+      "smoothed_se": 0.058433
+     },
+     {
+      "fiscal_year": 2012,
+      "filtered_bp": -3.95,
+      "filtered_bp_lo": -20.97,
+      "filtered_bp_hi": 13.07,
+      "filtered_coef": 0.039513,
+      "filtered_se": 0.086852,
+      "smoothed_bp": 3.35,
+      "smoothed_bp_lo": -11.16,
+      "smoothed_bp_hi": 17.86,
+      "smoothed_coef": -0.033534,
+      "smoothed_se": 0.074028
+     },
+     {
+      "fiscal_year": 2013,
+      "filtered_bp": -5.61,
+      "filtered_bp_lo": -28.24,
+      "filtered_bp_hi": 17.03,
+      "filtered_coef": 0.056068,
+      "filtered_se": 0.115493,
+      "smoothed_bp": 2.05,
+      "smoothed_bp_lo": -17.51,
+      "smoothed_bp_hi": 21.6,
+      "smoothed_coef": -0.020477,
+      "smoothed_se": 0.099766
+     },
+     {
+      "fiscal_year": 2014,
+      "filtered_bp": -4.99,
+      "filtered_bp_lo": -32.83,
+      "filtered_bp_hi": 22.86,
+      "filtered_coef": 0.049856,
+      "filtered_se": 0.142064,
+      "smoothed_bp": -0.71,
+      "smoothed_bp_lo": -24.09,
+      "smoothed_bp_hi": 22.67,
+      "smoothed_coef": 0.007093,
+      "smoothed_se": 0.119266
+     },
+     {
+      "fiscal_year": 2015,
+      "filtered_bp": -10.63,
+      "filtered_bp_lo": -42.48,
+      "filtered_bp_hi": 21.21,
+      "filtered_coef": 0.106343,
+      "filtered_se": 0.16248,
+      "smoothed_bp": -8.65,
+      "smoothed_bp_lo": -33.66,
+      "smoothed_bp_hi": 16.36,
+      "smoothed_coef": 0.086514,
+      "smoothed_se": 0.127622
+     },
+     {
+      "fiscal_year": 2016,
+      "filtered_bp": -21.79,
+      "filtered_bp_lo": -54.21,
+      "filtered_bp_hi": 10.62,
+      "filtered_coef": 0.217919,
+      "filtered_se": 0.165385,
+      "smoothed_bp": -14.76,
+      "smoothed_bp_lo": -39.26,
+      "smoothed_bp_hi": 9.74,
+      "smoothed_coef": 0.147594,
+      "smoothed_se": 0.125002
+     },
+     {
+      "fiscal_year": 2017,
+      "filtered_bp": -25.53,
+      "filtered_bp_lo": -57.07,
+      "filtered_bp_hi": 6.01,
+      "filtered_coef": 0.2553,
+      "filtered_se": 0.160946,
+      "smoothed_bp": -17.31,
+      "smoothed_bp_lo": -40.42,
+      "smoothed_bp_hi": 5.79,
+      "smoothed_coef": 0.173129,
+      "smoothed_se": 0.117895
+     },
+     {
+      "fiscal_year": 2018,
+      "filtered_bp": -30.4,
+      "filtered_bp_lo": -60.07,
+      "filtered_bp_hi": -0.73,
+      "filtered_coef": 0.303994,
+      "filtered_se": 0.151367,
+      "smoothed_bp": -19.2,
+      "smoothed_bp_lo": -40.06,
+      "smoothed_bp_hi": 1.66,
+      "smoothed_coef": 0.191986,
+      "smoothed_se": 0.106422
+     },
+     {
+      "fiscal_year": 2019,
+      "filtered_bp": -34.26,
+      "filtered_bp_lo": -60.21,
+      "filtered_bp_hi": -8.31,
+      "filtered_coef": 0.342576,
+      "filtered_se": 0.132404,
+      "smoothed_bp": -18.46,
+      "smoothed_bp_lo": -35.62,
+      "smoothed_bp_hi": -1.3,
+      "smoothed_coef": 0.184571,
+      "smoothed_se": 0.087542
+     },
+     {
+      "fiscal_year": 2020,
+      "filtered_bp": -12.6,
+      "filtered_bp_lo": -22.22,
+      "filtered_bp_hi": -2.98,
+      "filtered_coef": 0.125987,
+      "filtered_se": 0.049093,
+      "smoothed_bp": -11.19,
+      "smoothed_bp_lo": -20.36,
+      "smoothed_bp_hi": -2.01,
+      "smoothed_coef": 0.111854,
+      "smoothed_se": 0.046826
+     },
+     {
+      "fiscal_year": 2021,
+      "filtered_bp": -8.17,
+      "filtered_bp_lo": -19.2,
+      "filtered_bp_hi": 2.86,
+      "filtered_coef": 0.081694,
+      "filtered_se": 0.056286,
+      "smoothed_bp": -7.87,
+      "smoothed_bp_lo": -18.84,
+      "smoothed_bp_hi": 3.11,
+      "smoothed_coef": 0.078677,
+      "smoothed_se": 0.056006
+     },
+     {
+      "fiscal_year": 2022,
+      "filtered_bp": -12.98,
+      "filtered_bp_lo": -30.87,
+      "filtered_bp_hi": 4.91,
+      "filtered_coef": 0.129803,
+      "filtered_se": 0.091284,
+      "smoothed_bp": -12.97,
+      "smoothed_bp_lo": -29.95,
+      "smoothed_bp_hi": 4.0,
+      "smoothed_coef": 0.12974,
+      "smoothed_se": 0.086624
+     },
+     {
+      "fiscal_year": 2023,
+      "filtered_bp": -14.53,
+      "filtered_bp_lo": -33.01,
+      "filtered_bp_hi": 3.94,
+      "filtered_coef": 0.145314,
+      "filtered_se": 0.094263,
+      "smoothed_bp": -12.36,
+      "smoothed_bp_lo": -29.94,
+      "smoothed_bp_hi": 5.22,
+      "smoothed_coef": 0.123585,
+      "smoothed_se": 0.089709
+     },
+     {
+      "fiscal_year": 2024,
+      "filtered_bp": -9.6,
+      "filtered_bp_lo": -28.34,
+      "filtered_bp_hi": 9.14,
+      "filtered_coef": 0.095969,
+      "filtered_se": 0.09562,
+      "smoothed_bp": -7.39,
+      "smoothed_bp_lo": -25.48,
+      "smoothed_bp_hi": 10.7,
+      "smoothed_coef": 0.073908,
+      "smoothed_se": 0.092308
+     },
+     {
+      "fiscal_year": 2025,
+      "filtered_bp": -2.41,
+      "filtered_bp_lo": -22.17,
+      "filtered_bp_hi": 17.36,
+      "filtered_coef": 0.024078,
+      "filtered_se": 0.100839,
+      "smoothed_bp": -2.41,
+      "smoothed_bp_lo": -22.17,
+      "smoothed_bp_hi": 17.36,
+      "smoothed_coef": 0.024078,
+      "smoothed_se": 0.100839
+     }
+    ]
+   },
+   "shape": {
+    "peak": {
+     "fy": 1982,
+     "bp": 59.67
+    },
+    "fy1982": {
+     "bp": 59.67,
+     "bp_lo": 42.44,
+     "bp_hi": 76.91
+    },
+    "fy2000_bp": 21.17,
+    "fy2007_bp": 9.52,
+    "post_2008_mean_bp": -5.08,
+    "early_retreat_bp": 38.5,
+    "late_retreat_bp": 14.6,
+    "early_retreat_share_of_v0": 1.0,
+    "late_retreat_share_of_v0": 1.0
+   },
+   "coming_back": {
+    "latest": 2025,
+    "latest_bp": -2.41,
+    "latest_bp_lo": -22.17,
+    "post_2008_range_bp": [
+     -34.26,
+     9.27
+    ],
+    "post_2008_from": 2009,
+    "post_2008_to": 2024,
+    "reappearing": false
+   },
+   "rolling": {
+    "20": [
+     {
+      "end": 1986,
+      "start": 1967,
+      "n": 20,
+      "bp": 66.77,
+      "bp_lo": 45.41,
+      "bp_hi": 88.13,
+      "coef": -0.667677,
+      "se": 0.10897
+     },
+     {
+      "end": 1987,
+      "start": 1968,
+      "n": 20,
+      "bp": 60.49,
+      "bp_lo": 41.73,
+      "bp_hi": 79.24,
+      "coef": -0.604865,
+      "se": 0.095679
+     },
+     {
+      "end": 1988,
+      "start": 1969,
+      "n": 20,
+      "bp": 56.93,
+      "bp_lo": 39.8,
+      "bp_hi": 74.07,
+      "coef": -0.569334,
+      "se": 0.087412
+     },
+     {
+      "end": 1989,
+      "start": 1970,
+      "n": 20,
+      "bp": 59.99,
+      "bp_lo": 40.59,
+      "bp_hi": 79.4,
+      "coef": -0.599933,
+      "se": 0.099005
+     },
+     {
+      "end": 1990,
+      "start": 1971,
+      "n": 20,
+      "bp": 60.01,
+      "bp_lo": 38.36,
+      "bp_hi": 81.65,
+      "coef": -0.600075,
+      "se": 0.110436
+     },
+     {
+      "end": 1991,
+      "start": 1972,
+      "n": 20,
+      "bp": 59.38,
+      "bp_lo": 37.68,
+      "bp_hi": 81.07,
+      "coef": -0.593791,
+      "se": 0.110693
+     },
+     {
+      "end": 1992,
+      "start": 1973,
+      "n": 20,
+      "bp": 57.77,
+      "bp_lo": 36.22,
+      "bp_hi": 79.33,
+      "coef": -0.577739,
+      "se": 0.109961
+     },
+     {
+      "end": 1993,
+      "start": 1974,
+      "n": 20,
+      "bp": 54.48,
+      "bp_lo": 32.71,
+      "bp_hi": 76.25,
+      "coef": -0.544819,
+      "se": 0.111078
+     },
+     {
+      "end": 1994,
+      "start": 1975,
+      "n": 20,
+      "bp": 50.19,
+      "bp_lo": 25.26,
+      "bp_hi": 75.11,
+      "coef": -0.501885,
+      "se": 0.127173
+     },
+     {
+      "end": 1995,
+      "start": 1976,
+      "n": 20,
+      "bp": 50.56,
+      "bp_lo": 27.45,
+      "bp_hi": 73.67,
+      "coef": -0.505595,
+      "se": 0.117914
+     },
+     {
+      "end": 1996,
+      "start": 1977,
+      "n": 20,
+      "bp": 52.58,
+      "bp_lo": 31.6,
+      "bp_hi": 73.56,
+      "coef": -0.525795,
+      "se": 0.107063
+     },
+     {
+      "end": 1997,
+      "start": 1978,
+      "n": 20,
+      "bp": 46.94,
+      "bp_lo": 28.42,
+      "bp_hi": 65.47,
+      "coef": -0.469424,
+      "se": 0.094518
+     },
+     {
+      "end": 1998,
+      "start": 1979,
+      "n": 20,
+      "bp": 43.57,
+      "bp_lo": 28.66,
+      "bp_hi": 58.48,
+      "coef": -0.435702,
+      "se": 0.076072
+     },
+     {
+      "end": 1999,
+      "start": 1980,
+      "n": 20,
+      "bp": 35.29,
+      "bp_lo": 24.56,
+      "bp_hi": 46.02,
+      "coef": -0.352925,
+      "se": 0.054757
+     },
+     {
+      "end": 2000,
+      "start": 1981,
+      "n": 20,
+      "bp": 31.89,
+      "bp_lo": 23.01,
+      "bp_hi": 40.77,
+      "coef": -0.318911,
+      "se": 0.045301
+     },
+     {
+      "end": 2001,
+      "start": 1982,
+      "n": 20,
+      "bp": 31.72,
+      "bp_lo": 23.45,
+      "bp_hi": 39.98,
+      "coef": -0.31715,
+      "se": 0.042184
+     },
+     {
+      "end": 2002,
+      "start": 1983,
+      "n": 20,
+      "bp": 32.48,
+      "bp_lo": 24.69,
+      "bp_hi": 40.27,
+      "coef": -0.324762,
+      "se": 0.039745
+     },
+     {
+      "end": 2003,
+      "start": 1984,
+      "n": 20,
+      "bp": 32.3,
+      "bp_lo": 24.17,
+      "bp_hi": 40.43,
+      "coef": -0.323,
+      "se": 0.041467
+     },
+     {
+      "end": 2004,
+      "start": 1985,
+      "n": 20,
+      "bp": 31.14,
+      "bp_lo": 23.2,
+      "bp_hi": 39.08,
+      "coef": -0.3114,
+      "se": 0.040505
+     },
+     {
+      "end": 2005,
+      "start": 1986,
+      "n": 20,
+      "bp": 28.87,
+      "bp_lo": 20.23,
+      "bp_hi": 37.51,
+      "coef": -0.288673,
+      "se": 0.044077
+     },
+     {
+      "end": 2006,
+      "start": 1987,
+      "n": 20,
+      "bp": 30.24,
+      "bp_lo": 20.26,
+      "bp_hi": 40.21,
+      "coef": -0.302353,
+      "se": 0.050916
+     },
+     {
+      "end": 2007,
+      "start": 1988,
+      "n": 20,
+      "bp": 31.08,
+      "bp_lo": 19.62,
+      "bp_hi": 42.55,
+      "coef": -0.310839,
+      "se": 0.058499
+     },
+     {
+      "end": 2008,
+      "start": 1989,
+      "n": 20,
+      "bp": 28.99,
+      "bp_lo": 17.29,
+      "bp_hi": 40.7,
+      "coef": -0.289947,
+      "se": 0.059718
+     },
+     {
+      "end": 2009,
+      "start": 1990,
+      "n": 20,
+      "bp": 26.61,
+      "bp_lo": 15.91,
+      "bp_hi": 37.3,
+      "coef": -0.26606,
+      "se": 0.054551
+     },
+     {
+      "end": 2010,
+      "start": 1991,
+      "n": 20,
+      "bp": 29.58,
+      "bp_lo": 18.25,
+      "bp_hi": 40.91,
+      "coef": -0.295782,
+      "se": 0.057793
+     },
+     {
+      "end": 2011,
+      "start": 1992,
+      "n": 20,
+      "bp": 26.9,
+      "bp_lo": 12.55,
+      "bp_hi": 41.25,
+      "coef": -0.268998,
+      "se": 0.073232
+     },
+     {
+      "end": 2012,
+      "start": 1993,
+      "n": 20,
+      "bp": 24.14,
+      "bp_lo": 14.87,
+      "bp_hi": 33.42,
+      "coef": -0.241438,
+      "se": 0.047305
+     },
+     {
+      "end": 2013,
+      "start": 1994,
+      "n": 20,
+      "bp": 19.24,
+      "bp_lo": 13.4,
+      "bp_hi": 25.08,
+      "coef": -0.192402,
+      "se": 0.029791
+     },
+     {
+      "end": 2014,
+      "start": 1995,
+      "n": 20,
+      "bp": 15.32,
+      "bp_lo": 9.61,
+      "bp_hi": 21.02,
+      "coef": -0.153151,
+      "se": 0.029115
+     },
+     {
+      "end": 2015,
+      "start": 1996,
+      "n": 20,
+      "bp": 16.41,
+      "bp_lo": 10.85,
+      "bp_hi": 21.96,
+      "coef": -0.16406,
+      "se": 0.028332
+     },
+     {
+      "end": 2016,
+      "start": 1997,
+      "n": 20,
+      "bp": 17.92,
+      "bp_lo": 12.06,
+      "bp_hi": 23.78,
+      "coef": -0.179179,
+      "se": 0.029888
+     },
+     {
+      "end": 2017,
+      "start": 1998,
+      "n": 20,
+      "bp": 19.0,
+      "bp_lo": 13.23,
+      "bp_hi": 24.77,
+      "coef": -0.190002,
+      "se": 0.029417
+     },
+     {
+      "end": 2018,
+      "start": 1999,
+      "n": 20,
+      "bp": 19.59,
+      "bp_lo": 13.47,
+      "bp_hi": 25.7,
+      "coef": -0.19586,
+      "se": 0.031216
+     },
+     {
+      "end": 2019,
+      "start": 2000,
+      "n": 20,
+      "bp": 20.8,
+      "bp_lo": 13.82,
+      "bp_hi": 27.79,
+      "coef": -0.208046,
+      "se": 0.035651
+     },
+     {
+      "end": 2020,
+      "start": 2001,
+      "n": 20,
+      "bp": 10.26,
+      "bp_lo": -6.2,
+      "bp_hi": 26.72,
+      "coef": -0.102612,
+      "se": 0.083983
+     },
+     {
+      "end": 2021,
+      "start": 2002,
+      "n": 20,
+      "bp": 9.3,
+      "bp_lo": -5.52,
+      "bp_hi": 24.11,
+      "coef": -0.092967,
+      "se": 0.075579
+     },
+     {
+      "end": 2022,
+      "start": 2003,
+      "n": 20,
+      "bp": 9.6,
+      "bp_lo": -5.62,
+      "bp_hi": 24.83,
+      "coef": -0.096009,
+      "se": 0.07768
+     },
+     {
+      "end": 2023,
+      "start": 2004,
+      "n": 20,
+      "bp": 9.49,
+      "bp_lo": -6.02,
+      "bp_hi": 25.0,
+      "coef": -0.094903,
+      "se": 0.079157
+     },
+     {
+      "end": 2024,
+      "start": 2005,
+      "n": 20,
+      "bp": 8.97,
+      "bp_lo": -7.19,
+      "bp_hi": 25.12,
+      "coef": -0.089664,
+      "se": 0.082411
+     },
+     {
+      "end": 2025,
+      "start": 2006,
+      "n": 20,
+      "bp": 8.11,
+      "bp_lo": -7.98,
+      "bp_hi": 24.21,
+      "coef": -0.081138,
+      "se": 0.082108
+     }
+    ]
+   },
+   "answer": null
+  },
+  "V1": {
+   "controls": [
+    "debt_gdp",
+    "core_infl"
+   ],
+   "drifting": [],
+   "role": "the primary inflation-controlled version",
+   "control_coverage": {
+    "debt_gdp": [
+     1967,
+     2025
+    ],
+    "core_infl": [
+     1967,
+     2025
+    ]
+   },
+   "time_varying": {
+    "rows": {
+     "first": 1967,
+     "last": 2025,
+     "n": 59,
+     "nobs_diffuse": 4
+    },
+    "drift_variance_q": 0.008339158650325109,
+    "drift_sd_bp_per_year": 9.132,
+    "obs_variance_h": 0.22008826546148094,
+    "loglik_time_varying": -64.2914,
+    "loglik_fixed_slope": -86.5054,
+    "lr_stat": 44.428,
+    "lr_p_boundary_mixture": 0.0,
+    "lr_mixture": "chi2(0):chi2(1) 50:50",
+    "converged": true,
+    "fixed_slope": {
+     "bp": 17.8,
+     "bp_lo": 7.61,
+     "bp_hi": 28.0,
+     "coef": -0.178048,
+     "se": 0.052036
+    },
+    "controls": {
+     "debt_gdp": {
+      "drifting": false,
+      "coef": -1.338808,
+      "se": 0.776131,
+      "lo": -2.859997,
+      "hi": 0.182381
+     },
+     "core_infl": {
+      "drifting": false,
+      "coef": -0.044088,
+      "se": 0.064382,
+      "lo": -0.170276,
+      "hi": 0.082099
+     }
+    },
+    "params": [
+     -1.513726606448545,
+     -4.78679294895632
+    ],
+    "paths": [
+     {
+      "fiscal_year": 1971,
+      "filtered_bp": 24.37,
+      "filtered_bp_lo": -18.78,
+      "filtered_bp_hi": 67.51,
+      "filtered_coef": -0.243696,
+      "filtered_se": 0.220131,
+      "smoothed_bp": 5.78,
+      "smoothed_bp_lo": -23.39,
+      "smoothed_bp_hi": 34.96,
+      "smoothed_coef": -0.057844,
+      "smoothed_se": 0.148864
+     },
+     {
+      "fiscal_year": 1972,
+      "filtered_bp": 24.53,
+      "filtered_bp_lo": -22.13,
+      "filtered_bp_hi": 71.19,
+      "filtered_coef": -0.245332,
+      "filtered_se": 0.238066,
+      "smoothed_bp": 8.58,
+      "smoothed_bp_lo": -20.33,
+      "smoothed_bp_hi": 37.5,
+      "smoothed_coef": -0.085834,
+      "smoothed_se": 0.14753
+     },
+     {
+      "fiscal_year": 1973,
+      "filtered_bp": 27.18,
+      "filtered_bp_lo": -19.68,
+      "filtered_bp_hi": 74.04,
+      "filtered_coef": -0.271767,
+      "filtered_se": 0.239082,
+      "smoothed_bp": 11.06,
+      "smoothed_bp_lo": -18.15,
+      "smoothed_bp_hi": 40.27,
+      "smoothed_coef": -0.110594,
+      "smoothed_se": 0.149011
+     },
+     {
+      "fiscal_year": 1974,
+      "filtered_bp": 30.19,
+      "filtered_bp_lo": -19.69,
+      "filtered_bp_hi": 80.06,
+      "filtered_coef": -0.301851,
+      "filtered_se": 0.254471,
+      "smoothed_bp": 14.99,
+      "smoothed_bp_lo": -13.43,
+      "smoothed_bp_hi": 43.41,
+      "smoothed_coef": -0.149903,
+      "smoothed_se": 0.145012
+     },
+     {
+      "fiscal_year": 1975,
+      "filtered_bp": 17.54,
+      "filtered_bp_lo": -23.56,
+      "filtered_bp_hi": 58.63,
+      "filtered_coef": -0.175366,
+      "filtered_se": 0.209689,
+      "smoothed_bp": 19.42,
+      "smoothed_bp_lo": -6.3,
+      "smoothed_bp_hi": 45.14,
+      "smoothed_coef": -0.194206,
+      "smoothed_se": 0.131235
+     },
+     {
+      "fiscal_year": 1976,
+      "filtered_bp": 25.76,
+      "filtered_bp_lo": -4.38,
+      "filtered_bp_hi": 55.89,
+      "filtered_coef": -0.25756,
+      "filtered_se": 0.153773,
+      "smoothed_bp": 25.33,
+      "smoothed_bp_lo": 1.94,
+      "smoothed_bp_hi": 48.72,
+      "smoothed_coef": -0.253307,
+      "smoothed_se": 0.119351
+     },
+     {
+      "fiscal_year": 1977,
+      "filtered_bp": 33.44,
+      "filtered_bp_lo": 1.06,
+      "filtered_bp_hi": 65.82,
+      "filtered_coef": -0.334402,
+      "filtered_se": 0.165231,
+      "smoothed_bp": 32.87,
+      "smoothed_bp_lo": 7.62,
+      "smoothed_bp_hi": 58.12,
+      "smoothed_coef": -0.328744,
+      "smoothed_se": 0.128827
+     },
+     {
+      "fiscal_year": 1978,
+      "filtered_bp": 34.21,
+      "filtered_bp_lo": 0.12,
+      "filtered_bp_hi": 68.3,
+      "filtered_coef": -0.342145,
+      "filtered_se": 0.173934,
+      "smoothed_bp": 38.68,
+      "smoothed_bp_lo": 12.03,
+      "smoothed_bp_hi": 65.33,
+      "smoothed_coef": -0.386794,
+      "smoothed_se": 0.135992
+     },
+     {
+      "fiscal_year": 1979,
+      "filtered_bp": 34.2,
+      "filtered_bp_lo": -4.28,
+      "filtered_bp_hi": 72.68,
+      "filtered_coef": -0.341991,
+      "filtered_se": 0.196324,
+      "smoothed_bp": 47.1,
+      "smoothed_bp_lo": 19.0,
+      "smoothed_bp_hi": 75.21,
+      "smoothed_coef": -0.471037,
+      "smoothed_se": 0.143401
+     },
+     {
+      "fiscal_year": 1980,
+      "filtered_bp": 44.46,
+      "filtered_bp_lo": 4.31,
+      "filtered_bp_hi": 84.61,
+      "filtered_coef": -0.444589,
+      "filtered_se": 0.204864,
+      "smoothed_bp": 57.18,
+      "smoothed_bp_lo": 30.02,
+      "smoothed_bp_hi": 84.33,
+      "smoothed_coef": -0.571757,
+      "smoothed_se": 0.13856
+     },
+     {
+      "fiscal_year": 1981,
+      "filtered_bp": 52.36,
+      "filtered_bp_lo": 9.54,
+      "filtered_bp_hi": 95.18,
+      "filtered_coef": -0.523599,
+      "filtered_se": 0.218455,
+      "smoothed_bp": 64.01,
+      "smoothed_bp_lo": 38.95,
+      "smoothed_bp_hi": 89.06,
+      "smoothed_coef": -0.640076,
+      "smoothed_se": 0.127825
+     },
+     {
+      "fiscal_year": 1982,
+      "filtered_bp": 74.93,
+      "filtered_bp_lo": 45.16,
+      "filtered_bp_hi": 104.69,
+      "filtered_coef": -0.749273,
+      "filtered_se": 0.151875,
+      "smoothed_bp": 64.02,
+      "smoothed_bp_lo": 44.04,
+      "smoothed_bp_hi": 84.0,
+      "smoothed_coef": -0.640168,
+      "smoothed_se": 0.101934
+     },
+     {
+      "fiscal_year": 1983,
+      "filtered_bp": 57.49,
+      "filtered_bp_lo": 38.19,
+      "filtered_bp_hi": 76.79,
+      "filtered_coef": -0.574906,
+      "filtered_se": 0.098453,
+      "smoothed_bp": 55.08,
+      "smoothed_bp_lo": 40.02,
+      "smoothed_bp_hi": 70.15,
+      "smoothed_coef": -0.550843,
+      "smoothed_se": 0.076884
+     },
+     {
+      "fiscal_year": 1984,
+      "filtered_bp": 71.15,
+      "filtered_bp_lo": 50.4,
+      "filtered_bp_hi": 91.9,
+      "filtered_coef": -0.711502,
+      "filtered_se": 0.105891,
+      "smoothed_bp": 58.76,
+      "smoothed_bp_lo": 43.95,
+      "smoothed_bp_hi": 73.57,
+      "smoothed_coef": -0.587605,
+      "smoothed_se": 0.075576
+     },
+     {
+      "fiscal_year": 1985,
+      "filtered_bp": 73.91,
+      "filtered_bp_lo": 50.04,
+      "filtered_bp_hi": 97.78,
+      "filtered_coef": -0.739098,
+      "filtered_se": 0.121793,
+      "smoothed_bp": 54.97,
+      "smoothed_bp_lo": 40.71,
+      "smoothed_bp_hi": 69.23,
+      "smoothed_coef": -0.54969,
+      "smoothed_se": 0.072774
+     },
+     {
+      "fiscal_year": 1986,
+      "filtered_bp": 69.49,
+      "filtered_bp_lo": 40.71,
+      "filtered_bp_hi": 98.28,
+      "filtered_coef": -0.69492,
+      "filtered_se": 0.146871,
+      "smoothed_bp": 46.6,
+      "smoothed_bp_lo": 32.06,
+      "smoothed_bp_hi": 61.15,
+      "smoothed_coef": -0.466028,
+      "smoothed_se": 0.074201
+     },
+     {
+      "fiscal_year": 1987,
+      "filtered_bp": 65.04,
+      "filtered_bp_lo": 31.54,
+      "filtered_bp_hi": 98.54,
+      "filtered_coef": -0.650384,
+      "filtered_se": 0.170923,
+      "smoothed_bp": 50.15,
+      "smoothed_bp_lo": 33.28,
+      "smoothed_bp_hi": 67.03,
+      "smoothed_coef": -0.501545,
+      "smoothed_se": 0.086102
+     },
+     {
+      "fiscal_year": 1988,
+      "filtered_bp": 64.98,
+      "filtered_bp_lo": 27.0,
+      "filtered_bp_hi": 102.96,
+      "filtered_coef": -0.649795,
+      "filtered_se": 0.193788,
+      "smoothed_bp": 51.79,
+      "smoothed_bp_lo": 34.01,
+      "smoothed_bp_hi": 69.58,
+      "smoothed_coef": -0.517922,
+      "smoothed_se": 0.090736
+     },
+     {
+      "fiscal_year": 1989,
+      "filtered_bp": 64.39,
+      "filtered_bp_lo": 22.42,
+      "filtered_bp_hi": 106.37,
+      "filtered_coef": -0.643945,
+      "filtered_se": 0.214154,
+      "smoothed_bp": 45.91,
+      "smoothed_bp_lo": 27.97,
+      "smoothed_bp_hi": 63.84,
+      "smoothed_coef": -0.459086,
+      "smoothed_se": 0.091508
+     },
+     {
+      "fiscal_year": 1990,
+      "filtered_bp": 54.2,
+      "filtered_bp_lo": 11.84,
+      "filtered_bp_hi": 96.57,
+      "filtered_coef": -0.542032,
+      "filtered_se": 0.216166,
+      "smoothed_bp": 42.36,
+      "smoothed_bp_lo": 25.97,
+      "smoothed_bp_hi": 58.74,
+      "smoothed_coef": -0.423554,
+      "smoothed_se": 0.083596
+     },
+     {
+      "fiscal_year": 1991,
+      "filtered_bp": 55.46,
+      "filtered_bp_lo": 11.87,
+      "filtered_bp_hi": 99.04,
+      "filtered_coef": -0.554559,
+      "filtered_se": 0.22237,
+      "smoothed_bp": 45.39,
+      "smoothed_bp_lo": 30.24,
+      "smoothed_bp_hi": 60.54,
+      "smoothed_coef": -0.453866,
+      "smoothed_se": 0.077297
+     },
+     {
+      "fiscal_year": 1992,
+      "filtered_bp": 61.0,
+      "filtered_bp_lo": 15.04,
+      "filtered_bp_hi": 106.96,
+      "filtered_coef": -0.609996,
+      "filtered_se": 0.234477,
+      "smoothed_bp": 49.96,
+      "smoothed_bp_lo": 34.9,
+      "smoothed_bp_hi": 65.02,
+      "smoothed_coef": -0.499579,
+      "smoothed_se": 0.076834
+     },
+     {
+      "fiscal_year": 1993,
+      "filtered_bp": 60.66,
+      "filtered_bp_lo": 11.39,
+      "filtered_bp_hi": 109.93,
+      "filtered_coef": -0.60659,
+      "filtered_se": 0.251365,
+      "smoothed_bp": 49.07,
+      "smoothed_bp_lo": 32.56,
+      "smoothed_bp_hi": 65.57,
+      "smoothed_coef": -0.490657,
+      "smoothed_se": 0.084215
+     },
+     {
+      "fiscal_year": 1994,
+      "filtered_bp": 58.39,
+      "filtered_bp_lo": 7.3,
+      "filtered_bp_hi": 109.49,
+      "filtered_coef": -0.583913,
+      "filtered_se": 0.260694,
+      "smoothed_bp": 46.52,
+      "smoothed_bp_lo": 27.78,
+      "smoothed_bp_hi": 65.27,
+      "smoothed_coef": -0.465239,
+      "smoothed_se": 0.095653
+     },
+     {
+      "fiscal_year": 1995,
+      "filtered_bp": 59.86,
+      "filtered_bp_lo": 7.58,
+      "filtered_bp_hi": 112.14,
+      "filtered_coef": -0.598615,
+      "filtered_se": 0.266754,
+      "smoothed_bp": 42.05,
+      "smoothed_bp_lo": 21.03,
+      "smoothed_bp_hi": 63.07,
+      "smoothed_coef": -0.420514,
+      "smoothed_se": 0.107238
+     },
+     {
+      "fiscal_year": 1996,
+      "filtered_bp": 56.17,
+      "filtered_bp_lo": 4.78,
+      "filtered_bp_hi": 107.56,
+      "filtered_coef": -0.561671,
+      "filtered_se": 0.262201,
+      "smoothed_bp": 38.12,
+      "smoothed_bp_lo": 14.89,
+      "smoothed_bp_hi": 61.35,
+      "smoothed_coef": -0.381188,
+      "smoothed_se": 0.118513
+     },
+     {
+      "fiscal_year": 1997,
+      "filtered_bp": 42.06,
+      "filtered_bp_lo": -3.66,
+      "filtered_bp_hi": 87.78,
+      "filtered_coef": -0.420625,
+      "filtered_se": 0.233282,
+      "smoothed_bp": 33.71,
+      "smoothed_bp_lo": 9.08,
+      "smoothed_bp_hi": 58.34,
+      "smoothed_coef": -0.337095,
+      "smoothed_se": 0.125682
+     },
+     {
+      "fiscal_year": 1998,
+      "filtered_bp": 38.29,
+      "filtered_bp_lo": -0.64,
+      "filtered_bp_hi": 77.21,
+      "filtered_coef": -0.38286,
+      "filtered_se": 0.198588,
+      "smoothed_bp": 28.92,
+      "smoothed_bp_lo": 4.42,
+      "smoothed_bp_hi": 53.41,
+      "smoothed_coef": -0.28916,
+      "smoothed_se": 0.124958
+     },
+     {
+      "fiscal_year": 1999,
+      "filtered_bp": 24.97,
+      "filtered_bp_lo": -10.31,
+      "filtered_bp_hi": 60.25,
+      "filtered_coef": -0.249679,
+      "filtered_se": 0.180007,
+      "smoothed_bp": 24.1,
+      "smoothed_bp_lo": 0.81,
+      "smoothed_bp_hi": 47.38,
+      "smoothed_coef": -0.240959,
+      "smoothed_se": 0.118784
+     },
+     {
+      "fiscal_year": 2000,
+      "filtered_bp": 13.79,
+      "filtered_bp_lo": -15.24,
+      "filtered_bp_hi": 42.82,
+      "filtered_coef": -0.137915,
+      "filtered_se": 0.148106,
+      "smoothed_bp": 21.22,
+      "smoothed_bp_lo": -0.26,
+      "smoothed_bp_hi": 42.7,
+      "smoothed_coef": -0.212199,
+      "smoothed_se": 0.109618
+     },
+     {
+      "fiscal_year": 2001,
+      "filtered_bp": 9.71,
+      "filtered_bp_lo": -22.49,
+      "filtered_bp_hi": 41.91,
+      "filtered_coef": -0.097079,
+      "filtered_se": 0.164276,
+      "smoothed_bp": 22.44,
+      "smoothed_bp_lo": 0.95,
+      "smoothed_bp_hi": 43.92,
+      "smoothed_coef": -0.224379,
+      "smoothed_se": 0.109627
+     },
+     {
+      "fiscal_year": 2002,
+      "filtered_bp": 25.62,
+      "filtered_bp_lo": -5.38,
+      "filtered_bp_hi": 56.61,
+      "filtered_coef": -0.256159,
+      "filtered_se": 0.158131,
+      "smoothed_bp": 25.95,
+      "smoothed_bp_lo": 5.5,
+      "smoothed_bp_hi": 46.39,
+      "smoothed_coef": -0.259474,
+      "smoothed_se": 0.104317
+     },
+     {
+      "fiscal_year": 2003,
+      "filtered_bp": 26.23,
+      "filtered_bp_lo": 3.6,
+      "filtered_bp_hi": 48.86,
+      "filtered_coef": -0.262297,
+      "filtered_se": 0.115473,
+      "smoothed_bp": 25.31,
+      "smoothed_bp_lo": 7.26,
+      "smoothed_bp_hi": 43.35,
+      "smoothed_coef": -0.253077,
+      "smoothed_se": 0.092063
+     },
+     {
+      "fiscal_year": 2004,
+      "filtered_bp": 23.58,
+      "filtered_bp_lo": 2.5,
+      "filtered_bp_hi": 44.65,
+      "filtered_coef": -0.235783,
+      "filtered_se": 0.107522,
+      "smoothed_bp": 20.84,
+      "smoothed_bp_lo": 2.97,
+      "smoothed_bp_hi": 38.72,
+      "smoothed_coef": -0.20842,
+      "smoothed_se": 0.091201
+     },
+     {
+      "fiscal_year": 2005,
+      "filtered_bp": 8.35,
+      "filtered_bp_lo": -15.45,
+      "filtered_bp_hi": 32.15,
+      "filtered_coef": -0.083531,
+      "filtered_se": 0.121428,
+      "smoothed_bp": 11.82,
+      "smoothed_bp_lo": -7.67,
+      "smoothed_bp_hi": 31.3,
+      "smoothed_coef": -0.118155,
+      "smoothed_se": 0.099395
+     },
+     {
+      "fiscal_year": 2006,
+      "filtered_bp": -4.46,
+      "filtered_bp_lo": -31.9,
+      "filtered_bp_hi": 22.98,
+      "filtered_coef": 0.044645,
+      "filtered_se": 0.140003,
+      "smoothed_bp": 7.61,
+      "smoothed_bp_lo": -12.97,
+      "smoothed_bp_hi": 28.19,
+      "smoothed_coef": -0.076101,
+      "smoothed_se": 0.104993
+     },
+     {
+      "fiscal_year": 2007,
+      "filtered_bp": -10.92,
+      "filtered_bp_lo": -42.82,
+      "filtered_bp_hi": 20.99,
+      "filtered_coef": 0.109159,
+      "filtered_se": 0.162802,
+      "smoothed_bp": 8.46,
+      "smoothed_bp_lo": -11.6,
+      "smoothed_bp_hi": 28.53,
+      "smoothed_coef": -0.084647,
+      "smoothed_se": 0.102392
+     },
+     {
+      "fiscal_year": 2008,
+      "filtered_bp": -1.7,
+      "filtered_bp_lo": -27.9,
+      "filtered_bp_hi": 24.51,
+      "filtered_coef": 0.016954,
+      "filtered_se": 0.133707,
+      "smoothed_bp": 12.14,
+      "smoothed_bp_lo": -4.08,
+      "smoothed_bp_hi": 28.35,
+      "smoothed_coef": -0.12138,
+      "smoothed_se": 0.082734
+     },
+     {
+      "fiscal_year": 2009,
+      "filtered_bp": 7.98,
+      "filtered_bp_lo": -3.57,
+      "filtered_bp_hi": 19.52,
+      "filtered_coef": -0.079768,
+      "filtered_se": 0.058904,
+      "smoothed_bp": 14.09,
+      "smoothed_bp_lo": 4.57,
+      "smoothed_bp_hi": 23.62,
+      "smoothed_coef": -0.140912,
+      "smoothed_se": 0.048593
+     },
+     {
+      "fiscal_year": 2010,
+      "filtered_bp": 7.08,
+      "filtered_bp_lo": -6.5,
+      "filtered_bp_hi": 20.65,
+      "filtered_coef": -0.070752,
+      "filtered_se": 0.06927,
+      "smoothed_bp": 15.01,
+      "smoothed_bp_lo": 4.57,
+      "smoothed_bp_hi": 25.46,
+      "smoothed_coef": -0.150146,
+      "smoothed_se": 0.05331
+     },
+     {
+      "fiscal_year": 2011,
+      "filtered_bp": 4.78,
+      "filtered_bp_lo": -10.47,
+      "filtered_bp_hi": 20.03,
+      "filtered_coef": -0.04783,
+      "filtered_se": 0.077808,
+      "smoothed_bp": 12.6,
+      "smoothed_bp_lo": 0.99,
+      "smoothed_bp_hi": 24.2,
+      "smoothed_coef": -0.125982,
+      "smoothed_se": 0.059216
+     },
+     {
+      "fiscal_year": 2012,
+      "filtered_bp": -6.88,
+      "filtered_bp_lo": -26.2,
+      "filtered_bp_hi": 12.45,
+      "filtered_coef": 0.068763,
+      "filtered_se": 0.098606,
+      "smoothed_bp": 3.74,
+      "smoothed_bp_lo": -11.16,
+      "smoothed_bp_hi": 18.64,
+      "smoothed_coef": -0.03736,
+      "smoothed_se": 0.076026
+     },
+     {
+      "fiscal_year": 2013,
+      "filtered_bp": -8.56,
+      "filtered_bp_lo": -33.98,
+      "filtered_bp_hi": 16.87,
+      "filtered_coef": 0.085571,
+      "filtered_se": 0.129717,
+      "smoothed_bp": 2.89,
+      "smoothed_bp_lo": -17.41,
+      "smoothed_bp_hi": 23.2,
+      "smoothed_coef": -0.028939,
+      "smoothed_se": 0.1036
+     },
+     {
+      "fiscal_year": 2014,
+      "filtered_bp": -8.34,
+      "filtered_bp_lo": -39.23,
+      "filtered_bp_hi": 22.55,
+      "filtered_coef": 0.083436,
+      "filtered_se": 0.157609,
+      "smoothed_bp": 0.43,
+      "smoothed_bp_lo": -24.0,
+      "smoothed_bp_hi": 24.86,
+      "smoothed_coef": -0.004319,
+      "smoothed_se": 0.124642
+     },
+     {
+      "fiscal_year": 2015,
+      "filtered_bp": -13.55,
+      "filtered_bp_lo": -48.64,
+      "filtered_bp_hi": 21.55,
+      "filtered_coef": 0.135473,
+      "filtered_se": 0.179054,
+      "smoothed_bp": -7.85,
+      "smoothed_bp_lo": -34.03,
+      "smoothed_bp_hi": 18.33,
+      "smoothed_coef": 0.078514,
+      "smoothed_se": 0.133569
+     },
+     {
+      "fiscal_year": 2016,
+      "filtered_bp": -24.78,
+      "filtered_bp_lo": -60.61,
+      "filtered_bp_hi": 11.05,
+      "filtered_coef": 0.247837,
+      "filtered_se": 0.18281,
+      "smoothed_bp": -14.11,
+      "smoothed_bp_lo": -39.75,
+      "smoothed_bp_hi": 11.53,
+      "smoothed_coef": 0.141086,
+      "smoothed_se": 0.130814
+     },
+     {
+      "fiscal_year": 2017,
+      "filtered_bp": -28.24,
+      "filtered_bp_lo": -63.22,
+      "filtered_bp_hi": 6.74,
+      "filtered_coef": 0.282365,
+      "filtered_se": 0.178476,
+      "smoothed_bp": -16.59,
+      "smoothed_bp_lo": -40.79,
+      "smoothed_bp_hi": 7.62,
+      "smoothed_coef": 0.165864,
+      "smoothed_se": 0.123482
+     },
+     {
+      "fiscal_year": 2018,
+      "filtered_bp": -32.91,
+      "filtered_bp_lo": -65.93,
+      "filtered_bp_hi": 0.12,
+      "filtered_coef": 0.329064,
+      "filtered_se": 0.168503,
+      "smoothed_bp": -18.56,
+      "smoothed_bp_lo": -40.43,
+      "smoothed_bp_hi": 3.31,
+      "smoothed_coef": 0.185619,
+      "smoothed_se": 0.111588
+     },
+     {
+      "fiscal_year": 2019,
+      "filtered_bp": -36.42,
+      "filtered_bp_lo": -65.2,
+      "filtered_bp_hi": -7.64,
+      "filtered_coef": 0.364217,
+      "filtered_se": 0.146831,
+      "smoothed_bp": -17.98,
+      "smoothed_bp_lo": -35.95,
+      "smoothed_bp_hi": -0.01,
+      "smoothed_coef": 0.179829,
+      "smoothed_se": 0.091684
+     },
+     {
+      "fiscal_year": 2020,
+      "filtered_bp": -12.42,
+      "filtered_bp_lo": -22.74,
+      "filtered_bp_hi": -2.1,
+      "filtered_coef": 0.124192,
+      "filtered_se": 0.052638,
+      "smoothed_bp": -10.61,
+      "smoothed_bp_lo": -20.09,
+      "smoothed_bp_hi": -1.13,
+      "smoothed_coef": 0.106091,
+      "smoothed_se": 0.048379
+     },
+     {
+      "fiscal_year": 2021,
+      "filtered_bp": -7.96,
+      "filtered_bp_lo": -20.37,
+      "filtered_bp_hi": 4.46,
+      "filtered_coef": 0.079577,
+      "filtered_se": 0.063337,
+      "smoothed_bp": -6.51,
+      "smoothed_bp_lo": -18.44,
+      "smoothed_bp_hi": 5.41,
+      "smoothed_coef": 0.065137,
+      "smoothed_se": 0.060827
+     },
+     {
+      "fiscal_year": 2022,
+      "filtered_bp": -10.81,
+      "filtered_bp_lo": -31.47,
+      "filtered_bp_hi": 9.85,
+      "filtered_coef": 0.108084,
+      "filtered_se": 0.105396,
+      "smoothed_bp": -10.33,
+      "smoothed_bp_lo": -30.23,
+      "smoothed_bp_hi": 9.57,
+      "smoothed_coef": 0.103276,
+      "smoothed_se": 0.101521
+     },
+     {
+      "fiscal_year": 2023,
+      "filtered_bp": -11.91,
+      "filtered_bp_lo": -33.5,
+      "filtered_bp_hi": 9.68,
+      "filtered_coef": 0.119096,
+      "filtered_se": 0.110147,
+      "smoothed_bp": -9.59,
+      "smoothed_bp_lo": -30.1,
+      "smoothed_bp_hi": 10.91,
+      "smoothed_coef": 0.095942,
+      "smoothed_se": 0.104606
+     },
+     {
+      "fiscal_year": 2024,
+      "filtered_bp": -7.08,
+      "filtered_bp_lo": -28.0,
+      "filtered_bp_hi": 13.84,
+      "filtered_coef": 0.070791,
+      "filtered_se": 0.106723,
+      "smoothed_bp": -4.89,
+      "smoothed_bp_lo": -25.17,
+      "smoothed_bp_hi": 15.39,
+      "smoothed_coef": 0.048899,
+      "smoothed_se": 0.103487
+     },
+     {
+      "fiscal_year": 2025,
+      "filtered_bp": 0.2,
+      "filtered_bp_lo": -21.47,
+      "filtered_bp_hi": 21.86,
+      "filtered_coef": -0.00196,
+      "filtered_se": 0.110527,
+      "smoothed_bp": 0.2,
+      "smoothed_bp_lo": -21.47,
+      "smoothed_bp_hi": 21.86,
+      "smoothed_coef": -0.00196,
+      "smoothed_se": 0.110527
+     }
+    ]
+   },
+   "shape": {
+    "peak": {
+     "fy": 1982,
+     "bp": 64.02
+    },
+    "fy1982": {
+     "bp": 64.02,
+     "bp_lo": 44.04,
+     "bp_hi": 84.0
+    },
+    "fy2000_bp": 21.22,
+    "fy2007_bp": 8.46,
+    "post_2008_mean_bp": -4.0,
+    "early_retreat_bp": 42.8,
+    "late_retreat_bp": 12.46,
+    "early_retreat_share_of_v0": 1.112,
+    "late_retreat_share_of_v0": 0.853
+   },
+   "coming_back": {
+    "latest": 2025,
+    "latest_bp": 0.2,
+    "latest_bp_lo": -21.47,
+    "post_2008_range_bp": [
+     -36.42,
+     7.98
+    ],
+    "post_2008_from": 2009,
+    "post_2008_to": 2024,
+    "reappearing": false
+   },
+   "rolling": {
+    "20": [
+     {
+      "end": 1986,
+      "start": 1967,
+      "n": 20,
+      "bp": 62.29,
+      "bp_lo": 35.49,
+      "bp_hi": 89.09,
+      "coef": -0.622923,
+      "se": 0.136729
+     },
+     {
+      "end": 1987,
+      "start": 1968,
+      "n": 20,
+      "bp": 54.87,
+      "bp_lo": 33.14,
+      "bp_hi": 76.61,
+      "coef": -0.548713,
+      "se": 0.110893
+     },
+     {
+      "end": 1988,
+      "start": 1969,
+      "n": 20,
+      "bp": 53.08,
+      "bp_lo": 33.61,
+      "bp_hi": 72.55,
+      "coef": -0.530848,
+      "se": 0.09934
+     },
+     {
+      "end": 1989,
+      "start": 1970,
+      "n": 20,
+      "bp": 57.93,
+      "bp_lo": 36.19,
+      "bp_hi": 79.68,
+      "coef": -0.57935,
+      "se": 0.110946
+     },
+     {
+      "end": 1990,
+      "start": 1971,
+      "n": 20,
+      "bp": 59.08,
+      "bp_lo": 35.57,
+      "bp_hi": 82.58,
+      "coef": -0.59077,
+      "se": 0.119924
+     },
+     {
+      "end": 1991,
+      "start": 1972,
+      "n": 20,
+      "bp": 58.85,
+      "bp_lo": 35.6,
+      "bp_hi": 82.09,
+      "coef": -0.588484,
+      "se": 0.118598
+     },
+     {
+      "end": 1992,
+      "start": 1973,
+      "n": 20,
+      "bp": 57.57,
+      "bp_lo": 34.91,
+      "bp_hi": 80.23,
+      "coef": -0.575704,
+      "se": 0.11562
+     },
+     {
+      "end": 1993,
+      "start": 1974,
+      "n": 20,
+      "bp": 54.05,
+      "bp_lo": 32.05,
+      "bp_hi": 76.04,
+      "coef": -0.540451,
+      "se": 0.112205
+     },
+     {
+      "end": 1994,
+      "start": 1975,
+      "n": 20,
+      "bp": 47.09,
+      "bp_lo": 22.25,
+      "bp_hi": 71.93,
+      "coef": -0.470858,
+      "se": 0.126739
+     },
+     {
+      "end": 1995,
+      "start": 1976,
+      "n": 20,
+      "bp": 54.81,
+      "bp_lo": 31.79,
+      "bp_hi": 77.83,
+      "coef": -0.548112,
+      "se": 0.117462
+     },
+     {
+      "end": 1996,
+      "start": 1977,
+      "n": 20,
+      "bp": 56.29,
+      "bp_lo": 35.57,
+      "bp_hi": 77.01,
+      "coef": -0.562897,
+      "se": 0.105731
+     },
+     {
+      "end": 1997,
+      "start": 1978,
+      "n": 20,
+      "bp": 48.39,
+      "bp_lo": 29.7,
+      "bp_hi": 67.08,
+      "coef": -0.483899,
+      "se": 0.095377
+     },
+     {
+      "end": 1998,
+      "start": 1979,
+      "n": 20,
+      "bp": 43.82,
+      "bp_lo": 29.19,
+      "bp_hi": 58.45,
+      "coef": -0.43819,
+      "se": 0.074641
+     },
+     {
+      "end": 1999,
+      "start": 1980,
+      "n": 20,
+      "bp": 35.3,
+      "bp_lo": 24.16,
+      "bp_hi": 46.44,
+      "coef": -0.352995,
+      "se": 0.056853
+     },
+     {
+      "end": 2000,
+      "start": 1981,
+      "n": 20,
+      "bp": 31.56,
+      "bp_lo": 21.75,
+      "bp_hi": 41.38,
+      "coef": -0.315643,
+      "se": 0.050079
+     },
+     {
+      "end": 2001,
+      "start": 1982,
+      "n": 20,
+      "bp": 30.21,
+      "bp_lo": 14.85,
+      "bp_hi": 45.57,
+      "coef": -0.302141,
+      "se": 0.078373
+     },
+     {
+      "end": 2002,
+      "start": 1983,
+      "n": 20,
+      "bp": 39.39,
+      "bp_lo": 20.25,
+      "bp_hi": 58.54,
+      "coef": -0.393926,
+      "se": 0.097677
+     },
+     {
+      "end": 2003,
+      "start": 1984,
+      "n": 20,
+      "bp": 33.3,
+      "bp_lo": 17.3,
+      "bp_hi": 49.3,
+      "coef": -0.332992,
+      "se": 0.081636
+     },
+     {
+      "end": 2004,
+      "start": 1985,
+      "n": 20,
+      "bp": 29.65,
+      "bp_lo": 16.71,
+      "bp_hi": 42.59,
+      "coef": -0.296517,
+      "se": 0.066013
+     },
+     {
+      "end": 2005,
+      "start": 1986,
+      "n": 20,
+      "bp": 24.06,
+      "bp_lo": 12.85,
+      "bp_hi": 35.27,
+      "coef": -0.24064,
+      "se": 0.057199
+     },
+     {
+      "end": 2006,
+      "start": 1987,
+      "n": 20,
+      "bp": 28.2,
+      "bp_lo": 16.04,
+      "bp_hi": 40.36,
+      "coef": -0.28202,
+      "se": 0.062037
+     },
+     {
+      "end": 2007,
+      "start": 1988,
+      "n": 20,
+      "bp": 30.48,
+      "bp_lo": 15.55,
+      "bp_hi": 45.41,
+      "coef": -0.304819,
+      "se": 0.076178
+     },
+     {
+      "end": 2008,
+      "start": 1989,
+      "n": 20,
+      "bp": 29.43,
+      "bp_lo": 14.63,
+      "bp_hi": 44.24,
+      "coef": -0.294328,
+      "se": 0.075533
+     },
+     {
+      "end": 2009,
+      "start": 1990,
+      "n": 20,
+      "bp": 22.92,
+      "bp_lo": 10.7,
+      "bp_hi": 35.13,
+      "coef": -0.22917,
+      "se": 0.062331
+     },
+     {
+      "end": 2010,
+      "start": 1991,
+      "n": 20,
+      "bp": 24.84,
+      "bp_lo": 14.41,
+      "bp_hi": 35.26,
+      "coef": -0.248364,
+      "se": 0.053207
+     },
+     {
+      "end": 2011,
+      "start": 1992,
+      "n": 20,
+      "bp": 23.97,
+      "bp_lo": 13.9,
+      "bp_hi": 34.03,
+      "coef": -0.239678,
+      "se": 0.051347
+     },
+     {
+      "end": 2012,
+      "start": 1993,
+      "n": 20,
+      "bp": 24.16,
+      "bp_lo": 14.55,
+      "bp_hi": 33.76,
+      "coef": -0.241557,
+      "se": 0.049011
+     },
+     {
+      "end": 2013,
+      "start": 1994,
+      "n": 20,
+      "bp": 18.55,
+      "bp_lo": 10.7,
+      "bp_hi": 26.39,
+      "coef": -0.185458,
+      "se": 0.04002
+     },
+     {
+      "end": 2014,
+      "start": 1995,
+      "n": 20,
+      "bp": 14.12,
+      "bp_lo": 6.5,
+      "bp_hi": 21.73,
+      "coef": -0.141175,
+      "se": 0.038842
+     },
+     {
+      "end": 2015,
+      "start": 1996,
+      "n": 20,
+      "bp": 15.67,
+      "bp_lo": 7.78,
+      "bp_hi": 23.55,
+      "coef": -0.156655,
+      "se": 0.040239
+     },
+     {
+      "end": 2016,
+      "start": 1997,
+      "n": 20,
+      "bp": 17.2,
+      "bp_lo": 9.26,
+      "bp_hi": 25.15,
+      "coef": -0.172026,
+      "se": 0.040538
+     },
+     {
+      "end": 2017,
+      "start": 1998,
+      "n": 20,
+      "bp": 18.11,
+      "bp_lo": 10.27,
+      "bp_hi": 25.94,
+      "coef": -0.181081,
+      "se": 0.03997
+     },
+     {
+      "end": 2018,
+      "start": 1999,
+      "n": 20,
+      "bp": 17.23,
+      "bp_lo": 8.99,
+      "bp_hi": 25.47,
+      "coef": -0.172304,
+      "se": 0.042057
+     },
+     {
+      "end": 2019,
+      "start": 2000,
+      "n": 20,
+      "bp": 15.54,
+      "bp_lo": 6.43,
+      "bp_hi": 24.64,
+      "coef": -0.155382,
+      "se": 0.046457
+     },
+     {
+      "end": 2020,
+      "start": 2001,
+      "n": 20,
+      "bp": 3.41,
+      "bp_lo": -11.34,
+      "bp_hi": 18.16,
+      "coef": -0.034111,
+      "se": 0.075268
+     },
+     {
+      "end": 2021,
+      "start": 2002,
+      "n": 20,
+      "bp": 7.9,
+      "bp_lo": -7.11,
+      "bp_hi": 22.91,
+      "coef": -0.078998,
+      "se": 0.076578
+     },
+     {
+      "end": 2022,
+      "start": 2003,
+      "n": 20,
+      "bp": 8.21,
+      "bp_lo": -6.99,
+      "bp_hi": 23.4,
+      "coef": -0.082068,
+      "se": 0.077534
+     },
+     {
+      "end": 2023,
+      "start": 2004,
+      "n": 20,
+      "bp": 8.06,
+      "bp_lo": -7.54,
+      "bp_hi": 23.65,
+      "coef": -0.080555,
+      "se": 0.079579
+     },
+     {
+      "end": 2024,
+      "start": 2005,
+      "n": 20,
+      "bp": 7.44,
+      "bp_lo": -8.82,
+      "bp_hi": 23.7,
+      "coef": -0.074403,
+      "se": 0.082965
+     },
+     {
+      "end": 2025,
+      "start": 2006,
+      "n": 20,
+      "bp": 6.78,
+      "bp_lo": -9.5,
+      "bp_hi": 23.05,
+      "coef": -0.067753,
+      "se": 0.083047
+     }
+    ]
+   },
+   "answer": {
+    "fy1982_fall": -0.0729,
+    "band_includes_zero": false,
+    "answer": "mostly separate from inflation"
+   }
+  },
+  "V2": {
+   "controls": [
+    "debt_gdp",
+    "core_infl",
+    "output_gap"
+   ],
+   "drifting": [],
+   "role": "matches Experiment 1's macro control",
+   "control_coverage": {
+    "debt_gdp": [
+     1967,
+     2025
+    ],
+    "core_infl": [
+     1967,
+     2025
+    ],
+    "output_gap": [
+     1967,
+     2025
+    ]
+   },
+   "time_varying": {
+    "rows": {
+     "first": 1967,
+     "last": 2025,
+     "n": 59,
+     "nobs_diffuse": 5
+    },
+    "drift_variance_q": 0.00800651073098593,
+    "drift_sd_bp_per_year": 8.948,
+    "obs_variance_h": 0.14013424320400278,
+    "loglik_time_varying": -58.0858,
+    "loglik_fixed_slope": -80.8277,
+    "lr_stat": 45.4839,
+    "lr_p_boundary_mixture": 0.0,
+    "lr_mixture": "chi2(0):chi2(1) 50:50",
+    "converged": true,
+    "fixed_slope": {
+     "bp": 5.59,
+     "bp_lo": -4.77,
+     "bp_hi": 15.95,
+     "coef": -0.055865,
+     "se": 0.052856
+    },
+    "controls": {
+     "debt_gdp": {
+      "drifting": false,
+      "coef": -2.140854,
+      "se": 0.715147,
+      "lo": -3.542516,
+      "hi": -0.739191
+     },
+     "core_infl": {
+      "drifting": false,
+      "coef": -0.079459,
+      "se": 0.056085,
+      "lo": -0.189383,
+      "hi": 0.030465
+     },
+     "output_gap": {
+      "drifting": false,
+      "coef": -0.22873,
+      "se": 0.048975,
+      "lo": -0.32472,
+      "hi": -0.13274
+     }
+    },
+    "params": [
+     -1.9651544357760262,
+     -4.827500226918381
+    ],
+    "paths": [
+     {
+      "fiscal_year": 1972,
+      "filtered_bp": 24.32,
+      "filtered_bp_lo": -26.61,
+      "filtered_bp_hi": 75.25,
+      "filtered_coef": -0.243238,
+      "filtered_se": 0.259855,
+      "smoothed_bp": -9.04,
+      "smoothed_bp_lo": -35.41,
+      "smoothed_bp_hi": 17.33,
+      "smoothed_coef": 0.090374,
+      "smoothed_se": 0.134546
+     },
+     {
+      "fiscal_year": 1973,
+      "filtered_bp": 23.18,
+      "filtered_bp_lo": -28.99,
+      "filtered_bp_hi": 75.35,
+      "filtered_coef": -0.231802,
+      "filtered_se": 0.266163,
+      "smoothed_bp": -8.29,
+      "smoothed_bp_lo": -35.47,
+      "smoothed_bp_hi": 18.89,
+      "smoothed_coef": 0.082856,
+      "smoothed_se": 0.138676
+     },
+     {
+      "fiscal_year": 1974,
+      "filtered_bp": 16.22,
+      "filtered_bp_lo": -36.44,
+      "filtered_bp_hi": 68.89,
+      "filtered_coef": -0.162218,
+      "filtered_se": 0.26871,
+      "smoothed_bp": -7.86,
+      "smoothed_bp_lo": -34.98,
+      "smoothed_bp_hi": 19.25,
+      "smoothed_coef": 0.078647,
+      "smoothed_se": 0.138329
+     },
+     {
+      "fiscal_year": 1975,
+      "filtered_bp": 7.46,
+      "filtered_bp_lo": -30.64,
+      "filtered_bp_hi": 45.55,
+      "filtered_coef": -0.074556,
+      "filtered_se": 0.194372,
+      "smoothed_bp": -6.7,
+      "smoothed_bp_lo": -31.65,
+      "smoothed_bp_hi": 18.25,
+      "smoothed_coef": 0.066976,
+      "smoothed_se": 0.1273
+     },
+     {
+      "fiscal_year": 1976,
+      "filtered_bp": 14.32,
+      "filtered_bp_lo": -15.83,
+      "filtered_bp_hi": 44.48,
+      "filtered_coef": -0.14324,
+      "filtered_se": 0.153839,
+      "smoothed_bp": 1.23,
+      "smoothed_bp_lo": -21.05,
+      "smoothed_bp_hi": 23.5,
+      "smoothed_coef": -0.01227,
+      "smoothed_se": 0.113664
+     },
+     {
+      "fiscal_year": 1977,
+      "filtered_bp": 23.95,
+      "filtered_bp_lo": -8.05,
+      "filtered_bp_hi": 55.95,
+      "filtered_coef": -0.239478,
+      "filtered_se": 0.163262,
+      "smoothed_bp": 11.39,
+      "smoothed_bp_lo": -12.48,
+      "smoothed_bp_hi": 35.26,
+      "smoothed_coef": -0.113894,
+      "smoothed_se": 0.121785
+     },
+     {
+      "fiscal_year": 1978,
+      "filtered_bp": 30.55,
+      "filtered_bp_lo": 0.47,
+      "filtered_bp_hi": 60.63,
+      "filtered_coef": -0.305465,
+      "filtered_se": 0.153469,
+      "smoothed_bp": 19.46,
+      "smoothed_bp_lo": -5.49,
+      "smoothed_bp_hi": 44.4,
+      "smoothed_coef": -0.194561,
+      "smoothed_se": 0.127264
+     },
+     {
+      "fiscal_year": 1979,
+      "filtered_bp": 32.03,
+      "filtered_bp_lo": -2.19,
+      "filtered_bp_hi": 66.25,
+      "filtered_coef": -0.320286,
+      "filtered_se": 0.174598,
+      "smoothed_bp": 27.25,
+      "smoothed_bp_lo": 0.26,
+      "smoothed_bp_hi": 54.24,
+      "smoothed_coef": -0.272505,
+      "smoothed_se": 0.137711
+     },
+     {
+      "fiscal_year": 1980,
+      "filtered_bp": 44.39,
+      "filtered_bp_lo": 8.9,
+      "filtered_bp_hi": 79.87,
+      "filtered_coef": -0.443867,
+      "filtered_se": 0.181035,
+      "smoothed_bp": 35.36,
+      "smoothed_bp_lo": 8.56,
+      "smoothed_bp_hi": 62.17,
+      "smoothed_coef": -0.353642,
+      "smoothed_se": 0.136752
+     },
+     {
+      "fiscal_year": 1981,
+      "filtered_bp": 55.09,
+      "filtered_bp_lo": 17.25,
+      "filtered_bp_hi": 92.93,
+      "filtered_coef": -0.550862,
+      "filtered_se": 0.193061,
+      "smoothed_bp": 40.06,
+      "smoothed_bp_lo": 14.31,
+      "smoothed_bp_hi": 65.81,
+      "smoothed_coef": -0.400573,
+      "smoothed_se": 0.131375
+     },
+     {
+      "fiscal_year": 1982,
+      "filtered_bp": 59.07,
+      "filtered_bp_lo": 24.63,
+      "filtered_bp_hi": 93.51,
+      "filtered_coef": -0.590713,
+      "filtered_se": 0.175699,
+      "smoothed_bp": 35.24,
+      "smoothed_bp_lo": 13.08,
+      "smoothed_bp_hi": 57.4,
+      "smoothed_coef": -0.352389,
+      "smoothed_se": 0.113066
+     },
+     {
+      "fiscal_year": 1983,
+      "filtered_bp": 38.24,
+      "filtered_bp_lo": 10.37,
+      "filtered_bp_hi": 66.1,
+      "filtered_coef": -0.38236,
+      "filtered_se": 0.142187,
+      "smoothed_bp": 27.87,
+      "smoothed_bp_lo": 10.86,
+      "smoothed_bp_hi": 44.89,
+      "smoothed_coef": -0.278721,
+      "smoothed_se": 0.086818
+     },
+     {
+      "fiscal_year": 1984,
+      "filtered_bp": 61.61,
+      "filtered_bp_lo": 35.98,
+      "filtered_bp_hi": 87.24,
+      "filtered_coef": -0.616052,
+      "filtered_se": 0.130768,
+      "smoothed_bp": 41.74,
+      "smoothed_bp_lo": 26.85,
+      "smoothed_bp_hi": 56.64,
+      "smoothed_coef": -0.41743,
+      "smoothed_se": 0.076009
+     },
+     {
+      "fiscal_year": 1985,
+      "filtered_bp": 65.79,
+      "filtered_bp_lo": 39.5,
+      "filtered_bp_hi": 92.08,
+      "filtered_coef": -0.657898,
+      "filtered_se": 0.134131,
+      "smoothed_bp": 42.91,
+      "smoothed_bp_lo": 29.61,
+      "smoothed_bp_hi": 56.22,
+      "smoothed_coef": -0.429148,
+      "smoothed_se": 0.067891
+     },
+     {
+      "fiscal_year": 1986,
+      "filtered_bp": 59.72,
+      "filtered_bp_lo": 29.32,
+      "filtered_bp_hi": 90.13,
+      "filtered_coef": -0.59723,
+      "filtered_se": 0.155136,
+      "smoothed_bp": 34.79,
+      "smoothed_bp_lo": 21.67,
+      "smoothed_bp_hi": 47.9,
+      "smoothed_coef": -0.347878,
+      "smoothed_se": 0.06692
+     },
+     {
+      "fiscal_year": 1987,
+      "filtered_bp": 53.02,
+      "filtered_bp_lo": 18.89,
+      "filtered_bp_hi": 87.15,
+      "filtered_coef": -0.530202,
+      "filtered_se": 0.174142,
+      "smoothed_bp": 40.71,
+      "smoothed_bp_lo": 25.32,
+      "smoothed_bp_hi": 56.09,
+      "smoothed_coef": -0.407066,
+      "smoothed_se": 0.07849
+     },
+     {
+      "fiscal_year": 1988,
+      "filtered_bp": 55.66,
+      "filtered_bp_lo": 17.42,
+      "filtered_bp_hi": 93.9,
+      "filtered_coef": -0.556623,
+      "filtered_se": 0.195113,
+      "smoothed_bp": 46.43,
+      "smoothed_bp_lo": 30.49,
+      "smoothed_bp_hi": 62.37,
+      "smoothed_coef": -0.464338,
+      "smoothed_se": 0.081324
+     },
+     {
+      "fiscal_year": 1989,
+      "filtered_bp": 52.84,
+      "filtered_bp_lo": 11.06,
+      "filtered_bp_hi": 94.62,
+      "filtered_coef": -0.52839,
+      "filtered_se": 0.213187,
+      "smoothed_bp": 40.55,
+      "smoothed_bp_lo": 24.53,
+      "smoothed_bp_hi": 56.58,
+      "smoothed_coef": -0.40554,
+      "smoothed_se": 0.081774
+     },
+     {
+      "fiscal_year": 1990,
+      "filtered_bp": 40.25,
+      "filtered_bp_lo": -0.64,
+      "filtered_bp_hi": 81.14,
+      "filtered_coef": -0.402476,
+      "filtered_se": 0.208614,
+      "smoothed_bp": 34.74,
+      "smoothed_bp_lo": 20.27,
+      "smoothed_bp_hi": 49.2,
+      "smoothed_coef": -0.347361,
+      "smoothed_se": 0.073804
+     },
+     {
+      "fiscal_year": 1991,
+      "filtered_bp": 39.17,
+      "filtered_bp_lo": -3.91,
+      "filtered_bp_hi": 82.25,
+      "filtered_coef": -0.391663,
+      "filtered_se": 0.219801,
+      "smoothed_bp": 33.82,
+      "smoothed_bp_lo": 20.0,
+      "smoothed_bp_hi": 47.64,
+      "smoothed_coef": -0.338199,
+      "smoothed_se": 0.070493
+     },
+     {
+      "fiscal_year": 1992,
+      "filtered_bp": 44.13,
+      "filtered_bp_lo": -1.46,
+      "filtered_bp_hi": 89.71,
+      "filtered_coef": -0.441282,
+      "filtered_se": 0.232581,
+      "smoothed_bp": 38.94,
+      "smoothed_bp_lo": 25.11,
+      "smoothed_bp_hi": 52.77,
+      "smoothed_coef": -0.389417,
+      "smoothed_se": 0.070563
+     },
+     {
+      "fiscal_year": 1993,
+      "filtered_bp": 44.12,
+      "filtered_bp_lo": -4.57,
+      "filtered_bp_hi": 92.82,
+      "filtered_coef": -0.441216,
+      "filtered_se": 0.248441,
+      "smoothed_bp": 37.73,
+      "smoothed_bp_lo": 22.57,
+      "smoothed_bp_hi": 52.9,
+      "smoothed_coef": -0.377338,
+      "smoothed_se": 0.077363
+     },
+     {
+      "fiscal_year": 1994,
+      "filtered_bp": 43.04,
+      "filtered_bp_lo": -7.2,
+      "filtered_bp_hi": 93.29,
+      "filtered_coef": -0.430442,
+      "filtered_se": 0.256342,
+      "smoothed_bp": 35.56,
+      "smoothed_bp_lo": 18.38,
+      "smoothed_bp_hi": 52.75,
+      "smoothed_coef": -0.355617,
+      "smoothed_se": 0.087681
+     },
+     {
+      "fiscal_year": 1995,
+      "filtered_bp": 47.24,
+      "filtered_bp_lo": -3.88,
+      "filtered_bp_hi": 98.36,
+      "filtered_coef": -0.472444,
+      "filtered_se": 0.260824,
+      "smoothed_bp": 30.4,
+      "smoothed_bp_lo": 11.05,
+      "smoothed_bp_hi": 49.76,
+      "smoothed_coef": -0.304043,
+      "smoothed_se": 0.098735
+     },
+     {
+      "fiscal_year": 1996,
+      "filtered_bp": 45.75,
+      "filtered_bp_lo": -3.82,
+      "filtered_bp_hi": 95.32,
+      "filtered_coef": -0.457502,
+      "filtered_se": 0.252898,
+      "smoothed_bp": 26.46,
+      "smoothed_bp_lo": 4.86,
+      "smoothed_bp_hi": 48.06,
+      "smoothed_coef": -0.264636,
+      "smoothed_se": 0.110209
+     },
+     {
+      "fiscal_year": 1997,
+      "filtered_bp": 31.57,
+      "filtered_bp_lo": -11.42,
+      "filtered_bp_hi": 74.55,
+      "filtered_coef": -0.315669,
+      "filtered_se": 0.219327,
+      "smoothed_bp": 22.33,
+      "smoothed_bp_lo": -0.74,
+      "smoothed_bp_hi": 45.41,
+      "smoothed_coef": -0.223336,
+      "smoothed_se": 0.117747
+     },
+     {
+      "fiscal_year": 1998,
+      "filtered_bp": 32.6,
+      "filtered_bp_lo": -2.73,
+      "filtered_bp_hi": 67.92,
+      "filtered_coef": -0.325963,
+      "filtered_se": 0.180246,
+      "smoothed_bp": 17.66,
+      "smoothed_bp_lo": -5.17,
+      "smoothed_bp_hi": 40.49,
+      "smoothed_coef": -0.176566,
+      "smoothed_se": 0.116484
+     },
+     {
+      "fiscal_year": 1999,
+      "filtered_bp": 19.23,
+      "filtered_bp_lo": -12.36,
+      "filtered_bp_hi": 50.81,
+      "filtered_coef": -0.192259,
+      "filtered_se": 0.161141,
+      "smoothed_bp": 12.53,
+      "smoothed_bp_lo": -8.91,
+      "smoothed_bp_hi": 33.97,
+      "smoothed_coef": -0.125308,
+      "smoothed_se": 0.109382
+     },
+     {
+      "fiscal_year": 2000,
+      "filtered_bp": 9.34,
+      "filtered_bp_lo": -15.85,
+      "filtered_bp_hi": 34.53,
+      "filtered_coef": -0.093394,
+      "filtered_se": 0.128518,
+      "smoothed_bp": 9.84,
+      "smoothed_bp_lo": -9.56,
+      "smoothed_bp_hi": 29.25,
+      "smoothed_coef": -0.098444,
+      "smoothed_se": 0.098999
+     },
+     {
+      "fiscal_year": 2001,
+      "filtered_bp": 9.03,
+      "filtered_bp_lo": -19.7,
+      "filtered_bp_hi": 37.76,
+      "filtered_coef": -0.090341,
+      "filtered_se": 0.146582,
+      "smoothed_bp": 11.3,
+      "smoothed_bp_lo": -8.41,
+      "smoothed_bp_hi": 31.01,
+      "smoothed_coef": -0.11298,
+      "smoothed_se": 0.100568
+     },
+     {
+      "fiscal_year": 2002,
+      "filtered_bp": 17.52,
+      "filtered_bp_lo": -10.22,
+      "filtered_bp_hi": 45.27,
+      "filtered_coef": -0.175229,
+      "filtered_se": 0.141553,
+      "smoothed_bp": 12.46,
+      "smoothed_bp_lo": -6.72,
+      "smoothed_bp_hi": 31.65,
+      "smoothed_coef": -0.12463,
+      "smoothed_se": 0.097869
+     },
+     {
+      "fiscal_year": 2003,
+      "filtered_bp": 15.02,
+      "filtered_bp_lo": -5.47,
+      "filtered_bp_hi": 35.52,
+      "filtered_coef": -0.150228,
+      "filtered_se": 0.104561,
+      "smoothed_bp": 11.69,
+      "smoothed_bp_lo": -5.02,
+      "smoothed_bp_hi": 28.39,
+      "smoothed_coef": -0.116871,
+      "smoothed_se": 0.085219
+     },
+     {
+      "fiscal_year": 2004,
+      "filtered_bp": 16.18,
+      "filtered_bp_lo": -2.27,
+      "filtered_bp_hi": 34.64,
+      "filtered_coef": -0.161848,
+      "filtered_se": 0.094176,
+      "smoothed_bp": 9.85,
+      "smoothed_bp_lo": -6.27,
+      "smoothed_bp_hi": 25.97,
+      "smoothed_coef": -0.098508,
+      "smoothed_se": 0.08224
+     },
+     {
+      "fiscal_year": 2005,
+      "filtered_bp": 1.08,
+      "filtered_bp_lo": -19.75,
+      "filtered_bp_hi": 21.9,
+      "filtered_coef": -0.010786,
+      "filtered_se": 0.106256,
+      "smoothed_bp": 0.58,
+      "smoothed_bp_lo": -17.1,
+      "smoothed_bp_hi": 18.26,
+      "smoothed_coef": -0.005779,
+      "smoothed_se": 0.09021
+     },
+     {
+      "fiscal_year": 2006,
+      "filtered_bp": -11.06,
+      "filtered_bp_lo": -35.37,
+      "filtered_bp_hi": 13.26,
+      "filtered_coef": 0.110573,
+      "filtered_se": 0.12406,
+      "smoothed_bp": -3.74,
+      "smoothed_bp_lo": -22.75,
+      "smoothed_bp_hi": 15.26,
+      "smoothed_coef": 0.03743,
+      "smoothed_se": 0.096976
+     },
+     {
+      "fiscal_year": 2007,
+      "filtered_bp": -17.47,
+      "filtered_bp_lo": -46.33,
+      "filtered_bp_hi": 11.39,
+      "filtered_coef": 0.174706,
+      "filtered_se": 0.147235,
+      "smoothed_bp": -2.61,
+      "smoothed_bp_lo": -21.47,
+      "smoothed_bp_hi": 16.26,
+      "smoothed_coef": 0.026052,
+      "smoothed_se": 0.096229
+     },
+     {
+      "fiscal_year": 2008,
+      "filtered_bp": -3.05,
+      "filtered_bp_lo": -25.36,
+      "filtered_bp_hi": 19.26,
+      "filtered_coef": 0.030494,
+      "filtered_se": 0.113834,
+      "smoothed_bp": 2.01,
+      "smoothed_bp_lo": -13.08,
+      "smoothed_bp_hi": 17.1,
+      "smoothed_coef": -0.020136,
+      "smoothed_se": 0.076992
+     },
+     {
+      "fiscal_year": 2009,
+      "filtered_bp": 0.28,
+      "filtered_bp_lo": -9.83,
+      "filtered_bp_hi": 10.4,
+      "filtered_coef": -0.00284,
+      "filtered_se": 0.051612,
+      "smoothed_bp": 2.43,
+      "smoothed_bp_lo": -6.75,
+      "smoothed_bp_hi": 11.62,
+      "smoothed_coef": -0.024338,
+      "smoothed_se": 0.046847
+     },
+     {
+      "fiscal_year": 2010,
+      "filtered_bp": 1.8,
+      "filtered_bp_lo": -9.84,
+      "filtered_bp_hi": 13.43,
+      "filtered_coef": -0.01795,
+      "filtered_se": 0.059372,
+      "smoothed_bp": 4.77,
+      "smoothed_bp_lo": -5.05,
+      "smoothed_bp_hi": 14.59,
+      "smoothed_coef": -0.047685,
+      "smoothed_se": 0.050099
+     },
+     {
+      "fiscal_year": 2011,
+      "filtered_bp": 1.21,
+      "filtered_bp_lo": -11.67,
+      "filtered_bp_hi": 14.1,
+      "filtered_coef": -0.012149,
+      "filtered_se": 0.065739,
+      "smoothed_bp": 3.35,
+      "smoothed_bp_lo": -7.2,
+      "smoothed_bp_hi": 13.9,
+      "smoothed_coef": -0.033497,
+      "smoothed_se": 0.05384
+     },
+     {
+      "fiscal_year": 2012,
+      "filtered_bp": -10.04,
+      "filtered_bp_lo": -26.58,
+      "filtered_bp_hi": 6.49,
+      "filtered_coef": 0.100449,
+      "filtered_se": 0.084387,
+      "smoothed_bp": -6.67,
+      "smoothed_bp_lo": -20.04,
+      "smoothed_bp_hi": 6.7,
+      "smoothed_coef": 0.066701,
+      "smoothed_se": 0.068209
+     },
+     {
+      "fiscal_year": 2013,
+      "filtered_bp": -11.67,
+      "filtered_bp_lo": -34.24,
+      "filtered_bp_hi": 10.9,
+      "filtered_coef": 0.116686,
+      "filtered_se": 0.115157,
+      "smoothed_bp": -8.11,
+      "smoothed_bp_lo": -26.79,
+      "smoothed_bp_hi": 10.58,
+      "smoothed_coef": 0.081092,
+      "smoothed_se": 0.095336
+     },
+     {
+      "fiscal_year": 2014,
+      "filtered_bp": -10.37,
+      "filtered_bp_lo": -38.46,
+      "filtered_bp_hi": 17.72,
+      "filtered_coef": 0.103732,
+      "filtered_se": 0.143327,
+      "smoothed_bp": -9.16,
+      "smoothed_bp_lo": -31.9,
+      "smoothed_bp_hi": 13.58,
+      "smoothed_coef": 0.091574,
+      "smoothed_se": 0.116021
+     },
+     {
+      "fiscal_year": 2015,
+      "filtered_bp": -15.93,
+      "filtered_bp_lo": -48.02,
+      "filtered_bp_hi": 16.16,
+      "filtered_coef": 0.15926,
+      "filtered_se": 0.163727,
+      "smoothed_bp": -16.73,
+      "smoothed_bp_lo": -41.02,
+      "smoothed_bp_hi": 7.56,
+      "smoothed_coef": 0.167345,
+      "smoothed_se": 0.123929
+     },
+     {
+      "fiscal_year": 2016,
+      "filtered_bp": -26.25,
+      "filtered_bp_lo": -58.31,
+      "filtered_bp_hi": 5.8,
+      "filtered_coef": 0.262512,
+      "filtered_se": 0.16355,
+      "smoothed_bp": -21.59,
+      "smoothed_bp_lo": -45.05,
+      "smoothed_bp_hi": 1.87,
+      "smoothed_coef": 0.215914,
+      "smoothed_se": 0.119685
+     },
+     {
+      "fiscal_year": 2017,
+      "filtered_bp": -26.08,
+      "filtered_bp_lo": -56.9,
+      "filtered_bp_hi": 4.73,
+      "filtered_coef": 0.260823,
+      "filtered_se": 0.157233,
+      "smoothed_bp": -21.15,
+      "smoothed_bp_lo": -43.13,
+      "smoothed_bp_hi": 0.83,
+      "smoothed_coef": 0.211526,
+      "smoothed_se": 0.112138
+     },
+     {
+      "fiscal_year": 2018,
+      "filtered_bp": -24.83,
+      "filtered_bp_lo": -53.94,
+      "filtered_bp_hi": 4.27,
+      "filtered_coef": 0.248343,
+      "filtered_se": 0.148484,
+      "smoothed_bp": -20.19,
+      "smoothed_bp_lo": -40.04,
+      "smoothed_bp_hi": -0.34,
+      "smoothed_coef": 0.201862,
+      "smoothed_se": 0.101274
+     },
+     {
+      "fiscal_year": 2019,
+      "filtered_bp": -25.6,
+      "filtered_bp_lo": -50.95,
+      "filtered_bp_hi": -0.24,
+      "filtered_coef": 0.255966,
+      "filtered_se": 0.129364,
+      "smoothed_bp": -18.98,
+      "smoothed_bp_lo": -35.26,
+      "smoothed_bp_hi": -2.7,
+      "smoothed_coef": 0.189787,
+      "smoothed_se": 0.083049
+     },
+     {
+      "fiscal_year": 2020,
+      "filtered_bp": -13.62,
+      "filtered_bp_lo": -22.31,
+      "filtered_bp_hi": -4.94,
+      "filtered_coef": 0.136242,
+      "filtered_se": 0.044321,
+      "smoothed_bp": -13.25,
+      "smoothed_bp_lo": -21.25,
+      "smoothed_bp_hi": -5.25,
+      "smoothed_coef": 0.132493,
+      "smoothed_se": 0.04083
+     },
+     {
+      "fiscal_year": 2021,
+      "filtered_bp": -4.0,
+      "filtered_bp_lo": -14.97,
+      "filtered_bp_hi": 6.96,
+      "filtered_coef": 0.040036,
+      "filtered_se": 0.055947,
+      "smoothed_bp": -3.84,
+      "smoothed_bp_lo": -14.17,
+      "smoothed_bp_hi": 6.49,
+      "smoothed_coef": 0.038394,
+      "smoothed_se": 0.052709
+     },
+     {
+      "fiscal_year": 2022,
+      "filtered_bp": -4.24,
+      "filtered_bp_lo": -23.59,
+      "filtered_bp_hi": 15.11,
+      "filtered_coef": 0.0424,
+      "filtered_se": 0.098728,
+      "smoothed_bp": -3.51,
+      "smoothed_bp_lo": -22.22,
+      "smoothed_bp_hi": 15.2,
+      "smoothed_coef": 0.035106,
+      "smoothed_se": 0.09544
+     },
+     {
+      "fiscal_year": 2023,
+      "filtered_bp": -4.19,
+      "filtered_bp_lo": -23.81,
+      "filtered_bp_hi": 15.42,
+      "filtered_coef": 0.041918,
+      "filtered_se": 0.100073,
+      "smoothed_bp": -1.95,
+      "smoothed_bp_lo": -20.77,
+      "smoothed_bp_hi": 16.87,
+      "smoothed_coef": 0.019501,
+      "smoothed_se": 0.096033
+     },
+     {
+      "fiscal_year": 2024,
+      "filtered_bp": 2.12,
+      "filtered_bp_lo": -16.67,
+      "filtered_bp_hi": 20.92,
+      "filtered_coef": -0.021248,
+      "filtered_se": 0.095903,
+      "smoothed_bp": 4.05,
+      "smoothed_bp_lo": -14.33,
+      "smoothed_bp_hi": 22.44,
+      "smoothed_coef": -0.040538,
+      "smoothed_se": 0.093792
+     },
+     {
+      "fiscal_year": 2025,
+      "filtered_bp": 10.36,
+      "filtered_bp_lo": -9.15,
+      "filtered_bp_hi": 29.87,
+      "filtered_coef": -0.103577,
+      "filtered_se": 0.099554,
+      "smoothed_bp": 10.36,
+      "smoothed_bp_lo": -9.15,
+      "smoothed_bp_hi": 29.87,
+      "smoothed_coef": -0.103577,
+      "smoothed_se": 0.099554
+     }
+    ]
+   },
+   "shape": {
+    "peak": {
+     "fy": 1988,
+     "bp": 46.43
+    },
+    "fy1982": {
+     "bp": 35.24,
+     "bp_lo": 13.08,
+     "bp_hi": 57.4
+    },
+    "fy2000_bp": 9.84,
+    "fy2007_bp": -2.61,
+    "post_2008_mean_bp": -7.07,
+    "early_retreat_bp": 25.4,
+    "late_retreat_bp": 4.46,
+    "early_retreat_share_of_v0": 0.66,
+    "late_retreat_share_of_v0": 0.305
+   },
+   "coming_back": {
+    "latest": 2025,
+    "latest_bp": 10.36,
+    "latest_bp_lo": -9.15,
+    "post_2008_range_bp": [
+     -26.25,
+     2.12
+    ],
+    "post_2008_from": 2009,
+    "post_2008_to": 2024,
+    "reappearing": false
+   },
+   "rolling": {
+    "20": [
+     {
+      "end": 1986,
+      "start": 1967,
+      "n": 20,
+      "bp": 41.49,
+      "bp_lo": 2.86,
+      "bp_hi": 80.11,
+      "coef": -0.414851,
+      "se": 0.197088
+     },
+     {
+      "end": 1987,
+      "start": 1968,
+      "n": 20,
+      "bp": 37.44,
+      "bp_lo": 2.97,
+      "bp_hi": 71.92,
+      "coef": -0.374421,
+      "se": 0.175901
+     },
+     {
+      "end": 1988,
+      "start": 1969,
+      "n": 20,
+      "bp": 47.15,
+      "bp_lo": 10.25,
+      "bp_hi": 84.05,
+      "coef": -0.471501,
+      "se": 0.18829
+     },
+     {
+      "end": 1989,
+      "start": 1970,
+      "n": 20,
+      "bp": 50.29,
+      "bp_lo": 13.95,
+      "bp_hi": 86.62,
+      "coef": -0.502857,
+      "se": 0.185375
+     },
+     {
+      "end": 1990,
+      "start": 1971,
+      "n": 20,
+      "bp": 47.01,
+      "bp_lo": 2.47,
+      "bp_hi": 91.56,
+      "coef": -0.470147,
+      "se": 0.227263
+     },
+     {
+      "end": 1991,
+      "start": 1972,
+      "n": 20,
+      "bp": 47.8,
+      "bp_lo": 3.54,
+      "bp_hi": 92.06,
+      "coef": -0.478004,
+      "se": 0.225839
+     },
+     {
+      "end": 1992,
+      "start": 1973,
+      "n": 20,
+      "bp": 40.72,
+      "bp_lo": -2.92,
+      "bp_hi": 84.35,
+      "coef": -0.407167,
+      "se": 0.222641
+     },
+     {
+      "end": 1993,
+      "start": 1974,
+      "n": 20,
+      "bp": 37.05,
+      "bp_lo": -4.68,
+      "bp_hi": 78.78,
+      "coef": -0.370477,
+      "se": 0.212925
+     },
+     {
+      "end": 1994,
+      "start": 1975,
+      "n": 20,
+      "bp": 21.4,
+      "bp_lo": -21.71,
+      "bp_hi": 64.52,
+      "coef": -0.214042,
+      "se": 0.219985
+     },
+     {
+      "end": 1995,
+      "start": 1976,
+      "n": 20,
+      "bp": 36.82,
+      "bp_lo": 3.37,
+      "bp_hi": 70.26,
+      "coef": -0.368176,
+      "se": 0.170636
+     },
+     {
+      "end": 1996,
+      "start": 1977,
+      "n": 20,
+      "bp": 40.9,
+      "bp_lo": 17.46,
+      "bp_hi": 64.35,
+      "coef": -0.409044,
+      "se": 0.119606
+     },
+     {
+      "end": 1997,
+      "start": 1978,
+      "n": 20,
+      "bp": 33.85,
+      "bp_lo": 16.03,
+      "bp_hi": 51.67,
+      "coef": -0.338528,
+      "se": 0.090921
+     },
+     {
+      "end": 1998,
+      "start": 1979,
+      "n": 20,
+      "bp": 35.09,
+      "bp_lo": 20.45,
+      "bp_hi": 49.72,
+      "coef": -0.350867,
+      "se": 0.074675
+     },
+     {
+      "end": 1999,
+      "start": 1980,
+      "n": 20,
+      "bp": 30.69,
+      "bp_lo": 16.66,
+      "bp_hi": 44.72,
+      "coef": -0.306886,
+      "se": 0.071599
+     },
+     {
+      "end": 2000,
+      "start": 1981,
+      "n": 20,
+      "bp": 27.73,
+      "bp_lo": 15.31,
+      "bp_hi": 40.14,
+      "coef": -0.277268,
+      "se": 0.063335
+     },
+     {
+      "end": 2001,
+      "start": 1982,
+      "n": 20,
+      "bp": 29.11,
+      "bp_lo": 14.99,
+      "bp_hi": 43.23,
+      "coef": -0.291082,
+      "se": 0.072056
+     },
+     {
+      "end": 2002,
+      "start": 1983,
+      "n": 20,
+      "bp": 36.59,
+      "bp_lo": 13.16,
+      "bp_hi": 60.02,
+      "coef": -0.365904,
+      "se": 0.119563
+     },
+     {
+      "end": 2003,
+      "start": 1984,
+      "n": 20,
+      "bp": 15.21,
+      "bp_lo": -9.77,
+      "bp_hi": 40.19,
+      "coef": -0.152125,
+      "se": 0.127459
+     },
+     {
+      "end": 2004,
+      "start": 1985,
+      "n": 20,
+      "bp": 15.86,
+      "bp_lo": -0.27,
+      "bp_hi": 31.99,
+      "coef": -0.158616,
+      "se": 0.082286
+     },
+     {
+      "end": 2005,
+      "start": 1986,
+      "n": 20,
+      "bp": 5.06,
+      "bp_lo": -15.91,
+      "bp_hi": 26.03,
+      "coef": -0.050604,
+      "se": 0.106996
+     },
+     {
+      "end": 2006,
+      "start": 1987,
+      "n": 20,
+      "bp": 2.57,
+      "bp_lo": -21.71,
+      "bp_hi": 26.85,
+      "coef": -0.025697,
+      "se": 0.123897
+     },
+     {
+      "end": 2007,
+      "start": 1988,
+      "n": 20,
+      "bp": 1.81,
+      "bp_lo": -22.51,
+      "bp_hi": 26.14,
+      "coef": -0.018145,
+      "se": 0.124116
+     },
+     {
+      "end": 2008,
+      "start": 1989,
+      "n": 20,
+      "bp": -1.01,
+      "bp_lo": -23.4,
+      "bp_hi": 21.38,
+      "coef": 0.010096,
+      "se": 0.114219
+     },
+     {
+      "end": 2009,
+      "start": 1990,
+      "n": 20,
+      "bp": -7.57,
+      "bp_lo": -29.29,
+      "bp_hi": 14.16,
+      "coef": 0.075671,
+      "se": 0.110855
+     },
+     {
+      "end": 2010,
+      "start": 1991,
+      "n": 20,
+      "bp": -5.97,
+      "bp_lo": -33.16,
+      "bp_hi": 21.22,
+      "coef": 0.059668,
+      "se": 0.138729
+     },
+     {
+      "end": 2011,
+      "start": 1992,
+      "n": 20,
+      "bp": -7.15,
+      "bp_lo": -34.43,
+      "bp_hi": 20.12,
+      "coef": 0.071537,
+      "se": 0.139145
+     },
+     {
+      "end": 2012,
+      "start": 1993,
+      "n": 20,
+      "bp": 3.3,
+      "bp_lo": -19.54,
+      "bp_hi": 26.13,
+      "coef": -0.032966,
+      "se": 0.116503
+     },
+     {
+      "end": 2013,
+      "start": 1994,
+      "n": 20,
+      "bp": 4.62,
+      "bp_lo": -8.81,
+      "bp_hi": 18.06,
+      "coef": -0.046226,
+      "se": 0.068558
+     },
+     {
+      "end": 2014,
+      "start": 1995,
+      "n": 20,
+      "bp": 1.16,
+      "bp_lo": -10.54,
+      "bp_hi": 12.87,
+      "coef": -0.011649,
+      "se": 0.059737
+     },
+     {
+      "end": 2015,
+      "start": 1996,
+      "n": 20,
+      "bp": 1.98,
+      "bp_lo": -9.6,
+      "bp_hi": 13.56,
+      "coef": -0.019773,
+      "se": 0.059089
+     },
+     {
+      "end": 2016,
+      "start": 1997,
+      "n": 20,
+      "bp": 2.67,
+      "bp_lo": -9.43,
+      "bp_hi": 14.78,
+      "coef": -0.02674,
+      "se": 0.061768
+     },
+     {
+      "end": 2017,
+      "start": 1998,
+      "n": 20,
+      "bp": 2.65,
+      "bp_lo": -9.49,
+      "bp_hi": 14.79,
+      "coef": -0.026511,
+      "se": 0.061955
+     },
+     {
+      "end": 2018,
+      "start": 1999,
+      "n": 20,
+      "bp": 3.1,
+      "bp_lo": -9.05,
+      "bp_hi": 15.26,
+      "coef": -0.031049,
+      "se": 0.06204
+     },
+     {
+      "end": 2019,
+      "start": 2000,
+      "n": 20,
+      "bp": 1.95,
+      "bp_lo": -10.02,
+      "bp_hi": 13.92,
+      "coef": -0.019537,
+      "se": 0.061066
+     },
+     {
+      "end": 2020,
+      "start": 2001,
+      "n": 20,
+      "bp": -7.58,
+      "bp_lo": -19.59,
+      "bp_hi": 4.43,
+      "coef": 0.075802,
+      "se": 0.06126
+     },
+     {
+      "end": 2021,
+      "start": 2002,
+      "n": 20,
+      "bp": -6.06,
+      "bp_lo": -20.68,
+      "bp_hi": 8.56,
+      "coef": 0.060587,
+      "se": 0.074599
+     },
+     {
+      "end": 2022,
+      "start": 2003,
+      "n": 20,
+      "bp": -4.21,
+      "bp_lo": -19.41,
+      "bp_hi": 10.98,
+      "coef": 0.042149,
+      "se": 0.077538
+     },
+     {
+      "end": 2023,
+      "start": 2004,
+      "n": 20,
+      "bp": -4.21,
+      "bp_lo": -19.53,
+      "bp_hi": 11.11,
+      "coef": 0.042092,
+      "se": 0.078168
+     },
+     {
+      "end": 2024,
+      "start": 2005,
+      "n": 20,
+      "bp": -3.69,
+      "bp_lo": -18.43,
+      "bp_hi": 11.06,
+      "coef": 0.036854,
+      "se": 0.075221
+     },
+     {
+      "end": 2025,
+      "start": 2006,
+      "n": 20,
+      "bp": -2.6,
+      "bp_lo": -17.79,
+      "bp_hi": 12.59,
+      "coef": 0.025969,
+      "se": 0.077499
+     }
+    ]
+   },
+   "answer": {
+    "fy1982_fall": 0.4094,
+    "band_includes_zero": false,
+    "answer": "mixed"
+   }
+  },
+  "V3": {
+   "controls": [
+    "debt_gdp",
+    "infl_vol"
+   ],
+   "drifting": [],
+   "role": "backward-looking proxy for inflation uncertainty",
+   "control_coverage": {
+    "debt_gdp": [
+     1967,
+     2025
+    ],
+    "infl_vol": [
+     1967,
+     2025
+    ]
+   },
+   "time_varying": {
+    "rows": {
+     "first": 1967,
+     "last": 2025,
+     "n": 59,
+     "nobs_diffuse": 4
+    },
+    "drift_variance_q": 0.008339410136690279,
+    "drift_sd_bp_per_year": 9.132,
+    "obs_variance_h": 0.21126623136351358,
+    "loglik_time_varying": -62.4213,
+    "loglik_fixed_slope": -85.2645,
+    "lr_stat": 45.6863,
+    "lr_p_boundary_mixture": 0.0,
+    "lr_mixture": "chi2(0):chi2(1) 50:50",
+    "converged": true,
+    "fixed_slope": {
+     "bp": 14.54,
+     "bp_lo": 3.89,
+     "bp_hi": 25.19,
+     "coef": -0.145371,
+     "se": 0.05434
+    },
+    "controls": {
+     "debt_gdp": {
+      "drifting": false,
+      "coef": -0.961973,
+      "se": 0.684526,
+      "lo": -2.30362,
+      "hi": 0.379674
+     },
+     "infl_vol": {
+      "drifting": false,
+      "coef": 0.271919,
+      "se": 0.188292,
+      "lo": -0.097126,
+      "hi": 0.640963
+     }
+    },
+    "params": [
+     -1.5546361808396312,
+     -4.786762792128309
+    ],
+    "paths": [
+     {
+      "fiscal_year": 1971,
+      "filtered_bp": 20.38,
+      "filtered_bp_lo": -25.62,
+      "filtered_bp_hi": 66.38,
+      "filtered_coef": -0.203779,
+      "filtered_se": 0.234701,
+      "smoothed_bp": 2.15,
+      "smoothed_bp_lo": -26.3,
+      "smoothed_bp_hi": 30.6,
+      "smoothed_coef": -0.02151,
+      "smoothed_se": 0.145159
+     },
+     {
+      "fiscal_year": 1972,
+      "filtered_bp": 21.79,
+      "filtered_bp_lo": -19.53,
+      "filtered_bp_hi": 63.1,
+      "filtered_coef": -0.217891,
+      "filtered_se": 0.21079,
+      "smoothed_bp": 3.06,
+      "smoothed_bp_lo": -25.22,
+      "smoothed_bp_hi": 31.34,
+      "smoothed_coef": -0.030632,
+      "smoothed_se": 0.144286
+     },
+     {
+      "fiscal_year": 1973,
+      "filtered_bp": 21.26,
+      "filtered_bp_lo": -23.66,
+      "filtered_bp_hi": 66.18,
+      "filtered_coef": -0.21259,
+      "filtered_se": 0.229197,
+      "smoothed_bp": 2.6,
+      "smoothed_bp_lo": -26.25,
+      "smoothed_bp_hi": 31.46,
+      "smoothed_coef": -0.026042,
+      "smoothed_se": 0.147215
+     },
+     {
+      "fiscal_year": 1974,
+      "filtered_bp": 20.87,
+      "filtered_bp_lo": -27.08,
+      "filtered_bp_hi": 68.82,
+      "filtered_coef": -0.208674,
+      "filtered_se": 0.244641,
+      "smoothed_bp": 3.31,
+      "smoothed_bp_lo": -24.99,
+      "smoothed_bp_hi": 31.62,
+      "smoothed_coef": -0.033137,
+      "smoothed_se": 0.144429
+     },
+     {
+      "fiscal_year": 1975,
+      "filtered_bp": 31.93,
+      "filtered_bp_lo": -9.45,
+      "filtered_bp_hi": 73.31,
+      "filtered_coef": -0.319335,
+      "filtered_se": 0.211128,
+      "smoothed_bp": 4.85,
+      "smoothed_bp_lo": -21.07,
+      "smoothed_bp_hi": 30.76,
+      "smoothed_coef": -0.048458,
+      "smoothed_se": 0.132231
+     },
+     {
+      "fiscal_year": 1976,
+      "filtered_bp": 38.34,
+      "filtered_bp_lo": 4.58,
+      "filtered_bp_hi": 72.09,
+      "filtered_coef": -0.383351,
+      "filtered_se": 0.172246,
+      "smoothed_bp": 12.1,
+      "smoothed_bp_lo": -11.35,
+      "smoothed_bp_hi": 35.55,
+      "smoothed_coef": -0.12098,
+      "smoothed_se": 0.119654
+     },
+     {
+      "fiscal_year": 1977,
+      "filtered_bp": 46.42,
+      "filtered_bp_lo": 11.26,
+      "filtered_bp_hi": 81.58,
+      "filtered_coef": -0.464191,
+      "filtered_se": 0.17939,
+      "smoothed_bp": 20.83,
+      "smoothed_bp_lo": -3.21,
+      "smoothed_bp_hi": 44.86,
+      "smoothed_coef": -0.208253,
+      "smoothed_se": 0.122652
+     },
+     {
+      "fiscal_year": 1978,
+      "filtered_bp": 39.04,
+      "filtered_bp_lo": 7.7,
+      "filtered_bp_hi": 70.37,
+      "filtered_coef": -0.39039,
+      "filtered_se": 0.159877,
+      "smoothed_bp": 28.08,
+      "smoothed_bp_lo": 4.07,
+      "smoothed_bp_hi": 52.1,
+      "smoothed_coef": -0.280823,
+      "smoothed_se": 0.122519
+     },
+     {
+      "fiscal_year": 1979,
+      "filtered_bp": 38.02,
+      "filtered_bp_lo": 2.53,
+      "filtered_bp_hi": 73.51,
+      "filtered_coef": -0.380179,
+      "filtered_se": 0.181067,
+      "smoothed_bp": 36.21,
+      "smoothed_bp_lo": 11.36,
+      "smoothed_bp_hi": 61.07,
+      "smoothed_coef": -0.36214,
+      "smoothed_se": 0.1268
+     },
+     {
+      "fiscal_year": 1980,
+      "filtered_bp": 52.99,
+      "filtered_bp_lo": 18.18,
+      "filtered_bp_hi": 87.8,
+      "filtered_coef": -0.529884,
+      "filtered_se": 0.17759,
+      "smoothed_bp": 45.97,
+      "smoothed_bp_lo": 22.32,
+      "smoothed_bp_hi": 69.63,
+      "smoothed_coef": -0.459739,
+      "smoothed_se": 0.120682
+     },
+     {
+      "fiscal_year": 1981,
+      "filtered_bp": 66.62,
+      "filtered_bp_lo": 30.46,
+      "filtered_bp_hi": 102.77,
+      "filtered_coef": -0.666163,
+      "filtered_se": 0.184485,
+      "smoothed_bp": 53.24,
+      "smoothed_bp_lo": 30.98,
+      "smoothed_bp_hi": 75.5,
+      "smoothed_coef": -0.53242,
+      "smoothed_se": 0.113572
+     },
+     {
+      "fiscal_year": 1982,
+      "filtered_bp": 82.62,
+      "filtered_bp_lo": 55.15,
+      "filtered_bp_hi": 110.09,
+      "filtered_coef": -0.826185,
+      "filtered_se": 0.140173,
+      "smoothed_bp": 55.18,
+      "smoothed_bp_lo": 36.29,
+      "smoothed_bp_hi": 74.06,
+      "smoothed_coef": -0.551759,
+      "smoothed_se": 0.096344
+     },
+     {
+      "fiscal_year": 1983,
+      "filtered_bp": 66.15,
+      "filtered_bp_lo": 45.72,
+      "filtered_bp_hi": 86.58,
+      "filtered_coef": -0.661494,
+      "filtered_se": 0.104218,
+      "smoothed_bp": 47.86,
+      "smoothed_bp_lo": 32.25,
+      "smoothed_bp_hi": 63.47,
+      "smoothed_coef": -0.478625,
+      "smoothed_se": 0.079637
+     },
+     {
+      "fiscal_year": 1984,
+      "filtered_bp": 78.8,
+      "filtered_bp_lo": 55.58,
+      "filtered_bp_hi": 102.01,
+      "filtered_coef": -0.787953,
+      "filtered_se": 0.118463,
+      "smoothed_bp": 52.55,
+      "smoothed_bp_lo": 36.57,
+      "smoothed_bp_hi": 68.52,
+      "smoothed_coef": -0.525463,
+      "smoothed_se": 0.081514
+     },
+     {
+      "fiscal_year": 1985,
+      "filtered_bp": 82.76,
+      "filtered_bp_lo": 57.21,
+      "filtered_bp_hi": 108.31,
+      "filtered_coef": -0.82761,
+      "filtered_se": 0.130342,
+      "smoothed_bp": 49.61,
+      "smoothed_bp_lo": 34.28,
+      "smoothed_bp_hi": 64.94,
+      "smoothed_coef": -0.496111,
+      "smoothed_se": 0.078198
+     },
+     {
+      "fiscal_year": 1986,
+      "filtered_bp": 77.42,
+      "filtered_bp_lo": 48.19,
+      "filtered_bp_hi": 106.65,
+      "filtered_coef": -0.774217,
+      "filtered_se": 0.14912,
+      "smoothed_bp": 41.95,
+      "smoothed_bp_lo": 26.73,
+      "smoothed_bp_hi": 57.17,
+      "smoothed_coef": -0.419525,
+      "smoothed_se": 0.07766
+     },
+     {
+      "fiscal_year": 1987,
+      "filtered_bp": 75.35,
+      "filtered_bp_lo": 41.14,
+      "filtered_bp_hi": 109.57,
+      "filtered_coef": -0.753536,
+      "filtered_se": 0.174568,
+      "smoothed_bp": 46.35,
+      "smoothed_bp_lo": 29.22,
+      "smoothed_bp_hi": 63.47,
+      "smoothed_coef": -0.463491,
+      "smoothed_se": 0.087375
+     },
+     {
+      "fiscal_year": 1988,
+      "filtered_bp": 79.37,
+      "filtered_bp_lo": 41.01,
+      "filtered_bp_hi": 117.74,
+      "filtered_coef": -0.793735,
+      "filtered_se": 0.195741,
+      "smoothed_bp": 48.5,
+      "smoothed_bp_lo": 30.85,
+      "smoothed_bp_hi": 66.16,
+      "smoothed_coef": -0.485027,
+      "smoothed_se": 0.090092
+     },
+     {
+      "fiscal_year": 1989,
+      "filtered_bp": 77.82,
+      "filtered_bp_lo": 35.75,
+      "filtered_bp_hi": 119.89,
+      "filtered_coef": -0.778206,
+      "filtered_se": 0.214648,
+      "smoothed_bp": 42.8,
+      "smoothed_bp_lo": 25.22,
+      "smoothed_bp_hi": 60.38,
+      "smoothed_coef": -0.427992,
+      "smoothed_se": 0.08969
+     },
+     {
+      "fiscal_year": 1990,
+      "filtered_bp": 66.57,
+      "filtered_bp_lo": 25.09,
+      "filtered_bp_hi": 108.04,
+      "filtered_coef": -0.665675,
+      "filtered_se": 0.211604,
+      "smoothed_bp": 39.71,
+      "smoothed_bp_lo": 23.77,
+      "smoothed_bp_hi": 55.65,
+      "smoothed_coef": -0.397133,
+      "smoothed_se": 0.081324
+     },
+     {
+      "fiscal_year": 1991,
+      "filtered_bp": 68.85,
+      "filtered_bp_lo": 26.62,
+      "filtered_bp_hi": 111.08,
+      "filtered_coef": -0.688527,
+      "filtered_se": 0.215471,
+      "smoothed_bp": 43.12,
+      "smoothed_bp_lo": 28.39,
+      "smoothed_bp_hi": 57.84,
+      "smoothed_coef": -0.431155,
+      "smoothed_se": 0.075117
+     },
+     {
+      "fiscal_year": 1992,
+      "filtered_bp": 75.11,
+      "filtered_bp_lo": 30.52,
+      "filtered_bp_hi": 119.7,
+      "filtered_coef": -0.7511,
+      "filtered_se": 0.22748,
+      "smoothed_bp": 48.14,
+      "smoothed_bp_lo": 33.42,
+      "smoothed_bp_hi": 62.87,
+      "smoothed_coef": -0.481433,
+      "smoothed_se": 0.075146
+     },
+     {
+      "fiscal_year": 1993,
+      "filtered_bp": 74.57,
+      "filtered_bp_lo": 26.58,
+      "filtered_bp_hi": 122.57,
+      "filtered_coef": -0.745727,
+      "filtered_se": 0.244889,
+      "smoothed_bp": 47.41,
+      "smoothed_bp_lo": 31.16,
+      "smoothed_bp_hi": 63.67,
+      "smoothed_coef": -0.474143,
+      "smoothed_se": 0.082923
+     },
+     {
+      "fiscal_year": 1994,
+      "filtered_bp": 71.21,
+      "filtered_bp_lo": 21.18,
+      "filtered_bp_hi": 121.25,
+      "filtered_coef": -0.712148,
+      "filtered_se": 0.255268,
+      "smoothed_bp": 45.22,
+      "smoothed_bp_lo": 26.7,
+      "smoothed_bp_hi": 63.74,
+      "smoothed_coef": -0.452187,
+      "smoothed_se": 0.094499
+     },
+     {
+      "fiscal_year": 1995,
+      "filtered_bp": 71.16,
+      "filtered_bp_lo": 19.63,
+      "filtered_bp_hi": 122.69,
+      "filtered_coef": -0.711603,
+      "filtered_se": 0.262894,
+      "smoothed_bp": 40.86,
+      "smoothed_bp_lo": 20.06,
+      "smoothed_bp_hi": 61.66,
+      "smoothed_coef": -0.408594,
+      "smoothed_se": 0.106108
+     },
+     {
+      "fiscal_year": 1996,
+      "filtered_bp": 65.7,
+      "filtered_bp_lo": 14.7,
+      "filtered_bp_hi": 116.7,
+      "filtered_coef": -0.657014,
+      "filtered_se": 0.260191,
+      "smoothed_bp": 36.8,
+      "smoothed_bp_lo": 13.78,
+      "smoothed_bp_hi": 59.82,
+      "smoothed_coef": -0.368035,
+      "smoothed_se": 0.11745
+     },
+     {
+      "fiscal_year": 1997,
+      "filtered_bp": 48.35,
+      "filtered_bp_lo": 2.92,
+      "filtered_bp_hi": 93.79,
+      "filtered_coef": -0.483547,
+      "filtered_se": 0.231824,
+      "smoothed_bp": 31.84,
+      "smoothed_bp_lo": 7.4,
+      "smoothed_bp_hi": 56.28,
+      "smoothed_coef": -0.318406,
+      "smoothed_se": 0.124685
+     },
+     {
+      "fiscal_year": 1998,
+      "filtered_bp": 43.9,
+      "filtered_bp_lo": 5.79,
+      "filtered_bp_hi": 82.01,
+      "filtered_coef": -0.43896,
+      "filtered_se": 0.194445,
+      "smoothed_bp": 26.4,
+      "smoothed_bp_lo": 2.11,
+      "smoothed_bp_hi": 50.69,
+      "smoothed_coef": -0.264004,
+      "smoothed_se": 0.123909
+     },
+     {
+      "fiscal_year": 1999,
+      "filtered_bp": 30.51,
+      "filtered_bp_lo": -3.69,
+      "filtered_bp_hi": 64.72,
+      "filtered_coef": -0.30513,
+      "filtered_se": 0.174513,
+      "smoothed_bp": 21.11,
+      "smoothed_bp_lo": -1.98,
+      "smoothed_bp_hi": 44.19,
+      "smoothed_coef": -0.211055,
+      "smoothed_se": 0.117779
+     },
+     {
+      "fiscal_year": 2000,
+      "filtered_bp": 18.4,
+      "filtered_bp_lo": -9.76,
+      "filtered_bp_hi": 46.56,
+      "filtered_coef": -0.183983,
+      "filtered_se": 0.143684,
+      "smoothed_bp": 17.83,
+      "smoothed_bp_lo": -3.57,
+      "smoothed_bp_hi": 39.24,
+      "smoothed_coef": -0.178349,
+      "smoothed_se": 0.109231
+     },
+     {
+      "fiscal_year": 2001,
+      "filtered_bp": 14.57,
+      "filtered_bp_lo": -16.86,
+      "filtered_bp_hi": 46.01,
+      "filtered_coef": -0.145727,
+      "filtered_se": 0.160397,
+      "smoothed_bp": 18.45,
+      "smoothed_bp_lo": -3.33,
+      "smoothed_bp_hi": 40.24,
+      "smoothed_coef": -0.184537,
+      "smoothed_se": 0.111165
+     },
+     {
+      "fiscal_year": 2002,
+      "filtered_bp": 24.62,
+      "filtered_bp_lo": -6.61,
+      "filtered_bp_hi": 55.85,
+      "filtered_coef": -0.246197,
+      "filtered_se": 0.159361,
+      "smoothed_bp": 21.3,
+      "smoothed_bp_lo": 0.0,
+      "smoothed_bp_hi": 42.6,
+      "smoothed_coef": -0.213036,
+      "smoothed_se": 0.108672
+     },
+     {
+      "fiscal_year": 2003,
+      "filtered_bp": 22.15,
+      "filtered_bp_lo": -2.28,
+      "filtered_bp_hi": 46.58,
+      "filtered_coef": -0.221493,
+      "filtered_se": 0.124652,
+      "smoothed_bp": 20.74,
+      "smoothed_bp_lo": 1.65,
+      "smoothed_bp_hi": 39.82,
+      "smoothed_coef": -0.207354,
+      "smoothed_se": 0.09738
+     },
+     {
+      "fiscal_year": 2004,
+      "filtered_bp": 19.56,
+      "filtered_bp_lo": -3.62,
+      "filtered_bp_hi": 42.73,
+      "filtered_coef": -0.195557,
+      "filtered_se": 0.118226,
+      "smoothed_bp": 17.13,
+      "smoothed_bp_lo": -1.37,
+      "smoothed_bp_hi": 35.64,
+      "smoothed_coef": -0.171339,
+      "smoothed_se": 0.094406
+     },
+     {
+      "fiscal_year": 2005,
+      "filtered_bp": 5.39,
+      "filtered_bp_lo": -18.57,
+      "filtered_bp_hi": 29.35,
+      "filtered_coef": -0.05393,
+      "filtered_se": 0.122246,
+      "smoothed_bp": 9.94,
+      "smoothed_bp_lo": -9.51,
+      "smoothed_bp_hi": 29.4,
+      "smoothed_coef": -0.099413,
+      "smoothed_se": 0.099268
+     },
+     {
+      "fiscal_year": 2006,
+      "filtered_bp": -6.1,
+      "filtered_bp_lo": -33.24,
+      "filtered_bp_hi": 21.04,
+      "filtered_coef": 0.061009,
+      "filtered_se": 0.138459,
+      "smoothed_bp": 6.46,
+      "smoothed_bp_lo": -14.0,
+      "smoothed_bp_hi": 26.93,
+      "smoothed_coef": -0.064647,
+      "smoothed_se": 0.104426
+     },
+     {
+      "fiscal_year": 2007,
+      "filtered_bp": -12.28,
+      "filtered_bp_lo": -43.78,
+      "filtered_bp_hi": 19.22,
+      "filtered_coef": 0.12281,
+      "filtered_se": 0.16072,
+      "smoothed_bp": 7.73,
+      "smoothed_bp_lo": -12.23,
+      "smoothed_bp_hi": 27.7,
+      "smoothed_coef": -0.077301,
+      "smoothed_se": 0.101864
+     },
+     {
+      "fiscal_year": 2008,
+      "filtered_bp": 0.03,
+      "filtered_bp_lo": -25.33,
+      "filtered_bp_hi": 25.38,
+      "filtered_coef": -0.000257,
+      "filtered_se": 0.129364,
+      "smoothed_bp": 11.77,
+      "smoothed_bp_lo": -4.32,
+      "smoothed_bp_hi": 27.86,
+      "smoothed_coef": -0.117723,
+      "smoothed_se": 0.082092
+     },
+     {
+      "fiscal_year": 2009,
+      "filtered_bp": 7.98,
+      "filtered_bp_lo": -3.09,
+      "filtered_bp_hi": 19.05,
+      "filtered_coef": -0.079794,
+      "filtered_se": 0.056493,
+      "smoothed_bp": 13.55,
+      "smoothed_bp_lo": 4.15,
+      "smoothed_bp_hi": 22.95,
+      "smoothed_coef": -0.135503,
+      "smoothed_se": 0.04796
+     },
+     {
+      "fiscal_year": 2010,
+      "filtered_bp": 7.73,
+      "filtered_bp_lo": -4.77,
+      "filtered_bp_hi": 20.23,
+      "filtered_coef": -0.077303,
+      "filtered_se": 0.063753,
+      "smoothed_bp": 14.04,
+      "smoothed_bp_lo": 3.72,
+      "smoothed_bp_hi": 24.36,
+      "smoothed_coef": -0.140417,
+      "smoothed_se": 0.052639
+     },
+     {
+      "fiscal_year": 2011,
+      "filtered_bp": 5.97,
+      "filtered_bp_lo": -7.73,
+      "filtered_bp_hi": 19.67,
+      "filtered_coef": -0.059706,
+      "filtered_se": 0.069911,
+      "smoothed_bp": 11.57,
+      "smoothed_bp_lo": 0.19,
+      "smoothed_bp_hi": 22.94,
+      "smoothed_coef": -0.115691,
+      "smoothed_se": 0.058036
+     },
+     {
+      "fiscal_year": 2012,
+      "filtered_bp": -5.86,
+      "filtered_bp_lo": -22.78,
+      "filtered_bp_hi": 11.05,
+      "filtered_coef": 0.058627,
+      "filtered_se": 0.086289,
+      "smoothed_bp": 2.6,
+      "smoothed_bp_lo": -11.87,
+      "smoothed_bp_hi": 17.06,
+      "smoothed_coef": -0.025965,
+      "smoothed_se": 0.073801
+     },
+     {
+      "fiscal_year": 2013,
+      "filtered_bp": -7.41,
+      "filtered_bp_lo": -30.18,
+      "filtered_bp_hi": 15.36,
+      "filtered_coef": 0.074094,
+      "filtered_se": 0.116187,
+      "smoothed_bp": 2.08,
+      "smoothed_bp_lo": -17.72,
+      "smoothed_bp_hi": 21.88,
+      "smoothed_coef": -0.020787,
+      "smoothed_se": 0.10101
+     },
+     {
+      "fiscal_year": 2014,
+      "filtered_bp": -6.45,
+      "filtered_bp_lo": -34.69,
+      "filtered_bp_hi": 21.79,
+      "filtered_coef": 0.064517,
+      "filtered_se": 0.1441,
+      "smoothed_bp": -0.07,
+      "smoothed_bp_lo": -23.97,
+      "smoothed_bp_hi": 23.83,
+      "smoothed_coef": 0.000724,
+      "smoothed_se": 0.121943
+     },
+     {
+      "fiscal_year": 2015,
+      "filtered_bp": -12.65,
+      "filtered_bp_lo": -45.01,
+      "filtered_bp_hi": 19.72,
+      "filtered_coef": 0.126462,
+      "filtered_se": 0.165137,
+      "smoothed_bp": -8.33,
+      "smoothed_bp_lo": -33.98,
+      "smoothed_bp_hi": 17.31,
+      "smoothed_coef": 0.083332,
+      "smoothed_se": 0.130833
+     },
+     {
+      "fiscal_year": 2016,
+      "filtered_bp": -24.13,
+      "filtered_bp_lo": -56.79,
+      "filtered_bp_hi": 8.52,
+      "filtered_coef": 0.241348,
+      "filtered_se": 0.166622,
+      "smoothed_bp": -14.81,
+      "smoothed_bp_lo": -39.83,
+      "smoothed_bp_hi": 10.21,
+      "smoothed_coef": 0.14812,
+      "smoothed_se": 0.127654
+     },
+     {
+      "fiscal_year": 2017,
+      "filtered_bp": -28.01,
+      "filtered_bp_lo": -59.56,
+      "filtered_bp_hi": 3.53,
+      "filtered_coef": 0.280149,
+      "filtered_se": 0.160948,
+      "smoothed_bp": -17.69,
+      "smoothed_bp_lo": -41.2,
+      "smoothed_bp_hi": 5.82,
+      "smoothed_coef": 0.176924,
+      "smoothed_se": 0.119943
+     },
+     {
+      "fiscal_year": 2018,
+      "filtered_bp": -33.59,
+      "filtered_bp_lo": -63.12,
+      "filtered_bp_hi": -4.07,
+      "filtered_coef": 0.335947,
+      "filtered_se": 0.150637,
+      "smoothed_bp": -20.11,
+      "smoothed_bp_lo": -41.28,
+      "smoothed_bp_hi": 1.06,
+      "smoothed_coef": 0.201069,
+      "smoothed_se": 0.108017
+     },
+     {
+      "fiscal_year": 2019,
+      "filtered_bp": -37.39,
+      "filtered_bp_lo": -63.1,
+      "filtered_bp_hi": -11.67,
+      "filtered_coef": 0.373858,
+      "filtered_se": 0.131195,
+      "smoothed_bp": -19.65,
+      "smoothed_bp_lo": -37.03,
+      "smoothed_bp_hi": -2.27,
+      "smoothed_coef": 0.196467,
+      "smoothed_se": 0.088679
+     },
+     {
+      "fiscal_year": 2020,
+      "filtered_bp": -14.49,
+      "filtered_bp_lo": -24.07,
+      "filtered_bp_hi": -4.92,
+      "filtered_coef": 0.144918,
+      "filtered_se": 0.048845,
+      "smoothed_bp": -12.1,
+      "smoothed_bp_lo": -21.16,
+      "smoothed_bp_hi": -3.03,
+      "smoothed_coef": 0.120973,
+      "smoothed_se": 0.046241
+     },
+     {
+      "fiscal_year": 2021,
+      "filtered_bp": -12.15,
+      "filtered_bp_lo": -23.62,
+      "filtered_bp_hi": -0.68,
+      "filtered_coef": 0.121485,
+      "filtered_se": 0.058524,
+      "smoothed_bp": -10.3,
+      "smoothed_bp_lo": -21.55,
+      "smoothed_bp_hi": 0.95,
+      "smoothed_coef": 0.103015,
+      "smoothed_se": 0.057399
+     },
+     {
+      "fiscal_year": 2022,
+      "filtered_bp": -19.55,
+      "filtered_bp_lo": -38.92,
+      "filtered_bp_hi": -0.17,
+      "filtered_coef": 0.195456,
+      "filtered_se": 0.098834,
+      "smoothed_bp": -18.99,
+      "smoothed_bp_lo": -37.44,
+      "smoothed_bp_hi": -0.53,
+      "smoothed_coef": 0.189896,
+      "smoothed_se": 0.094161
+     },
+     {
+      "fiscal_year": 2023,
+      "filtered_bp": -21.03,
+      "filtered_bp_lo": -40.78,
+      "filtered_bp_hi": -1.27,
+      "filtered_coef": 0.21028,
+      "filtered_se": 0.100791,
+      "smoothed_bp": -18.06,
+      "smoothed_bp_lo": -36.81,
+      "smoothed_bp_hi": 0.68,
+      "smoothed_coef": 0.180621,
+      "smoothed_se": 0.09563
+     },
+     {
+      "fiscal_year": 2024,
+      "filtered_bp": -14.25,
+      "filtered_bp_lo": -33.67,
+      "filtered_bp_hi": 5.17,
+      "filtered_coef": 0.14248,
+      "filtered_se": 0.099071,
+      "smoothed_bp": -11.76,
+      "smoothed_bp_lo": -30.51,
+      "smoothed_bp_hi": 6.98,
+      "smoothed_coef": 0.117645,
+      "smoothed_se": 0.095632
+     },
+     {
+      "fiscal_year": 2025,
+      "filtered_bp": -5.9,
+      "filtered_bp_lo": -26.06,
+      "filtered_bp_hi": 14.27,
+      "filtered_coef": 0.058981,
+      "filtered_se": 0.102882,
+      "smoothed_bp": -5.9,
+      "smoothed_bp_lo": -26.06,
+      "smoothed_bp_hi": 14.27,
+      "smoothed_coef": 0.058981,
+      "smoothed_se": 0.102882
+     }
+    ]
+   },
+   "shape": {
+    "peak": {
+     "fy": 1982,
+     "bp": 55.18
+    },
+    "fy1982": {
+     "bp": 55.18,
+     "bp_lo": 36.29,
+     "bp_hi": 74.06
+    },
+    "fy2000_bp": 17.83,
+    "fy2007_bp": 7.73,
+    "post_2008_mean_bp": -6.7,
+    "early_retreat_bp": 37.35,
+    "late_retreat_bp": 14.43,
+    "early_retreat_share_of_v0": 0.97,
+    "late_retreat_share_of_v0": 0.988
+   },
+   "coming_back": {
+    "latest": 2025,
+    "latest_bp": -5.9,
+    "latest_bp_lo": -26.06,
+    "post_2008_range_bp": [
+     -37.39,
+     7.98
+    ],
+    "post_2008_from": 2009,
+    "post_2008_to": 2024,
+    "reappearing": false
+   },
+   "rolling": {
+    "20": [
+     {
+      "end": 1986,
+      "start": 1967,
+      "n": 20,
+      "bp": 74.45,
+      "bp_lo": 46.35,
+      "bp_hi": 102.55,
+      "coef": -0.744494,
+      "se": 0.143356
+     },
+     {
+      "end": 1987,
+      "start": 1968,
+      "n": 20,
+      "bp": 64.61,
+      "bp_lo": 40.19,
+      "bp_hi": 89.04,
+      "coef": -0.646128,
+      "se": 0.124629
+     },
+     {
+      "end": 1988,
+      "start": 1969,
+      "n": 20,
+      "bp": 62.2,
+      "bp_lo": 39.59,
+      "bp_hi": 84.81,
+      "coef": -0.622,
+      "se": 0.115383
+     },
+     {
+      "end": 1989,
+      "start": 1970,
+      "n": 20,
+      "bp": 66.76,
+      "bp_lo": 40.47,
+      "bp_hi": 93.05,
+      "coef": -0.667606,
+      "se": 0.134137
+     },
+     {
+      "end": 1990,
+      "start": 1971,
+      "n": 20,
+      "bp": 66.37,
+      "bp_lo": 38.71,
+      "bp_hi": 94.02,
+      "coef": -0.663665,
+      "se": 0.141093
+     },
+     {
+      "end": 1991,
+      "start": 1972,
+      "n": 20,
+      "bp": 68.54,
+      "bp_lo": 39.81,
+      "bp_hi": 97.27,
+      "coef": -0.68538,
+      "se": 0.14659
+     },
+     {
+      "end": 1992,
+      "start": 1973,
+      "n": 20,
+      "bp": 68.84,
+      "bp_lo": 40.38,
+      "bp_hi": 97.3,
+      "coef": -0.688372,
+      "se": 0.145211
+     },
+     {
+      "end": 1993,
+      "start": 1974,
+      "n": 20,
+      "bp": 64.49,
+      "bp_lo": 38.07,
+      "bp_hi": 90.92,
+      "coef": -0.644927,
+      "se": 0.134828
+     },
+     {
+      "end": 1994,
+      "start": 1975,
+      "n": 20,
+      "bp": 60.26,
+      "bp_lo": 27.94,
+      "bp_hi": 92.59,
+      "coef": -0.602627,
+      "se": 0.164924
+     },
+     {
+      "end": 1995,
+      "start": 1976,
+      "n": 20,
+      "bp": 46.17,
+      "bp_lo": 11.01,
+      "bp_hi": 81.33,
+      "coef": -0.461732,
+      "se": 0.179384
+     },
+     {
+      "end": 1996,
+      "start": 1977,
+      "n": 20,
+      "bp": 31.73,
+      "bp_lo": 2.46,
+      "bp_hi": 60.99,
+      "coef": -0.317262,
+      "se": 0.149332
+     },
+     {
+      "end": 1997,
+      "start": 1978,
+      "n": 20,
+      "bp": 18.71,
+      "bp_lo": 1.16,
+      "bp_hi": 36.26,
+      "coef": -0.187108,
+      "se": 0.089561
+     },
+     {
+      "end": 1998,
+      "start": 1979,
+      "n": 20,
+      "bp": 25.59,
+      "bp_lo": 7.54,
+      "bp_hi": 43.65,
+      "coef": -0.255943,
+      "se": 0.092123
+     },
+     {
+      "end": 1999,
+      "start": 1980,
+      "n": 20,
+      "bp": 28.6,
+      "bp_lo": 15.12,
+      "bp_hi": 42.08,
+      "coef": -0.286007,
+      "se": 0.068793
+     },
+     {
+      "end": 2000,
+      "start": 1981,
+      "n": 20,
+      "bp": 27.14,
+      "bp_lo": 15.93,
+      "bp_hi": 38.35,
+      "coef": -0.271373,
+      "se": 0.057193
+     },
+     {
+      "end": 2001,
+      "start": 1982,
+      "n": 20,
+      "bp": 27.26,
+      "bp_lo": 16.8,
+      "bp_hi": 37.71,
+      "coef": -0.272565,
+      "se": 0.053341
+     },
+     {
+      "end": 2002,
+      "start": 1983,
+      "n": 20,
+      "bp": 30.3,
+      "bp_lo": 21.79,
+      "bp_hi": 38.82,
+      "coef": -0.303036,
+      "se": 0.043429
+     },
+     {
+      "end": 2003,
+      "start": 1984,
+      "n": 20,
+      "bp": 31.28,
+      "bp_lo": 22.13,
+      "bp_hi": 40.43,
+      "coef": -0.312797,
+      "se": 0.04668
+     },
+     {
+      "end": 2004,
+      "start": 1985,
+      "n": 20,
+      "bp": 31.39,
+      "bp_lo": 22.11,
+      "bp_hi": 40.68,
+      "coef": -0.313916,
+      "se": 0.047381
+     },
+     {
+      "end": 2005,
+      "start": 1986,
+      "n": 20,
+      "bp": 27.63,
+      "bp_lo": 16.78,
+      "bp_hi": 38.48,
+      "coef": -0.276274,
+      "se": 0.055369
+     },
+     {
+      "end": 2006,
+      "start": 1987,
+      "n": 20,
+      "bp": 27.83,
+      "bp_lo": 16.1,
+      "bp_hi": 39.57,
+      "coef": -0.278334,
+      "se": 0.059867
+     },
+     {
+      "end": 2007,
+      "start": 1988,
+      "n": 20,
+      "bp": 28.15,
+      "bp_lo": 15.09,
+      "bp_hi": 41.22,
+      "coef": -0.281531,
+      "se": 0.066649
+     },
+     {
+      "end": 2008,
+      "start": 1989,
+      "n": 20,
+      "bp": 25.05,
+      "bp_lo": 12.08,
+      "bp_hi": 38.03,
+      "coef": -0.250542,
+      "se": 0.066192
+     },
+     {
+      "end": 2009,
+      "start": 1990,
+      "n": 20,
+      "bp": 22.01,
+      "bp_lo": 8.89,
+      "bp_hi": 35.12,
+      "coef": -0.220061,
+      "se": 0.066907
+     },
+     {
+      "end": 2010,
+      "start": 1991,
+      "n": 20,
+      "bp": 24.62,
+      "bp_lo": 7.01,
+      "bp_hi": 42.22,
+      "coef": -0.246155,
+      "se": 0.089809
+     },
+     {
+      "end": 2011,
+      "start": 1992,
+      "n": 20,
+      "bp": 20.51,
+      "bp_lo": -0.86,
+      "bp_hi": 41.87,
+      "coef": -0.205059,
+      "se": 0.108988
+     },
+     {
+      "end": 2012,
+      "start": 1993,
+      "n": 20,
+      "bp": 17.31,
+      "bp_lo": 4.35,
+      "bp_hi": 30.28,
+      "coef": -0.173117,
+      "se": 0.066145
+     },
+     {
+      "end": 2013,
+      "start": 1994,
+      "n": 20,
+      "bp": 13.0,
+      "bp_lo": 6.27,
+      "bp_hi": 19.74,
+      "coef": -0.130039,
+      "se": 0.034362
+     },
+     {
+      "end": 2014,
+      "start": 1995,
+      "n": 20,
+      "bp": 8.91,
+      "bp_lo": 2.6,
+      "bp_hi": 15.22,
+      "coef": -0.08908,
+      "se": 0.032202
+     },
+     {
+      "end": 2015,
+      "start": 1996,
+      "n": 20,
+      "bp": 9.98,
+      "bp_lo": 3.44,
+      "bp_hi": 16.52,
+      "coef": -0.099832,
+      "se": 0.033359
+     },
+     {
+      "end": 2016,
+      "start": 1997,
+      "n": 20,
+      "bp": 11.24,
+      "bp_lo": 4.28,
+      "bp_hi": 18.21,
+      "coef": -0.112429,
+      "se": 0.035523
+     },
+     {
+      "end": 2017,
+      "start": 1998,
+      "n": 20,
+      "bp": 12.37,
+      "bp_lo": 5.5,
+      "bp_hi": 19.23,
+      "coef": -0.123679,
+      "se": 0.035027
+     },
+     {
+      "end": 2018,
+      "start": 1999,
+      "n": 20,
+      "bp": 13.94,
+      "bp_lo": 6.66,
+      "bp_hi": 21.22,
+      "coef": -0.139414,
+      "se": 0.037135
+     },
+     {
+      "end": 2019,
+      "start": 2000,
+      "n": 20,
+      "bp": 15.74,
+      "bp_lo": 7.8,
+      "bp_hi": 23.68,
+      "coef": -0.157392,
+      "se": 0.040516
+     },
+     {
+      "end": 2020,
+      "start": 2001,
+      "n": 20,
+      "bp": 5.4,
+      "bp_lo": -12.78,
+      "bp_hi": 23.59,
+      "coef": -0.054038,
+      "se": 0.092779
+     },
+     {
+      "end": 2021,
+      "start": 2002,
+      "n": 20,
+      "bp": 5.1,
+      "bp_lo": -12.52,
+      "bp_hi": 22.73,
+      "coef": -0.051041,
+      "se": 0.089933
+     },
+     {
+      "end": 2022,
+      "start": 2003,
+      "n": 20,
+      "bp": 8.44,
+      "bp_lo": -8.11,
+      "bp_hi": 24.99,
+      "coef": -0.084399,
+      "se": 0.084454
+     },
+     {
+      "end": 2023,
+      "start": 2004,
+      "n": 20,
+      "bp": 9.15,
+      "bp_lo": -7.58,
+      "bp_hi": 25.87,
+      "coef": -0.09146,
+      "se": 0.08532
+     },
+     {
+      "end": 2024,
+      "start": 2005,
+      "n": 20,
+      "bp": 9.07,
+      "bp_lo": -8.75,
+      "bp_hi": 26.9,
+      "coef": -0.090734,
+      "se": 0.090959
+     },
+     {
+      "end": 2025,
+      "start": 2006,
+      "n": 20,
+      "bp": 8.09,
+      "bp_lo": -9.66,
+      "bp_hi": 25.84,
+      "coef": -0.080884,
+      "se": 0.09055
+     }
+    ]
+   },
+   "answer": {
+    "fy1982_fall": 0.0752,
+    "band_includes_zero": false,
+    "answer": "mostly separate from inflation"
+   }
+  },
+  "V4": {
+   "controls": [
+    "debt_gdp",
+    "core_infl",
+    "infl_vol"
+   ],
+   "drifting": [],
+   "role": "inflation level and volatility",
+   "control_coverage": {
+    "debt_gdp": [
+     1967,
+     2025
+    ],
+    "core_infl": [
+     1967,
+     2025
+    ],
+    "infl_vol": [
+     1967,
+     2025
+    ]
+   },
+   "time_varying": {
+    "rows": {
+     "first": 1967,
+     "last": 2025,
+     "n": 59,
+     "nobs_diffuse": 5
+    },
+    "drift_variance_q": 0.009673939609227437,
+    "drift_sd_bp_per_year": 9.836,
+    "obs_variance_h": 0.19451199359460616,
+    "loglik_time_varying": -64.4012,
+    "loglik_fixed_slope": -86.4988,
+    "lr_stat": 44.1952,
+    "lr_p_boundary_mixture": 0.0,
+    "lr_mixture": "chi2(0):chi2(1) 50:50",
+    "converged": true,
+    "fixed_slope": {
+     "bp": 15.26,
+     "bp_lo": 4.71,
+     "bp_hi": 25.81,
+     "coef": -0.152573,
+     "se": 0.053838
+    },
+    "controls": {
+     "debt_gdp": {
+      "drifting": false,
+      "coef": -1.291882,
+      "se": 0.779738,
+      "lo": -2.820142,
+      "hi": 0.236377
+     },
+     "core_infl": {
+      "drifting": false,
+      "coef": -0.082114,
+      "se": 0.066703,
+      "lo": -0.212849,
+      "hi": 0.048621
+     },
+     "infl_vol": {
+      "drifting": false,
+      "coef": 0.349025,
+      "se": 0.195811,
+      "lo": -0.034757,
+      "hi": 0.732807
+     }
+    },
+    "params": [
+     -1.6372614540992838,
+     -4.638319647186376
+    ],
+    "paths": [
+     {
+      "fiscal_year": 1972,
+      "filtered_bp": 23.67,
+      "filtered_bp_lo": -23.03,
+      "filtered_bp_hi": 70.38,
+      "filtered_coef": -0.236742,
+      "filtered_se": 0.238289,
+      "smoothed_bp": 7.09,
+      "smoothed_bp_lo": -21.79,
+      "smoothed_bp_hi": 35.96,
+      "smoothed_coef": -0.070864,
+      "smoothed_se": 0.14734
+     },
+     {
+      "fiscal_year": 1973,
+      "filtered_bp": 24.83,
+      "filtered_bp_lo": -23.96,
+      "filtered_bp_hi": 73.63,
+      "filtered_coef": -0.24833,
+      "filtered_se": 0.248964,
+      "smoothed_bp": 6.41,
+      "smoothed_bp_lo": -23.49,
+      "smoothed_bp_hi": 36.31,
+      "smoothed_coef": -0.064111,
+      "smoothed_se": 0.152541
+     },
+     {
+      "fiscal_year": 1974,
+      "filtered_bp": 23.79,
+      "filtered_bp_lo": -27.53,
+      "filtered_bp_hi": 75.1,
+      "filtered_coef": -0.237854,
+      "filtered_se": 0.261811,
+      "smoothed_bp": 7.75,
+      "smoothed_bp_lo": -22.11,
+      "smoothed_bp_hi": 37.61,
+      "smoothed_coef": -0.077511,
+      "smoothed_se": 0.152355
+     },
+     {
+      "fiscal_year": 1975,
+      "filtered_bp": 28.04,
+      "filtered_bp_lo": -15.13,
+      "filtered_bp_hi": 71.22,
+      "filtered_coef": -0.280446,
+      "filtered_se": 0.220282,
+      "smoothed_bp": 9.98,
+      "smoothed_bp_lo": -17.75,
+      "smoothed_bp_hi": 37.72,
+      "smoothed_coef": -0.099837,
+      "smoothed_se": 0.141524
+     },
+     {
+      "fiscal_year": 1976,
+      "filtered_bp": 37.82,
+      "filtered_bp_lo": 4.46,
+      "filtered_bp_hi": 71.19,
+      "filtered_coef": -0.378246,
+      "filtered_se": 0.170219,
+      "smoothed_bp": 17.18,
+      "smoothed_bp_lo": -7.55,
+      "smoothed_bp_hi": 41.9,
+      "smoothed_coef": -0.171765,
+      "smoothed_se": 0.126136
+     },
+     {
+      "fiscal_year": 1977,
+      "filtered_bp": 46.23,
+      "filtered_bp_lo": 11.22,
+      "filtered_bp_hi": 81.25,
+      "filtered_coef": -0.462326,
+      "filtered_se": 0.178646,
+      "smoothed_bp": 27.54,
+      "smoothed_bp_lo": 1.54,
+      "smoothed_bp_hi": 53.54,
+      "smoothed_coef": -0.275358,
+      "smoothed_se": 0.132659
+     },
+     {
+      "fiscal_year": 1978,
+      "filtered_bp": 36.76,
+      "filtered_bp_lo": 3.42,
+      "filtered_bp_hi": 70.11,
+      "filtered_coef": -0.367637,
+      "filtered_se": 0.170134,
+      "smoothed_bp": 36.4,
+      "smoothed_bp_lo": 9.47,
+      "smoothed_bp_hi": 63.32,
+      "smoothed_coef": -0.363977,
+      "smoothed_se": 0.137385
+     },
+     {
+      "fiscal_year": 1979,
+      "filtered_bp": 36.05,
+      "filtered_bp_lo": -2.31,
+      "filtered_bp_hi": 74.42,
+      "filtered_coef": -0.360528,
+      "filtered_se": 0.195739,
+      "smoothed_bp": 46.03,
+      "smoothed_bp_lo": 17.26,
+      "smoothed_bp_hi": 74.8,
+      "smoothed_coef": -0.460301,
+      "smoothed_se": 0.146781
+     },
+     {
+      "fiscal_year": 1980,
+      "filtered_bp": 47.56,
+      "filtered_bp_lo": 7.78,
+      "filtered_bp_hi": 87.35,
+      "filtered_coef": -0.475649,
+      "filtered_se": 0.202965,
+      "smoothed_bp": 56.84,
+      "smoothed_bp_lo": 28.97,
+      "smoothed_bp_hi": 84.71,
+      "smoothed_coef": -0.568389,
+      "smoothed_se": 0.142198
+     },
+     {
+      "fiscal_year": 1981,
+      "filtered_bp": 57.02,
+      "filtered_bp_lo": 14.44,
+      "filtered_bp_hi": 99.59,
+      "filtered_coef": -0.570181,
+      "filtered_se": 0.217226,
+      "smoothed_bp": 63.58,
+      "smoothed_bp_lo": 37.67,
+      "smoothed_bp_hi": 89.49,
+      "smoothed_coef": -0.635779,
+      "smoothed_se": 0.132186
+     },
+     {
+      "fiscal_year": 1982,
+      "filtered_bp": 80.02,
+      "filtered_bp_lo": 51.1,
+      "filtered_bp_hi": 108.94,
+      "filtered_coef": -0.800191,
+      "filtered_se": 0.147563,
+      "smoothed_bp": 62.06,
+      "smoothed_bp_lo": 41.54,
+      "smoothed_bp_hi": 82.57,
+      "smoothed_coef": -0.620591,
+      "smoothed_se": 0.104668
+     },
+     {
+      "fiscal_year": 1983,
+      "filtered_bp": 63.19,
+      "filtered_bp_lo": 42.76,
+      "filtered_bp_hi": 83.62,
+      "filtered_coef": -0.631873,
+      "filtered_se": 0.104233,
+      "smoothed_bp": 49.89,
+      "smoothed_bp_lo": 34.17,
+      "smoothed_bp_hi": 65.61,
+      "smoothed_coef": -0.498928,
+      "smoothed_se": 0.080205
+     },
+     {
+      "fiscal_year": 1984,
+      "filtered_bp": 77.94,
+      "filtered_bp_lo": 54.73,
+      "filtered_bp_hi": 101.16,
+      "filtered_coef": -0.779425,
+      "filtered_se": 0.118436,
+      "smoothed_bp": 53.95,
+      "smoothed_bp_lo": 37.97,
+      "smoothed_bp_hi": 69.93,
+      "smoothed_coef": -0.539471,
+      "smoothed_se": 0.081532
+     },
+     {
+      "fiscal_year": 1985,
+      "filtered_bp": 80.49,
+      "filtered_bp_lo": 54.39,
+      "filtered_bp_hi": 106.58,
+      "filtered_coef": -0.804888,
+      "filtered_se": 0.133144,
+      "smoothed_bp": 50.11,
+      "smoothed_bp_lo": 34.85,
+      "smoothed_bp_hi": 65.37,
+      "smoothed_coef": -0.501064,
+      "smoothed_se": 0.077858
+     },
+     {
+      "fiscal_year": 1986,
+      "filtered_bp": 74.15,
+      "filtered_bp_lo": 43.41,
+      "filtered_bp_hi": 104.9,
+      "filtered_coef": -0.741524,
+      "filtered_se": 0.156877,
+      "smoothed_bp": 41.23,
+      "smoothed_bp_lo": 26.11,
+      "smoothed_bp_hi": 56.35,
+      "smoothed_coef": -0.4123,
+      "smoothed_se": 0.077154
+     },
+     {
+      "fiscal_year": 1987,
+      "filtered_bp": 70.6,
+      "filtered_bp_lo": 34.53,
+      "filtered_bp_hi": 106.68,
+      "filtered_coef": -0.706009,
+      "filtered_se": 0.184059,
+      "smoothed_bp": 47.1,
+      "smoothed_bp_lo": 29.79,
+      "smoothed_bp_hi": 64.41,
+      "smoothed_coef": -0.47097,
+      "smoothed_se": 0.088315
+     },
+     {
+      "fiscal_year": 1988,
+      "filtered_bp": 72.32,
+      "filtered_bp_lo": 31.51,
+      "filtered_bp_hi": 113.13,
+      "filtered_coef": -0.723189,
+      "filtered_se": 0.208227,
+      "smoothed_bp": 50.77,
+      "smoothed_bp_lo": 32.76,
+      "smoothed_bp_hi": 68.77,
+      "smoothed_coef": -0.507678,
+      "smoothed_se": 0.091854
+     },
+     {
+      "fiscal_year": 1989,
+      "filtered_bp": 70.35,
+      "filtered_bp_lo": 25.33,
+      "filtered_bp_hi": 115.37,
+      "filtered_coef": -0.703495,
+      "filtered_se": 0.229689,
+      "smoothed_bp": 44.53,
+      "smoothed_bp_lo": 26.42,
+      "smoothed_bp_hi": 62.65,
+      "smoothed_coef": -0.445345,
+      "smoothed_se": 0.092432
+     },
+     {
+      "fiscal_year": 1990,
+      "filtered_bp": 56.79,
+      "filtered_bp_lo": 12.44,
+      "filtered_bp_hi": 101.14,
+      "filtered_coef": -0.567936,
+      "filtered_se": 0.226283,
+      "smoothed_bp": 40.85,
+      "smoothed_bp_lo": 24.54,
+      "smoothed_bp_hi": 57.16,
+      "smoothed_coef": -0.408481,
+      "smoothed_se": 0.083218
+     },
+     {
+      "fiscal_year": 1991,
+      "filtered_bp": 58.57,
+      "filtered_bp_lo": 13.16,
+      "filtered_bp_hi": 103.98,
+      "filtered_coef": -0.585676,
+      "filtered_se": 0.231683,
+      "smoothed_bp": 44.58,
+      "smoothed_bp_lo": 29.61,
+      "smoothed_bp_hi": 59.54,
+      "smoothed_coef": -0.445767,
+      "smoothed_se": 0.076353
+     },
+     {
+      "fiscal_year": 1992,
+      "filtered_bp": 64.92,
+      "filtered_bp_lo": 16.94,
+      "filtered_bp_hi": 112.9,
+      "filtered_coef": -0.649214,
+      "filtered_se": 0.24479,
+      "smoothed_bp": 49.95,
+      "smoothed_bp_lo": 35.09,
+      "smoothed_bp_hi": 64.81,
+      "smoothed_coef": -0.49948,
+      "smoothed_se": 0.075813
+     },
+     {
+      "fiscal_year": 1993,
+      "filtered_bp": 64.45,
+      "filtered_bp_lo": 12.82,
+      "filtered_bp_hi": 116.09,
+      "filtered_coef": -0.64451,
+      "filtered_se": 0.26345,
+      "smoothed_bp": 48.77,
+      "smoothed_bp_lo": 32.35,
+      "smoothed_bp_hi": 65.19,
+      "smoothed_coef": -0.487715,
+      "smoothed_se": 0.083767
+     },
+     {
+      "fiscal_year": 1994,
+      "filtered_bp": 61.81,
+      "filtered_bp_lo": 8.11,
+      "filtered_bp_hi": 115.51,
+      "filtered_coef": -0.618101,
+      "filtered_se": 0.273988,
+      "smoothed_bp": 46.32,
+      "smoothed_bp_lo": 27.49,
+      "smoothed_bp_hi": 65.14,
+      "smoothed_coef": -0.463153,
+      "smoothed_se": 0.09607
+     },
+     {
+      "fiscal_year": 1995,
+      "filtered_bp": 63.33,
+      "filtered_bp_lo": 8.16,
+      "filtered_bp_hi": 118.49,
+      "filtered_coef": -0.633254,
+      "filtered_se": 0.281446,
+      "smoothed_bp": 41.63,
+      "smoothed_bp_lo": 20.34,
+      "smoothed_bp_hi": 62.92,
+      "smoothed_coef": -0.416285,
+      "smoothed_se": 0.108631
+     },
+     {
+      "fiscal_year": 1996,
+      "filtered_bp": 59.13,
+      "filtered_bp_lo": 4.86,
+      "filtered_bp_hi": 113.39,
+      "filtered_coef": -0.591273,
+      "filtered_se": 0.276859,
+      "smoothed_bp": 37.57,
+      "smoothed_bp_lo": 13.77,
+      "smoothed_bp_hi": 61.36,
+      "smoothed_coef": -0.375674,
+      "smoothed_se": 0.121412
+     },
+     {
+      "fiscal_year": 1997,
+      "filtered_bp": 42.51,
+      "filtered_bp_lo": -5.08,
+      "filtered_bp_hi": 90.1,
+      "filtered_coef": -0.425058,
+      "filtered_se": 0.242809,
+      "smoothed_bp": 32.54,
+      "smoothed_bp_lo": 7.09,
+      "smoothed_bp_hi": 57.99,
+      "smoothed_coef": -0.325372,
+      "smoothed_se": 0.129847
+     },
+     {
+      "fiscal_year": 1998,
+      "filtered_bp": 37.51,
+      "filtered_bp_lo": -2.17,
+      "filtered_bp_hi": 77.19,
+      "filtered_coef": -0.375123,
+      "filtered_se": 0.202449,
+      "smoothed_bp": 26.94,
+      "smoothed_bp_lo": 1.67,
+      "smoothed_bp_hi": 52.21,
+      "smoothed_coef": -0.269387,
+      "smoothed_se": 0.128922
+     },
+     {
+      "fiscal_year": 1999,
+      "filtered_bp": 22.18,
+      "filtered_bp_lo": -13.72,
+      "filtered_bp_hi": 58.08,
+      "filtered_coef": -0.221809,
+      "filtered_se": 0.183181,
+      "smoothed_bp": 21.22,
+      "smoothed_bp_lo": -2.62,
+      "smoothed_bp_hi": 45.07,
+      "smoothed_coef": -0.21224,
+      "smoothed_se": 0.121673
+     },
+     {
+      "fiscal_year": 2000,
+      "filtered_bp": 10.82,
+      "filtered_bp_lo": -18.36,
+      "filtered_bp_hi": 39.99,
+      "filtered_coef": -0.108157,
+      "filtered_se": 0.148867,
+      "smoothed_bp": 17.37,
+      "smoothed_bp_lo": -4.44,
+      "smoothed_bp_hi": 39.17,
+      "smoothed_coef": -0.173655,
+      "smoothed_se": 0.111232
+     },
+     {
+      "fiscal_year": 2001,
+      "filtered_bp": 6.33,
+      "filtered_bp_lo": -26.66,
+      "filtered_bp_hi": 39.33,
+      "filtered_coef": -0.063326,
+      "filtered_se": 0.16834,
+      "smoothed_bp": 17.32,
+      "smoothed_bp_lo": -4.99,
+      "smoothed_bp_hi": 39.64,
+      "smoothed_coef": -0.173242,
+      "smoothed_se": 0.113846
+     },
+     {
+      "fiscal_year": 2002,
+      "filtered_bp": 24.29,
+      "filtered_bp_lo": -7.4,
+      "filtered_bp_hi": 55.99,
+      "filtered_coef": -0.242933,
+      "filtered_se": 0.161711,
+      "smoothed_bp": 19.56,
+      "smoothed_bp_lo": -2.43,
+      "smoothed_bp_hi": 41.56,
+      "smoothed_coef": -0.195632,
+      "smoothed_se": 0.112226
+     },
+     {
+      "fiscal_year": 2003,
+      "filtered_bp": 23.5,
+      "filtered_bp_lo": -0.92,
+      "filtered_bp_hi": 47.92,
+      "filtered_coef": -0.23496,
+      "filtered_se": 0.124599,
+      "smoothed_bp": 18.45,
+      "smoothed_bp_lo": -1.18,
+      "smoothed_bp_hi": 38.08,
+      "smoothed_coef": -0.184536,
+      "smoothed_se": 0.100151
+     },
+     {
+      "fiscal_year": 2004,
+      "filtered_bp": 20.53,
+      "filtered_bp_lo": -2.62,
+      "filtered_bp_hi": 43.68,
+      "filtered_coef": -0.205327,
+      "filtered_se": 0.118124,
+      "smoothed_bp": 14.76,
+      "smoothed_bp_lo": -4.17,
+      "smoothed_bp_hi": 33.69,
+      "smoothed_coef": -0.147621,
+      "smoothed_se": 0.096571
+     },
+     {
+      "fiscal_year": 2005,
+      "filtered_bp": 3.57,
+      "filtered_bp_lo": -20.46,
+      "filtered_bp_hi": 27.6,
+      "filtered_coef": -0.03573,
+      "filtered_se": 0.122606,
+      "smoothed_bp": 7.24,
+      "smoothed_bp_lo": -12.67,
+      "smoothed_bp_hi": 27.15,
+      "smoothed_coef": -0.072445,
+      "smoothed_se": 0.101583
+     },
+     {
+      "fiscal_year": 2006,
+      "filtered_bp": -9.51,
+      "filtered_bp_lo": -37.2,
+      "filtered_bp_hi": 18.19,
+      "filtered_coef": 0.095056,
+      "filtered_se": 0.141288,
+      "smoothed_bp": 3.69,
+      "smoothed_bp_lo": -17.49,
+      "smoothed_bp_hi": 24.88,
+      "smoothed_coef": -0.036949,
+      "smoothed_se": 0.108081
+     },
+     {
+      "fiscal_year": 2007,
+      "filtered_bp": -16.47,
+      "filtered_bp_lo": -49.06,
+      "filtered_bp_hi": 16.13,
+      "filtered_coef": 0.164661,
+      "filtered_se": 0.166314,
+      "smoothed_bp": 5.59,
+      "smoothed_bp_lo": -15.24,
+      "smoothed_bp_hi": 26.43,
+      "smoothed_coef": -0.055943,
+      "smoothed_se": 0.1063
+     },
+     {
+      "fiscal_year": 2008,
+      "filtered_bp": -1.76,
+      "filtered_bp_lo": -27.53,
+      "filtered_bp_hi": 24.01,
+      "filtered_coef": 0.017582,
+      "filtered_se": 0.131466,
+      "smoothed_bp": 10.91,
+      "smoothed_bp_lo": -5.65,
+      "smoothed_bp_hi": 27.46,
+      "smoothed_coef": -0.10906,
+      "smoothed_se": 0.08446
+     },
+     {
+      "fiscal_year": 2009,
+      "filtered_bp": 7.38,
+      "filtered_bp_lo": -3.62,
+      "filtered_bp_hi": 18.38,
+      "filtered_coef": -0.073788,
+      "filtered_se": 0.056129,
+      "smoothed_bp": 12.92,
+      "smoothed_bp_lo": 3.68,
+      "smoothed_bp_hi": 22.17,
+      "smoothed_coef": -0.129243,
+      "smoothed_se": 0.047155
+     },
+     {
+      "fiscal_year": 2010,
+      "filtered_bp": 6.56,
+      "filtered_bp_lo": -6.62,
+      "filtered_bp_hi": 19.74,
+      "filtered_coef": -0.065605,
+      "filtered_se": 0.067252,
+      "smoothed_bp": 14.17,
+      "smoothed_bp_lo": 3.88,
+      "smoothed_bp_hi": 24.45,
+      "smoothed_coef": -0.141674,
+      "smoothed_se": 0.052483
+     },
+     {
+      "fiscal_year": 2011,
+      "filtered_bp": 4.45,
+      "filtered_bp_lo": -10.37,
+      "filtered_bp_hi": 19.27,
+      "filtered_coef": -0.044513,
+      "filtered_se": 0.075627,
+      "smoothed_bp": 12.14,
+      "smoothed_bp_lo": 0.74,
+      "smoothed_bp_hi": 23.54,
+      "smoothed_coef": -0.121407,
+      "smoothed_se": 0.058148
+     },
+     {
+      "fiscal_year": 2012,
+      "filtered_bp": -7.59,
+      "filtered_bp_lo": -26.65,
+      "filtered_bp_hi": 11.46,
+      "filtered_coef": 0.075919,
+      "filtered_se": 0.097225,
+      "smoothed_bp": 3.33,
+      "smoothed_bp_lo": -11.5,
+      "smoothed_bp_hi": 18.15,
+      "smoothed_coef": -0.033266,
+      "smoothed_se": 0.075623
+     },
+     {
+      "fiscal_year": 2013,
+      "filtered_bp": -8.99,
+      "filtered_bp_lo": -34.69,
+      "filtered_bp_hi": 16.72,
+      "filtered_coef": 0.089861,
+      "filtered_se": 0.131159,
+      "smoothed_bp": 4.07,
+      "smoothed_bp_lo": -16.74,
+      "smoothed_bp_hi": 24.87,
+      "smoothed_coef": -0.040652,
+      "smoothed_se": 0.106154
+     },
+     {
+      "fiscal_year": 2014,
+      "filtered_bp": -8.29,
+      "filtered_bp_lo": -40.03,
+      "filtered_bp_hi": 23.45,
+      "filtered_coef": 0.082858,
+      "filtered_se": 0.16194,
+      "smoothed_bp": 2.85,
+      "smoothed_bp_lo": -22.65,
+      "smoothed_bp_hi": 28.35,
+      "smoothed_coef": -0.028469,
+      "smoothed_se": 0.130105
+     },
+     {
+      "fiscal_year": 2015,
+      "filtered_bp": -14.59,
+      "filtered_bp_lo": -50.79,
+      "filtered_bp_hi": 21.61,
+      "filtered_coef": 0.145876,
+      "filtered_se": 0.184686,
+      "smoothed_bp": -6.1,
+      "smoothed_bp_lo": -33.55,
+      "smoothed_bp_hi": 21.35,
+      "smoothed_coef": 0.061012,
+      "smoothed_se": 0.140071
+     },
+     {
+      "fiscal_year": 2016,
+      "filtered_bp": -26.52,
+      "filtered_bp_lo": -62.95,
+      "filtered_bp_hi": 9.9,
+      "filtered_coef": 0.265229,
+      "filtered_se": 0.18583,
+      "smoothed_bp": -12.95,
+      "smoothed_bp_lo": -39.66,
+      "smoothed_bp_hi": 13.76,
+      "smoothed_coef": 0.129481,
+      "smoothed_se": 0.136278
+     },
+     {
+      "fiscal_year": 2017,
+      "filtered_bp": -29.78,
+      "filtered_bp_lo": -64.85,
+      "filtered_bp_hi": 5.29,
+      "filtered_coef": 0.297772,
+      "filtered_se": 0.178935,
+      "smoothed_bp": -15.81,
+      "smoothed_bp_lo": -40.86,
+      "smoothed_bp_hi": 9.24,
+      "smoothed_coef": 0.158074,
+      "smoothed_se": 0.127801
+     },
+     {
+      "fiscal_year": 2018,
+      "filtered_bp": -35.11,
+      "filtered_bp_lo": -67.86,
+      "filtered_bp_hi": -2.35,
+      "filtered_coef": 0.351071,
+      "filtered_se": 0.167106,
+      "smoothed_bp": -18.64,
+      "smoothed_bp_lo": -41.17,
+      "smoothed_bp_hi": 3.89,
+      "smoothed_coef": 0.186399,
+      "smoothed_se": 0.11496
+     },
+     {
+      "fiscal_year": 2019,
+      "filtered_bp": -38.52,
+      "filtered_bp_lo": -66.78,
+      "filtered_bp_hi": -10.26,
+      "filtered_coef": 0.385184,
+      "filtered_se": 0.144177,
+      "smoothed_bp": -18.71,
+      "smoothed_bp_lo": -37.13,
+      "smoothed_bp_hi": -0.29,
+      "smoothed_coef": 0.18712,
+      "smoothed_se": 0.093986
+     },
+     {
+      "fiscal_year": 2020,
+      "filtered_bp": -13.97,
+      "filtered_bp_lo": -24.05,
+      "filtered_bp_hi": -3.89,
+      "filtered_coef": 0.139709,
+      "filtered_se": 0.051436,
+      "smoothed_bp": -11.16,
+      "smoothed_bp_lo": -20.38,
+      "smoothed_bp_hi": -1.94,
+      "smoothed_coef": 0.11161,
+      "smoothed_se": 0.047033
+     },
+     {
+      "fiscal_year": 2021,
+      "filtered_bp": -11.37,
+      "filtered_bp_lo": -23.95,
+      "filtered_bp_hi": 1.21,
+      "filtered_coef": 0.113677,
+      "filtered_se": 0.064178,
+      "smoothed_bp": -8.36,
+      "smoothed_bp_lo": -20.22,
+      "smoothed_bp_hi": 3.5,
+      "smoothed_coef": 0.083616,
+      "smoothed_se": 0.060505
+     },
+     {
+      "fiscal_year": 2022,
+      "filtered_bp": -16.51,
+      "filtered_bp_lo": -38.3,
+      "filtered_bp_hi": 5.29,
+      "filtered_coef": 0.165071,
+      "filtered_se": 0.111188,
+      "smoothed_bp": -15.56,
+      "smoothed_bp_lo": -36.52,
+      "smoothed_bp_hi": 5.41,
+      "smoothed_coef": 0.155559,
+      "smoothed_se": 0.106946
+     },
+     {
+      "fiscal_year": 2023,
+      "filtered_bp": -16.98,
+      "filtered_bp_lo": -39.14,
+      "filtered_bp_hi": 5.18,
+      "filtered_coef": 0.169798,
+      "filtered_se": 0.113076,
+      "smoothed_bp": -14.22,
+      "smoothed_bp_lo": -35.3,
+      "smoothed_bp_hi": 6.86,
+      "smoothed_coef": 0.142202,
+      "smoothed_se": 0.107565
+     },
+     {
+      "fiscal_year": 2024,
+      "filtered_bp": -10.35,
+      "filtered_bp_lo": -31.38,
+      "filtered_bp_hi": 10.68,
+      "filtered_coef": 0.103539,
+      "filtered_se": 0.107298,
+      "smoothed_bp": -8.09,
+      "smoothed_bp_lo": -28.55,
+      "smoothed_bp_hi": 12.36,
+      "smoothed_coef": 0.080949,
+      "smoothed_se": 0.104353
+     },
+     {
+      "fiscal_year": 2025,
+      "filtered_bp": -1.8,
+      "filtered_bp_lo": -23.48,
+      "filtered_bp_hi": 19.89,
+      "filtered_coef": 0.01797,
+      "filtered_se": 0.110654,
+      "smoothed_bp": -1.8,
+      "smoothed_bp_lo": -23.48,
+      "smoothed_bp_hi": 19.89,
+      "smoothed_coef": 0.01797,
+      "smoothed_se": 0.110654
+     }
+    ]
+   },
+   "shape": {
+    "peak": {
+     "fy": 1981,
+     "bp": 63.58
+    },
+    "fy1982": {
+     "bp": 62.06,
+     "bp_lo": 41.54,
+     "bp_hi": 82.57
+    },
+    "fy2000_bp": 17.37,
+    "fy2007_bp": 5.59,
+    "post_2008_mean_bp": -4.82,
+    "early_retreat_bp": 44.69,
+    "late_retreat_bp": 10.41,
+    "early_retreat_share_of_v0": 1.161,
+    "late_retreat_share_of_v0": 0.713
+   },
+   "coming_back": {
+    "latest": 2025,
+    "latest_bp": -1.8,
+    "latest_bp_lo": -23.48,
+    "post_2008_range_bp": [
+     -38.52,
+     7.38
+    ],
+    "post_2008_from": 2009,
+    "post_2008_to": 2024,
+    "reappearing": false
+   },
+   "rolling": {
+    "20": [
+     {
+      "end": 1986,
+      "start": 1967,
+      "n": 20,
+      "bp": 70.56,
+      "bp_lo": 38.87,
+      "bp_hi": 102.24,
+      "coef": -0.705563,
+      "se": 0.161661
+     },
+     {
+      "end": 1987,
+      "start": 1968,
+      "n": 20,
+      "bp": 62.64,
+      "bp_lo": 35.49,
+      "bp_hi": 89.79,
+      "coef": -0.626406,
+      "se": 0.138505
+     },
+     {
+      "end": 1988,
+      "start": 1969,
+      "n": 20,
+      "bp": 61.89,
+      "bp_lo": 36.81,
+      "bp_hi": 86.98,
+      "coef": -0.61895,
+      "se": 0.127963
+     },
+     {
+      "end": 1989,
+      "start": 1970,
+      "n": 20,
+      "bp": 68.19,
+      "bp_lo": 39.93,
+      "bp_hi": 96.45,
+      "coef": -0.681895,
+      "se": 0.144192
+     },
+     {
+      "end": 1990,
+      "start": 1971,
+      "n": 20,
+      "bp": 67.65,
+      "bp_lo": 39.27,
+      "bp_hi": 96.03,
+      "coef": -0.6765,
+      "se": 0.144785
+     },
+     {
+      "end": 1991,
+      "start": 1972,
+      "n": 20,
+      "bp": 69.79,
+      "bp_lo": 39.96,
+      "bp_hi": 99.63,
+      "coef": -0.697946,
+      "se": 0.152212
+     },
+     {
+      "end": 1992,
+      "start": 1973,
+      "n": 20,
+      "bp": 69.86,
+      "bp_lo": 40.48,
+      "bp_hi": 99.24,
+      "coef": -0.698633,
+      "se": 0.149901
+     },
+     {
+      "end": 1993,
+      "start": 1974,
+      "n": 20,
+      "bp": 65.4,
+      "bp_lo": 40.47,
+      "bp_hi": 90.32,
+      "coef": -0.653976,
+      "se": 0.127161
+     },
+     {
+      "end": 1994,
+      "start": 1975,
+      "n": 20,
+      "bp": 60.87,
+      "bp_lo": 28.49,
+      "bp_hi": 93.25,
+      "coef": -0.608703,
+      "se": 0.165221
+     },
+     {
+      "end": 1995,
+      "start": 1976,
+      "n": 20,
+      "bp": 50.8,
+      "bp_lo": 17.41,
+      "bp_hi": 84.18,
+      "coef": -0.507982,
+      "se": 0.170343
+     },
+     {
+      "end": 1996,
+      "start": 1977,
+      "n": 20,
+      "bp": 35.44,
+      "bp_lo": 5.92,
+      "bp_hi": 64.95,
+      "coef": -0.354355,
+      "se": 0.150587
+     },
+     {
+      "end": 1997,
+      "start": 1978,
+      "n": 20,
+      "bp": 20.2,
+      "bp_lo": 2.21,
+      "bp_hi": 38.18,
+      "coef": -0.201968,
+      "se": 0.09175
+     },
+     {
+      "end": 1998,
+      "start": 1979,
+      "n": 20,
+      "bp": 24.64,
+      "bp_lo": 8.3,
+      "bp_hi": 40.98,
+      "coef": -0.246397,
+      "se": 0.08338
+     },
+     {
+      "end": 1999,
+      "start": 1980,
+      "n": 20,
+      "bp": 26.52,
+      "bp_lo": 11.38,
+      "bp_hi": 41.67,
+      "coef": -0.265205,
+      "se": 0.07727
+     },
+     {
+      "end": 2000,
+      "start": 1981,
+      "n": 20,
+      "bp": 23.96,
+      "bp_lo": 10.19,
+      "bp_hi": 37.74,
+      "coef": -0.23964,
+      "se": 0.070275
+     },
+     {
+      "end": 2001,
+      "start": 1982,
+      "n": 20,
+      "bp": 15.87,
+      "bp_lo": -4.64,
+      "bp_hi": 36.38,
+      "coef": -0.158737,
+      "se": 0.104641
+     },
+     {
+      "end": 2002,
+      "start": 1983,
+      "n": 20,
+      "bp": 32.61,
+      "bp_lo": 4.66,
+      "bp_hi": 60.56,
+      "coef": -0.326109,
+      "se": 0.142591
+     },
+     {
+      "end": 2003,
+      "start": 1984,
+      "n": 20,
+      "bp": 25.46,
+      "bp_lo": -5.66,
+      "bp_hi": 56.57,
+      "coef": -0.254553,
+      "se": 0.158736
+     },
+     {
+      "end": 2004,
+      "start": 1985,
+      "n": 20,
+      "bp": 26.55,
+      "bp_lo": -1.91,
+      "bp_hi": 55.01,
+      "coef": -0.265485,
+      "se": 0.14521
+     },
+     {
+      "end": 2005,
+      "start": 1986,
+      "n": 20,
+      "bp": 5.48,
+      "bp_lo": -24.24,
+      "bp_hi": 35.2,
+      "coef": -0.054797,
+      "se": 0.151636
+     },
+     {
+      "end": 2006,
+      "start": 1987,
+      "n": 20,
+      "bp": 2.36,
+      "bp_lo": -29.61,
+      "bp_hi": 34.32,
+      "coef": -0.023557,
+      "se": 0.163094
+     },
+     {
+      "end": 2007,
+      "start": 1988,
+      "n": 20,
+      "bp": -9.43,
+      "bp_lo": -34.72,
+      "bp_hi": 15.86,
+      "coef": 0.094324,
+      "se": 0.129042
+     },
+     {
+      "end": 2008,
+      "start": 1989,
+      "n": 20,
+      "bp": -17.56,
+      "bp_lo": -38.55,
+      "bp_hi": 3.43,
+      "coef": 0.175596,
+      "se": 0.107074
+     },
+     {
+      "end": 2009,
+      "start": 1990,
+      "n": 20,
+      "bp": -13.1,
+      "bp_lo": -28.12,
+      "bp_hi": 1.92,
+      "coef": 0.131016,
+      "se": 0.076617
+     },
+     {
+      "end": 2010,
+      "start": 1991,
+      "n": 20,
+      "bp": 4.93,
+      "bp_lo": -13.51,
+      "bp_hi": 23.37,
+      "coef": -0.049329,
+      "se": 0.094093
+     },
+     {
+      "end": 2011,
+      "start": 1992,
+      "n": 20,
+      "bp": 8.81,
+      "bp_lo": -7.17,
+      "bp_hi": 24.79,
+      "coef": -0.08812,
+      "se": 0.081528
+     },
+     {
+      "end": 2012,
+      "start": 1993,
+      "n": 20,
+      "bp": 16.44,
+      "bp_lo": 3.89,
+      "bp_hi": 29.0,
+      "coef": -0.164423,
+      "se": 0.064068
+     },
+     {
+      "end": 2013,
+      "start": 1994,
+      "n": 20,
+      "bp": 13.26,
+      "bp_lo": 6.72,
+      "bp_hi": 19.79,
+      "coef": -0.132556,
+      "se": 0.03332
+     },
+     {
+      "end": 2014,
+      "start": 1995,
+      "n": 20,
+      "bp": 9.23,
+      "bp_lo": 3.64,
+      "bp_hi": 14.83,
+      "coef": -0.092345,
+      "se": 0.028547
+     },
+     {
+      "end": 2015,
+      "start": 1996,
+      "n": 20,
+      "bp": 10.63,
+      "bp_lo": 4.26,
+      "bp_hi": 17.0,
+      "coef": -0.106302,
+      "se": 0.032492
+     },
+     {
+      "end": 2016,
+      "start": 1997,
+      "n": 20,
+      "bp": 11.89,
+      "bp_lo": 5.09,
+      "bp_hi": 18.69,
+      "coef": -0.118861,
+      "se": 0.034697
+     },
+     {
+      "end": 2017,
+      "start": 1998,
+      "n": 20,
+      "bp": 12.83,
+      "bp_lo": 6.12,
+      "bp_hi": 19.55,
+      "coef": -0.128336,
+      "se": 0.034271
+     },
+     {
+      "end": 2018,
+      "start": 1999,
+      "n": 20,
+      "bp": 13.61,
+      "bp_lo": 6.02,
+      "bp_hi": 21.19,
+      "coef": -0.136058,
+      "se": 0.038706
+     },
+     {
+      "end": 2019,
+      "start": 2000,
+      "n": 20,
+      "bp": 13.38,
+      "bp_lo": 4.51,
+      "bp_hi": 22.24,
+      "coef": -0.13378,
+      "se": 0.045238
+     },
+     {
+      "end": 2020,
+      "start": 2001,
+      "n": 20,
+      "bp": 2.21,
+      "bp_lo": -12.58,
+      "bp_hi": 17.0,
+      "coef": -0.02207,
+      "se": 0.075453
+     },
+     {
+      "end": 2021,
+      "start": 2002,
+      "n": 20,
+      "bp": 2.98,
+      "bp_lo": -13.13,
+      "bp_hi": 19.09,
+      "coef": -0.029808,
+      "se": 0.082177
+     },
+     {
+      "end": 2022,
+      "start": 2003,
+      "n": 20,
+      "bp": 0.06,
+      "bp_lo": -16.55,
+      "bp_hi": 16.68,
+      "coef": -0.000617,
+      "se": 0.084766
+     },
+     {
+      "end": 2023,
+      "start": 2004,
+      "n": 20,
+      "bp": -2.36,
+      "bp_lo": -20.35,
+      "bp_hi": 15.63,
+      "coef": 0.023602,
+      "se": 0.09177
+     },
+     {
+      "end": 2024,
+      "start": 2005,
+      "n": 20,
+      "bp": -17.68,
+      "bp_lo": -32.74,
+      "bp_hi": -2.62,
+      "coef": 0.176818,
+      "se": 0.076822
+     },
+     {
+      "end": 2025,
+      "start": 2006,
+      "n": 20,
+      "bp": -19.91,
+      "bp_lo": -35.39,
+      "bp_hi": -4.43,
+      "coef": 0.199132,
+      "se": 0.078984
+     }
+    ]
+   },
+   "answer": {
+    "fy1982_fall": -0.0401,
+    "band_includes_zero": false,
+    "answer": "mostly separate from inflation"
+   }
+  },
+  "V5": {
+   "controls": [
+    "debt_gdp",
+    "core_infl"
+   ],
+   "drifting": [
+    "core_infl"
+   ],
+   "role": "check: V1 with the inflation coefficient also allowed to drift (a second random-walk state). Reported only if the maximum-likelihood fit converges; if not, reported as not converged.",
+   "control_coverage": {
+    "debt_gdp": [
+     1967,
+     2025
+    ],
+    "core_infl": [
+     1967,
+     2025
+    ]
+   },
+   "time_varying": {
+    "rows": {
+     "first": 1967,
+     "last": 2025,
+     "n": 59,
+     "nobs_diffuse": 4
+    },
+    "drift_variance_q": 0.0029368555121707008,
+    "drift_sd_bp_per_year": 5.419,
+    "obs_variance_h": 0.10636364268085931,
+    "loglik_time_varying": -57.5019,
+    "loglik_fixed_slope": -86.5054,
+    "lr_stat": 58.007,
+    "lr_p_boundary_mixture": 0.0,
+    "lr_mixture": "chi2(0):chi2(1):chi2(2) 25:50:25",
+    "converged": true,
+    "fixed_slope": {
+     "bp": 17.8,
+     "bp_lo": 7.61,
+     "bp_hi": 28.0,
+     "coef": -0.178048,
+     "se": 0.052036
+    },
+    "controls": {
+     "debt_gdp": {
+      "drifting": false,
+      "coef": -1.470731,
+      "se": 1.013591,
+      "lo": -3.457333,
+      "hi": 0.515871
+     },
+     "core_infl": {
+      "drifting": true,
+      "q": 0.008440099791993616,
+      "path": [
+       {
+        "fiscal_year": 1971,
+        "coef": -0.056947,
+        "se": 0.114234,
+        "lo": -0.280841,
+        "hi": 0.166947
+       },
+       {
+        "fiscal_year": 1972,
+        "coef": -0.080423,
+        "se": 0.126857,
+        "lo": -0.329057,
+        "hi": 0.168212
+       },
+       {
+        "fiscal_year": 1973,
+        "coef": -0.114642,
+        "se": 0.129377,
+        "lo": -0.368217,
+        "hi": 0.138934
+       },
+       {
+        "fiscal_year": 1974,
+        "coef": -0.097279,
+        "se": 0.098085,
+        "lo": -0.289523,
+        "hi": 0.094965
+       },
+       {
+        "fiscal_year": 1975,
+        "coef": -0.060911,
+        "se": 0.07399,
+        "lo": -0.205929,
+        "hi": 0.084108
+       },
+       {
+        "fiscal_year": 1976,
+        "coef": -0.032813,
+        "se": 0.096173,
+        "lo": -0.221309,
+        "hi": 0.155683
+       },
+       {
+        "fiscal_year": 1977,
+        "coef": 0.007523,
+        "se": 0.093984,
+        "lo": -0.176683,
+        "hi": 0.191729
+       },
+       {
+        "fiscal_year": 1978,
+        "coef": -0.015464,
+        "se": 0.090314,
+        "lo": -0.192476,
+        "hi": 0.161549
+       },
+       {
+        "fiscal_year": 1979,
+        "coef": -0.009357,
+        "se": 0.080462,
+        "lo": -0.16706,
+        "hi": 0.148346
+       },
+       {
+        "fiscal_year": 1980,
+        "coef": 0.083967,
+        "se": 0.072234,
+        "lo": -0.057609,
+        "hi": 0.225543
+       },
+       {
+        "fiscal_year": 1981,
+        "coef": 0.140495,
+        "se": 0.070156,
+        "lo": 0.002991,
+        "hi": 0.277999
+       },
+       {
+        "fiscal_year": 1982,
+        "coef": 0.218579,
+        "se": 0.095673,
+        "lo": 0.031063,
+        "hi": 0.406095
+       },
+       {
+        "fiscal_year": 1983,
+        "coef": 0.195147,
+        "se": 0.128087,
+        "lo": -0.055899,
+        "hi": 0.446193
+       },
+       {
+        "fiscal_year": 1984,
+        "coef": 0.288002,
+        "se": 0.144318,
+        "lo": 0.005144,
+        "hi": 0.570859
+       },
+       {
+        "fiscal_year": 1985,
+        "coef": 0.270082,
+        "se": 0.154239,
+        "lo": -0.032221,
+        "hi": 0.572385
+       },
+       {
+        "fiscal_year": 1986,
+        "coef": 0.176097,
+        "se": 0.159006,
+        "lo": -0.135549,
+        "hi": 0.487743
+       },
+       {
+        "fiscal_year": 1987,
+        "coef": 0.20474,
+        "se": 0.152482,
+        "lo": -0.09412,
+        "hi": 0.503599
+       },
+       {
+        "fiscal_year": 1988,
+        "coef": 0.20831,
+        "se": 0.137414,
+        "lo": -0.061017,
+        "hi": 0.477636
+       },
+       {
+        "fiscal_year": 1989,
+        "coef": 0.092582,
+        "se": 0.131121,
+        "lo": -0.164412,
+        "hi": 0.349575
+       },
+       {
+        "fiscal_year": 1990,
+        "coef": 0.069111,
+        "se": 0.144818,
+        "lo": -0.214728,
+        "hi": 0.352949
+       },
+       {
+        "fiscal_year": 1991,
+        "coef": 0.136592,
+        "se": 0.157958,
+        "lo": -0.173,
+        "hi": 0.446185
+       },
+       {
+        "fiscal_year": 1992,
+        "coef": 0.214736,
+        "se": 0.171944,
+        "lo": -0.122268,
+        "hi": 0.551741
+       },
+       {
+        "fiscal_year": 1993,
+        "coef": 0.214141,
+        "se": 0.179453,
+        "lo": -0.137581,
+        "hi": 0.565862
+       },
+       {
+        "fiscal_year": 1994,
+        "coef": 0.197513,
+        "se": 0.185277,
+        "lo": -0.165623,
+        "hi": 0.560648
+       },
+       {
+        "fiscal_year": 1995,
+        "coef": 0.161192,
+        "se": 0.188325,
+        "lo": -0.207918,
+        "hi": 0.530303
+       },
+       {
+        "fiscal_year": 1996,
+        "coef": 0.156888,
+        "se": 0.193313,
+        "lo": -0.221999,
+        "hi": 0.535776
+       },
+       {
+        "fiscal_year": 1997,
+        "coef": 0.169001,
+        "se": 0.199851,
+        "lo": -0.2227,
+        "hi": 0.560703
+       },
+       {
+        "fiscal_year": 1998,
+        "coef": 0.170671,
+        "se": 0.211928,
+        "lo": -0.2447,
+        "hi": 0.586042
+       },
+       {
+        "fiscal_year": 1999,
+        "coef": 0.198939,
+        "se": 0.216632,
+        "lo": -0.225651,
+        "hi": 0.62353
+       },
+       {
+        "fiscal_year": 2000,
+        "coef": 0.211421,
+        "se": 0.212218,
+        "lo": -0.204519,
+        "hi": 0.62736
+       },
+       {
+        "fiscal_year": 2001,
+        "coef": 0.200479,
+        "se": 0.20585,
+        "lo": -0.20298,
+        "hi": 0.603939
+       },
+       {
+        "fiscal_year": 2002,
+        "coef": 0.172305,
+        "se": 0.205582,
+        "lo": -0.230628,
+        "hi": 0.575238
+       },
+       {
+        "fiscal_year": 2003,
+        "coef": 0.086233,
+        "se": 0.204048,
+        "lo": -0.313694,
+        "hi": 0.486161
+       },
+       {
+        "fiscal_year": 2004,
+        "coef": -0.016959,
+        "se": 0.196163,
+        "lo": -0.401432,
+        "hi": 0.367514
+       },
+       {
+        "fiscal_year": 2005,
+        "coef": -0.159272,
+        "se": 0.183466,
+        "lo": -0.51886,
+        "hi": 0.200315
+       },
+       {
+        "fiscal_year": 2006,
+        "coef": -0.234005,
+        "se": 0.172261,
+        "lo": -0.571632,
+        "hi": 0.103621
+       },
+       {
+        "fiscal_year": 2007,
+        "coef": -0.231166,
+        "se": 0.169759,
+        "lo": -0.563889,
+        "hi": 0.101556
+       },
+       {
+        "fiscal_year": 2008,
+        "coef": -0.175683,
+        "se": 0.174842,
+        "lo": -0.518366,
+        "hi": 0.167001
+       },
+       {
+        "fiscal_year": 2009,
+        "coef": -0.171258,
+        "se": 0.191352,
+        "lo": -0.546301,
+        "hi": 0.203785
+       },
+       {
+        "fiscal_year": 2010,
+        "coef": -0.160931,
+        "se": 0.199953,
+        "lo": -0.552831,
+        "hi": 0.23097
+       },
+       {
+        "fiscal_year": 2011,
+        "coef": -0.164538,
+        "se": 0.20784,
+        "lo": -0.571897,
+        "hi": 0.242821
+       },
+       {
+        "fiscal_year": 2012,
+        "coef": -0.188719,
+        "se": 0.211152,
+        "lo": -0.60257,
+        "hi": 0.225132
+       },
+       {
+        "fiscal_year": 2013,
+        "coef": -0.16182,
+        "se": 0.218855,
+        "lo": -0.590768,
+        "hi": 0.267128
+       },
+       {
+        "fiscal_year": 2014,
+        "coef": -0.149509,
+        "se": 0.225097,
+        "lo": -0.590691,
+        "hi": 0.291674
+       },
+       {
+        "fiscal_year": 2015,
+        "coef": -0.20984,
+        "se": 0.229079,
+        "lo": -0.658828,
+        "hi": 0.239147
+       },
+       {
+        "fiscal_year": 2016,
+        "coef": -0.253985,
+        "se": 0.225636,
+        "lo": -0.696223,
+        "hi": 0.188254
+       },
+       {
+        "fiscal_year": 2017,
+        "coef": -0.265726,
+        "se": 0.217187,
+        "lo": -0.691405,
+        "hi": 0.159953
+       },
+       {
+        "fiscal_year": 2018,
+        "coef": -0.280378,
+        "se": 0.207089,
+        "lo": -0.686264,
+        "hi": 0.125509
+       },
+       {
+        "fiscal_year": 2019,
+        "coef": -0.283258,
+        "se": 0.197087,
+        "lo": -0.669541,
+        "hi": 0.103025
+       },
+       {
+        "fiscal_year": 2020,
+        "coef": -0.246162,
+        "se": 0.185481,
+        "lo": -0.609699,
+        "hi": 0.117374
+       },
+       {
+        "fiscal_year": 2021,
+        "coef": -0.199506,
+        "se": 0.165418,
+        "lo": -0.523719,
+        "hi": 0.124706
+       },
+       {
+        "fiscal_year": 2022,
+        "coef": -0.177997,
+        "se": 0.132805,
+        "lo": -0.43829,
+        "hi": 0.082297
+       },
+       {
+        "fiscal_year": 2023,
+        "coef": -0.17599,
+        "se": 0.145061,
+        "lo": -0.460305,
+        "hi": 0.108325
+       },
+       {
+        "fiscal_year": 2024,
+        "coef": -0.147884,
+        "se": 0.178655,
+        "lo": -0.498041,
+        "hi": 0.202273
+       },
+       {
+        "fiscal_year": 2025,
+        "coef": -0.105108,
+        "se": 0.199532,
+        "lo": -0.496183,
+        "hi": 0.285967
+       }
+      ]
+     }
+    },
+    "params": [
+     -2.240891464596013,
+     -5.830415823695687,
+     -4.7747611467482445
+    ],
+    "paths": [
+     {
+      "fiscal_year": 1971,
+      "filtered_bp": 19.68,
+      "filtered_bp_lo": -17.68,
+      "filtered_bp_hi": 57.04,
+      "filtered_coef": -0.196821,
+      "filtered_se": 0.190622,
+      "smoothed_bp": 17.43,
+      "smoothed_bp_lo": -7.61,
+      "smoothed_bp_hi": 42.47,
+      "smoothed_coef": -0.17426,
+      "smoothed_se": 0.127762
+     },
+     {
+      "fiscal_year": 1972,
+      "filtered_bp": 20.25,
+      "filtered_bp_lo": -18.17,
+      "filtered_bp_hi": 58.67,
+      "filtered_coef": -0.202498,
+      "filtered_se": 0.196043,
+      "smoothed_bp": 18.04,
+      "smoothed_bp_lo": -6.89,
+      "smoothed_bp_hi": 42.97,
+      "smoothed_coef": -0.180413,
+      "smoothed_se": 0.12721
+     },
+     {
+      "fiscal_year": 1973,
+      "filtered_bp": 21.14,
+      "filtered_bp_lo": -18.23,
+      "filtered_bp_hi": 60.5,
+      "filtered_coef": -0.211353,
+      "filtered_se": 0.200836,
+      "smoothed_bp": 18.48,
+      "smoothed_bp_lo": -6.57,
+      "smoothed_bp_hi": 43.54,
+      "smoothed_coef": -0.184823,
+      "smoothed_se": 0.127842
+     },
+     {
+      "fiscal_year": 1974,
+      "filtered_bp": 23.63,
+      "filtered_bp_lo": -16.83,
+      "filtered_bp_hi": 64.09,
+      "filtered_coef": -0.236271,
+      "filtered_se": 0.206424,
+      "smoothed_bp": 19.53,
+      "smoothed_bp_lo": -5.46,
+      "smoothed_bp_hi": 44.53,
+      "smoothed_coef": -0.195336,
+      "smoothed_se": 0.127525
+     },
+     {
+      "fiscal_year": 1975,
+      "filtered_bp": 21.31,
+      "filtered_bp_lo": -16.54,
+      "filtered_bp_hi": 59.16,
+      "filtered_coef": -0.21306,
+      "filtered_se": 0.193118,
+      "smoothed_bp": 20.63,
+      "smoothed_bp_lo": -3.93,
+      "smoothed_bp_hi": 45.19,
+      "smoothed_coef": -0.206327,
+      "smoothed_se": 0.125317
+     },
+     {
+      "fiscal_year": 1976,
+      "filtered_bp": 26.48,
+      "filtered_bp_lo": -8.93,
+      "filtered_bp_hi": 61.9,
+      "filtered_coef": -0.264833,
+      "filtered_se": 0.180698,
+      "smoothed_bp": 21.64,
+      "smoothed_bp_lo": -2.36,
+      "smoothed_bp_hi": 45.63,
+      "smoothed_coef": -0.216354,
+      "smoothed_se": 0.122406
+     },
+     {
+      "fiscal_year": 1977,
+      "filtered_bp": 24.13,
+      "filtered_bp_lo": -12.43,
+      "filtered_bp_hi": 60.69,
+      "filtered_coef": -0.241295,
+      "filtered_se": 0.186511,
+      "smoothed_bp": 22.89,
+      "smoothed_bp_lo": -1.57,
+      "smoothed_bp_hi": 47.34,
+      "smoothed_coef": -0.228893,
+      "smoothed_se": 0.124776
+     },
+     {
+      "fiscal_year": 1978,
+      "filtered_bp": 23.96,
+      "filtered_bp_lo": -14.09,
+      "filtered_bp_hi": 62.02,
+      "filtered_coef": -0.239641,
+      "filtered_se": 0.194175,
+      "smoothed_bp": 23.24,
+      "smoothed_bp_lo": -1.31,
+      "smoothed_bp_hi": 47.8,
+      "smoothed_coef": -0.232424,
+      "smoothed_se": 0.125284
+     },
+     {
+      "fiscal_year": 1979,
+      "filtered_bp": 25.12,
+      "filtered_bp_lo": -13.78,
+      "filtered_bp_hi": 64.02,
+      "filtered_coef": -0.251181,
+      "filtered_se": 0.198469,
+      "smoothed_bp": 23.99,
+      "smoothed_bp_lo": -0.67,
+      "smoothed_bp_hi": 48.64,
+      "smoothed_coef": -0.239876,
+      "smoothed_se": 0.125792
+     },
+     {
+      "fiscal_year": 1980,
+      "filtered_bp": 27.58,
+      "filtered_bp_lo": -12.43,
+      "filtered_bp_hi": 67.58,
+      "filtered_coef": -0.27575,
+      "filtered_se": 0.204109,
+      "smoothed_bp": 25.4,
+      "smoothed_bp_lo": 1.13,
+      "smoothed_bp_hi": 49.66,
+      "smoothed_coef": -0.253953,
+      "smoothed_se": 0.123786
+     },
+     {
+      "fiscal_year": 1981,
+      "filtered_bp": 27.64,
+      "filtered_bp_lo": -13.75,
+      "filtered_bp_hi": 69.03,
+      "filtered_coef": -0.276422,
+      "filtered_se": 0.211176,
+      "smoothed_bp": 26.42,
+      "smoothed_bp_lo": 2.67,
+      "smoothed_bp_hi": 50.18,
+      "smoothed_coef": -0.264223,
+      "smoothed_se": 0.121203
+     },
+     {
+      "fiscal_year": 1982,
+      "filtered_bp": 40.25,
+      "filtered_bp_lo": 2.14,
+      "filtered_bp_hi": 78.36,
+      "filtered_coef": -0.402479,
+      "filtered_se": 0.194444,
+      "smoothed_bp": 27.65,
+      "smoothed_bp_lo": 5.11,
+      "smoothed_bp_hi": 50.19,
+      "smoothed_coef": -0.276499,
+      "smoothed_se": 0.115019
+     },
+     {
+      "fiscal_year": 1983,
+      "filtered_bp": 36.3,
+      "filtered_bp_lo": 2.64,
+      "filtered_bp_hi": 69.96,
+      "filtered_coef": -0.362987,
+      "filtered_se": 0.17175,
+      "smoothed_bp": 26.95,
+      "smoothed_bp_lo": 6.12,
+      "smoothed_bp_hi": 47.78,
+      "smoothed_coef": -0.269497,
+      "smoothed_se": 0.106289
+     },
+     {
+      "fiscal_year": 1984,
+      "filtered_bp": 36.56,
+      "filtered_bp_lo": 1.27,
+      "filtered_bp_hi": 71.86,
+      "filtered_coef": -0.365649,
+      "filtered_se": 0.180093,
+      "smoothed_bp": 30.46,
+      "smoothed_bp_lo": 9.8,
+      "smoothed_bp_hi": 51.13,
+      "smoothed_coef": -0.304609,
+      "smoothed_se": 0.105434
+     },
+     {
+      "fiscal_year": 1985,
+      "filtered_bp": 36.32,
+      "filtered_bp_lo": -0.49,
+      "filtered_bp_hi": 73.12,
+      "filtered_coef": -0.363155,
+      "filtered_se": 0.187771,
+      "smoothed_bp": 29.85,
+      "smoothed_bp_lo": 9.61,
+      "smoothed_bp_hi": 50.09,
+      "smoothed_coef": -0.298517,
+      "smoothed_se": 0.103255
+     },
+     {
+      "fiscal_year": 1986,
+      "filtered_bp": 41.18,
+      "filtered_bp_lo": 3.43,
+      "filtered_bp_hi": 78.92,
+      "filtered_coef": -0.411752,
+      "filtered_se": 0.19256,
+      "smoothed_bp": 26.03,
+      "smoothed_bp_lo": 5.93,
+      "smoothed_bp_hi": 46.12,
+      "smoothed_coef": -0.260252,
+      "smoothed_se": 0.102547
+     },
+     {
+      "fiscal_year": 1987,
+      "filtered_bp": 27.68,
+      "filtered_bp_lo": -6.37,
+      "filtered_bp_hi": 61.73,
+      "filtered_coef": -0.276794,
+      "filtered_se": 0.17373,
+      "smoothed_bp": 27.87,
+      "smoothed_bp_lo": 6.7,
+      "smoothed_bp_hi": 49.04,
+      "smoothed_coef": -0.278695,
+      "smoothed_se": 0.107994
+     },
+     {
+      "fiscal_year": 1988,
+      "filtered_bp": 25.67,
+      "filtered_bp_lo": -9.26,
+      "filtered_bp_hi": 60.6,
+      "filtered_coef": -0.256709,
+      "filtered_se": 0.178234,
+      "smoothed_bp": 28.86,
+      "smoothed_bp_lo": 6.98,
+      "smoothed_bp_hi": 50.75,
+      "smoothed_coef": -0.288633,
+      "smoothed_se": 0.111674
+     },
+     {
+      "fiscal_year": 1989,
+      "filtered_bp": 29.35,
+      "filtered_bp_lo": -6.97,
+      "filtered_bp_hi": 65.67,
+      "filtered_coef": -0.293489,
+      "filtered_se": 0.185294,
+      "smoothed_bp": 26.79,
+      "smoothed_bp_lo": 4.8,
+      "smoothed_bp_hi": 48.77,
+      "smoothed_coef": -0.267881,
+      "smoothed_se": 0.112163
+     },
+     {
+      "fiscal_year": 1990,
+      "filtered_bp": 26.27,
+      "filtered_bp_lo": -9.88,
+      "filtered_bp_hi": 62.43,
+      "filtered_coef": -0.262719,
+      "filtered_se": 0.184472,
+      "smoothed_bp": 26.71,
+      "smoothed_bp_lo": 5.75,
+      "smoothed_bp_hi": 47.66,
+      "smoothed_coef": -0.267063,
+      "smoothed_se": 0.106925
+     },
+     {
+      "fiscal_year": 1991,
+      "filtered_bp": 30.29,
+      "filtered_bp_lo": -6.62,
+      "filtered_bp_hi": 67.19,
+      "filtered_coef": -0.302865,
+      "filtered_se": 0.1883,
+      "smoothed_bp": 29.61,
+      "smoothed_bp_lo": 9.76,
+      "smoothed_bp_hi": 49.45,
+      "smoothed_coef": -0.296075,
+      "smoothed_se": 0.10125
+     },
+     {
+      "fiscal_year": 1992,
+      "filtered_bp": 32.51,
+      "filtered_bp_lo": -5.78,
+      "filtered_bp_hi": 70.8,
+      "filtered_coef": -0.325112,
+      "filtered_se": 0.195368,
+      "smoothed_bp": 32.94,
+      "smoothed_bp_lo": 14.06,
+      "smoothed_bp_hi": 51.81,
+      "smoothed_coef": -0.329386,
+      "smoothed_se": 0.096308
+     },
+     {
+      "fiscal_year": 1993,
+      "filtered_bp": 33.14,
+      "filtered_bp_lo": -5.92,
+      "filtered_bp_hi": 72.2,
+      "filtered_coef": -0.331408,
+      "filtered_se": 0.199308,
+      "smoothed_bp": 32.44,
+      "smoothed_bp_lo": 13.76,
+      "smoothed_bp_hi": 51.11,
+      "smoothed_coef": -0.324358,
+      "smoothed_se": 0.095283
+     },
+     {
+      "fiscal_year": 1994,
+      "filtered_bp": 34.21,
+      "filtered_bp_lo": -4.44,
+      "filtered_bp_hi": 72.86,
+      "filtered_coef": -0.342095,
+      "filtered_se": 0.197203,
+      "smoothed_bp": 31.19,
+      "smoothed_bp_lo": 12.45,
+      "smoothed_bp_hi": 49.92,
+      "smoothed_coef": -0.311884,
+      "smoothed_se": 0.095592
+     },
+     {
+      "fiscal_year": 1995,
+      "filtered_bp": 39.22,
+      "filtered_bp_lo": 0.85,
+      "filtered_bp_hi": 77.6,
+      "filtered_coef": -0.392248,
+      "filtered_se": 0.19581,
+      "smoothed_bp": 29.12,
+      "smoothed_bp_lo": 10.3,
+      "smoothed_bp_hi": 47.94,
+      "smoothed_coef": -0.291182,
+      "smoothed_se": 0.096012
+     },
+     {
+      "fiscal_year": 1996,
+      "filtered_bp": 39.68,
+      "filtered_bp_lo": 2.55,
+      "filtered_bp_hi": 76.81,
+      "filtered_coef": -0.396796,
+      "filtered_se": 0.189422,
+      "smoothed_bp": 28.13,
+      "smoothed_bp_lo": 9.34,
+      "smoothed_bp_hi": 46.92,
+      "smoothed_coef": -0.281327,
+      "smoothed_se": 0.095867
+     },
+     {
+      "fiscal_year": 1997,
+      "filtered_bp": 33.41,
+      "filtered_bp_lo": 0.15,
+      "filtered_bp_hi": 66.67,
+      "filtered_coef": -0.334132,
+      "filtered_se": 0.169706,
+      "smoothed_bp": 27.54,
+      "smoothed_bp_lo": 9.03,
+      "smoothed_bp_hi": 46.04,
+      "smoothed_coef": -0.275377,
+      "smoothed_se": 0.094413
+     },
+     {
+      "fiscal_year": 1998,
+      "filtered_bp": 35.03,
+      "filtered_bp_lo": 5.73,
+      "filtered_bp_hi": 64.33,
+      "filtered_coef": -0.350303,
+      "filtered_se": 0.149506,
+      "smoothed_bp": 26.89,
+      "smoothed_bp_lo": 9.14,
+      "smoothed_bp_hi": 44.65,
+      "smoothed_coef": -0.268931,
+      "smoothed_se": 0.09059
+     },
+     {
+      "fiscal_year": 1999,
+      "filtered_bp": 26.58,
+      "filtered_bp_lo": -0.75,
+      "filtered_bp_hi": 53.9,
+      "filtered_coef": -0.265761,
+      "filtered_se": 0.139415,
+      "smoothed_bp": 25.71,
+      "smoothed_bp_lo": 8.99,
+      "smoothed_bp_hi": 42.43,
+      "smoothed_coef": -0.257126,
+      "smoothed_se": 0.085296
+     },
+     {
+      "fiscal_year": 2000,
+      "filtered_bp": 21.1,
+      "filtered_bp_lo": -3.19,
+      "filtered_bp_hi": 45.4,
+      "filtered_coef": -0.211049,
+      "filtered_se": 0.123962,
+      "smoothed_bp": 25.1,
+      "smoothed_bp_lo": 9.56,
+      "smoothed_bp_hi": 40.63,
+      "smoothed_coef": -0.250956,
+      "smoothed_se": 0.079281
+     },
+     {
+      "fiscal_year": 2001,
+      "filtered_bp": 21.1,
+      "filtered_bp_lo": -5.42,
+      "filtered_bp_hi": 47.61,
+      "filtered_coef": -0.210982,
+      "filtered_se": 0.13529,
+      "smoothed_bp": 25.6,
+      "smoothed_bp_lo": 10.37,
+      "smoothed_bp_hi": 40.82,
+      "smoothed_coef": -0.255957,
+      "smoothed_se": 0.077694
+     },
+     {
+      "fiscal_year": 2002,
+      "filtered_bp": 29.06,
+      "filtered_bp_lo": 7.02,
+      "filtered_bp_hi": 51.1,
+      "filtered_coef": -0.290594,
+      "filtered_se": 0.112453,
+      "smoothed_bp": 26.47,
+      "smoothed_bp_lo": 11.79,
+      "smoothed_bp_hi": 41.16,
+      "smoothed_coef": -0.264749,
+      "smoothed_se": 0.0749
+     },
+     {
+      "fiscal_year": 2003,
+      "filtered_bp": 23.59,
+      "filtered_bp_lo": 6.19,
+      "filtered_bp_hi": 40.99,
+      "filtered_coef": -0.235902,
+      "filtered_se": 0.088787,
+      "smoothed_bp": 25.62,
+      "smoothed_bp_lo": 11.84,
+      "smoothed_bp_hi": 39.4,
+      "smoothed_coef": -0.256199,
+      "smoothed_se": 0.070294
+     },
+     {
+      "fiscal_year": 2004,
+      "filtered_bp": 20.42,
+      "filtered_bp_lo": 2.58,
+      "filtered_bp_hi": 38.27,
+      "filtered_coef": -0.204237,
+      "filtered_se": 0.091043,
+      "smoothed_bp": 23.58,
+      "smoothed_bp_lo": 9.59,
+      "smoothed_bp_hi": 37.56,
+      "smoothed_coef": -0.23577,
+      "smoothed_se": 0.071354
+     },
+     {
+      "fiscal_year": 2005,
+      "filtered_bp": 16.1,
+      "filtered_bp_lo": -4.45,
+      "filtered_bp_hi": 36.64,
+      "filtered_coef": -0.160973,
+      "filtered_se": 0.104826,
+      "smoothed_bp": 19.06,
+      "smoothed_bp_lo": 4.23,
+      "smoothed_bp_hi": 33.89,
+      "smoothed_coef": -0.190598,
+      "smoothed_se": 0.075661
+     },
+     {
+      "fiscal_year": 2006,
+      "filtered_bp": 16.6,
+      "filtered_bp_lo": -6.53,
+      "filtered_bp_hi": 39.72,
+      "filtered_coef": -0.165966,
+      "filtered_se": 0.117974,
+      "smoothed_bp": 17.24,
+      "smoothed_bp_lo": 2.16,
+      "smoothed_bp_hi": 32.32,
+      "smoothed_coef": -0.17239,
+      "smoothed_se": 0.076944
+     },
+     {
+      "fiscal_year": 2007,
+      "filtered_bp": 17.35,
+      "filtered_bp_lo": -7.98,
+      "filtered_bp_hi": 42.68,
+      "filtered_coef": -0.173507,
+      "filtered_se": 0.129239,
+      "smoothed_bp": 17.46,
+      "smoothed_bp_lo": 3.18,
+      "smoothed_bp_hi": 31.74,
+      "smoothed_coef": -0.174605,
+      "smoothed_se": 0.072847
+     },
+     {
+      "fiscal_year": 2008,
+      "filtered_bp": 25.41,
+      "filtered_bp_lo": 1.92,
+      "filtered_bp_hi": 48.9,
+      "filtered_coef": -0.254121,
+      "filtered_se": 0.119843,
+      "smoothed_bp": 18.59,
+      "smoothed_bp_lo": 6.7,
+      "smoothed_bp_hi": 30.48,
+      "smoothed_coef": -0.185882,
+      "smoothed_se": 0.060664
+     },
+     {
+      "fiscal_year": 2009,
+      "filtered_bp": 16.71,
+      "filtered_bp_lo": 3.5,
+      "filtered_bp_hi": 29.92,
+      "filtered_coef": -0.167118,
+      "filtered_se": 0.067398,
+      "smoothed_bp": 17.2,
+      "smoothed_bp_lo": 9.3,
+      "smoothed_bp_hi": 25.1,
+      "smoothed_coef": -0.172002,
+      "smoothed_se": 0.040285
+     },
+     {
+      "fiscal_year": 2010,
+      "filtered_bp": 17.76,
+      "filtered_bp_lo": 1.97,
+      "filtered_bp_hi": 33.54,
+      "filtered_coef": -0.177566,
+      "filtered_se": 0.080543,
+      "smoothed_bp": 17.96,
+      "smoothed_bp_lo": 9.14,
+      "smoothed_bp_hi": 26.78,
+      "smoothed_coef": -0.179611,
+      "smoothed_se": 0.045001
+     },
+     {
+      "fiscal_year": 2011,
+      "filtered_bp": 17.43,
+      "filtered_bp_lo": -0.69,
+      "filtered_bp_hi": 35.56,
+      "filtered_coef": -0.174324,
+      "filtered_se": 0.092482,
+      "smoothed_bp": 15.98,
+      "smoothed_bp_lo": 6.02,
+      "smoothed_bp_hi": 25.94,
+      "smoothed_coef": -0.159828,
+      "smoothed_se": 0.050824
+     },
+     {
+      "fiscal_year": 2012,
+      "filtered_bp": 16.46,
+      "filtered_bp_lo": -4.51,
+      "filtered_bp_hi": 37.43,
+      "filtered_coef": -0.1646,
+      "filtered_se": 0.107004,
+      "smoothed_bp": 9.73,
+      "smoothed_bp_lo": -2.8,
+      "smoothed_bp_hi": 22.26,
+      "smoothed_coef": -0.097283,
+      "smoothed_se": 0.063935
+     },
+     {
+      "fiscal_year": 2013,
+      "filtered_bp": 14.04,
+      "filtered_bp_lo": -8.42,
+      "filtered_bp_hi": 36.51,
+      "filtered_coef": -0.140446,
+      "filtered_se": 0.114607,
+      "smoothed_bp": 9.78,
+      "smoothed_bp_lo": -6.23,
+      "smoothed_bp_hi": 25.79,
+      "smoothed_coef": -0.097827,
+      "smoothed_se": 0.08168
+     },
+     {
+      "fiscal_year": 2014,
+      "filtered_bp": 10.19,
+      "filtered_bp_lo": -13.89,
+      "filtered_bp_hi": 34.27,
+      "filtered_coef": -0.101873,
+      "filtered_se": 0.122855,
+      "smoothed_bp": 8.53,
+      "smoothed_bp_lo": -9.98,
+      "smoothed_bp_hi": 27.04,
+      "smoothed_coef": -0.085309,
+      "smoothed_se": 0.094421
+     },
+     {
+      "fiscal_year": 2015,
+      "filtered_bp": 11.67,
+      "filtered_bp_lo": -14.58,
+      "filtered_bp_hi": 37.93,
+      "filtered_coef": -0.116734,
+      "filtered_se": 0.133971,
+      "smoothed_bp": 2.71,
+      "smoothed_bp_lo": -16.86,
+      "smoothed_bp_hi": 22.28,
+      "smoothed_coef": -0.02708,
+      "smoothed_se": 0.09985
+     },
+     {
+      "fiscal_year": 2016,
+      "filtered_bp": 5.81,
+      "filtered_bp_lo": -21.64,
+      "filtered_bp_hi": 33.27,
+      "filtered_coef": -0.058146,
+      "filtered_se": 0.140093,
+      "smoothed_bp": -2.06,
+      "smoothed_bp_lo": -21.29,
+      "smoothed_bp_hi": 17.18,
+      "smoothed_coef": 0.020556,
+      "smoothed_se": 0.098146
+     },
+     {
+      "fiscal_year": 2017,
+      "filtered_bp": 3.89,
+      "filtered_bp_lo": -23.82,
+      "filtered_bp_hi": 31.6,
+      "filtered_coef": -0.038908,
+      "filtered_se": 0.141367,
+      "smoothed_bp": -4.42,
+      "smoothed_bp_lo": -22.57,
+      "smoothed_bp_hi": 13.74,
+      "smoothed_coef": 0.044181,
+      "smoothed_se": 0.092622
+     },
+     {
+      "fiscal_year": 2018,
+      "filtered_bp": 0.15,
+      "filtered_bp_lo": -27.3,
+      "filtered_bp_hi": 27.59,
+      "filtered_coef": -0.001455,
+      "filtered_se": 0.140032,
+      "smoothed_bp": -6.99,
+      "smoothed_bp_lo": -23.41,
+      "smoothed_bp_hi": 9.44,
+      "smoothed_coef": 0.069889,
+      "smoothed_se": 0.083808
+     },
+     {
+      "fiscal_year": 2019,
+      "filtered_bp": -6.88,
+      "filtered_bp_lo": -32.2,
+      "filtered_bp_hi": 18.43,
+      "filtered_coef": 0.068838,
+      "filtered_se": 0.129151,
+      "smoothed_bp": -8.7,
+      "smoothed_bp_lo": -22.37,
+      "smoothed_bp_hi": 4.98,
+      "smoothed_coef": 0.086975,
+      "smoothed_se": 0.069775
+     },
+     {
+      "fiscal_year": 2020,
+      "filtered_bp": -6.19,
+      "filtered_bp_lo": -14.88,
+      "filtered_bp_hi": 2.5,
+      "filtered_coef": 0.061907,
+      "filtered_se": 0.044352,
+      "smoothed_bp": -6.78,
+      "smoothed_bp_lo": -15.14,
+      "smoothed_bp_hi": 1.59,
+      "smoothed_coef": 0.06776,
+      "smoothed_se": 0.04268
+     },
+     {
+      "fiscal_year": 2021,
+      "filtered_bp": 0.07,
+      "filtered_bp_lo": -10.79,
+      "filtered_bp_hi": 10.93,
+      "filtered_coef": -0.000695,
+      "filtered_se": 0.055412,
+      "smoothed_bp": -1.36,
+      "smoothed_bp_lo": -11.11,
+      "smoothed_bp_hi": 8.4,
+      "smoothed_coef": 0.013577,
+      "smoothed_se": 0.049777
+     },
+     {
+      "fiscal_year": 2022,
+      "filtered_bp": -0.4,
+      "filtered_bp_lo": -15.43,
+      "filtered_bp_hi": 14.62,
+      "filtered_coef": 0.00401,
+      "filtered_se": 0.076663,
+      "smoothed_bp": 0.19,
+      "smoothed_bp_lo": -14.61,
+      "smoothed_bp_hi": 14.98,
+      "smoothed_coef": -0.001889,
+      "smoothed_se": 0.075486
+     },
+     {
+      "fiscal_year": 2023,
+      "filtered_bp": -0.37,
+      "filtered_bp_lo": -17.56,
+      "filtered_bp_hi": 16.81,
+      "filtered_coef": 0.003734,
+      "filtered_se": 0.087684,
+      "smoothed_bp": 1.05,
+      "smoothed_bp_lo": -15.57,
+      "smoothed_bp_hi": 17.67,
+      "smoothed_coef": -0.010509,
+      "smoothed_se": 0.0848
+     },
+     {
+      "fiscal_year": 2024,
+      "filtered_bp": 2.0,
+      "filtered_bp_lo": -15.66,
+      "filtered_bp_hi": 19.65,
+      "filtered_coef": -0.019969,
+      "filtered_se": 0.090079,
+      "smoothed_bp": 3.08,
+      "smoothed_bp_lo": -14.46,
+      "smoothed_bp_hi": 20.62,
+      "smoothed_coef": -0.030825,
+      "smoothed_se": 0.089499
+     },
+     {
+      "fiscal_year": 2025,
+      "filtered_bp": 6.14,
+      "filtered_bp_lo": -12.99,
+      "filtered_bp_hi": 25.28,
+      "filtered_coef": -0.061421,
+      "filtered_se": 0.097629,
+      "smoothed_bp": 6.14,
+      "smoothed_bp_lo": -12.99,
+      "smoothed_bp_hi": 25.28,
+      "smoothed_coef": -0.061421,
+      "smoothed_se": 0.097629
+     }
+    ]
+   },
+   "shape": {
+    "peak": {
+     "fy": 1992,
+     "bp": 32.94
+    },
+    "fy1982": {
+     "bp": 27.65,
+     "bp_lo": 5.11,
+     "bp_hi": 50.19
+    },
+    "fy2000_bp": 25.1,
+    "fy2007_bp": 17.46,
+    "post_2008_mean_bp": 3.65,
+    "early_retreat_bp": 2.55,
+    "late_retreat_bp": 13.81,
+    "early_retreat_share_of_v0": 0.066,
+    "late_retreat_share_of_v0": 0.946
+   },
+   "coming_back": {
+    "latest": 2025,
+    "latest_bp": 6.14,
+    "latest_bp_lo": -12.99,
+    "post_2008_range_bp": [
+     -6.88,
+     17.76
+    ],
+    "post_2008_from": 2009,
+    "post_2008_to": 2024,
+    "reappearing": false
+   },
+   "answer": {
+    "fy1982_fall": 0.5366,
+    "band_includes_zero": false,
+    "answer": "mixed"
+   }
+  }
+ },
+ "t7b": {
+  "label": "added after the results existed (T7b)",
+  "v1_core_infl": {
+   "drifting": false,
+   "coef": -0.044088,
+   "se": 0.064382,
+   "lo": -0.170276,
+   "hi": 0.082099
+  },
+  "inflation_by_subsample": [
+   {
+    "from_fy": 1967,
+    "to_fy": 1990,
+    "n": 24,
+    "core_infl": {
+     "coef": 0.124953,
+     "se": 0.134415,
+     "lo": -0.138496,
+     "hi": 0.388402
+    },
+    "fiscal_slope": {
+     "bp": 57.9,
+     "bp_lo": 37.23,
+     "bp_hi": 78.56,
+     "coef": -0.578973,
+     "se": 0.105444
+    }
+   },
+   {
+    "from_fy": 1967,
+    "to_fy": 2007,
+    "n": 41,
+    "core_infl": {
+     "coef": 0.107835,
+     "se": 0.12163,
+     "lo": -0.130555,
+     "hi": 0.346225
+    },
+    "fiscal_slope": {
+     "bp": 40.78,
+     "bp_lo": 26.1,
+     "bp_hi": 55.45,
+     "coef": -0.407766,
+     "se": 0.074881
+    }
+   },
+   {
+    "from_fy": 1991,
+    "to_fy": 2025,
+    "n": 35,
+    "core_infl": {
+     "coef": 0.108982,
+     "se": 0.129434,
+     "lo": -0.144705,
+     "hi": 0.362669
+    },
+    "fiscal_slope": {
+     "bp": 13.69,
+     "bp_lo": 1.51,
+     "bp_hi": 25.87,
+     "coef": -0.136926,
+     "se": 0.062149
+    }
+   },
+   {
+    "from_fy": 2008,
+    "to_fy": 2025,
+    "n": 18,
+    "core_infl": {
+     "coef": 0.010788,
+     "se": 0.133035,
+     "lo": -0.249956,
+     "hi": 0.271531
+    },
+    "fiscal_slope": {
+     "bp": 5.5,
+     "bp_lo": -6.7,
+     "bp_hi": 17.69,
+     "coef": -0.054968,
+     "se": 0.06222
+    }
+   },
+   {
+    "from_fy": 1967,
+    "to_fy": 2025,
+    "n": 59,
+    "core_infl": {
+     "coef": -0.063647,
+     "se": 0.064722,
+     "lo": -0.190501,
+     "hi": 0.063207
+    },
+    "fiscal_slope": {
+     "bp": 17.8,
+     "bp_lo": 3.63,
+     "bp_hi": 31.98,
+     "coef": -0.178048,
+     "se": 0.07232
+    }
+   }
+  ],
+  "v5_inflation_path": [
+   {
+    "fiscal_year": 1972,
+    "coef": -0.080423,
+    "lo": -0.329057,
+    "hi": 0.168212
+   },
+   {
+    "fiscal_year": 1977,
+    "coef": 0.007523,
+    "lo": -0.176683,
+    "hi": 0.191729
+   },
+   {
+    "fiscal_year": 1982,
+    "coef": 0.218579,
+    "lo": 0.031063,
+    "hi": 0.406095
+   },
+   {
+    "fiscal_year": 1987,
+    "coef": 0.20474,
+    "lo": -0.09412,
+    "hi": 0.503599
+   },
+   {
+    "fiscal_year": 1992,
+    "coef": 0.214736,
+    "lo": -0.122268,
+    "hi": 0.551741
+   },
+   {
+    "fiscal_year": 2000,
+    "coef": 0.211421,
+    "lo": -0.204519,
+    "hi": 0.62736
+   },
+   {
+    "fiscal_year": 2008,
+    "coef": -0.175683,
+    "lo": -0.518366,
+    "hi": 0.167001
+   },
+   {
+    "fiscal_year": 2015,
+    "coef": -0.20984,
+    "lo": -0.658828,
+    "hi": 0.239147
+   },
+   {
+    "fiscal_year": 2021,
+    "coef": -0.199506,
+    "lo": -0.523719,
+    "hi": 0.124706
+   },
+   {
+    "fiscal_year": 2025,
+    "coef": -0.105108,
+    "lo": -0.496183,
+    "hi": 0.285967
+   }
+  ],
+  "v5_vs_v1": {
+   "loglik_v1": -64.2914,
+   "loglik_v5": -57.5019,
+   "lr_stat": 13.579,
+   "p_boundary_mixture": 0.000114,
+   "mixture": "chi2(0):chi2(1) 50:50 (one drift variance at zero under V1)",
+   "prefers": "V5"
+  },
+  "v5_fy1982_share_of_v0": 0.463,
+  "v5_shape": {
+   "from_fy": 1980,
+   "to_fy": 1996,
+   "min_bp": 25.4,
+   "max_bp": 32.94,
+   "range_bp": 7.54,
+   "median_band_half_width_bp": 20.66
+  },
+  "smoothed_corr_fiscal_slope_inflation_fy1982": {
+   "V1": 0.491,
+   "V5": 0.588
+  }
+ },
+ "events": [
+  {
+   "id": 1,
+   "date": "1979-10-06",
+   "label": "Volcker disinflation begins (1979-82)",
+   "source_url": "https://www.federalreservehistory.org/essays/anti-inflation-measures",
+   "verified": "22 Oct 2026: essay dates the announcement 6 October 1979 (unscheduled FOMC meeting); the 1979-82 span is the design's"
+  },
+  {
+   "id": 2,
+   "date": "1994-02-04",
+   "label": "Start of the 1994 bond rout: first FOMC tightening since 1989",
+   "source_url": "https://www.federalreserve.gov/fomc/19940204default.htm",
+   "verified": "22 Oct 2026: statement dated 4 February 1994, first tightening since early 1989"
+  },
+  {
+   "id": 3,
+   "date": "2004-08-01",
+   "label": "August 2004: data-picked break (Bai-Perron)",
+   "source_url": "docs/decisions/break-date.md",
+   "verified": "22 Oct 2026: repository record; one-break Bai-Perron solution for the fiscal specification is August 2004"
+  },
+  {
+   "id": 4,
+   "date": "2005-02-16",
+   "label": "Greenspan's bond-market 'conundrum'",
+   "source_url": "https://www.federalreserve.gov/boarddocs/hh/2005/february/testimony.htm",
+   "verified": "22 Oct 2026: testimony dated 16 February 2005 ('remains a conundrum')"
+  },
+  {
+   "id": 5,
+   "date": "2008-09-15",
+   "label": "Lehman Brothers bankruptcy",
+   "source_url": "https://www.federalreservehistory.org/essays/great-recession-and-its-aftermath",
+   "verified": "22 Oct 2026: essay says Lehman filed and 'the next day' the Fed supported AIG; the AIG release is dated 16 September 2008 (https://www.federalreserve.gov/newsevents/pressreleases/other20080916a.htm)"
+  },
+  {
+   "id": 6,
+   "date": "2008-11-25",
+   "label": "First large-scale asset purchases announced (agency debt and MBS)",
+   "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20081125b.htm",
+   "verified": "22 Oct 2026: release dated 25 November 2008; up to $100bn GSE debt and $500bn MBS"
+  },
+  {
+   "id": 7,
+   "date": "2011-08-05",
+   "label": "S&P downgrades the US to AA+",
+   "source_url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20110809.htm",
+   "verified": "22 Oct 2026: FOMC minutes of 9 August 2011 refer to 'the August 5 announcement by Standard & Poor's of its downgrade'; S&P's own release is behind registration"
+  },
+  {
+   "id": 8,
+   "date": "2013-05-22",
+   "label": "Taper tantrum: Bernanke testimony on the pace of purchases",
+   "source_url": "https://www.federalreserve.gov/newsevents/testimony/bernanke20130522a.htm",
+   "verified": "22 Oct 2026: testimony dated 22 May 2013; Committee 'prepared to increase or reduce the pace of its asset purchases'"
+  },
+  {
+   "id": 9,
+   "date": "2020-03-15",
+   "label": "March 2020: rate to zero and at least $500bn Treasury purchases",
+   "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20200315a.htm",
+   "verified": "22 Oct 2026: release dated 15 March 2020"
+  },
+  {
+   "id": 10,
+   "date": "2022-03-16",
+   "label": "2022 tightening begins",
+   "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20220316a.htm",
+   "verified": "22 Oct 2026: release dated 16 March 2022; target range raised to 1/4 to 1/2 percent"
+  },
+  {
+   "id": 11,
+   "date": "2023-08-01",
+   "label": "Fitch downgrades the US to AA+",
+   "source_url": "https://home.treasury.gov/news/press-releases/jy1665",
+   "verified": "22 Oct 2026: Treasury statement dated 1 August 2023 responds to the Fitch change 'announced today'; fitchratings.com could not be fetched"
+  },
+  {
+   "id": 12,
+   "date": "2025-05-16",
+   "label": "Moody's downgrades the US to Aa1",
+   "source_url": "https://www.moodys.com/web/en/us/about-us/usrating.html",
+   "verified": "22 Oct 2026: Moody's page dates the downgrade from Aaa to Aa1 16 May 2025"
+  },
+  {
+   "id": 13,
+   "date": "2026-09-30",
+   "label": "ACM 10-year premium at its highest month-end since April 2014",
+   "source_url": "https://www.newyorkfed.org/medialibrary/media/research/data_indicators/ACMTermPremium.xls",
+   "verified": "22 Oct 2026: Lab file ACMTermPremium_2026-10-22.xls: 0.885% at 30 September 2026; last month-end at or above it was April 2014 (1.077%)"
+  }
+ ],
+ "t7c": {
+  "label": "added after the results existed (T7c, after the T5c review)",
+  "drifting_level": {
+   "models": {
+    "a": {
+     "controls": [
+      "debt_gdp"
+     ],
+     "drifting": [
+      "intercept"
+     ],
+     "n_states": 3,
+     "nobs_diffuse": 3,
+     "loglik": -51.3063,
+     "converged": true,
+     "drift_variance_slope": 0.002036359376375059,
+     "drift_sd_bp_per_year": 4.513,
+     "drift_variance_core_infl": null,
+     "drift_variance_intercept": 0.1970245471937002,
+     "drift_sd_intercept_pp_per_year": 0.444,
+     "fy1982": {
+      "bp": 25.47,
+      "bp_lo": 5.92,
+      "bp_hi": 45.02,
+      "coef": -0.254673,
+      "se": 0.099739
+     },
+     "fy1982_share_of_v0": 0.427,
+     "core_infl_fy1982": null,
+     "same_states_as": [
+      "V0"
+     ]
+    },
+    "b": {
+     "controls": [
+      "debt_gdp",
+      "core_infl"
+     ],
+     "drifting": [
+      "intercept"
+     ],
+     "n_states": 4,
+     "nobs_diffuse": 4,
+     "loglik": -53.9427,
+     "converged": true,
+     "drift_variance_slope": 0.0020327283919196032,
+     "drift_sd_bp_per_year": 4.509,
+     "drift_variance_core_infl": null,
+     "drift_variance_intercept": 0.20643838032322007,
+     "drift_sd_intercept_pp_per_year": 0.454,
+     "fy1982": {
+      "bp": 25.07,
+      "bp_lo": 5.36,
+      "bp_hi": 44.77,
+      "coef": -0.250653,
+      "se": 0.100527
+     },
+     "fy1982_share_of_v0": 0.42,
+     "core_infl_fy1982": {
+      "coef": 0.006733,
+      "se": 0.071714,
+      "lo": -0.133823,
+      "hi": 0.147289
+     },
+     "same_states_as": [
+      "V1",
+      "V5"
+     ]
+    },
+    "c": {
+     "controls": [
+      "debt_gdp",
+      "core_infl"
+     ],
+     "drifting": [
+      "intercept",
+      "core_infl"
+     ],
+     "n_states": 4,
+     "nobs_diffuse": 4,
+     "loglik": -53.9427,
+     "converged": true,
+     "drift_variance_slope": 0.0020327731130578026,
+     "drift_sd_bp_per_year": 4.509,
+     "drift_variance_core_infl": 2.3815919978353104e-27,
+     "drift_variance_intercept": 0.20643930690577983,
+     "drift_sd_intercept_pp_per_year": 0.454,
+     "fy1982": {
+      "bp": 25.07,
+      "bp_lo": 5.36,
+      "bp_hi": 44.77,
+      "coef": -0.250653,
+      "se": 0.100528
+     },
+     "fy1982_share_of_v0": 0.42,
+     "core_infl_fy1982": {
+      "coef": 0.006733,
+      "se": 0.071714,
+      "lo": -0.133823,
+      "hi": 0.147289
+     },
+     "same_states_as": [
+      "V1",
+      "V5"
+     ]
+    }
+   },
+   "nested_tests": {
+    "a_vs_V0": {
+     "lr_stat": 20.9334,
+     "p_boundary_mixture": 2e-06,
+     "null": "intercept drift variance at zero under V0"
+    },
+    "c_vs_V5": {
+     "lr_stat": 7.1184,
+     "p_boundary_mixture": 0.003815,
+     "null": "intercept drift variance at zero under V5"
+    },
+    "c_vs_b": {
+     "lr_stat": 0.0,
+     "p_boundary_mixture": 1.0,
+     "null": "inflation drift variance at zero under (b)"
+    }
+   },
+   "b_vs_v5": {
+    "loglik_b": -53.9427,
+    "loglik_v5": -57.5019,
+    "difference": 3.5592,
+    "note": "not nested; same states, same number of parameters (h and two drift variances)"
+   }
+  },
+  "pooled_by_period": {
+   "post_from_fy": 1991,
+   "regressions": [
+    {
+     "spec": "pooled",
+     "description": "as the full-sample row above",
+     "n": 59,
+     "core_infl": {
+      "coef": -0.063647,
+      "se": 0.064722,
+      "lo": -0.190501,
+      "hi": 0.063207
+     },
+     "fiscal_slope": {
+      "bp": 17.8,
+      "bp_lo": 3.63,
+      "bp_hi": 31.98,
+      "coef": -0.178048,
+      "se": 0.07232
+     }
+    },
+    {
+     "spec": "post_dummy",
+     "description": "+ one dummy for FY1991 onward",
+     "n": 59,
+     "core_infl": {
+      "coef": 0.027901,
+      "se": 0.090359,
+      "lo": -0.1492,
+      "hi": 0.205002
+     },
+     "fiscal_slope": {
+      "bp": 20.82,
+      "bp_lo": 6.6,
+      "bp_hi": 35.04,
+      "coef": -0.208202,
+      "se": 0.072542
+     }
+    },
+    {
+     "spec": "post_dummy_period_slopes",
+     "description": "+ dummy, deficit and debt slopes allowed to differ from FY1991",
+     "n": 59,
+     "core_infl": {
+      "coef": 0.118919,
+      "se": 0.094991,
+      "lo": -0.06726,
+      "hi": 0.305098
+     },
+     "fiscal_slope": {
+      "bp": 58.11,
+      "bp_lo": 38.87,
+      "bp_hi": 77.35,
+      "coef": -0.581092,
+      "se": 0.098164
+     },
+     "fiscal_slope_from_fy1991": {
+      "bp": 13.71,
+      "bp_lo": 1.47,
+      "bp_hi": 25.95,
+      "coef": -0.137071,
+      "se": 0.06246
+     }
+    },
+    {
+     "spec": "linear_trend",
+     "description": "+ linear trend in fiscal years",
+     "n": 59,
+     "core_infl": {
+      "coef": -0.014082,
+      "se": 0.060462,
+      "lo": -0.132585,
+      "hi": 0.104421
+     },
+     "fiscal_slope": {
+      "bp": 19.53,
+      "bp_lo": 6.68,
+      "bp_hi": 32.38,
+      "coef": -0.195287,
+      "se": 0.065563
+     }
+    }
+   ],
+   "period_means": [
+    {
+     "from_fy": 1967,
+     "to_fy": 1990,
+     "n": 24,
+     "y": 2.268,
+     "core_infl": 5.288,
+     "debt_gdp": 0.375
+    },
+    {
+     "from_fy": 1991,
+     "to_fy": 2025,
+     "n": 35,
+     "y": 1.041,
+     "core_infl": 2.143,
+     "debt_gdp": 0.824
+    }
+   ],
+   "units": "y: premium, percentage points; core_infl: percent; debt_gdp: ratio"
+  },
+  "v5_fy1982_band_share_of_v0": [
+   0.086,
+   0.841
+  ],
+  "smoothed_corr_deficit_link_bp_inflation_fy1982": {
+   "V1": -0.491,
+   "V5": -0.588
+  }
+ }
+}

@@ -11,6 +11,7 @@ PAGES = (
     'projects/fima.html',
     'projects/term-premium.html',
     'projects/term-premium/deficits-and-the-term-premium.html',
+    'projects/term-premium/lab-notes-2026-10.html',
     'projects/repo-market.html',
     'notes/climate-resilience.html',
     'notes/who-buys-the-debt.html',
