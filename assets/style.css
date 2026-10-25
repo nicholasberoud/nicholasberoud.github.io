@@ -276,3 +276,5 @@ pre.formula { white-space: pre; margin: 22px 0; }
 .writing .w-tags { margin-bottom: 10px; }
 .card--featured .kicker { margin-bottom: 8px; }
 .card .card-sub { flex: 0; margin: -2px 0 10px; font-size: 15px; color: var(--bright); font-weight: 500; }
+.tag--quant { color: #e3b341; border-color: #e3b34155; }
+.eyebrow .tag { margin-left: 8px; letter-spacing: 0; }
