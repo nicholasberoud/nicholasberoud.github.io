@@ -272,3 +272,6 @@ pre.formula { white-space: pre; margin: 22px 0; }
 .post-list p { line-height: 1.6; }
 .post-list br { display: none; }
 .writing a { line-height: 1.35; margin: 2px 0 4px; }
+.post-list a.post-title { margin-top: 14px; }
+.writing .w-tags { margin-bottom: 10px; }
+.card--featured .kicker { margin-bottom: 8px; }
