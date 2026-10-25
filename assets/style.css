@@ -278,3 +278,12 @@ pre.formula { white-space: pre; margin: 22px 0; }
 .card .card-sub { flex: 0; margin: -2px 0 10px; font-size: 15px; color: var(--bright); font-weight: 500; }
 .tag--quant { color: #e3b341; border-color: #e3b34155; }
 .eyebrow .tag { margin-left: 8px; letter-spacing: 0; }
+.kind { display: inline-block; font: 500 11px/1.7 var(--mono); padding: 0 7px; border-radius: 4px; border: 1px solid var(--rule-strong); color: var(--muted); vertical-align: 1px; white-space: nowrap; }
+.plan li .kind { display: table; margin-bottom: 6px; }
+.kind--hyp { color: var(--purple); border-color: #cea5fb55; }
+.kind--plan { color: var(--green); border-color: #7ce38b55; }
+.kind--open { color: var(--muted); }
+.placeholder--left { text-align: left; color: var(--text); font-size: 14.5px; line-height: 1.6; padding: 16px 18px; }
+.placeholder--left strong { display: block; color: var(--orange) !important; font: 600 12px/1.6 var(--mono); margin-bottom: 4px; }
+.data-table--text td { text-align: left; font-family: var(--sans); font-size: 13px; }
+.data-table--text th { text-align: left; }
