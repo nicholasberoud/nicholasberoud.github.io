@@ -275,3 +275,4 @@ pre.formula { white-space: pre; margin: 22px 0; }
 .post-list a.post-title { margin-top: 14px; }
 .writing .w-tags { margin-bottom: 10px; }
 .card--featured .kicker { margin-bottom: 8px; }
+.card .card-sub { flex: 0; margin: -2px 0 10px; font-size: 15px; color: var(--bright); font-weight: 500; }
