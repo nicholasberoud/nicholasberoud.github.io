@@ -267,3 +267,8 @@ pre.formula { white-space: pre; margin: 22px 0; }
   .wip-banner { flex-direction: column; gap: 4px; }
 }
 .glance-read { margin: 14px 0 0; font-size: 14.5px; line-height: 1.6; color: var(--text); }
+.post-list a.post-title { display: block; margin: 10px 0 6px; line-height: 1.35; }
+.post-list .meta { margin: 0 0 8px; line-height: 1.5; }
+.post-list p { line-height: 1.6; }
+.post-list br { display: none; }
+.writing a { line-height: 1.35; margin: 2px 0 4px; }
