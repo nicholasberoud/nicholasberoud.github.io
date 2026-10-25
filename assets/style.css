@@ -36,7 +36,6 @@ code { background: var(--panel); border: 1px solid var(--rule); border-radius: 5
 .site-header { position: sticky; top: 0; z-index: 5; background: #0d1117ee; backdrop-filter: blur(6px); border-bottom: 1px solid var(--rule); }
 .nav-inner { max-width: 1040px; margin: auto; padding: 12px 30px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .wordmark { font-family: var(--mono); font-size: 15px; font-weight: 600; color: var(--bright); text-decoration: none; white-space: nowrap; }
-.wordmark:before { content: '~/'; color: var(--muted); font-weight: 400; }
 .site-header nav { display: flex; gap: 22px; }
 .site-header nav a { display: inline-flex; align-items: center; min-height: 44px; white-space: nowrap; color: var(--muted); text-decoration: none; font-size: 14px; }
 .site-header nav a:hover, .site-header nav a[aria-current="page"] { color: var(--bright); }
@@ -181,7 +180,6 @@ h1 { font-weight: 600; font-size: 38px; line-height: 1.2; letter-spacing: -.6px;
   body { font-size: 15px; }
   .nav-inner { padding: 8px 18px; gap: 12px; }
   .wordmark { font-size: 13px; }
-  .wordmark:before { content: none; }
   .site-header nav { gap: 14px; }
   .site-header nav a { font-size: 13px; }
   .profile-banner { height: 220px; }
@@ -268,3 +266,4 @@ pre.formula { white-space: pre; margin: 22px 0; }
   .writing .w-side { grid-column: 1; grid-row: auto; text-align: left; }
   .wip-banner { flex-direction: column; gap: 4px; }
 }
+.glance-read { margin: 14px 0 0; font-size: 14.5px; line-height: 1.6; color: var(--text); }
