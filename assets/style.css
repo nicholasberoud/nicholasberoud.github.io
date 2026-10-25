@@ -287,3 +287,28 @@ pre.formula { white-space: pre; margin: 22px 0; }
 .placeholder--left strong { display: block; color: var(--orange) !important; font: 600 12px/1.6 var(--mono); margin-bottom: 4px; }
 .data-table--text td { text-align: left; font-family: var(--sans); font-size: 13px; }
 .data-table--text th { text-align: left; }
+/* Article reading layer (25 Oct): byline, opener with drop cap, one body size */
+.article p, .article li { font-size: 17px; line-height: 1.75; }
+.byline { display: flex; flex-wrap: wrap; gap: 4px 0; margin: 4px 0 30px; padding-bottom: 18px; border-bottom: 1px solid var(--rule); font: 13px/1.6 var(--mono); color: var(--muted); }
+.byline span + span:before { content: '·'; margin: 0 10px; color: var(--rule-strong); }
+.byline span:first-child { color: var(--text); }
+.opener { margin: 0 0 36px; }
+.opener p { margin: 0 0 20px; color: var(--text); }
+.opener p:first-child { color: var(--bright); }
+.opener p:first-child::first-letter { float: left; font-size: 66px; line-height: .9; font-weight: 600; color: var(--blue); margin: 6px 12px 0 0; }
+.opener p:last-child { margin-bottom: 0; }
+.about-data { margin: -14px 0 26px; font-size: 13px; }
+.about-data summary { cursor: pointer; font: 12px/1.6 var(--mono); color: var(--muted); padding: 4px 0; }
+.about-data summary:hover { color: var(--bright); }
+.about-data .dates { margin-top: 8px; }
+.glance .stat-label { font-size: 14px; line-height: 1.5; }
+.glance .glance-read { font-size: 14.5px; line-height: 1.6; }
+.sidebar p, .findings p, .findings li { font-size: 15.5px; }
+.post-list p, .writing .w-desc, .card p { font-size: 15px; }
+.exhibit figcaption { font-size: 12.5px; }
+@media (max-width: 560px) { .article p, .article li { font-size: 16px; } .opener p:first-child::first-letter { font-size: 54px; } }
+.article .source-note { font-size: 12.5px; line-height: 1.6; }
+.article .toc li { font-size: 15px; line-height: 1.6; }
+.article .glance .glance-read { font-size: 14.5px; }
+.article .wip-banner p, .article .placeholder { font-size: 14.5px; }
+.article .post-list p { font-size: 15px; }
