@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brazil Prices Lula: Anatomy of an Eight-Sigma Day | The Long End | Nicholas Beroud</title><meta name="description" content="After Lula's re-election, Brazil's main US-listed ETF fell 19% in a day, an 'impossible' 8.6-sigma move under a normal distribution. The day wasn't impossible. The model was wrong.">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Nicholas Beroud"><meta property="og:title" content="Brazil Prices Lula: Anatomy of an Eight-Sigma Day"><meta property="og:description" content="After Lula's re-election, Brazil's main US-listed ETF fell 19% in a day. The day wasn't impossible. The model was wrong."><meta property="og:url" content="https://nicholasberoud.github.io/projects/term-premium/brazil-eight-sigma.html"><meta property="og:image" content="https://nicholasberoud.github.io/assets/term-premium/brazil-2026-10/br-fat-tails.png"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1117"><link rel="icon" href="../../assets/favicon.svg?v=2" type="image/svg+xml"><link rel="stylesheet" href="../../assets/style.css?v=20261029-1"></head>
+<body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="nav-inner"><a class="wordmark" href="../../index.html">Nicholas Beroud</a><nav aria-label="Main navigation"><a href="../term-premium.html" aria-current="page">The Long End</a><a href="../../index.html#projects">Projects</a><a href="../../index.html#writing">Writing</a></nav></div></header>
+<main id="main"><article class="article article--brazil"><a class="back" href="../term-premium.html">← The Long End</a>
+<p class="eyebrow">The Long End · Commentary · Market note <span class="tag tag--quant">Quantitative</span></p>
+<h1>Brazil Prices Lula: Anatomy of an Eight-Sigma Day</h1>
+<p class="byline"><span>By Nicholas Beroud</span><span>29 Oct 2026</span><span>Data to 28 Oct</span><span>8 min read</span></p>
+
+<div class="opener">
+<p>On Monday, Brazil’s main US-listed stock fund, the iShares MSCI Brazil ETF (EWZ), lost almost a fifth of its value in a single session. One market newsletter, The Kobeissi Letter, worked out that under a normal distribution a fall that size should happen about once in 58 quadrillion days. The universe is roughly five trillion days old. Either São Paulo just saw something that should take more than ten thousand lifetimes of the universe to come around, or the model was wrong.</p>
+<p>It was the model. And why it was wrong tells you more about this selloff than the size of it does.</p>
+<p>Markets went into Sunday’s runoff positioned for a Flávio Bolsonaro win. After the first round, investors had treated him as the candidate who would finally fix Brazil’s public finances, although he never said how. When Lula won a fourth term instead, they didn’t reprice Brazil overnight; they unwound a bet. The currency, stocks and long-term yields all moved at once because the same trade was coming off everywhere.</p>
+</div>
+
+<section class="glance" aria-labelledby="glance-head">
+<p class="glance-head" id="glance-head">At a glance · Monday 26 October against Friday 23 October</p>
+<ul class="stats">
+<li class="stat"><span class="stat-num">−19.1%</span><span class="stat-label">EWZ, in dollars. An 8.6-sigma day by its own 20-year volatility.</span></li>
+<li class="stat"><span class="stat-num">+9.2%</span><span class="stat-label">The dollar against the real, at the central bank’s official PTAX rate (5.04 to 5.50).</span></li>
+<li class="stat"><span class="stat-num">+2.3 to 2.5 pp</span><span class="stat-label">The yield on Brazil’s 2037 local-currency government bond, from about 12.9% to 15.2 to 15.4%.</span></li>
+<li class="stat"><span class="stat-num">19 vs 0.003</span><span class="stat-label">EWZ days beyond 5 sigma since 2005, against what a normal distribution expects.</span></li>
+</ul>
+<p class="glance-read"><strong>What this shows:</strong> a violent, cross-asset repricing on one day, and that “impossible” moves are routine for Brazil. <strong>What it doesn’t:</strong> whether the move was right. That part is my interpretation, and section 05 says what would prove it wrong.</p>
+<p class="source-note">Numbers: <a href="../../assets/term-premium/brazil-2026-10/results.json">note results</a> and the <a href="../../assets/term-premium/brazil-2026-10/event_table.csv">event table</a>. EWZ is the fund’s net asset value, not its market price.</p>
+</section>
+
+<nav class="toc" aria-label="Contents"><p class="toc-head">Contents</p><ol>
+<li><a href="#happened">What Happened</a></li>
+<li><a href="#sigma">Eight Sigma? Blame the Model</a></li>
+<li><a href="#twice">Why Dollar Investors Lost Twice</a></li>
+<li><a href="#why">Why the Market Freaked</a></li>
+<li><a href="#watch">What Would Prove Me Wrong, and What to Watch</a></li>
+<li><a href="#sources">Sources and Data</a></li>
+</ol></nav>
+
+<h2 id="happened"><span class="num">01</span>What Happened</h2>
+<p>Lula won Sunday’s runoff against Flávio Bolsonaro. On Monday, everything Brazilian sold off at once. The Ibovespa fell 13.9% and triggered a 30-minute trading halt after its first 10% drop. The dollar jumped 9.2% against the real. Long-term local yields jumped by well over two percentage points.</p>
+<figure class="exhibit"><span class="exhibit-label">Exhibit 1</span><span class="exhibit-title">One day, four markets: the currency, stocks and local yields moved together</span><a href="../../assets/term-premium/brazil-2026-10/br-cross-asset.png" aria-label="Open exhibit 1 at full size"><img src="../../assets/term-premium/brazil-2026-10/br-cross-asset.png" width="924" height="1452" alt="Four stacked panels, 16 to 29 October 2026. The dollar against the real jumps from about 5.04 to 5.50 on 26 October, then eases to about 5.37. The Ibovespa falls from about 205,000 to 177,000 and keeps falling to 171,000. EWZ's net asset value falls from about $42 to $34. The 2037 local bond yield jumps from about 12.9% to 15.4%, then eases to about 14.9%." loading="lazy"></a><figcaption>Daily closes; the dollar uses the central bank’s PTAX fixing; the bond yield is the Treasury’s morning rate. Sources: Banco Central do Brasil, B3, iShares, Tesouro Nacional. <a href="../../assets/term-premium/brazil-2026-10/br-cross-asset.csv">Chart data (CSV)</a></figcaption></figure>
+<p>One market barely flinched. Brazil’s spread on its dollar bonds, the extra yield over US Treasuries, widened by only 22 basis points (from 161 to 183). Investors dumped the currency and local assets but did not suddenly fear a default on Brazil’s dollar debt. That gap is the first clue that this was about positioning and policy risk, not solvency.</p>
+
+<h2 id="sigma"><span class="num">02</span>Eight Sigma? Blame the Model</h2>
+<p>“Sigma” is the standard deviation: how much a market typically moves in a day. Over the previous 20 years EWZ moved about 2.2% on a typical day, so Monday’s 19.1% drop was about 8.6 of those typical days in one. Under a normal distribution, the bell curve, that is a once-in-334-quadrillion-days event. (The newsletter’s 58 quadrillion used the fund’s market price and a slightly different window; the conclusion is the same.)</p>
+<p>The trouble is that markets don’t follow the bell curve, and Brazil follows it less than most. Exhibit 2 shows every EWZ day since 2005. The yellow curve is what a normal distribution predicts. The green bars are what happened.</p>
+<figure class="exhibit"><span class="exhibit-label">Exhibit 2</span><span class="exhibit-title">The bell curve says these days never happen. Since 2005, EWZ has had nineteen beyond five sigma</span><a href="../../assets/term-premium/brazil-2026-10/br-fat-tails.png" aria-label="Open exhibit 2 at full size"><img src="../../assets/term-premium/brazil-2026-10/br-fat-tails.png" width="924" height="748" alt="Histogram of EWZ daily returns since 2005 on a log scale, with a normal curve of the same mean and standard deviation. The normal curve drops to almost zero beyond about plus or minus 8%, but actual days extend to minus 19.1% on 26 October 2026, minus 15.8% on 22 October 2008, minus 14.9% on Joesley Day, and plus 23.4% on 13 October 2008." loading="lazy"></a><figcaption>EWZ daily total returns on net asset value, January 2005 to 28 October 2026 (5,492 days); log scale. Source: iShares; my calculations. <a href="../../assets/term-premium/brazil-2026-10/br-fat-tails.csv">Chart data (CSV)</a></figcaption></figure>
+<p>Count the extremes and the bell curve falls apart. Since 2005, EWZ has had 19 days beyond five sigma in either direction. A normal distribution expects 0.003 of them: one such day every 6,900 years. A simple fat-tailed model fitted to the same history (a Student-t, one illustrative choice) puts a day as bad as Monday at roughly once in 22 years. Rare, but not cosmic.</p>
+<p>And Brazil has done this before. Monday now tops the list of EWZ’s worst days since 2005, ahead of the Covid crash, the 2008 crisis and “Joesley Day”, 18 May 2017, when a recording implicating President Michel Temer knocked the fund down 14.9%. Two of the ten were Brazilian political shocks.</p>
+<div class="table-wrap"><table class="data-table"><caption>EWZ’s ten worst days since 2005 (daily total return on net asset value). Labels cite a dated source; two days stay unlabelled because no source names a single cause.</caption>
+<tr><th>Date</th><th>Move</th><th>Sigma</th><th>Event</th></tr>
+<tr><td>26 Oct 2026</td><td>−19.1%</td><td>−8.6</td><td style="text-align:left;font-family:var(--sans)">First session after the runoff</td></tr>
+<tr><td>12 Mar 2020</td><td>−17.7%</td><td>−8.0</td><td style="text-align:left;font-family:var(--sans)">Covid-19 selloff</td></tr>
+<tr><td>16 Mar 2020</td><td>−17.3%</td><td>−7.8</td><td style="text-align:left;font-family:var(--sans)">Covid-19 selloff</td></tr>
+<tr><td>22 Oct 2008</td><td>−15.8%</td><td>−7.1</td><td style="text-align:left;font-family:var(--sans)">Global financial crisis</td></tr>
+<tr><td>18 May 2017</td><td>−14.9%</td><td>−6.7</td><td style="text-align:left;font-family:var(--sans)">Joesley Day (Temer recording)</td></tr>
+<tr><td>15 Oct 2008</td><td>−14.5%</td><td>−6.5</td><td style="text-align:left;font-family:var(--sans)">Global financial crisis</td></tr>
+<tr><td>29 Sep 2008</td><td>−14.4%</td><td>−6.5</td><td style="text-align:left;font-family:var(--sans)">US House rejects the bailout bill</td></tr>
+<tr><td>9 Mar 2020</td><td>−14.1%</td><td>−6.4</td><td style="text-align:left;font-family:var(--sans)">Covid-19 selloff</td></tr>
+<tr><td>12 Nov 2008</td><td>−12.1%</td><td>−5.5</td><td style="text-align:left;font-family:var(--sans)">Unlabelled</td></tr>
+<tr><td>2 Oct 2008</td><td>−11.5%</td><td>−5.2</td><td style="text-align:left;font-family:var(--sans)">Unlabelled</td></tr>
+</table></div>
+<p>Election days have never looked like this, though. In the first session after each of the four previous runoffs (2002, 2014, 2018, 2022), EWZ moved between −5.8% and +3.4%. Monday was −19.1%.</p>
+
+<h2 id="twice"><span class="num">03</span>Why Dollar Investors Lost Twice</h2>
+<p>EWZ fell further than the Ibovespa because a dollar investor in Brazilian stocks holds two bets: the stocks themselves, priced in reais, and the real against the dollar. On Monday both lost. Stocks fell 13.9% in reais; the weaker real took off roughly another 7.2% once converted into dollars.</p>
+<figure class="exhibit"><span class="exhibit-label">Exhibit 3</span><span class="exhibit-title">About two-thirds of the dollar loss was stocks, one-third the currency</span><a href="../../assets/term-premium/brazil-2026-10/br-decomposition.png" aria-label="Open exhibit 3 at full size"><img src="../../assets/term-premium/brazil-2026-10/br-decomposition.png" width="924" height="594" alt="Bar chart for 26 October 2026: Ibovespa in reais minus 13.9%, the real weakening against the dollar minus 7.2%, a residual of plus 2.0%, and EWZ in dollars minus 19.1%." loading="lazy"></a><figcaption>The two parts multiply rather than add, so the residual (+2.0 points) also reflects timing (the fund values in the London afternoon; the PTAX rate averages morning quotes at the panic’s peak), different stock weights in MSCI Brazil and the Ibovespa, and fund tracking. Sources: B3, Banco Central do Brasil, iShares. <a href="../../assets/term-premium/brazil-2026-10/br-decomposition.csv">Chart data (CSV)</a></figcaption></figure>
+
+<h2 id="why"><span class="num">04</span>Why the Market Freaked</h2>
+<p>My read is that Monday was mostly positioning, not a new verdict on Brazil’s solvency. Three things point that way.</p>
+<ul>
+<li><strong>The bet was one-sided.</strong> After Bolsonaro’s first-round showing, markets treated his win as the base case and priced in a fiscal turnaround he never spelled out. Losing that bet forced the same trade to unwind across every asset at once, which is what Exhibit 1 shows.</li>
+<li><strong>Credit barely moved.</strong> If investors had suddenly doubted Brazil’s ability to pay, the dollar-bond spread would have blown out. It widened 22 basis points while the local 2037 yield jumped about ten times as much. The fear was about inflation, the currency and policy, not default.</li>
+<li><strong>The fiscal problem is real, but it isn’t new.</strong> Brazil’s gross government debt has climbed to about 93% of GDP (Exhibit 4), and Bloomberg Opinion’s Juan Pablo Spinetto points to roughly R$290 billion in campaign pledges, a figure he cites from Folha de S.Paulo. None of that changed between Friday and Monday. What changed was the hope that someone else would fix it.</li>
+</ul>
+<figure class="exhibit"><span class="exhibit-label">Exhibit 4</span><span class="exhibit-title">The fiscal backdrop: Brazil’s debt is back near its pandemic peak</span><a href="../../assets/term-premium/brazil-2026-10/br-debt.png" aria-label="Open exhibit 4 at full size"><img src="../../assets/term-premium/brazil-2026-10/br-debt.png" width="924" height="572" alt="Line chart of Brazil's general government gross debt as a share of GDP, 2000 to 2025: around 60 to 75% until 2014, rising to about 96% in 2020, easing to about 84% in 2022 and 2023, and reaching 93.3% in 2025." loading="lazy"></a><figcaption>General government gross debt, % of GDP, 2000 to 2025; the IMF’s projections are excluded. Source: IMF World Economic Outlook (DataMapper). <a href="../../assets/term-premium/brazil-2026-10/br-debt.csv">Chart data (CSV)</a></figcaption></figure>
+<p>There is also a political reason to expect some calm. Spinetto notes that right-leaning parties will hold about 60% of both chambers of the new congress, so Lula will need centrist votes to pass anything and may have to govern more pragmatically than in his third term. That is his argument, not a certainty, and it is the kind of credibility question I am working on in <a href="em-sovereign-credit.html">Political Credibility and Sovereign Credit</a>.</p>
+
+<h2 id="watch"><span class="num">05</span>What Would Prove Me Wrong, and What to Watch</h2>
+<p>If I’m right, much of Monday’s move should fade as the trade clears and investors look at what Lula actually does. If I’m wrong, the selloff will stick.</p>
+<p>The early evidence is mixed. By Thursday the dollar had given back about a quarter of its jump (5.37 reais, against 5.50 on Monday). By Wednesday the 2037 yield had eased about half a point on the Treasury’s morning rate but barely at all on ANBIMA’s close. Stocks kept falling: by then the Ibovespa was down 16.6% from Friday. So far the currency agrees with me more than the stock market does.</p>
+<p>The signposts I’m watching (not recommendations):</p>
+<ul>
+<li><strong>The finance minister.</strong> A name the market trusts would be the fastest way to reverse the move. A name it doesn’t would confirm it.</li>
+<li><strong>The fiscal framework.</strong> Any concrete sign the campaign spending will be paid for, or not.</li>
+<li><strong>The central bank.</strong> Whether it signals concern about the weaker real feeding into inflation.</li>
+<li><strong>The local yield curve and the dollar-bond spread.</strong> Local yields that keep rising even after the positioning clears would mean the market is pricing something deeper. A widening spread would mean investors are starting to doubt repayment.</li>
+</ul>
+
+<h2 id="sources"><span class="num">06</span>Sources and Data</h2>
+<ul>
+<li>Market data, all public: Banco Central do Brasil (PTAX, series 1); B3 (Ibovespa, and its notice of the 26 October trading halt); iShares (EWZ net asset value, daily since 2000); Tesouro Nacional and ANBIMA (NTN-F 1 January 2037); Banco Central de Reserva del Perú (EMBIG Brazil spread, series PD43665XD); IMF World Economic Outlook (gross government debt). Pulled 29 October 2026. Each series’ latest close is on or before 29 October; EWZ, the Ibovespa and the bond run to 28 October.</li>
+<li>Commentary cited: Juan Pablo Spinetto, <a href="https://www.bloomberg.com/opinion/articles/2026-10-26/markets-are-mispricing-brazil-after-lula-s-epic-comeback">Markets Are Mispricing Brazil After Lula’s Epic Comeback</a>, Bloomberg Opinion, 26 October 2026. The Kobeissi Letter’s probability claim was checked against the data above.</li>
+<li>Files: <a href="../../assets/term-premium/brazil-2026-10/results.json">results.json</a>, <a href="../../assets/term-premium/brazil-2026-10/event_table.csv">event table</a>, <a href="../../assets/term-premium/brazil-2026-10/top10_down_days.csv">ten worst days</a>, <a href="../../assets/term-premium/brazil-2026-10/sigma_counts.csv">sigma counts</a>, <a href="../../assets/term-premium/brazil-2026-10/election_days.csv">election days</a>.</li>
+</ul>
+<p class="source-note">Research and education only. Nothing here is investment advice or a forecast.</p>
+</article></main>
+<footer class="site-footer"><span>© 2026 Nicholas Beroud</span><span><a href="mailto:nicholasberoud@gmail.com">Get in touch</a> · <a href="#main">Back to top ↑</a></span></footer></body></html>

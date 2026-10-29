@@ -1,0 +1,7 @@
+series,level_unit,close_2026_10_23,close_2026_10_26,change_1d,change_unit,latest_date,close_latest,change_23_to_latest,source
+USD/BRL (PTAX selling),BRL per USD,5.0377,5.5007,9.1907,%,2026-10-29,5.3744,6.68361,BCB SGS series 1
+Ibovespa close,points,205083,176608,-13.8843,%,2026-10-28,171006,-16.616,B3 index statistics
+EWZ NAV per share,USD,42.4337,34.3193,-19.1227,%,2026-10-28,33.6276,-20.7527,iShares (BlackRock) fund history
+"NTN-F Jan 2037, Tesouro Direto morning rate",%,12.9,15.42,252,bp,2026-10-28,14.87,197,"Tesouro Nacional, Precos e taxas"
+"NTN-F Jan 2037, ANBIMA indicative close",%,12.8865,15.164,227.75,bp,2026-10-28,15.1318,224.53,ANBIMA secondary market
+EMBIG Brazil spread,bp,160.821,183.038,22.217,bp,2026-10-27,179.099,18.2783,BCRP series PD43665XD

@@ -1,0 +1,11 @@
+rank,date,return_pct,sigma,label,label_source
+1,2026-10-26,-19.1227,-8.63307,First session after the 2026 runoff; B3 circuit breaker,https://www.b3.com.br/pt_br/noticias/b3-informa.htm
+2,2020-03-12,-17.6899,-7.98782,Covid-19 selloff; two B3 circuit breakers,https://www.poder360.com.br/economia/ibovespa-despenca-1478-e-dolar-tem-recorde-aos-r-4785/
+3,2020-03-16,-17.3461,-7.83303,Covid-19 selloff; B3 circuit breaker,https://www.suno.com.br/noticias/?p=57301
+4,2008-10-22,-15.7768,-7.12631,2008 financial crisis; B3 circuit breaker,https://dol.com.br/noticias/brasil/577327/veja-todas-as-vezes-que-a-bolsa-brasileira-acionou-o-circuit-breaker
+5,2017-05-18,-14.9362,-6.74778,Joesley Day (Temer recording); B3 circuit breaker,https://exame.com/mercados/em-dia-tragico-bolsa-cai-88-e-dolar-tem-maior-alta-em-14-anos/
+6,2008-10-15,-14.4689,-6.53734,2008 financial crisis; B3 circuit breaker,https://dol.com.br/noticias/brasil/577327/veja-todas-as-vezes-que-a-bolsa-brasileira-acionou-o-circuit-breaker
+7,2008-09-29,-14.3903,-6.50195,US House rejects the bailout bill; B3 circuit breaker,https://www.npr.org/2008/09/29/95180529/house-rejects-bailout-bill-wall-street-shudders
+8,2020-03-09,-14.0846,-6.36427,Covid-19 selloff; B3 circuit breaker,https://dol.com.br/noticias/brasil/577327/veja-todas-as-vezes-que-a-bolsa-brasileira-acionou-o-circuit-breaker
+9,2008-11-12,-12.071,-5.4575,,
+10,2008-10-02,-11.4715,-5.18754,,
