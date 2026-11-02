@@ -61,3 +61,4 @@ assets/repo-advisor-2026-10/distributions.csv
 assets/repo-advisor-2026-10/episode.csv
 assets/nicholas-beroud-headshot.png
 assets/repo-advisor-2026-10/spread-distributions.png
+assets/presentation-banner-wide.png
