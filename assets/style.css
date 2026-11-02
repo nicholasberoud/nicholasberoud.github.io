@@ -405,5 +405,33 @@ pre.formula { white-space: pre; margin: 22px 0; }
 .table-wrap:focus-visible { outline:2px solid var(--blue); outline-offset:4px; }
 .data-table tbody th { background:transparent; font-weight:400; }
 .cell-note { display:block; color:var(--muted); font-size:11px; line-height:1.5; margin-top:4px; }
-@media(max-width:700px) { .portfolio-section .pinned { grid-template-columns:1fr; } .research-lead { grid-template-columns:1fr; } .research-lead .latest-figure { display:none; } }
+@media(max-width:700px) { .portfolio-section .pinned { grid-template-columns:1fr; } .research-lead { grid-template-columns:1fr; } }
 @media(max-width:420px) { .portfolio-section > h2 { font-size:25px; } .portfolio-section .card { padding:19px; } .section-nav { column-gap:15px; font-size:12px; } }
+
+/* The Long End remains the umbrella; thumbnails use complete existing charts. */
+.portfolio-section > .journal-heading { font-size:40px; margin-bottom:8px; }
+.journal-heading a { color:var(--bright); text-decoration:none; }
+.journal-heading a:hover { color:var(--blue); }
+.journal-subtitle { font-size:18px; color:var(--bright); margin:0 0 18px; line-height:1.5; }
+.research-label { font:500 12px/1.6 var(--mono); color:var(--muted); margin:28px 0 14px; }
+.research-list { display:grid; gap:22px; }
+.research-row { grid-template-columns:minmax(0,1fr) minmax(0,1fr); border-color:#77bdfb44; }
+.research-row .latest-figure { display:flex; flex-direction:column; justify-content:center; min-width:0; padding:10px; }
+.research-row .latest-figure a { display:block; }
+.research-row .latest-figure img { width:100%; height:auto; padding:0; object-fit:contain; }
+.research-row .latest-body { min-width:0; }
+.research-row .latest-body h3 { font-size:23px; margin:4px 0 12px; line-height:1.35; }
+.article .research-row p { font-size:15px; line-height:1.65; }
+.research-row .latest-body .card-question { font-size:16px; }
+.research-row .thumbnail-caption, .article .research-row .thumbnail-caption { font-size:11px; color:var(--muted); line-height:1.5; margin:8px 8px 4px; }
+@media(max-width:700px) {
+  .research-row { grid-template-columns:1fr; }
+  .research-row .latest-body { order:0; }
+  .research-row .latest-figure { order:1; display:flex; border-right:0; border-bottom:0; border-top:1px solid var(--rule); }
+}
+@media(max-width:420px) {
+  .portfolio-section > .journal-heading { font-size:32px; }
+  .journal-subtitle { font-size:16px; }
+  .research-row .latest-body { padding:20px; }
+  .research-row .latest-body h3 { font-size:21px; }
+}
