@@ -1,0 +1,4 @@
+series,frequency,earlier_date,later_date,earlier_usd_bn,later_usd_bn
+WTREGEN,weekly_average,2025-10-08,2025-10-29,807.428,957.990
+WRESBAL,weekly_average,2025-10-08,2025-10-29,2998.471,2848.021
+RRPONTSYD,daily,2025-10-03,2025-10-31,25.392,51.802

@@ -1,0 +1,5 @@
+on_rrp_balance_usd_bn,median_weekly_spread_bp
+<=10,-0.60
+>10 and <=100,-2.55
+>100 and <=500,-7.50
+>500,-10.00

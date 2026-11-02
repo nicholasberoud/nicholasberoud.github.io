@@ -55,3 +55,7 @@ assets/tic-2026-11/treasury_official_private.csv
 assets/tic-2026-11/treasury_outstanding_share.csv
 assets/tic-2026-11/validation.json
 assets/tic-2026-11/validation.md
+assets/repo-advisor-2026-10/README.md
+assets/repo-advisor-2026-10/balance-groups.csv
+assets/repo-advisor-2026-10/distributions.csv
+assets/repo-advisor-2026-10/episode.csv
