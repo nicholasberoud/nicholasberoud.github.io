@@ -1,0 +1,85 @@
+{
+ "checks": [
+  {
+   "id": "V0",
+   "description": "Preserved source files match sources/MANIFEST.json (sha256)",
+   "passed": true,
+   "detail": "9 files verified"
+  },
+  {
+   "id": "V1",
+   "description": "Official + private = total foreign, long- and short-term, 2008-2025 (tolerance 1bn)",
+   "passed": true,
+   "detail": "all 36 rows within rounding"
+  },
+  {
+   "id": "V2",
+   "description": "Computed official share matches the published percentage (tolerance 0.15 pp)",
+   "passed": true,
+   "detail": "largest gap -0.1 pp (2010, short_term)"
+  },
+  {
+   "id": "V3",
+   "description": "Total foreign Treasury holdings match Treasury's historical data file (shlhistdat.txt), 2008-2025, tolerance 1bn",
+   "passed": true,
+   "detail": "all 36 long- and short-term totals agree"
+  },
+  {
+   "id": "V4",
+   "description": "Exhibit 2 foreign-owned Treasury debt equals Exhibit 7 + Exhibit 8 totals (tolerance 1.5bn)",
+   "passed": true,
+   "detail": "all 18 years agree"
+  },
+  {
+   "id": "V5",
+   "description": "Revisions: vintage_2024 report vs 2025 report, overlapping Treasury rows",
+   "passed": null,
+   "detail": "34 overlapping rows; no revisions"
+  },
+  {
+   "id": "V6",
+   "description": "Revisions: vintage_2016 report vs 2025 report, overlapping Treasury rows",
+   "passed": null,
+   "detail": "18 overlapping rows; no revisions"
+  },
+  {
+   "id": "V7",
+   "description": "Revisions: vintage_2008 report vs 2025 report, overlapping Treasury rows",
+   "passed": null,
+   "detail": "2 overlapping rows; no revisions"
+  },
+  {
+   "id": "V8",
+   "description": "First survey year in which private holdings exceed official holdings, by definition",
+   "passed": null,
+   "detail": "long_term: 2025 (stays above: True; near ties: [(2024, -3.0)]); short_term: 2016 (stays above: True; near ties: [(2017, 20.0)]); all: 2023 (stays above: True; near ties: [])"
+  }
+ ],
+ "crossover": {
+  "long_term": {
+   "first_year_private_exceeds_official": 2025,
+   "private_above_in_every_later_year": true,
+   "near_ties_under_25bn": [
+    [
+     2024,
+     -3.0
+    ]
+   ]
+  },
+  "short_term": {
+   "first_year_private_exceeds_official": 2016,
+   "private_above_in_every_later_year": true,
+   "near_ties_under_25bn": [
+    [
+     2017,
+     20.0
+    ]
+   ]
+  },
+  "all": {
+   "first_year_private_exceeds_official": 2023,
+   "private_above_in_every_later_year": true,
+   "near_ties_under_25bn": []
+  }
+ }
+}

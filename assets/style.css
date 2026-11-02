@@ -366,3 +366,14 @@ pre.formula { white-space: pre; margin: 22px 0; }
 .profile-banner { height: 230px; } .profile .accent { margin: 14px auto 20px; }
 @media (max-width: 560px) { .profile-banner { height: 170px; } }
 .timeline a { display: block; line-height: 1.35; } .latest-body .meta a { font-weight: 500; }
+
+/* Research desk: make reading stages visible before opening a note. */
+.reading-stage { display: block; margin-top: 5px; color: var(--muted); font: 400 12px/1.6 var(--mono); }
+@media (max-width: 560px) {
+  .now-head { flex-wrap: wrap; }
+  .now-head .meta { flex-basis: 100%; margin-left: 0; }
+}
+
+/* Long research-status labels need their own line at every width. */
+.wip-banner--stacked { display: block; }
+.wip-banner--stacked strong { display: block; white-space: normal; margin-bottom: 6px; }

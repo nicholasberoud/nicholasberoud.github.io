@@ -1,12 +1,38 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Repo Market Model | Nicholas Beroud</title><meta name="description" content="Repo Market Model: a public-data study of pressure in overnight Treasury funding markets, created by Eleonora Björnberg, with Nicholas Beroud advising on data and economic interpretation.">
-<meta property="og:type" content="article"><meta property="og:site_name" content="Nicholas Beroud"><meta property="og:title" content="Repo Market Model"><meta property="og:description" content="Repo Market Model: a public-data study of pressure in overnight Treasury funding markets, created by Eleonora Björnberg, with Nicholas Beroud advising on data and economic interpretation."><meta property="og:url" content="https://nicholasberoud.github.io/projects/repo-market.html"><meta property="og:image" content="https://nicholasberoud.github.io/assets/presentation-banner.jpeg"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1117"><link rel="icon" href="../assets/favicon.svg?v=2" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=20261029-2"></head>
-<body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="nav-inner"><a class="wordmark" href="../index.html">Nicholas Beroud</a><nav aria-label="Main navigation"><a href="../projects/term-premium.html">The Long End</a><a href="../index.html#projects">Projects</a><a href="../index.html#writing">Writing</a></nav></div></header>
-<main id="main"><article class="article"><a class="back" href="../index.html#projects">← All projects</a><p class="eyebrow">Research collaboration · Advisor</p><h1>Repo Market Model</h1><p class="meta">Research collaboration · Updated 12 October 2026</p><p class="lead">What can public data tell us about pressure in overnight Treasury funding markets?</p>
-<p>Repo is the market where cash is borrowed against securities, including US Treasuries. This project studies the conditions associated with pressure in that market and how a forecast can be evaluated using only information available at the time.</p>
-<h2>The collaboration</h2><p>Eleonora Björnberg is the project’s author and owns its model, research design, engineering and evaluation decisions. I contribute as an advisor on data selection and economic interpretation: which public series represent the market’s mechanics, what those quantities mean, and which questions need economic judgment.</p>
-<p>That role is documented in the project’s <a href="https://github.com/eleonorabjornberg/repo-market-model/blob/main/METHODOLOGY.md#contributors-and-their-roles">contributor statement</a>.</p>
-<h2>What I Contribute</h2><p>My work focuses on the economics behind the inputs: how bank reserves, the Treasury’s cash balance, money-market funds and settlement dates affect the availability of cash. I help connect those quantities to the market behaviour the model is trying to explain.</p><p>Model results, evaluation and limitations are maintained in Eleonora’s original project, linked below.</p>
-<h2>Explore the original work</h2><p><a href="https://eleonorabjornberg.github.io/repo-market-model/">Open the project explorer ↗</a><br><a href="https://github.com/eleonorabjornberg/repo-market-model">View Eleonora’s repository ↗</a></p></article></main>
+<title>Repo Market Model | Nicholas Beroud</title><meta name="description" content="Repo Market Model: Eleonora Björnberg’s research on Treasury funding pressure, with a dated economic advisory contribution and evidence pack by Nicholas Beroud.">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Nicholas Beroud"><meta property="og:title" content="Repo Market Model"><meta property="og:description" content="Repo Market Model: Eleonora Björnberg’s research on Treasury funding pressure, with a dated economic advisory contribution and evidence pack by Nicholas Beroud."><meta property="og:url" content="https://nicholasberoud.github.io/projects/repo-market.html"><meta property="og:image" content="https://nicholasberoud.github.io/assets/presentation-banner.jpeg"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1117"><link rel="icon" href="../assets/favicon.svg?v=2" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=20261101-2"></head>
+<body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="nav-inner"><a class="wordmark" href="../index.html">Nicholas Beroud</a><nav aria-label="Main navigation"><a href="../projects/term-premium.html">The Long End</a><a href="../index.html#projects">Projects</a><a href="../research.html">Research desk</a></nav></div></header>
+<main id="main"><article class="article">
+<a class="back" href="../index.html#projects">← Projects and contributions</a>
+<p class="eyebrow">Collaboration · Economic advisory contribution</p>
+<h1>Repo Market Model</h1>
+<p class="meta">Evidence pack: 1 October 2026 · Page updated 1 November 2026</p>
+<p class="lead">What can public data tell us about pressure in overnight Treasury funding markets?</p>
+<p>Repo is the market where cash is borrowed against securities, including US Treasuries. Eleonora Björnberg’s project asks whether observable funding conditions can help forecast pressure in that market, using information available before the day being forecast.</p>
+<p>My interest was in the economics behind the inputs. A movement in reserves, the Treasury’s cash balance or a money-market facility is a useful observation only if we understand what it measures and what else might explain it.</p>
+
+<h2>My contribution</h2>
+<p>I contributed data selection and economic interpretation and prepared an <a href="https://github.com/eleonorabjornberg/repo-market-model/blob/main/docs/advisor/evidence-pack/MEMO.md">advisor evidence pack dated 1 October 2026</a>. It brought together public data, historical comparisons and questions for the model’s design:</p>
+<ul>
+<li><strong>Interpreting funding pressure.</strong> I examined the Secured Overnight Financing Rate (SOFR) relative to interest on reserve balances (IORB), and how to interpret pressure thresholds across different market conditions.</li>
+<li><strong>Understanding the balance-sheet context.</strong> I examined reserves, overnight reverse repo (ON RRP) balances, Treasury cash movements and calendar effects around funding pressure.</li>
+<li><strong>Separating observations from explanations.</strong> The memo distinguishes computed observations from economic arguments, third-party commentary and claims requiring verification.</li>
+</ul>
+<p><a class="button" href="https://github.com/eleonorabjornberg/repo-market-model/blob/main/docs/advisor/evidence-pack/MEMO.md">Read my advisor evidence pack ↗</a></p>
+
+<h2>How to read the evidence</h2>
+<p>The pack uses historical FRED data downloaded on 1 October 2026. These are revised series, not a reconstruction of the information a forecaster could have known on each historical date. The analysis is descriptive: it does not establish causal effects or validate a forecasting signal.</p>
+<p>Its public memo is an inspectable record of my contribution. The standalone code and data pipeline used to generate that memo are not public. The original model’s code, evaluation and current limitations are maintained separately in Eleonora’s repository.</p>
+
+<h2>Attribution and current work</h2>
+<p>Eleonora is the project’s author and leads its research design, model implementation, methodology and evaluation. My earlier advisory role is recorded in the <a href="https://github.com/eleonorabjornberg/repo-market-model/blob/main/METHODOLOGY.md#contributors-and-their-roles">contributor statement</a>. I stepped back from ongoing responsibilities in October; the project’s <a href="https://github.com/eleonorabjornberg/repo-market-model/blob/main/PLAN.md#objective-and-scope">current ownership record</a> assigns data interpretation decisions to Eleonora.</p>
+<p>This page records work I contributed at that stage. For the model’s current results and open questions, read the original project:</p>
+<ul>
+<li><a href="https://eleonorabjornberg.github.io/repo-market-model/">Project explorer ↗</a></li>
+<li><a href="https://eleonorabjornberg.github.io/repo-market-model/plain.html">Plain-language results ↗</a></li>
+<li><a href="https://github.com/eleonorabjornberg/repo-market-model">Eleonora’s repository ↗</a></li>
+</ul>
+<p class="meta">Related: <a href="../research.html">current questions and reading notes</a>.</p>
+</article></main>
 <footer class="site-footer"><span>© 2026 Nicholas Beroud</span><span><a href="mailto:nicholasberoud@gmail.com">Get in touch</a> · <a href="#main">Back to top ↑</a></span></footer></body></html>

@@ -6,8 +6,10 @@ import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / '_site'
+SITE_HOST = 'nicholasberoud.github.io'
 PAGES = (
     'index.html',
+    'research.html',
     '404.html',
     'projects/fima.html',
     'projects/term-premium.html',
@@ -19,6 +21,7 @@ PAGES = (
     'projects/repo-market.html',
     'notes/climate-resilience.html',
     'notes/who-buys-the-debt.html',
+    'notes/tic-research.html',
 )
 
 class Page(HTMLParser):
@@ -29,10 +32,28 @@ class Page(HTMLParser):
     def handle_starttag(self, tag, attributes):
         attrs = dict(attributes)
         if 'id' in attrs:
+            if attrs['id'] in self.ids:
+                raise ValueError(f'Duplicate HTML id: {attrs["id"]}')
             self.ids.add(attrs['id'])
         for key in ('href', 'src'):
             if key in attrs:
                 self.links.append(attrs[key])
+
+asset_names = [line.strip() for line in (ROOT / 'scripts/public-assets.txt').read_text().splitlines()
+               if line.strip() and not line.lstrip().startswith('#')]
+if len(asset_names) != len(set(asset_names)):
+    raise ValueError('Duplicate entry in public asset manifest')
+for name in asset_names:
+    path = Path(name)
+    if path.is_absolute() or '..' in path.parts or path.parts[0] != 'assets':
+        raise ValueError(f'Invalid public asset path: {name}')
+asset_paths = list((ROOT / 'assets').rglob('*'))
+if (ROOT / 'assets').is_symlink() or any(path.is_symlink() for path in asset_paths):
+    raise ValueError('Symlinks are not allowed in public assets')
+actual_assets = {path.relative_to(ROOT).as_posix() for path in asset_paths if path.is_file()}
+if actual_assets != set(asset_names):
+    raise ValueError(f'Public assets need review: unlisted={sorted(actual_assets - set(asset_names))}; '
+                     f'missing={sorted(set(asset_names) - actual_assets)}')
 
 if OUT.exists():
     shutil.rmtree(OUT)
@@ -41,7 +62,10 @@ for name in PAGES:
     dest = OUT / name
     dest.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(ROOT / name, dest)
-shutil.copytree(ROOT / 'assets', OUT / 'assets')
+for name in asset_names:
+    dest = OUT / name
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(ROOT / name, dest)
 shutil.copy2(ROOT / '.nojekyll', OUT / '.nojekyll')
 parsed = {}
 for name in PAGES:
@@ -55,9 +79,16 @@ count = 0
 for filename, page in parsed.items():
     for link in page.links:
         url = urlsplit(link)
-        if url.scheme or url.netloc:
+        if url.scheme and url.scheme not in ('http', 'https'):
             continue
-        target = (filename.parent / unquote(url.path)).resolve() if url.path else filename
+        if url.netloc and url.netloc != SITE_HOST:
+            continue
+        if url.scheme and not url.netloc:
+            raise ValueError(f'Malformed URL in {filename.name}: {link}')
+        if url.netloc or url.path.startswith('/'):
+            target = (OUT / unquote(url.path).lstrip('/')).resolve()
+        else:
+            target = (filename.parent / unquote(url.path)).resolve() if url.path else filename
         if target.is_dir():
             target /= 'index.html'
         if not target.is_relative_to(OUT.resolve()) or not target.is_file():
