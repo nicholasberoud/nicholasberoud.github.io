@@ -501,3 +501,7 @@ pre.formula { white-space: pre; margin: 22px 0; }
   .site-header nav { width: 100%; flex-wrap: wrap; justify-content: flex-start; column-gap: 16px; row-gap: 0; }
   .site-header nav a { min-height: 36px; font-size: 13px; }
 }
+
+/* Research Desk (7 November 2026): topic tags on project cards, wide project page */
+.research-row .latest-body p.topic-tags, .article .research-row p.topic-tags, .entry p.topic-tags, .topic-tags { font: 11px/1.6 var(--mono); color: var(--muted); letter-spacing: .02em; margin: 2px 0 6px; }
+.article--wide .research-list { margin-top: 24px; }
