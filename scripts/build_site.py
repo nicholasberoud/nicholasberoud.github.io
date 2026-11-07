@@ -16,7 +16,6 @@ PAGES = (
     'projects/term-premium/deficits-and-the-term-premium.html',
     'projects/term-premium/lab-notes-2026-10.html',
     'projects/term-premium/em-sovereign-credit.html',
-    'projects/term-premium/where-is-the-fed.html',
     'projects/term-premium/brazil-eight-sigma.html',
     'projects/repo-market.html',
     'notes/climate-resilience.html',
