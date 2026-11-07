@@ -6,7 +6,7 @@ Personal website about markets, policy and research: https://nicholasberoud.gith
 
 Run `python3 scripts/build_site.py`, then `python3 -m http.server 4173 --bind 127.0.0.1 --directory _site` from this checkout. Open http://127.0.0.1:4173. Serving the packaged directory also checks that new pages are included in the deployment list.
 
-Plain HTML and CSS with no external runtime dependencies. `index.html` introduces The Long End, the Research Desk and Nicholas’s background; `research.html` carries selected reading notes, current questions and archived explorations; `projects/` and `notes/` contain individual pages. Shared styles are in `assets/style.css`.
+Plain HTML and CSS with no external runtime dependencies. `index.html` shows the Research Desk (all research projects), the undergraduate thesis and Nicholas’s background; `research.html` is the Research Desk, projects only; `thesis.html` is the thesis page; `projects/` and `notes/` contain individual pages. Shared styles are in `assets/style.css`.
 
 ## Publishing
 
@@ -17,7 +17,7 @@ The two older note outlines remain in source and are excluded from deployment. P
 ## Content and evidence
 
 - The résumé link retains `assets/nicholas-beroud-resume.pdf`, based on the supplied November 2026 CV, with the public repo-advisor entry corrected to September–October 2026 and past tense. Original application documents are unchanged.
-- The Long End lives at `projects/term-premium.html`. The independent Treasury term-premium study is separate from the provisional undergraduate thesis on political credibility and sovereign borrowing in emerging markets. FIMA remains archived background research, reachable from the Research Desk.
+- `projects/term-premium.html` (formerly "The Long End", then "Markets") redirects to the Research Desk since 7 November 2026. Reading notes and open questions were taken off the site the same day; `projects/fima.html` stays in source but is no longer deployed. The independent Treasury term-premium study is separate from the provisional undergraduate thesis on political credibility and sovereign borrowing in emerging markets. FIMA remains archived background research, reachable from the Research Desk.
 - Existing quantitative article assets in `assets/term-premium/` are generated outputs from a private research repository. Preserve their dates, definitions, numerical results and captions. Public results downloads do not constitute a release of the full research pipeline.
 - `research.html` contains selected, edited reading notes. Reading stages and last-updated dates are explicit. This is not an automatic Notion mirror.
 - `notes/tic-research.html` presents a descriptive 2008–2025 holdings series, two charts, data, methods, validation and a curated code snapshot. Data assembly is complete; interpretation remains under review. The note does not identify elasticity or explain term premia. The ownership study and explainer are a linked pair with different purposes; keep their titles consistent across cards, the journal and Research Desk. `notes/who-buys-the-debt.html` remains the background explainer.

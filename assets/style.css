@@ -482,3 +482,26 @@ pre.formula { white-space: pre; margin: 22px 0; }
   .concept-preview strong { font-size: 15px; }
   .concept-preview small { font-size: 11px; }
 }
+
+/* Thesis (7 November 2026): typographic panel in place of a chart, and the draft note */
+.thesis-card { border-color: var(--blue); }
+.thesis-panel { display: flex; flex-direction: column; justify-content: center; gap: 14px; padding: 28px 26px; background: linear-gradient(160deg, #0d1117 0%, #13233a 100%); border-right: 1px solid var(--rule); color: var(--bright); text-decoration: none; }
+.thesis-panel-kicker { font: 11px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--blue); }
+.thesis-panel-q { font-size: 26px; line-height: 1.25; font-weight: 600; }
+.thesis-panel-sub { font: 12px/1.6 var(--mono); color: var(--muted); }
+.tag--thesis { color: var(--blue); border-color: var(--blue); }
+.draft-note { margin: 18px 0; padding: 12px 14px; border: 1px dashed var(--orange); border-radius: 8px; color: var(--text); font-size: 14px; line-height: 1.6; }
+.thesis-abstract { margin: 26px 0; padding: 18px 22px; background: var(--panel); border: 1px solid var(--rule); border-left: 3px solid var(--blue); border-radius: 8px; }
+.thesis-abstract h2 { margin-top: 0; }
+@media (max-width: 720px) { .thesis-panel { border-right: 0; border-bottom: 1px solid var(--rule); } .thesis-panel-q { font-size: 22px; } }
+
+/* Menu on phones (7 November 2026): wordmark on its own row, links wrap left-aligned */
+@media (max-width: 560px) {
+  .nav-inner { flex-wrap: wrap; row-gap: 0; padding: 6px 18px 2px; }
+  .site-header nav { width: 100%; flex-wrap: wrap; justify-content: flex-start; column-gap: 16px; row-gap: 0; }
+  .site-header nav a { min-height: 36px; font-size: 13px; }
+}
+
+/* Research Desk (7 November 2026): topic tags on project cards, wide project page */
+.research-row .latest-body p.topic-tags, .article .research-row p.topic-tags, .entry p.topic-tags, .topic-tags { font: 11px/1.6 var(--mono); color: var(--muted); letter-spacing: .02em; margin: 2px 0 6px; }
+.article--wide .research-list { margin-top: 24px; }
