@@ -2,16 +2,15 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Who Holds the Treasuries Held Abroad? | Nicholas Beroud</title>
 <meta name="description" content="A descriptive study of foreign official and private Treasury holdings, 2008–2025, with charts, downloadable data, source checks and limitations.">
-<meta property="og:type" content="article"><meta property="og:site_name" content="Nicholas Beroud"><meta property="og:title" content="Who Holds the Treasuries Held Abroad?"><meta property="og:description" content="Foreign private holdings have grown substantially. What does that tell us, and what do the TIC categories leave unresolved?"><meta property="og:url" content="https://nicholasberoud.github.io/notes/tic-research.html"><meta property="og:image" content="https://nicholasberoud.github.io/assets/tic-2026-11/tic-lt-official-private.png"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1117"><link rel="icon" href="../assets/favicon.svg?v=2" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=20261107-4"></head>
-<body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="nav-inner"><a class="wordmark" href="../index.html">Nicholas Beroud</a><nav aria-label="Main navigation"><a href="../research.html">Research Desk</a><a href="../thesis.html">Undergraduate Thesis</a><a href="../index.html#about">About</a></nav></div></header>
-<main id="main"><article class="article"><a class="back" href="../research.html">← Research Desk</a>
+<meta property="og:type" content="article"><meta property="og:site_name" content="Nicholas Beroud"><meta property="og:title" content="Who Holds the Treasuries Held Abroad?"><meta property="og:description" content="Foreign private holdings have grown substantially. What does that tell us, and what do the TIC categories leave unresolved?"><meta property="og:url" content="https://nicholasberoud.github.io/notes/tic-research.html"><meta property="og:image" content="https://nicholasberoud.github.io/assets/tic-2026-11/tic-lt-official-private.png"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1117"><link rel="icon" href="../assets/favicon.svg?v=2" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=20261107-5"></head>
+<body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="nav-inner"><a class="wordmark" href="../index.html">Nicholas Beroud</a><nav aria-label="Main navigation"><a href="../research.html">Projects</a><a href="../thesis.html">Undergraduate Thesis</a><a href="../index.html#experience">Experience</a></nav></div></header>
+<main id="main"><article class="article"><a class="back" href="../research.html">← Projects</a>
 <p class="eyebrow">Treasury ownership · Data study · Working note</p>
 <h1>Who Holds the Treasuries Held Abroad?</h1>
 <p class="lead">Foreign private holdings of U.S. Treasuries have grown substantially. The year they overtook official holdings depends on which securities we count.</p>
 <p class="meta">Nicholas Beroud · 1 November 2026 · Annual observations, 2008–2025</p>
 <div class="wip-banner wip-banner--stacked"><strong>Data assembly completed · Interpretation under review</strong><p>This is a descriptive study of published TIC survey tables. The datasets, charts and checks are available below. It does not estimate investors’ price sensitivity or explain changes in Treasury term premia.</p></div>
 
-<p class="companion-link"><span>Companion explainer</span><a href="who-buys-the-debt.html">Who Buys the Debt?</a> introduces holdings, purchases and price sensitivity. This page examines the foreign holdings data.</p>
 <h2 id="question">The question behind the data</h2>
 <p>While working on <a href="../projects/term-premium/deficits-and-the-term-premium.html">U.S. deficits and the term premium</a>, I wondered whether an increasing share of official buyers could help explain a weaker fiscal relationship. Before pursuing that explanation, I needed to check its premise: had the foreign investor base actually become more official?</p>
 <p>The published figures point in the opposite direction over this sample. That made the measurement question more interesting to me. Who is classified as official, what does a change in holdings represent, and how much does the answer depend on the denominator?</p>
@@ -31,10 +30,50 @@
 
 <h2 id="limits">What the categories leave open</h2>
 <ul>
-<li><strong>Official does not mean price-insensitive.</strong> The category follows <a href="https://home.treasury.gov/tic-country-codes-and-partial-list-of-foreign-official-institutions">Treasury’s institutional definition</a>, including central banks, finance ministries and certain other official institutions. It is not an estimated demand curve.</li>
+<li><strong>Official does not mean price-inelastic.</strong> The category follows <a href="https://home.treasury.gov/tic-country-codes-and-partial-list-of-foreign-official-institutions">Treasury’s institutional definition</a>, including central banks, finance ministries and certain other official institutions. It is not an estimated demand curve.</li>
 <li><strong>Private is a broad category.</strong> Banks, funds, insurers and other holders can have different mandates and responses to risk. This aggregate split does not identify which groups drove the increase.</li>
 <li><strong>Custody affects what reporters can see.</strong> Some securities recorded through private intermediaries may ultimately belong to official institutions. This dataset cannot quantify that amount or identify a particular government behind a custody-center total. See the <a href="https://home.treasury.gov/data/treasury-international-capital-tic-system-home-page/frequently-asked-questions-regarding/ticfaq2">TIC FAQ</a>.</li>
-<li><strong>Ownership is not a pricing explanation.</strong> A smaller official share does not establish why it changed or how it affected yields. The <a href="who-buys-the-debt.html">Who Buys the Debt?</a> explainer discusses the separate question of estimating demand responses.</li>
+<li><strong>Ownership is not a pricing explanation.</strong> A smaller official share does not establish why it changed or how it affected yields. The <a href="#price-sensitivity">section on price sensitivity</a> below discusses the separate question of estimating demand responses.</li>
+</ul>
+
+<h2 id="price-sensitivity">Holdings are not price sensitivity</h2>
+<p class="source-note">This section was published separately as <i>Who Buys the Debt?</i> (20 October 2026; definitions clarified 1 November 2026) and merged into this study on 7 November 2026.</p>
+<h3>Who holds Treasuries</h3>
+<p>US Treasury debt held by the public is spread across very different investors:</p>
+<ul>
+<li><strong>The Federal Reserve</strong>, which buys and sells for monetary-policy reasons, not for return.</li>
+<li><strong>Foreign official investors</strong>, such as central banks managing reserves, whose mandates can emphasize liquidity, safety and exchange-rate policy alongside return.</li>
+<li><strong>Foreign private investors</strong>, such as banks, insurers and funds abroad.</li>
+<li><strong>US banks, insurers, pension funds and money-market funds</strong>, often bound by regulation or by the liabilities they need to match.</li>
+<li><strong>Hedge funds, other asset managers and households</strong>, with different strategies, constraints and investment horizons.</li>
+</ul>
+
+<h3>Three things that are easy to confuse</h3>
+<ul>
+<li><strong>Holdings</strong>: how much of the stock each group owns at a point in time.</li>
+<li><strong>Purchases</strong>: how much each group adds or sells over a period.</li>
+<li><strong>Price sensitivity (elasticity)</strong>: how much a group changes its holdings when yields move. Lower elasticity means a smaller demand response to a given price change, holding other influences fixed. These responses must be estimated; an official or private label does not measure them.</li>
+</ul>
+<p>A large holder is not necessarily a price-setter. What matters for how far yields move is the price sensitivity of the investors who have to absorb new supply.</p>
+
+<h3>What a recent Federal Reserve paper finds</h3>
+<p>Daniel Beltran and Canlin Li (<a href="https://www.federalreserve.gov/econres/ifdp/estimating-yield-impacts-of-treasury-demand-and-supply-changes.htm">IFDP 1447, September 2026</a>) estimate how price-sensitive each investor group is, then combine those estimates with each group’s share of the market. Their findings, in plain terms:</p>
+<ul>
+<li>The Treasury market as a whole has become <strong>more</strong> price-sensitive since the early 2000s, mainly because price-inelastic foreign official investors now hold a smaller share and more price-elastic hedge funds and households a larger one.</li>
+<li>In normal times, a more price-sensitive market means <strong>smaller</strong> yield moves for a given change in supply: elastic investors step in after a small move in price.</li>
+<li>For 2026Q1, they estimate that an extra $100 billion of Treasury bond supply raises five-year yields by about 3 basis points, against around 65 in the early 2000s. Most of that fall reflects the larger Treasury bond market ($23.8 trillion held by the public in 2026Q1, against $2.5 trillion in 2000). Scaled to 1% of that market, the estimated effect is about 8 basis points in 2026Q1, against about 15 from 2000 to 2015.</li>
+<li>The flip side is fragility. When elastic investors step back in stress, as in March 2020, the market suddenly becomes much less elastic and the same shock moves yields much more.</li>
+</ul>
+<p>Two effects are easy to mix up here. In this framework, a larger share of price-inelastic holders makes yields <em>more</em> responsive to supply shocks, even though their buying can push the level of yields down. It is the elastic buyers who dampen the response in normal times, and their absence in stress that amplifies it.</p>
+
+<h3>Why this matters for fiscal risk</h3>
+<p>In my <a href="../projects/term-premium/deficits-and-the-term-premium.html">study of deficits and the term premium</a>, the link between deficits and the term premium is much weaker after 2008 than before. A natural question is whether changes in who holds the debt help explain that. The direction is not obvious: in Beltran and Li’s framework, a more price-inelastic holder base would amplify supply effects rather than mute them. I have <strong>not</strong> tested this. Doing it properly needs a design that separates holder composition from the crises and Fed purchases that changed at the same time; it is on the list of <a href="../projects/term-premium.html">questions I’m exploring next</a>.</p>
+
+<h3>Caveats about the data</h3>
+<ul>
+<li>Country attribution in <a href="https://home.treasury.gov/data/treasury-international-capital-tic-system-home-page/frequently-asked-questions-regarding/ticfaq2">TIC data can be affected by foreign custodians</a>: the ultimate holder’s residence is not always visible to a U.S. reporter. This limits country-level interpretation; it does not establish deliberate concealment.</li>
+<li>In the Fed’s <a href="https://www.federalreserve.gov/releases/z1/">Financial Accounts</a>, the household sector, which includes hedge funds, is largely a residual: what is left after other sectors are measured.</li>
+<li>The authors treat these as sample-average estimates, not fixed structural parameters; their values depend on the model and identification assumptions.</li>
 </ul>
 
 <h2 id="methods">Sources, checks and downloads</h2>

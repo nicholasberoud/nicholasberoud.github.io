@@ -505,3 +505,28 @@ pre.formula { white-space: pre; margin: 22px 0; }
 /* Research Desk (7 November 2026): topic tags on project cards, wide project page */
 .research-row .latest-body p.topic-tags, .article .research-row p.topic-tags, .entry p.topic-tags, .topic-tags { font: 11px/1.6 var(--mono); color: var(--muted); letter-spacing: .02em; margin: 2px 0 6px; }
 .article--wide .research-list { margin-top: 24px; }
+
+/* SITE-5 (7 November 2026): intro, project grid, NYU tags, Tin panel */
+.intro { max-width: 640px; margin: 8px auto 26px; }
+.intro p { color: var(--text); font-size: 16px; line-height: 1.7; margin: 0 0 12px; }
+.project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.grid-card { display: flex; flex-direction: column; border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; background: var(--panel); }
+.grid-figure { display: block; background: #0d1117; border-bottom: 1px solid var(--rule); aspect-ratio: 4 / 3; }
+.grid-figure img { display: block; width: 100%; height: 100%; object-fit: contain; padding: 8px; }
+.grid-figure.thesis-panel { border-right: 0; padding: 20px; }
+.grid-figure .thesis-panel-q { font-size: 20px; }
+.grid-body { padding: 14px 16px 16px; }
+.grid-body h3 { margin: 4px 0 6px; font-size: 17px; line-height: 1.3; }
+.grid-body h3 a { color: var(--bright); text-decoration: none; }
+.grid-body h3 a:hover { color: var(--blue); }
+.grid-body .card-question { font-size: 14px; color: var(--text); line-height: 1.5; margin: 0 0 8px; }
+.grid-body p.topic-tags { font: 11px/1.6 var(--mono); color: var(--muted); margin: 0 0 4px; }
+.grid-body .meta { margin: 0; }
+.tag--nyu { color: var(--purple); border-color: #cea5fb88; }
+.tin-panel { background: linear-gradient(160deg, #0d1117 0%, #2a1840 100%); }
+.tin-panel .thesis-panel-kicker { color: var(--purple); }
+.tin-hero { margin: 22px 0; border-radius: 12px; border: 1px solid #cea5fb55; }
+@media (max-width: 640px) { .project-grid { grid-template-columns: 1fr; } }
+.grid-figure.thesis-panel { display: flex; flex-direction: column; justify-content: center; gap: 12px; }
+.project-grid > .grid-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.project-grid > .grid-card:last-child:nth-child(odd) .grid-figure.thesis-panel { aspect-ratio: auto; min-height: 190px; }

@@ -6,7 +6,7 @@ Personal website about markets, policy and research: https://nicholasberoud.gith
 
 Run `python3 scripts/build_site.py`, then `python3 -m http.server 4173 --bind 127.0.0.1 --directory _site` from this checkout. Open http://127.0.0.1:4173. Serving the packaged directory also checks that new pages are included in the deployment list.
 
-Plain HTML and CSS with no external runtime dependencies. `index.html` shows the Research Desk (all research projects), the undergraduate thesis and Nicholas’s background; `research.html` is the Research Desk, projects only; `thesis.html` is the thesis page; `projects/` and `notes/` contain individual pages. Shared styles are in `assets/style.css`.
+Plain HTML and CSS with no external runtime dependencies. `index.html` opens with Nicholas’s introduction, then Projects (a grid), the undergraduate thesis and Experience; `research.html` lists every project in detail; `thesis.html` is the thesis page; `projects/` and `notes/` contain individual pages. Shared styles are in `assets/style.css`.
 
 ## Publishing
 

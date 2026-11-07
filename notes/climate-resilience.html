@@ -1,11 +1,29 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tin, Supply Chains and Climate Resilience | Nicholas Beroud</title><meta name="description" content="Tin, supply chains and climate resilience: a team project from the Ethical Tech CoLab Climate Resilience Hackathon, by Nicholas Beroud.">
-<meta property="og:type" content="article"><meta property="og:site_name" content="Nicholas Beroud"><meta property="og:title" content="Tin, Supply Chains and Climate Resilience"><meta property="og:description" content="Tin, supply chains and climate resilience: a team project from the Ethical Tech CoLab Climate Resilience Hackathon, by Nicholas Beroud."><meta property="og:url" content="https://nicholasberoud.github.io/notes/climate-resilience.html"><meta property="og:image" content="https://nicholasberoud.github.io/assets/presentation-banner.jpeg"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1117"><link rel="icon" href="../assets/favicon.svg?v=2" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=20261107-4"></head>
-<body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="nav-inner"><a class="wordmark" href="../index.html">Nicholas Beroud</a><nav aria-label="Main navigation"><a href="../research.html">Research Desk</a><a href="../thesis.html">Undergraduate Thesis</a><a href="../index.html#about">About</a></nav></div></header>
-<main id="main"><article class="article"><a class="back" href="../research.html">← Research Desk</a><p class="eyebrow">Hackathon recap</p><h1>Tin, Supply Chains and Climate Resilience</h1><p class="meta">Updated 12 October 2026</p><p class="lead">Can a more sustainable and resilient supply chain also make financial sense?</p>
-<p>I took part in the Ethical Tech CoLab Climate Resilience Hackathon with Eleonora Björnberg, Madeleine Fornell, Alexandre Ly, Isayah C. and Ori Ben Yossef. Our team placed second.</p>
-<h2>The Project</h2><p>We focused on tin in NVIDIA’s supply chain, modelling potential savings from switching to more sustainable and resilient distributors. The team used data from Sayari, Tavily and TradeVerify to explore the question.</p>
-<p>The project brought a financial lens to sustainability: looking at how supplier choices could change costs and exposure to disruption, rather than considering sustainability in isolation.</p>
-<h2>A Starting Point</h2><p>This was a hackathon project, so the estimates represent the team’s modelled scenario, not savings realised by NVIDIA or an adopted supplier recommendation.</p><p>I’ll expand this recap with the team’s approach, my specific contribution and a shareable demonstration once those materials are ready.</p></article></main>
+<title>Tin, Supply Chains and Climate Resilience | Nicholas Beroud</title><meta name="description" content="Tin, supply chains and climate resilience: a team project at the NYU Ethical Tech CoLab Climate Intelligence Hackathon, hosted by Microsoft. An interactive supplier map, a disruption simulator and a loss model for NVIDIA’s tin supply chain.">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Nicholas Beroud"><meta property="og:title" content="Tin, Supply Chains and Climate Resilience"><meta property="og:description" content="Tin, supply chains and climate resilience: a team project from the Ethical Tech CoLab Climate Resilience Hackathon, by Nicholas Beroud."><meta property="og:url" content="https://nicholasberoud.github.io/notes/climate-resilience.html"><meta property="og:image" content="https://nicholasberoud.github.io/assets/presentation-banner.jpeg"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1117"><link rel="icon" href="../assets/favicon.svg?v=2" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=20261107-5"></head>
+<body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="nav-inner"><a class="wordmark" href="../index.html">Nicholas Beroud</a><nav aria-label="Main navigation"><a href="../research.html">Projects</a><a href="../thesis.html">Undergraduate Thesis</a><a href="../index.html#experience">Experience</a></nav></div></header>
+<main id="main"><article class="article"><a class="back" href="../research.html">← Projects</a>
+<p class="eyebrow">Team project · Climate Intelligence Hackathon</p>
+<p class="w-tags"><span class="tag tag--nyu">NYU</span> <span class="tag tag--nyu">Ethical Tech CoLab</span> <span class="tag tag--brief">Hosted by Microsoft</span></p>
+<h1>Tin, Supply Chains and Climate Resilience</h1>
+<p class="meta">September 2026 · Updated 7 November 2026</p>
+<p class="lead">How can critical supply chains remain both ethical and resilient in the face of climate change? That was the hackathon’s question. Our team answered it for one input: tin in NVIDIA’s supply chain.</p>
+<div class="tin-hero thesis-panel tin-panel"><span class="thesis-panel-kicker">Stable Supply</span><span class="thesis-panel-q">Where is NVIDIA’s tin supply chain exposed, and what would a disruption cost?</span><span class="thesis-panel-sub">Interactive supplier map · disruption simulator · loss model</span></div>
+<h2 id="built">What we built</h2>
+<ul>
+<li><strong>A map of the supply chain.</strong> An interactive globe of the smelters, mines and exporters linked to NVIDIA’s tin supply, with each relationship labelled by the evidence behind it: company-disclosed, trade-record evidenced, ownership-inferred or modelled only.</li>
+<li><strong>A disruption simulator.</strong> Stop one facility, or a country’s tin output, for a number of days and see which companies are exposed.</li>
+<li><strong>A loss model.</strong> A scenario-based estimate of the financial loss from a supplier outage, combining disruption probability, severity and revenue exposure.</li>
+</ul>
+<p>The team used trade datasets from Sayari and Tradeverifyd and search tools from Tavily. The code is public in the <a href="https://github.com/eleonorabjornberg/Stable-Supply">Stable Supply repository</a>.</p>
+<h2 id="my-part">My part</h2>
+<p>I helped develop the scenario-based financial loss model and assessed how inventory buffers, outage duration and alternative sourcing change potential supply-disruption losses.</p>
+<h2 id="team">Team and event</h2>
+<p>Madeleine Fornell, Eleonora Björnberg, Nicholas Beroud, Isayah Culbertson, Alexandre Ly and Ori Ben Yossef. We placed second of eight teams.</p>
+<p>The Climate Intelligence Hackathon was organized by the NYU Ethical Tech CoLab, a research collaboration between Microsoft and the NYU Center for Global Affairs, with sponsors Sayari, Tradeverifyd and Tavily.</p>
+<h2 id="limits">What it is and is not</h2>
+<p>This was a hackathon prototype. Its financial estimates rest on stated assumptions and are illustrations, not NVIDIA forecasts or savings realised by NVIDIA. A link in the map is not evidence of how much tin a supplier sells to NVIDIA.</p>
+<p class="source-note">Charts from the team’s data and a live demonstration are still to be added.</p>
+</article></main>
 <footer class="site-footer"><span>© 2026 Nicholas Beroud</span><span><a href="mailto:nicholasberoud@gmail.com">Get in touch</a> · <a href="#main">Back to top ↑</a></span></footer></body></html>
