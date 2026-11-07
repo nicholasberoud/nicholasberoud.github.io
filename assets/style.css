@@ -530,3 +530,10 @@ pre.formula { white-space: pre; margin: 22px 0; }
 .grid-figure.thesis-panel { display: flex; flex-direction: column; justify-content: center; gap: 12px; }
 .project-grid > .grid-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .project-grid > .grid-card:last-child:nth-child(odd) .grid-figure.thesis-panel { aspect-ratio: auto; min-height: 190px; }
+
+/* Tin screenshot (7 November 2026) */
+.tin-hero-figure { margin: 22px 0; }
+.tin-hero-figure img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #cea5fb55; }
+.tin-hero-figure figcaption { font-size: 12px; color: var(--muted); line-height: 1.6; margin-top: 8px; }
+.grid-figure--photo img { object-fit: cover; padding: 0; }
+.project-grid > .grid-card:last-child:nth-child(odd) .grid-figure--photo { aspect-ratio: 21 / 9; }
