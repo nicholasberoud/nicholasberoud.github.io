@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selling or Repricing? Foreign Holdings of Long-Term Treasuries | Nicholas Beroud</title><meta name="description" content="A working note on public TIC data: how much of each monthly change in foreign holdings of long-term Treasuries is buying or selling, and how much is bond prices, February 2023 to August 2026.">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Nicholas Beroud"><meta property="og:title" content="Selling or Repricing? Foreign Holdings of Long-Term Treasuries"><meta property="og:url" content="https://nicholasberoud.github.io/notes/tic-monthly.html"><meta name="theme-color" content="#0d1117"><link rel="icon" href="../assets/favicon.svg?v=2" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=20261107-10"></head>
+<body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="nav-inner"><a class="wordmark" href="../index.html">Nicholas Beroud</a><nav aria-label="Main navigation"><a href="../research.html">Projects</a><a href="../thesis.html">Undergraduate Thesis</a><a href="../index.html#about">About</a></nav></div></header>
+<main id="main"><article class="article"><a class="back" href="tic-research.html">← Who Holds the Treasuries Held Abroad?</a>
+<p class="eyebrow">Treasury ownership · Working note · Draft</p>
+<h1>Selling or Repricing?</h1>
+<p class="subtitle">Foreign holdings of long-term Treasuries, February 2023 to August 2026</p>
+<p class="meta">Working draft, November 2026 · Interpretation to be rewritten</p>
+<p class="lead">When the dollar value of foreign holdings of long-term Treasuries changes in a month, how much is foreigners buying or selling, and how much is bond prices moving?</p>
+<p>Holdings are measured at market value. When yields rise, bond prices fall and holdings shrink even if nobody sells, so a headline that reads every fall in holdings as foreigners dumping Treasuries can be wrong. The accounting identity is simple:</p>
+<p class="formula">holdings change = net purchases + valuation + other</p>
+<p>Treasury and the Federal Reserve publish the first three. "Other changes" is what is left: reclassifications, revisions and estimation differences. It is a remainder, not evidence of any particular cause. This note replicates the decomposition the Fed already publishes (<a href="https://doi.org/10.17016/2380-7172.4084">FEDS Note, 21 May 2026</a>) for all, official and private foreign holders, and reads it.</p>
+
+<h2 id="july">One month: July 2026</h2>
+<p>Foreign holdings of long-term Treasuries fell by $89.1bn. Net foreign selling was only $3.6bn. Valuation losses were $101.6bn, and other changes added back $16.0bn. Almost all of the fall was prices, not selling.</p>
+<figure class="exhibit"><span class="exhibit-label">Exhibit 1</span><span class="exhibit-title">Each month, buying and repricing pull in different directions</span><a href="../assets/tic-2026-11/cslt/cslt-monthly.png" aria-label="Open the chart at full size"><img src="../assets/tic-2026-11/cslt/cslt-monthly.png" width="1720" height="920" alt="Bar chart of monthly changes in foreign holdings of long-term Treasuries, split into net purchases, valuation change and other changes, with the total change as a line." loading="lazy"></a><figcaption>Monthly change in foreign holdings of long-term Treasuries and its three parts, all foreign holders, billions of dollars. Source: U.S. Treasury, TIC Continuous Securities Long Term (CSLT) archive, transmitted 13 October 2026; other changes computed as the residual. <a href="../assets/tic-2026-11/cslt/cslt-chart-data.csv">Chart data (CSV)</a></figcaption></figure>
+
+<h2 id="period">The whole period</h2>
+<div class="table-wrap"><table class="data-table"><thead><tr><th></th><th>Change in holdings</th><th>Net purchases</th><th>Valuation</th><th>Other</th><th>Months moving opposite to purchases</th></tr></thead><tbody><tr><td>All foreign holders</td><td>+$1,549.5bn</td><td>+$1,748.9bn</td><td>−$153.7bn</td><td>−$45.8bn</td><td>10 of 43</td></tr><tr><td>Foreign official</td><td>−$10.9bn</td><td>+$83.8bn</td><td>+$184.9bn</td><td>−$279.5bn</td><td>20 of 43</td></tr><tr><td>Foreign private</td><td>+$1,560.3bn</td><td>+$1,665.1bn</td><td>−$338.5bn</td><td>+$233.8bn</td><td>9 of 43</td></tr></tbody></table></div>
+<ol>
+<li><strong>Over the whole period, buying dominated.</strong> Net foreign purchases totalled $1,748.9bn; holdings rose by $1,549.5bn. Private holders account for almost all of it.</li>
+<li><strong>Month to month, the picture is noisier.</strong> In 10 of 43 months, total holdings moved in the opposite direction to net purchases.</li>
+<li><strong>For official holders, holdings hide the buying.</strong> Official holdings fell by $10.9bn although officials were net buyers (+$83.8bn) and valuation added $184.9bn, because other changes subtracted $279.5bn.</li>
+</ol>
+<figure class="exhibit"><span class="exhibit-label">Exhibit 2</span><span class="exhibit-title">Over time, net purchases explain most of the rise</span><a href="../assets/tic-2026-11/cslt/cslt-cumulative.png" aria-label="Open the chart at full size"><img src="../assets/tic-2026-11/cslt/cslt-cumulative.png" width="1720" height="920" alt="Line chart of cumulative net purchases, valuation change, other changes and change in holdings since January 2023." loading="lazy"></a><figcaption>Cumulative contributions since January 2023, all foreign holders, billions of dollars. Source: U.S. Treasury, TIC Continuous Securities Long Term (CSLT) archive, transmitted 13 October 2026; other changes computed as the residual. <a href="../assets/tic-2026-11/cslt/cslt-chart-data.csv">Chart data (CSV)</a></figcaption></figure>
+
+<h2 id="open-question">An open question, not a finding</h2>
+<p>Private holders' other changes (+$233.8bn) almost mirror official holders' (−$279.5bn). They do not move together month by month, so this is not a simple monthly reclassification. Valuation plus other changes is similar for both groups (−$94.6bn official, −$104.7bn private); what differs is how that total splits between the two. That points first to how valuation is estimated for each holder group, before any story about investor behaviour.</p>
+<figure class="exhibit"><span class="exhibit-label">Exhibit 3</span><span class="exhibit-title">Official and private holders, side by side</span><a href="../assets/tic-2026-11/cslt/cslt-holders.png" aria-label="Open the chart at full size"><img src="../assets/tic-2026-11/cslt/cslt-holders.png" width="1720" height="920" alt="Two line charts of cumulative contributions for foreign official and foreign private holders." loading="lazy"></a><figcaption>Cumulative contributions since January 2023, foreign official and foreign private (non-official) holders, billions of dollars. Source: U.S. Treasury, TIC Continuous Securities Long Term (CSLT) archive, transmitted 13 October 2026; other changes computed as the residual. <a href="../assets/tic-2026-11/cslt/cslt-chart-data.csv">Chart data (CSV)</a></figcaption></figure>
+
+<h2 id="limits">What the data cannot tell you</h2>
+<ul>
+<li><strong>Who the owners are.</strong> TIC records the custodian's country of residence. "Official" is a reporting class, not proof of a motive or of price-inelastic behaviour.</li>
+<li><strong>Why investors bought or sold.</strong> The decomposition separates prices from transactions; it does not identify motives.</li>
+<li><strong>Effects on yields.</strong> Nothing here estimates whether foreign buying moves Treasury prices.</li>
+<li><strong>Earlier years.</strong> Before February 2023 the series lean more on Fed staff estimates, which is why this note starts there.</li>
+</ul>
+
+<h2 id="checks">Checks and downloads</h2>
+<p>The source file is Treasury's CSLT archive, frozen with its checksum. Official plus private equals the total for holdings, purchases and valuation in every month, the identity holds in every row, and no months are missing. Not yet done: a cross-check against Treasury's monthly SLT Table 3 and a few months checked by hand.</p>
+<p class="source-note"><a href="../assets/tic-2026-11/cslt/cslt-chart-data.csv">Chart data (CSV)</a> · <a href="../assets/tic-2026-11/cslt/results.json">Results (JSON)</a> · <a href="../assets/tic-2026-11/cslt/validation.md">Validation report</a>. Data download, code, checks and this draft were prepared with AI assistance under my direction. Research and education only; not investment advice.</p>
+</article></main><footer class="site-footer"><span>© 2026 Nicholas Beroud</span><span><a href="mailto:nicholasberoud@gmail.com">Get in touch</a> · <a href="#main">Back to top ↑</a></span></footer></body></html>
