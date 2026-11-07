@@ -528,7 +528,6 @@ pre.formula { white-space: pre; margin: 22px 0; }
 .tin-hero { margin: 22px 0; border-radius: 12px; border: 1px solid #cea5fb55; }
 @media (max-width: 640px) { .project-grid { grid-template-columns: 1fr; } }
 .grid-figure.thesis-panel { display: flex; flex-direction: column; justify-content: center; gap: 12px; }
-.project-grid > .grid-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .project-grid > .grid-card:last-child:nth-child(odd) .grid-figure.thesis-panel { aspect-ratio: auto; min-height: 190px; }
 
 /* Tin screenshot (7 November 2026) */
@@ -544,3 +543,8 @@ pre.formula { white-space: pre; margin: 22px 0; }
 .grid-figure.thesis-panel { aspect-ratio: 4 / 3; }
 .project-grid > .grid-card:last-child:nth-child(odd) .grid-figure--photo { aspect-ratio: auto; }
 .project-grid > .grid-card:last-child:nth-child(odd) .grid-figure--photo img { aspect-ratio: 21 / 9; }
+
+/* Six-card grid (7 November 2026): placeholder for the next project */
+.next-panel { background: linear-gradient(160deg, #0d1117 0%, #2b2213 100%); }
+.next-panel .thesis-panel-kicker { color: var(--orange); }
+.grid-card--next { border-style: dashed; }
