@@ -73,3 +73,11 @@ assets/tin-2026-09/tin-evidence.csv
 assets/tin-2026-09/tin-smelters.png
 assets/tin-2026-09/tin-smelters.csv
 assets/tin-2026-09/results.json
+
+# TIC phase 1 pilot (portfolio-projects projects/tic outputs/cslt), 8 November 2026.
+assets/tic-2026-11/cslt/cslt-monthly.png
+assets/tic-2026-11/cslt/cslt-cumulative.png
+assets/tic-2026-11/cslt/cslt-holders.png
+assets/tic-2026-11/cslt/cslt-chart-data.csv
+assets/tic-2026-11/cslt/results.json
+assets/tic-2026-11/cslt/validation.md

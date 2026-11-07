@@ -21,6 +21,7 @@ PAGES = (
     'notes/climate-resilience.html',
     'notes/who-buys-the-debt.html',
     'notes/tic-research.html',
+    'notes/tic-monthly.html',
 )
 
 class Page(HTMLParser):

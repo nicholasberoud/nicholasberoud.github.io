@@ -1,0 +1,112 @@
+{
+  "source": {
+    "source_file": "cslt_20261107.zip",
+    "source_transmitted": "2026-10-13 15:18:48.221676",
+    "rows": 1500,
+    "main_window_start": "2023-02"
+  },
+  "window": [
+    "2023-02",
+    "2026-08"
+  ],
+  "example_2026_07_bn": {
+    "grand_total": {
+      "change": -89.1,
+      "net_purchases": -3.6,
+      "valuation": -101.6,
+      "other": 16.0
+    },
+    "foreign_official": {
+      "change": 1.3,
+      "net_purchases": 25.5,
+      "valuation": -32.2,
+      "other": 8.0
+    },
+    "foreign_non_official": {
+      "change": -90.4,
+      "net_purchases": -29.1,
+      "valuation": -69.3,
+      "other": 8.0
+    }
+  },
+  "summary": {
+    "grand_total": {
+      "cumulative_bn": {
+        "change": 1549.5,
+        "net_purchases": 1748.9,
+        "valuation": -153.7,
+        "other": -45.8
+      },
+      "valuation_plus_other_bn": -199.5,
+      "months": 43,
+      "months_change_and_purchases_disagree": 10,
+      "disagree_months": [
+        "2023-02",
+        "2023-05",
+        "2023-08",
+        "2023-09",
+        "2023-10",
+        "2024-04",
+        "2024-10",
+        "2024-11",
+        "2026-03",
+        "2026-06"
+      ]
+    },
+    "foreign_official": {
+      "cumulative_bn": {
+        "change": -10.9,
+        "net_purchases": 83.8,
+        "valuation": 184.9,
+        "other": -279.5
+      },
+      "valuation_plus_other_bn": -94.6,
+      "months": 43,
+      "months_change_and_purchases_disagree": 20,
+      "disagree_months": [
+        "2023-02",
+        "2023-05",
+        "2023-09",
+        "2023-11",
+        "2024-01",
+        "2024-02",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2025-02",
+        "2025-05",
+        "2025-06",
+        "2025-07",
+        "2025-08",
+        "2026-02",
+        "2026-04"
+      ]
+    },
+    "foreign_non_official": {
+      "cumulative_bn": {
+        "change": 1560.3,
+        "net_purchases": 1665.1,
+        "valuation": -338.5,
+        "other": 233.8
+      },
+      "valuation_plus_other_bn": -104.7,
+      "months": 43,
+      "months_change_and_purchases_disagree": 9,
+      "disagree_months": [
+        "2023-02",
+        "2023-05",
+        "2023-12",
+        "2024-04",
+        "2024-10",
+        "2024-11",
+        "2024-12",
+        "2026-03",
+        "2026-06"
+      ]
+    }
+  }
+}
