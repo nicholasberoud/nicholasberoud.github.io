@@ -551,3 +551,9 @@ pre.formula { white-space: pre; margin: 22px 0; }
 /* Two centred buttons (7 November 2026) */
 .portfolio-actions { grid-template-columns: repeat(2, minmax(0, 260px)); justify-content: center; }
 @media (max-width: 560px) { .portfolio-actions { grid-template-columns: 1fr 1fr; } }
+
+/* House chart style (7 November 2026): charts sit on the page, no box; grid thumbnails match the chart canvas */
+.exhibit img, .research-figure img { border: 0; border-radius: 0; background: transparent; }
+.grid-figure img { aspect-ratio: 1720 / 920; object-fit: cover; padding: 0; }
+.grid-figure.thesis-panel, .grid-figure.next-panel { aspect-ratio: 1720 / 920; }
+.latest-figure img { padding: 0; }
