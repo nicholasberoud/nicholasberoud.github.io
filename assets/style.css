@@ -195,7 +195,9 @@ h1 { font-weight: 600; font-size: 38px; line-height: 1.2; letter-spacing: -.6px;
   .site-footer { flex-wrap: wrap; gap: 5px 20px; }
 }
 pre.formula { white-space: pre; margin: 22px 0; }
-@media (max-width: 420px) { .nav-inner { flex-wrap: wrap; row-gap: 0; padding: 6px 18px 0; } .site-header nav { width: 100%; justify-content: space-between; } .site-header nav a { min-height: 40px; } }
+@media (max-width: 420px) { .nav-inner { flex-wrap: wrap; row-gap: 0; padding: 6px 18px 0; } .site-header nav { width: 100%; justify-content: space-between; gap: 6px; } .site-header nav a { min-height: 40px; } }
+@media (max-width: 370px) { .site-header nav a { font-size: 12px; } }
+@media (max-width: 340px) { .site-header nav { flex-wrap: wrap; justify-content: flex-start; column-gap: 14px; row-gap: 0; } .site-header nav a { min-height: 34px; } }
 
 /* Portfolio layer (24 October 2026): tagline, Now, pinned cards, writing list, log, WIP */
 .tagline { margin: -4px auto 14px; max-width: 540px; color: var(--muted); font-size: 16px; line-height: 1.55; }
