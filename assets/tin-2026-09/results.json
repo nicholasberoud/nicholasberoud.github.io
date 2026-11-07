@@ -1,0 +1,43 @@
+{
+  "source_commit": "784df88e679c266e468391dd5849a2d7e5f476e6",
+  "generated": "2026-11-07",
+  "loss_model": {
+    "conditional_loss_usd": 81516037.01917808,
+    "expected_disruption_loss_usd": 8151603.7019178085,
+    "matches_team_example": true,
+    "conditional_loss_60d_inv0_usd": 126802724.2520548,
+    "conditional_loss_60d_inv30_usd": 36229349.78630137,
+    "conditional_loss_60d_inv15_backup70_usd": 9057337.446575353
+  },
+  "links_total": 144,
+  "links_by_evidence": {
+    "company-disclosed": 2,
+    "trade-record evidenced": 21,
+    "ownership-inferred": 6,
+    "modelled only": 115
+  },
+  "smelters_total": 72,
+  "smelters_by_country": {
+    "Indonesia": 24,
+    "China": 11,
+    "Brazil": 10,
+    "United States": 4,
+    "Japan": 3,
+    "Bolivia": 2,
+    "Malaysia": 2,
+    "Spain": 2,
+    "Thailand": 2,
+    "DR Congo": 1,
+    "Germany": 1,
+    "Myanmar": 1,
+    "Rwanda": 1,
+    "Uganda": 1,
+    "Australia": 1,
+    "Belgium": 1,
+    "India": 1,
+    "Peru": 1,
+    "Philippines": 1,
+    "Poland": 1,
+    "Taiwan, Province Of China": 1
+  }
+}
