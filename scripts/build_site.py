@@ -10,6 +10,7 @@ SITE_HOST = 'nicholasberoud.github.io'
 PAGES = (
     'index.html',
     'research.html',
+    'thesis.html',
     '404.html',
     'projects/fima.html',
     'projects/term-premium.html',
