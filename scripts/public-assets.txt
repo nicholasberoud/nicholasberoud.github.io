@@ -61,3 +61,7 @@ assets/repo-advisor-2026-10/distributions.csv
 assets/repo-advisor-2026-10/episode.csv
 assets/nicholas-beroud-headshot.png
 assets/repo-advisor-2026-10/spread-distributions.png
+
+# Tin hackathon: screenshots of the team prototype (Stable Supply, public repository), 7 November 2026.
+assets/tin-2026-09/stable-supply-globe.jpg
+assets/tin-2026-09/stable-supply-globe-card.jpg
