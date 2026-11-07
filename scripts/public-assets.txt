@@ -65,3 +65,11 @@ assets/repo-advisor-2026-10/spread-distributions.png
 # Tin hackathon: screenshots of the team prototype (Stable Supply, public repository), 7 November 2026.
 assets/tin-2026-09/stable-supply-globe.jpg
 assets/tin-2026-09/stable-supply-globe-card.jpg
+# Tin charts generated in portfolio-projects/projects/site/tin (team data, commit 784df88), 7 November 2026.
+assets/tin-2026-09/tin-loss-curve.png
+assets/tin-2026-09/tin-loss-curve.csv
+assets/tin-2026-09/tin-evidence.png
+assets/tin-2026-09/tin-evidence.csv
+assets/tin-2026-09/tin-smelters.png
+assets/tin-2026-09/tin-smelters.csv
+assets/tin-2026-09/results.json
