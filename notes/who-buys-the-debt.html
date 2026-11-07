@@ -1,49 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Who Buys the Debt? | Nicholas Beroud</title><meta name="description" content="An explainer on who holds US Treasuries, why holdings are not the same as price sensitivity, and what a recent Federal Reserve paper says about how the investor base changes yield responses.">
-<meta property="og:type" content="article"><meta property="og:site_name" content="Nicholas Beroud"><meta property="og:title" content="Who Buys the Debt?"><meta property="og:description" content="An explainer on who holds US Treasuries, why holdings are not the same as price sensitivity, and what a recent Federal Reserve paper says about how the investor base changes yield responses."><meta property="og:url" content="https://nicholasberoud.github.io/notes/who-buys-the-debt.html"><meta property="og:image" content="https://nicholasberoud.github.io/assets/presentation-banner.jpeg"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1117"><link rel="icon" href="../assets/favicon.svg?v=2" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=20261107-4"></head>
-<body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="nav-inner"><a class="wordmark" href="../index.html">Nicholas Beroud</a><nav aria-label="Main navigation"><a href="../research.html">Research Desk</a><a href="../thesis.html">Undergraduate Thesis</a><a href="../index.html#about">About</a></nav></div></header>
-<main id="main"><article class="article"><a class="back" href="../research.html">← Research Desk</a> <span class="meta">· Companion to <a href="tic-research.html">Who Holds the Treasuries Held Abroad?</a></span><p class="eyebrow">Treasury ownership · Companion explainer</p><h1>Who Buys the Debt?</h1><p class="meta">Published 20 October 2026 · Definitions clarified 1 November 2026</p><p class="lead">When the US government borrows more, someone has to buy the extra bonds. Who that buyer is, and how much they care about price, can change how far yields move.</p>
-
-<p class="companion-link"><span>Companion data study</span><a href="tic-research.html">Who Holds the Treasuries Held Abroad?</a> charts the official/private split. This explainer asks why holdings alone cannot measure investors’ responses to prices.</p>
-<h2>Who holds Treasuries</h2>
-<p>US Treasury debt held by the public is spread across very different investors:</p>
-<ul>
-<li><strong>The Federal Reserve</strong>, which buys and sells for monetary-policy reasons, not for return.</li>
-<li><strong>Foreign official investors</strong>, such as central banks managing reserves, whose mandates can emphasize liquidity, safety and exchange-rate policy alongside return.</li>
-<li><strong>Foreign private investors</strong>, such as banks, insurers and funds abroad.</li>
-<li><strong>US banks, insurers, pension funds and money-market funds</strong>, often bound by regulation or by the liabilities they need to match.</li>
-<li><strong>Hedge funds, other asset managers and households</strong>, with different strategies, constraints and investment horizons.</li>
-</ul>
-
-<h2>Three things that are easy to confuse</h2>
-<ul>
-<li><strong>Holdings</strong>: how much of the stock each group owns at a point in time.</li>
-<li><strong>Purchases</strong>: how much each group adds or sells over a period.</li>
-<li><strong>Price sensitivity (elasticity)</strong>: how much a group changes its holdings when yields move. Lower elasticity means a smaller demand response to a given price change, holding other influences fixed. These responses must be estimated; an official or private label does not measure them.</li>
-</ul>
-<p>A large holder is not necessarily a price-setter. What matters for how far yields move is the price sensitivity of the investors who have to absorb new supply.</p>
-
-<h2>What a recent Federal Reserve paper finds</h2>
-<p>Daniel Beltran and Canlin Li (<a href="https://www.federalreserve.gov/econres/ifdp/estimating-yield-impacts-of-treasury-demand-and-supply-changes.htm">IFDP 1447, September 2026</a>) estimate how price-sensitive each investor group is, then combine those estimates with each group’s share of the market. Their findings, in plain terms:</p>
-<ul>
-<li>The Treasury market as a whole has become <strong>more</strong> price-sensitive since the early 2000s, mainly because price-inelastic foreign official investors now hold a smaller share and more price-elastic hedge funds and households a larger one.</li>
-<li>In normal times, a more price-sensitive market means <strong>smaller</strong> yield moves for a given change in supply: elastic investors step in after a small move in price.</li>
-<li>For 2026Q1, they estimate that an extra $100 billion of Treasury bond supply raises five-year yields by about 3 basis points, against around 65 in the early 2000s. Most of that fall reflects the larger Treasury bond market ($23.8 trillion held by the public in 2026Q1, against $2.5 trillion in 2000). Scaled to 1% of that market, the estimated effect is about 8 basis points in 2026Q1, against about 15 from 2000 to 2015.</li>
-<li>The flip side is fragility. When elastic investors step back in stress, as in March 2020, the market suddenly becomes much less elastic and the same shock moves yields much more.</li>
-</ul>
-<p>Two effects are easy to mix up here. In this framework, a larger share of price-inelastic holders makes yields <em>more</em> responsive to supply shocks, even though their buying can push the level of yields down. It is the elastic buyers who dampen the response in normal times, and their absence in stress that amplifies it.</p>
-
-<h2>Why this matters for fiscal risk</h2>
-<p>In my <a href="../projects/term-premium/deficits-and-the-term-premium.html">first journal article</a>, the link between deficits and the term premium is much weaker after 2008 than before. A natural question is whether changes in who holds the debt help explain that. The direction is not obvious: in Beltran and Li’s framework, a more price-inelastic holder base would amplify supply effects rather than mute them. I have <strong>not</strong> tested this. Doing it properly needs a design that separates holder composition from the crises and Fed purchases that changed at the same time; it is on the list of <a href="../projects/term-premium.html">questions I’m exploring next</a>.</p>
-
-<h2>Caveats about the data</h2>
-<ul>
-<li>Country attribution in <a href="https://home.treasury.gov/data/treasury-international-capital-tic-system-home-page/frequently-asked-questions-regarding/ticfaq2">TIC data can be affected by foreign custodians</a>: the ultimate holder’s residence is not always visible to a U.S. reporter. This limits country-level interpretation; it does not establish deliberate concealment.</li>
-<li>In the Fed’s <a href="https://www.federalreserve.gov/releases/z1/">Financial Accounts</a>, the household sector, which includes hedge funds, is largely a residual: what is left after other sectors are measured.</li>
-<li>The authors treat these as sample-average estimates, not fixed structural parameters; their values depend on the model and identification assumptions.</li>
-</ul>
-<p>A separate <a href="tic-research.html">TIC working study</a> now includes a reconstructed 2008–2025 holdings series, charts and downloadable data. It does not establish an ownership explanation for the term-premium result.</p>
-<p class="source-note">Research and education only. Nothing here is investment advice.</p>
-</article></main>
-<footer class="site-footer"><span>© 2026 Nicholas Beroud</span><span><a href="mailto:nicholasberoud@gmail.com">Get in touch</a> · <a href="#main">Back to top ↑</a></span></footer></body></html>
+<title>Moved: Who Buys the Debt? is now part of Who Holds the Treasuries Held Abroad? | Nicholas Beroud</title>
+<meta http-equiv="refresh" content="0; url=tic-research.html#price-sensitivity"><link rel="canonical" href="https://nicholasberoud.github.io/notes/tic-research.html">
+<meta name="theme-color" content="#0d1117"><link rel="icon" href="../assets/favicon.svg?v=2" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=20261107-5"></head>
+<body><main id="main"><article class="article"><p>This explainer is now a section of <a href="tic-research.html#price-sensitivity">Who Holds the Treasuries Held Abroad?</a></p></article></main></body></html>
