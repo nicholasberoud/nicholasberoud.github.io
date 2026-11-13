@@ -1,0 +1,114 @@
+{
+  "purpose": "Presentation only; no estimation or numerical-source edits.",
+  "palette": {
+    "background": "#0d1117",
+    "foreground": "#e6edf3",
+    "muted": "#9da7b3",
+    "primary": "#79b8f3",
+    "comparison": "#67c5b4",
+    "third": "#ddb66e"
+  },
+  "charts": {
+    "a1-premium-balance": {
+      "source": "assets/term-premium/2026-10/fig1_premium_and_balance.csv",
+      "source_sha256": "d8dc41df1eb847f30263764d372c3c9d95ede708694309308c878bc846c90d1c",
+      "rows": 561,
+      "notes": "Both source columns plotted; missing fiscal values are left missing. January 2008 is a comparison-date annotation.",
+      "dimensions_px": [
+        1720,
+        1700
+      ]
+    },
+    "a1-estimates": {
+      "source": "assets/term-premium/2026-10/fig2_estimates.csv",
+      "source_sha256": "a944bb48372825de412ea23d6caeaa2f336ef87978a11c4d46368390bff285f5",
+      "rows": 12,
+      "checks": {
+        "estimates": 12,
+        "intervals": 12,
+        "specifications": 6
+      },
+      "dimensions_px": [
+        1720,
+        1600
+      ]
+    },
+    "a1-fiscal-years": {
+      "source": "assets/term-premium/2026-10/fig3_fiscal_years.csv",
+      "source_sha256": "5e1009cbaafde1d994ac8bf5834c87d459a32fd8f32c437153f64d5554f0ead0",
+      "rows": 45,
+      "fit_line": "Existing fy_annual_hc1 slopes; lines centered on each plotted group mean. No model refit.",
+      "additional_source": {
+        "path": "assets/term-premium/2026-10/results.json",
+        "sha256": "eb039d513645d4a815dc8e0c812ffc6ee051a89b7fc0f174d2394148def11b1d"
+      },
+      "points": {
+        "pre": 27,
+        "post": 18
+      },
+      "dimensions_px": [
+        1720,
+        1320
+      ]
+    },
+    "a1-two-models": {
+      "source": "assets/term-premium/2026-10/fig4_two_models.csv",
+      "source_sha256": "9765daf6e50eb2c0b5b73b1a2e790388ce12caf3ca9a3db430a45838cf7cca39",
+      "rows": 441,
+      "dimensions_px": [
+        1720,
+        1200
+      ]
+    },
+    "lab-spec-curve": {
+      "source": "assets/term-premium/lab-2026-10/exp1-curve.csv",
+      "source_sha256": "f41fa29c6df6fd2fb49160e6e5d232bfec67cfecf51db09e7a2a4dff8d21083f",
+      "rows": 1050,
+      "checks": {
+        "estimates": 1050,
+        "intervals": 1050,
+        "main_specifications": 1
+      },
+      "dimensions_px": [
+        1720,
+        1360
+      ]
+    },
+    "lab-baseline": {
+      "source": "assets/term-premium/lab-2026-10/exp2c-baseline.csv",
+      "source_sha256": "beec38c5d59cadb569044a35021872f723442427f74e2ea39fd58354f53cd047",
+      "rows": 125,
+      "checks": {
+        "path_rows": 112,
+        "event_markers": 13,
+        "uncertainty_bounds": "All C0 and C1 smoothed 95% bounds retained."
+      },
+      "dimensions_px": [
+        1720,
+        1400
+      ]
+    },
+    "tic-lt-official-private": {
+      "source": "assets/tic-2026-11/tic-lt-official-private.csv",
+      "source_sha256": "3fa949283388b401d6dc4c01dc8960d9f82f5034229c912858a5ef6651ac88fc",
+      "rows": 18,
+      "dimensions_px": [
+        1720,
+        1260
+      ]
+    },
+    "tic-official-share-by-maturity": {
+      "source": "assets/tic-2026-11/tic-official-share-by-maturity.csv",
+      "source_sha256": "1fccd93ce144bb00d5f22e48044f41200bbea0229543c2d6907baf475685325a",
+      "rows": 54,
+      "dimensions_px": [
+        1720,
+        1320
+      ]
+    }
+  },
+  "checks": {
+    "all_source_hashes_unchanged": true,
+    "no_models_refitted": true
+  }
+}
