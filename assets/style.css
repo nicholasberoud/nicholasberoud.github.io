@@ -656,3 +656,41 @@ pre.formula { white-space: pre; margin: 22px 0; }
 .social-links .resume-link { width: auto; gap: 7px; font: 500 12px/1.4 var(--sans); white-space: nowrap; }
 .article-shortcuts { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 20px 0 28px; padding: 0; }
 .article-shortcuts a { font: 500 13px/1.6 var(--sans); text-underline-offset: 4px; }
+
+/* Portfolio revision · 19 November 2026 (homepage, AI project page) */
+.home-profile .profile-banner { aspect-ratio: 4 / 1; }
+.home-profile .profile-banner img { object-position: 50% 42%; }
+.home-intro { max-width: 680px; margin: 6px auto 8px; }
+.home-section { margin-top: 44px; }
+.home-section .journal-heading { margin-bottom: 18px; }
+.feature-links { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin: 4px 0 0; font-size: 14px; }
+.feature-links a:not(.button) { text-underline-offset: 4px; }
+.home-feature--wip { border-color: #faa35666; }
+.home-feature--wip .eyebrow { color: var(--orange); }
+.home-feature--wip :is(h2,h3) span { font-size: 19px; }
+.work-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+.work-list li { padding: 18px 0; border-bottom: 1px solid var(--rule); }
+.work-list .work-kicker { margin: 0 0 4px; font: 12px/1.6 var(--mono); color: var(--muted); letter-spacing: .02em; }
+.work-list h3 { margin: 0 0 6px; font-size: 19px; line-height: 1.35; border: 0; padding: 0; }
+.work-list h3 a { color: var(--bright); text-decoration: none; }
+.work-list h3 a:hover, .work-list h3 a:focus-visible { color: var(--blue); text-decoration: underline; text-underline-offset: 4px; }
+.work-list p:last-child { margin: 0; max-width: 68ch; font-size: 15px; line-height: 1.6; color: var(--text); }
+.experience-list { margin: 0; display: grid; grid-template-columns: minmax(0, 15rem) minmax(0, 1fr); gap: 0 28px; border-top: 1px solid var(--rule); }
+.experience-list dt, .experience-list dd { margin: 0; padding: 14px 0; border-bottom: 1px solid var(--rule); font-size: 15px; line-height: 1.6; }
+.experience-list dt { color: var(--bright); font-weight: 600; }
+.experience-list dt span { display: block; font: 12px/1.6 var(--mono); font-weight: 400; color: var(--muted); }
+.experience-list dd { color: var(--text); }
+@media (max-width: 640px) {
+  .home-profile .profile-banner { aspect-ratio: 5 / 2; }
+  .home-section { margin-top: 36px; }
+  .experience-list { grid-template-columns: 1fr; }
+  .experience-list dt { padding-bottom: 2px; border-bottom: 0; }
+  .experience-list dd { padding-top: 0; }
+}
+@media (max-width: 420px) { .site-header nav { gap: 10px; } }
+.contribution-note { margin: -4px 0 18px; font-size: 14px; line-height: 1.6; color: var(--muted); max-width: 68ch; }
+.article .work-list--full h3 { font-size: 20px; }
+.work-list--full li > p:not(.work-kicker):not(.work-meta) { margin: 0 0 8px; max-width: 68ch; font-size: 16px; line-height: 1.65; }
+.work-list .work-meta, .article .work-list .work-meta { margin: 0; font-size: 13px; line-height: 1.6; color: var(--muted); max-width: 68ch; }
+.article section + section h2, .article section > h2 { margin-top: 40px; }
+.article .work-list { padding-left: 0; } .article .work-list li { margin: 0; }
