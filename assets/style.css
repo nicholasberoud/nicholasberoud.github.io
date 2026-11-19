@@ -651,3 +651,8 @@ pre.formula { white-space: pre; margin: 22px 0; }
   .article .chapter-question { font-size: 19px; }
   .chapter-links { align-items: flex-start; flex-direction: column; }
 }
+
+/* Portfolio evidence routes · November 2026 */
+.social-links .resume-link { width: auto; gap: 7px; font: 500 12px/1.4 var(--sans); white-space: nowrap; }
+.article-shortcuts { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 20px 0 28px; padding: 0; }
+.article-shortcuts a { font: 500 13px/1.6 var(--sans); text-underline-offset: 4px; }
