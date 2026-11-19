@@ -1,0 +1,33 @@
+{
+ "script": "scripts/render_brazil_mobile.py",
+ "inputs": [
+  {
+   "file": "assets/term-premium/brazil-2026-10/br-cross-asset.csv",
+   "sha256": "a51f25e0d3e387901dd5646689553363a2347257f2338d27d01c37d13a0569f0"
+  },
+  {
+   "file": "assets/term-premium/brazil-2026-10/br-fat-tails.csv",
+   "sha256": "e0f6f913aa426304c14ecd79f38456014f7575dc3abd114e60a46a546014542d"
+  },
+  {
+   "file": "assets/term-premium/brazil-2026-10/top10_down_days.csv",
+   "sha256": "bcda67c516c29a063959a74890f731f067d7e5e45be38493eafe54fc8af9214c"
+  },
+  {
+   "file": "assets/term-premium/brazil-2026-10/br-decomposition.csv",
+   "sha256": "26ec970a2a268d7fe2cbead71dc07759895219be1e8bf741580afa1d0af5bf4d"
+  },
+  {
+   "file": "assets/term-premium/brazil-2026-10/br-debt.csv",
+   "sha256": "8815da9b046d1d98f8f6b4ef41b029b2ddd81606f94a7c1ab045c0962cab38f0"
+  }
+ ],
+ "outputs": [
+  "assets/term-premium/brazil-2026-10/mobile/br-cross-asset.png",
+  "assets/term-premium/brazil-2026-10/br-cross-asset.png",
+  "assets/term-premium/brazil-2026-10/mobile/br-fat-tails.png",
+  "assets/term-premium/brazil-2026-10/mobile/br-decomposition.png",
+  "assets/term-premium/brazil-2026-10/mobile/br-debt.png"
+ ],
+ "note": "Presentation only: values read from the published chart-data CSVs; nothing estimated or changed."
+}

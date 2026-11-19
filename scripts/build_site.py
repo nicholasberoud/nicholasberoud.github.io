@@ -38,9 +38,17 @@ class Page(HTMLParser):
             if attrs['id'] in self.ids:
                 raise ValueError(f'Duplicate HTML id: {attrs["id"]}')
             self.ids.add(attrs['id'])
-        for key in ('href', 'src'):
+        for key in ('href', 'src', 'srcset'):
             if key in attrs:
-                self.links.append(attrs[key])
+                # srcset may list several candidates ("a.png 1600w, b.png 2048w"); check each URL.
+                self.links.extend(part.split()[0] for part in attrs[key].split(',') if part.strip()) if key == 'srcset' else self.links.append(attrs[key])
+        if tag == 'meta':
+            # Redirect targets and social-card URLs live in content attributes; check them like links.
+            if (attrs.get('http-equiv') or '').lower() == 'refresh' and 'url=' in (attrs.get('content') or '').lower():
+                content = attrs['content']
+                self.links.append(content[content.lower().index('url=') + 4:].strip())
+            if attrs.get('property') in ('og:url', 'og:image') and attrs.get('content'):
+                self.links.append(attrs['content'])
 
 asset_names = [line.strip() for line in (ROOT / 'scripts/public-assets.txt').read_text().splitlines()
                if line.strip() and not line.lstrip().startswith('#')]
