@@ -30,6 +30,11 @@ assets/term-premium/brazil-2026-10/event_table.csv
 assets/term-premium/brazil-2026-10/results.json
 assets/term-premium/brazil-2026-10/sigma_counts.csv
 assets/term-premium/brazil-2026-10/top10_down_days.csv
+assets/term-premium/brazil-2026-10/mobile/br-cross-asset.png
+assets/term-premium/brazil-2026-10/mobile/br-decomposition.png
+assets/term-premium/brazil-2026-10/mobile/br-debt.png
+assets/term-premium/brazil-2026-10/mobile/br-fat-tails.png
+assets/term-premium/brazil-2026-10/mobile/provenance.json
 assets/term-premium/lab-2026-10/exp1-curve.csv
 assets/term-premium/lab-2026-10/exp1-curve.png
 assets/term-premium/lab-2026-10/exp1-results.json

@@ -694,3 +694,9 @@ pre.formula { white-space: pre; margin: 22px 0; }
 .work-list .work-meta, .article .work-list .work-meta { margin: 0; font-size: 13px; line-height: 1.6; color: var(--muted); max-width: 68ch; }
 .article section + section h2, .article section > h2 { margin-top: 40px; }
 .article .work-list { padding-left: 0; } .article .work-list li { margin: 0; }
+
+/* Fixes · 21 November 2026: readable line length and chart size on the Treasury article */
+.treasury-project p, .treasury-project li { max-width: 34em; }
+@media (min-width: 1060px) {
+  .treasury-project .exhibit { width: auto; max-width: 640px; margin-left: auto; margin-right: auto; }
+}
