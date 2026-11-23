@@ -1,0 +1,28 @@
+{
+ "research_repository": "nicholasberoud/ai-compute-economics (private)",
+ "research_commit": "9b6c292a0b63df49b76a60fb0b5c09358b909db8",
+ "generated": "2026-11-23",
+ "script": "scripts/neocloud/extract_coreweave.py",
+ "inputs": {
+  "research/coreweave/stage3/rq1_results/leverage_table.csv": "8a468b9effc65bd743a5ff953590fb1ea457455101cd4aa4bc4b32168825461a",
+  "research/coreweave/stage3/rq1_results/instrument_mix.csv": "f8163c1463200e51c57dd8a6e2167e70c749fffdf7d28c1c67d17e4c6205873b",
+  "research/coreweave/stage3/rq1_results/instrument_lines.csv": "be61162cd37dbe9a25171ec8b4bb8c3b8b24eefa29927ef9bd95388ad59cb755",
+  "research/coreweave/stage3/rq1_results/ppe_categories.csv": "18a673889169c09f8396bd75e6c655218d1e25e01182692e7bc20fbddd76b9c9",
+  "research/coreweave/stage3/rq1_results/sources_uses.csv": "d5d24748dd6eaaf23b01c9406ccaeb6bd35f47df6240d888379b93680c729d33",
+  "research/coreweave/stage3/rq1_results/routes_dated.csv": "ebcf08c1cbb5127569403cea685a0164e24f81b333bf2dc66b5c5278dffe33be",
+  "research/coreweave/stage3/rq1_results/collateral_dated.csv": "99ee8962d80d3b9746e1c64975b2ea71c44d9df52758a6cd911eb93a186a4983",
+  "research/coreweave/stage3/rq1_results/facility_cases.csv": "4cf939fcd082e62c11c6a8bff50ce36074c2e24129f9250a56f628875251c4cc",
+  "research/coreweave/stage3/rq1_results/facility_security_timeline.csv": "dc4a99f34e0eeb2c3d7af4fe29941aa56ca9295e20b488b4493ee2732ad3387b",
+  "research/coreweave/stage3/rq1_results/note_issue_uses.csv": "294828a17f732ffc9060c55e49b277693316d4e70006fe3fa258ec771d028e73",
+  "research/coreweave/stage3/rq1_results/oem_case.csv": "c73f4fae62e5ed7980c968ddb92ef4b7ea3362d5978429381f5b6ea37143e57b",
+  "research/coreweave/stage5/rq1_note/out/fig1_debt_leverage.csv": "3a6dce7a80a3f0f7ee983f75677cac35d129b518ad81e6b5c314fef055a54b0c",
+  "research/coreweave/stage5/rq1_note/out/fig2_instrument_mix.csv": "3d165056e8f00d8e5626acd4bc18935d10086e4760b7074768e1dfb95e3dd295",
+  "research/coreweave/stage5/rq1_note/out/fig3_ppe_composition.csv": "cbbf147a3d963bf9484473853cf6f82a6afa714ff41aac108866810c635734ca",
+  "research/coreweave/stage5/pedro_workbook/figures/figures_data.csv": "102552edbee9db3cda92959336ab5465af7f7cdbfc22d95a95cbc6e62ceb8f97"
+ },
+ "workbook_read_for_links_and_pages_only": {
+  "research/coreweave/stage5/pedro_workbook/CoreWeave_RQ1_Debt_and_Leverage.xlsx": "b47ae070bde46cb303bdd5577eafd80083bf7b5bcc49674e136e69772ce02f65"
+ },
+ "cross_checked_against_evidence_index": 68,
+ "numbers": 99
+}

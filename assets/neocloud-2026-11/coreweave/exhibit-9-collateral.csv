@@ -1,0 +1,19 @@
+exhibit,series,period_end,value,unit,filing,printed_page,sec_url,source_file
+9,"Certain special-purpose subsidiaries (aggregate, not named): noncurrent",2025-12-31,12.7,USD billions,Form 10-Q for Q3 2026,34,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,collateral_dated.csv
+9,"Certain special-purpose subsidiaries (aggregate, not named): current",2025-12-31,1.8,USD billions,Form 10-Q for Q3 2026,34,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,collateral_dated.csv
+9,"Certain special-purpose subsidiaries (aggregate, not named): noncurrent",2026-06-30,18.2,USD billions,Form 10-Q for Q2 2026,30,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm,collateral_dated.csv
+9,"Certain special-purpose subsidiaries (aggregate, not named): current",2026-06-30,2.6,USD billions,Form 10-Q for Q2 2026,30,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm,collateral_dated.csv
+9,"Certain special-purpose subsidiaries (aggregate, not named): noncurrent",2026-09-30,22.2,USD billions,Form 10-Q for Q3 2026,34,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,collateral_dated.csv
+9,"Certain special-purpose subsidiaries (aggregate, not named): current",2026-09-30,3.7,USD billions,Form 10-Q for Q3 2026,34,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,collateral_dated.csv
+9,"CCAC VIII, the DDTL 4.0 borrower: noncurrent",2025-12-31,,USD billions,,,,collateral_dated.csv
+9,"CCAC VIII, the DDTL 4.0 borrower: current",2025-12-31,,USD billions,,,,collateral_dated.csv
+9,"CCAC VIII, the DDTL 4.0 borrower: noncurrent",2026-06-30,3.3,USD billions,Form 10-Q for Q2 2026,29,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm,collateral_dated.csv
+9,"CCAC VIII, the DDTL 4.0 borrower: current",2026-06-30,0.155,USD billions,Form 10-Q for Q2 2026,29,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm,collateral_dated.csv
+9,"CCAC VIII, the DDTL 4.0 borrower: noncurrent",2026-09-30,5.2,USD billions,Form 10-Q for Q3 2026,33,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,collateral_dated.csv
+9,"CCAC VIII, the DDTL 4.0 borrower: current",2026-09-30,0.233,USD billions,Form 10-Q for Q3 2026,33,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,collateral_dated.csv
+9,Recourse debt (carrying value),2025-12-31,20.726,USD billions,Form 10-Q for Q2 2026,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm,leverage_table.csv
+9,Non-recourse debt (carrying value),2025-12-31,0.647,USD billions,Form 10-Q for Q2 2026,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm,leverage_table.csv
+9,Recourse debt (carrying value),2026-06-30,31.405,USD billions,Form 10-Q for Q2 2026,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm,leverage_table.csv
+9,Non-recourse debt (carrying value),2026-06-30,3.663,USD billions,Form 10-Q for Q2 2026,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm,leverage_table.csv
+9,Recourse debt (carrying value),2026-09-30,41.6,USD billions,Form 10-Q for Q3 2026,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,leverage_table.csv
+9,Non-recourse debt (carrying value),2026-09-30,5.273,USD billions,Form 10-Q for Q3 2026,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,leverage_table.csv

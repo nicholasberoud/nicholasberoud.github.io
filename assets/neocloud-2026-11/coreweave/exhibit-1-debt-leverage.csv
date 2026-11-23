@@ -1,0 +1,37 @@
+exhibit,series,period_end,value,unit,filing,printed_page,sec_url,source_file
+1,Headline Debt,2023-12-31,1.527298,USD billions,IPO Prospectus (Form 424B4),F-4,https://www.sec.gov/Archives/edgar/data/1769628/000119312525067651/d899798d424b4.htm,fig1_debt_leverage.csv
+1,Headline Debt / total assets,2023-12-31,30.68727490091873,percent,IPO Prospectus (Form 424B4),F-4,https://www.sec.gov/Archives/edgar/data/1769628/000119312525067651/d899798d424b4.htm,fig1_debt_leverage.csv
+1,Headline Debt,2024-12-31,8.018261,USD billions,IPO Prospectus (Form 424B4),F-4,https://www.sec.gov/Archives/edgar/data/1769628/000119312525067651/d899798d424b4.htm,fig1_debt_leverage.csv
+1,Headline Debt / total assets,2024-12-31,44.96406272579785,percent,IPO Prospectus (Form 424B4),F-4,https://www.sec.gov/Archives/edgar/data/1769628/000119312525067651/d899798d424b4.htm,fig1_debt_leverage.csv
+1,Headline Debt,2025-03-31,8.78949,USD billions,Form 10-Q for Q1 2025,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000014/crwv-20250331.htm,fig1_debt_leverage.csv
+1,Headline Debt / total assets,2025-03-31,40.2073925237266,percent,Form 10-Q for Q1 2025,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000014/crwv-20250331.htm,fig1_debt_leverage.csv
+1,Headline Debt,2025-06-30,11.115009,USD billions,Form 10-Q for Q2 2025,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm,fig1_debt_leverage.csv
+1,Headline Debt / total assets,2025-06-30,42.35682803519009,percent,Form 10-Q for Q2 2025,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm,fig1_debt_leverage.csv
+1,Headline Debt,2025-09-30,14.083936,USD billions,Form 10-Q for Q3 2025,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/crwv-20250930.htm,fig1_debt_leverage.csv
+1,Headline Debt / total assets,2025-09-30,42.79466084044064,percent,Form 10-Q for Q3 2025,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/crwv-20250930.htm,fig1_debt_leverage.csv
+1,Headline Debt,2025-12-31,21.627,USD billions,Form 10-K for 2025,84,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm,fig1_debt_leverage.csv
+1,Headline Debt / total assets,2025-12-31,43.86637458926616,percent,Form 10-K for 2025,84,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm,fig1_debt_leverage.csv
+1,Headline Debt,2026-03-31,25.097,USD billions,Form 10-Q for Q1 2026,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/crwv-20260331.htm,fig1_debt_leverage.csv
+1,Headline Debt / total assets,2026-03-31,45.16041962823673,percent,Form 10-Q for Q1 2026,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/crwv-20260331.htm,fig1_debt_leverage.csv
+1,Headline Debt,2026-06-30,35.289,USD billions,Form 10-Q for Q2 2026,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm,fig1_debt_leverage.csv
+1,Headline Debt / total assets,2026-06-30,45.78824445309459,percent,Form 10-Q for Q2 2026,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm,fig1_debt_leverage.csv
+1,Headline Debt,2026-09-30,47.522,USD billions,Form 10-Q for Q3 2026,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,fig1_debt_leverage.csv
+1,Headline Debt / total assets,2026-09-30,51.94739891343558,percent,Form 10-Q for Q3 2026,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,fig1_debt_leverage.csv
+1,Lease-Inclusive Debt,2023-12-31,1.99974,USD billions,IPO Prospectus (Form 424B4),F-4,https://www.sec.gov/Archives/edgar/data/1769628/000119312525067651/d899798d424b4.htm,fig1_debt_leverage.csv
+1,Lease-Inclusive Debt / total assets,2023-12-31,40.17982810843937,percent,IPO Prospectus (Form 424B4),F-4,https://www.sec.gov/Archives/edgar/data/1769628/000119312525067651/d899798d424b4.htm,fig1_debt_leverage.csv
+1,Lease-Inclusive Debt,2024-12-31,10.620277,USD billions,IPO Prospectus (Form 424B4),F-4,https://www.sec.gov/Archives/edgar/data/1769628/000119312525067651/d899798d424b4.htm,fig1_debt_leverage.csv
+1,Lease-Inclusive Debt / total assets,2024-12-31,59.55540748715316,percent,IPO Prospectus (Form 424B4),F-4,https://www.sec.gov/Archives/edgar/data/1769628/000119312525067651/d899798d424b4.htm,fig1_debt_leverage.csv
+1,Lease-Inclusive Debt,2025-03-31,11.896877,USD billions,Form 10-Q for Q1 2025,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000014/crwv-20250331.htm,fig1_debt_leverage.csv
+1,Lease-Inclusive Debt / total assets,2025-03-31,54.42208857914338,percent,Form 10-Q for Q1 2025,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000014/crwv-20250331.htm,fig1_debt_leverage.csv
+1,Lease-Inclusive Debt,2025-06-30,14.562481,USD billions,Form 10-Q for Q2 2025,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm,fig1_debt_leverage.csv
+1,Lease-Inclusive Debt / total assets,2025-06-30,55.49437733093361,percent,Form 10-Q for Q2 2025,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm,fig1_debt_leverage.csv
+1,Lease-Inclusive Debt,2025-09-30,18.808277,USD billions,Form 10-Q for Q3 2025,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/crwv-20250930.htm,fig1_debt_leverage.csv
+1,Lease-Inclusive Debt / total assets,2025-09-30,57.14977938042748,percent,Form 10-Q for Q3 2025,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/crwv-20250930.htm,fig1_debt_leverage.csv
+1,Lease-Inclusive Debt,2025-12-31,29.822,USD billions,Form 10-K for 2025,84,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm,fig1_debt_leverage.csv
+1,Lease-Inclusive Debt / total assets,2025-12-31,60.48841831974362,percent,Form 10-K for 2025,84,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm,fig1_debt_leverage.csv
+1,Lease-Inclusive Debt,2026-03-31,35.147,USD billions,Form 10-Q for Q1 2026,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/crwv-20260331.htm,fig1_debt_leverage.csv
+1,Lease-Inclusive Debt / total assets,2026-03-31,63.2447411512785,percent,Form 10-Q for Q1 2026,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/crwv-20260331.htm,fig1_debt_leverage.csv
+1,Lease-Inclusive Debt,2026-06-30,51.608,USD billions,Form 10-Q for Q2 2026,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm,fig1_debt_leverage.csv
+1,Lease-Inclusive Debt / total assets,2026-06-30,66.96250162190216,percent,Form 10-Q for Q2 2026,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm,fig1_debt_leverage.csv
+1,Lease-Inclusive Debt,2026-09-30,66.219,USD billions,Form 10-Q for Q3 2026,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,fig1_debt_leverage.csv
+1,Lease-Inclusive Debt / total assets,2026-09-30,72.38552267684,percent,Form 10-Q for Q3 2026,6,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,fig1_debt_leverage.csv

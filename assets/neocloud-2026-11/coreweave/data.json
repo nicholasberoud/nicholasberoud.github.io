@@ -1,0 +1,3795 @@
+{
+ "company": "CoreWeave, Inc.",
+ "generated": "2026-11-23",
+ "research_commit": "9b6c292a0b63df49b76a60fb0b5c09358b909db8",
+ "dates": [
+  {
+   "iso": "2023-12-31",
+   "label": "Dec 2023",
+   "bs": {
+    "doc": "crwv-424b4-20250331",
+    "page": "F-4"
+   }
+  },
+  {
+   "iso": "2024-12-31",
+   "label": "Dec 2024",
+   "bs": {
+    "doc": "crwv-424b4-20250331",
+    "page": "F-4"
+   }
+  },
+  {
+   "iso": "2025-03-31",
+   "label": "Mar 2025",
+   "bs": {
+    "doc": "crwv-10q-20250515",
+    "page": "6"
+   }
+  },
+  {
+   "iso": "2025-06-30",
+   "label": "Jun 2025",
+   "bs": {
+    "doc": "crwv-10q-20250813",
+    "page": "6"
+   }
+  },
+  {
+   "iso": "2025-09-30",
+   "label": "Sep 2025",
+   "bs": {
+    "doc": "crwv-10q-20251113",
+    "page": "6"
+   }
+  },
+  {
+   "iso": "2025-12-31",
+   "label": "Dec 2025",
+   "bs": {
+    "doc": "crwv-10k-20260302",
+    "page": "84"
+   }
+  },
+  {
+   "iso": "2026-03-31",
+   "label": "Mar 2026",
+   "bs": {
+    "doc": "crwv-10q-20260508",
+    "page": "6"
+   }
+  },
+  {
+   "iso": "2026-06-30",
+   "label": "Jun 2026",
+   "bs": {
+    "doc": "crwv-10q-20260812",
+    "page": "6"
+   }
+  },
+  {
+   "iso": "2026-09-30",
+   "label": "Sep 2026",
+   "bs": {
+    "doc": "crwv-10q-20261112",
+    "page": "6"
+   }
+  }
+ ],
+ "docs": {
+  "crwv-424b4-20250331": {
+   "name": "IPO Prospectus (Form 424B4)",
+   "short": "IPO prospectus",
+   "url": "https://www.sec.gov/Archives/edgar/data/1769628/000119312525067651/d899798d424b4.htm",
+   "filed": "31 March 2025",
+   "accession": "0001193125-25-067651"
+  },
+  "crwv-10q-20250515": {
+   "name": "Form 10-Q for Q1 2025",
+   "short": "10-Q, Q1 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000014/crwv-20250331.htm",
+   "filed": "15 May 2025",
+   "accession": "0001769628-25-000014"
+  },
+  "crwv-10q-20250813": {
+   "name": "Form 10-Q for Q2 2025",
+   "short": "10-Q, Q2 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+   "filed": "13 August 2025",
+   "accession": "0001769628-25-000041"
+  },
+  "crwv-10q-20251113": {
+   "name": "Form 10-Q for Q3 2025",
+   "short": "10-Q, Q3 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/crwv-20250930.htm",
+   "filed": "13 November 2025",
+   "accession": "0001769628-25-000062"
+  },
+  "crwv-10k-20260302": {
+   "name": "Form 10-K for 2025",
+   "short": "10-K, 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm",
+   "filed": "2 March 2026",
+   "accession": "0001769628-26-000104"
+  },
+  "crwv-10q-20260508": {
+   "name": "Form 10-Q for Q1 2026",
+   "short": "10-Q, Q1 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/crwv-20260331.htm",
+   "filed": "8 May 2026",
+   "accession": "0001769628-26-000222"
+  },
+  "crwv-10q-20260812": {
+   "name": "Form 10-Q for Q2 2026",
+   "short": "10-Q, Q2 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+   "filed": "12 August 2026",
+   "accession": "0001769628-26-000366"
+  },
+  "crwv-10q-20261112": {
+   "name": "Form 10-Q for Q3 2026",
+   "short": "10-Q, Q3 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+   "filed": "12 November 2026",
+   "accession": "0001769628-26-000465"
+  },
+  "crwv-s1-20250303-ex-10-13": {
+   "name": "DDTL 2.0 Credit Agreement (S-1 Exhibit 10.13)",
+   "short": "S-1 Ex. 10.13",
+   "url": "https://www.sec.gov/Archives/edgar/data/1769628/000119312525044231/d899798dex1013.htm",
+   "filed": "3 March 2025",
+   "accession": "0001193125-25-044231"
+  },
+  "crwv-s1-20250303-ex-10-16": {
+   "name": "DDTL 2.0 Parent Guarantee and Pledge Agreement (S-1 Exhibit 10.16)",
+   "short": "S-1 Ex. 10.16",
+   "url": "https://www.sec.gov/Archives/edgar/data/1769628/000119312525044231/d899798dex1016.htm",
+   "filed": "3 March 2025",
+   "accession": "0001193125-25-044231"
+  },
+  "crwv-8k-20251002-ex-10-1": {
+   "name": "Fifth Amendment to the DDTL 2.0 Credit Agreement (8-K Exhibit 10.1)",
+   "short": "8-K Ex. 10.1 (Oct 2025)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1769628/000119312525227562/d910811dex101.htm",
+   "filed": "2 October 2025",
+   "accession": "0001193125-25-227562"
+  },
+  "crwv-8k-20260331": {
+   "name": "Form 8-K Announcing DDTL 4.0",
+   "short": "8-K, 31 Mar 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000129/crwv-20260330.htm",
+   "filed": "31 March 2026",
+   "accession": "0001769628-26-000129"
+  },
+  "crwv-8k-20260331-ex-10-1": {
+   "name": "DDTL 4.0 Credit Agreement (8-K Exhibit 10.1)",
+   "short": "8-K Ex. 10.1 (Mar 2026)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000129/ex1011.htm",
+   "filed": "31 March 2026",
+   "accession": "0001769628-26-000129"
+  },
+  "crwv-8k-20260331-ex-10-2": {
+   "name": "DDTL 4.0 Limited Guarantee (8-K Exhibit 10.2)",
+   "short": "8-K Ex. 10.2",
+   "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000129/ex102.htm",
+   "filed": "31 March 2026",
+   "accession": "0001769628-26-000129"
+  },
+  "crwv-8k-20260331-ex-99-1": {
+   "name": "DDTL 4.0 Press Release (8-K Exhibit 99.1)",
+   "short": "8-K Ex. 99.1",
+   "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000129/ex991.htm",
+   "filed": "31 March 2026",
+   "accession": "0001769628-26-000129"
+  }
+ },
+ "ex1": {
+  "series": [
+   {
+    "id": "headline",
+    "name": "Headline Debt",
+    "usd_bn": [
+     1.527298,
+     8.018261,
+     8.78949,
+     11.115009,
+     14.083936,
+     21.627,
+     25.097,
+     35.289,
+     47.522
+    ],
+    "pct_assets": [
+     30.68727490091873,
+     44.96406272579785,
+     40.2073925237266,
+     42.35682803519009,
+     42.79466084044064,
+     43.86637458926616,
+     45.16041962823673,
+     45.78824445309459,
+     51.94739891343558
+    ],
+    "hollow": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ]
+   },
+   {
+    "id": "lease",
+    "name": "Lease-Inclusive Debt",
+    "usd_bn": [
+     1.99974,
+     10.620277,
+     11.896877,
+     14.562481,
+     18.808277,
+     29.822,
+     35.147,
+     51.608,
+     66.219
+    ],
+    "pct_assets": [
+     40.17982810843937,
+     59.55540748715316,
+     54.42208857914338,
+     55.49437733093361,
+     57.14977938042748,
+     60.48841831974362,
+     63.2447411512785,
+     66.96250162190216,
+     72.38552267684
+    ],
+    "hollow": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     true,
+     true
+    ]
+   }
+  ],
+  "borrowings_bn": [
+   1.523254,
+   7.92634,
+   8.711666,
+   11.051501,
+   14.034934,
+   21.373,
+   24.859,
+   35.068,
+   46.873
+  ],
+  "total_assets_bn": [
+   4.976975,
+   17.832599,
+   21.860383,
+   26.241363,
+   32.910498,
+   49.302,
+   55.573,
+   77.07,
+   91.481
+  ]
+ },
+ "ex2": {
+  "series": [
+   {
+    "id": "borrowings",
+    "name": "Borrowings (carrying value)",
+    "usd_bn": [
+     1.523254,
+     7.92634,
+     8.711666,
+     11.051501,
+     14.034934,
+     21.373,
+     24.859,
+     35.068,
+     46.873
+    ]
+   },
+   {
+    "id": "finance",
+    "name": "Finance-lease liabilities",
+    "usd_bn": [
+     0.004044,
+     0.091921,
+     0.077824,
+     0.063508,
+     0.049002,
+     0.254,
+     0.238,
+     0.221,
+     0.649
+    ]
+   },
+   {
+    "id": "operating",
+    "name": "Operating-lease liabilities",
+    "usd_bn": [
+     0.472442,
+     2.602016,
+     3.107387,
+     3.447472,
+     4.724341,
+     8.195,
+     10.05,
+     16.319,
+     18.697
+    ]
+   }
+  ],
+  "total_bn": [
+   1.99974,
+   10.620277,
+   11.896877,
+   14.562481,
+   18.808277,
+   29.822,
+   35.147,
+   51.608,
+   66.219
+  ]
+ },
+ "ex3": {
+  "series": [
+   {
+    "id": "s0",
+    "name": "Delayed-draw term loans (DDTL)",
+    "share": [
+     88.41676371612728,
+     72.89893280331792,
+     71.34263579339552,
+     60.30055091153951,
+     58.46347284683401,
+     44.74207726116123,
+     47.01180961469641,
+     38.375854406345816,
+     37.1308283338596
+    ],
+    "usd_bn": [
+     1.374924,
+     5.856319,
+     6.283803,
+     6.736466999999999,
+     8.304893,
+     9.671,
+     11.823,
+     13.643,
+     17.639
+    ]
+   },
+   {
+    "id": "s1",
+    "name": "Term loans",
+    "share": [
+     0.0,
+     12.447910163930263,
+     11.353416998176982,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "usd_bn": [
+     0.0,
+     1.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "id": "s2",
+    "name": "Convertible notes",
+    "share": [
+     3.544904372788253,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     12.750404811473514,
+     10.970615133802537,
+     18.531124300300977,
+     22.709188506473
+    ],
+    "usd_bn": [
+     0.055125,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     2.756,
+     2.759,
+     6.588,
+     10.788
+    ]
+   },
+   {
+    "id": "s3",
+    "name": "Senior notes",
+    "share": [
+     8.038331911084473,
+     0.0,
+     0.0,
+     17.902722869878087,
+     26.398657174225786,
+     17.349063150589867,
+     14.911129667183586,
+     28.21017692891902,
+     21.096726660351543
+    ],
+    "usd_bn": [
+     0.125,
+     0.0,
+     0.0,
+     2.0,
+     3.75,
+     3.75,
+     3.75,
+     10.029,
+     10.022
+    ]
+   },
+   {
+    "id": "s4",
+    "name": "Revolving credit facility",
+    "share": [
+     0.0,
+     0.0,
+     0.5676708499088491,
+     4.02811264572257,
+     4.927749339188813,
+     4.626416840157298,
+     5.964451866873435,
+     0.0,
+     2.5260498894853174
+    ],
+    "usd_bn": [
+     0.0,
+     0.0,
+     0.05,
+     0.45,
+     0.7,
+     1.0,
+     1.5,
+     0.0,
+     1.2
+    ]
+   },
+   {
+    "id": "s5",
+    "name": "OEM and software financing",
+    "share": [
+     0.0,
+     14.653157032751821,
+     13.910217859583437,
+     15.471425687811424,
+     8.346966773171756,
+     19.269026139255146,
+     20.02465306771641,
+     14.351213749261625,
+     16.12672350278918
+    ],
+    "usd_bn": [
+     0.0,
+     1.177158,
+     1.225201,
+     1.7283879999999998,
+     1.1857090000000001,
+     4.165,
+     5.036,
+     5.102,
+     7.661
+    ]
+   },
+   {
+    "id": "s6",
+    "name": "Other loans (Magnetar)",
+    "share": [
+     0.0,
+     0.0,
+     2.82605849893522,
+     2.2971878850484067,
+     1.8631538665796379,
+     1.2630117973629424,
+     1.1173406497276233,
+     0.5316306151725689,
+     0.4104831070413641
+    ],
+    "usd_bn": [
+     0.0,
+     0.0,
+     0.248917,
+     0.25662999999999997,
+     0.264666,
+     0.273,
+     0.281,
+     0.189,
+     0.195
+    ]
+   }
+  ],
+  "pages": {
+   "2023-12-31": {
+    "doc": "crwv-424b4-20250331",
+    "page": "F-35"
+   },
+   "2024-12-31": {
+    "doc": "crwv-424b4-20250331",
+    "page": "F-35"
+   },
+   "2025-03-31": {
+    "doc": "crwv-10q-20250515",
+    "page": "21"
+   },
+   "2025-06-30": {
+    "doc": "crwv-10q-20250813",
+    "page": "27"
+   },
+   "2025-09-30": {
+    "doc": "crwv-10q-20251113",
+    "page": "29"
+   },
+   "2025-12-31": {
+    "doc": "crwv-10k-20260302",
+    "page": "114"
+   },
+   "2026-03-31": {
+    "doc": "crwv-10q-20260508",
+    "page": "24"
+   },
+   "2026-06-30": {
+    "doc": "crwv-10q-20260812",
+    "page": "27-28"
+   },
+   "2026-09-30": {
+    "doc": "crwv-10q-20261112",
+    "page": "30"
+   }
+  }
+ },
+ "ex4": {
+  "series": [
+   {
+    "id": "g0",
+    "name": "GPU proxy (technology equipment; not an equivalent)",
+    "usd_bn": [
+     1.298127,
+     9.146575,
+     10.746445,
+     13.170295,
+     14.62879,
+     20.903,
+     26.627,
+     33.823,
+     47.023
+    ]
+   },
+   {
+    "id": "g1",
+    "name": "Data centers, owned or built",
+    "usd_bn": [
+     2.286005,
+     3.585238,
+     4.60793,
+     4.942131,
+     8.049161,
+     12.218,
+     13.459,
+     17.915,
+     16.59
+    ]
+   },
+   {
+    "id": "g2",
+    "name": "Other",
+    "usd_bn": [
+     0.016654,
+     0.148192,
+     0.256174,
+     0.472691,
+     0.555808,
+     0.82,
+     0.847,
+     0.884,
+     0.941
+    ]
+   }
+  ],
+  "pages": {
+   "2023-12-31": {
+    "doc": "crwv-424b4-20250331",
+    "page": "F-30"
+   },
+   "2024-12-31": {
+    "doc": "crwv-424b4-20250331",
+    "page": "F-30"
+   },
+   "2025-03-31": {
+    "doc": "crwv-10q-20250515",
+    "page": "17"
+   },
+   "2025-06-30": {
+    "doc": "crwv-10q-20250813",
+    "page": "22"
+   },
+   "2025-09-30": {
+    "doc": "crwv-10q-20251113",
+    "page": "24"
+   },
+   "2025-12-31": {
+    "doc": "crwv-10k-20260302",
+    "page": "108"
+   },
+   "2026-03-31": {
+    "doc": "crwv-10q-20260508",
+    "page": "19"
+   },
+   "2026-06-30": {
+    "doc": "crwv-10q-20260812",
+    "page": "21"
+   },
+   "2026-09-30": {
+    "doc": "crwv-10q-20261112",
+    "page": "23"
+   }
+  }
+ },
+ "ex5": {
+  "series": [
+   {
+    "id": "headline",
+    "name": "Headline Debt",
+    "usd_bn": [
+     1.527298,
+     8.018261,
+     8.78949,
+     11.115009,
+     14.083936,
+     21.627,
+     25.097,
+     35.289,
+     47.522
+    ]
+   },
+   {
+    "id": "gross",
+    "name": "Gross property and equipment",
+    "usd_bn": [
+     3.600786,
+     12.880005,
+     15.610549,
+     18.585117,
+     23.233759,
+     33.941,
+     40.933,
+     52.622,
+     64.554
+    ]
+   },
+   {
+    "id": "tech",
+    "name": "Technology equipment (GPU proxy)",
+    "usd_bn": [
+     1.298127,
+     9.146575,
+     10.746445,
+     13.170295,
+     14.62879,
+     20.903,
+     26.627,
+     33.823,
+     47.023
+    ]
+   }
+  ]
+ },
+ "ex6": {
+  "series": [
+   {
+    "id": "operating",
+    "name": "Operating-lease liabilities (present value, on the balance sheet)",
+    "usd_bn": [
+     0.472442,
+     2.602016,
+     3.107387,
+     3.447472,
+     4.724341,
+     8.195,
+     10.05,
+     16.319,
+     18.697
+    ]
+   },
+   {
+    "id": "signed",
+    "name": "Signed leases not yet commenced (undiscounted, as estimated)",
+    "usd_bn": [
+     null,
+     15.0,
+     19.9,
+     34.0,
+     39.1,
+     38.5,
+     40.7,
+     35.5,
+     47.4
+    ]
+   }
+  ],
+  "signed_pages": {
+   "2024-12-31": {
+    "doc": "crwv-424b4-20250331",
+    "page": "F-33"
+   },
+   "2025-03-31": {
+    "doc": "crwv-10q-20250515",
+    "page": "20"
+   },
+   "2025-06-30": {
+    "doc": "crwv-10q-20250813",
+    "page": "25"
+   },
+   "2025-09-30": {
+    "doc": "crwv-10q-20251113",
+    "page": "27"
+   },
+   "2025-12-31": {
+    "doc": "crwv-10k-20260302",
+    "page": "112"
+   },
+   "2026-03-31": {
+    "doc": "crwv-10q-20260508",
+    "page": "22"
+   },
+   "2026-06-30": {
+    "doc": "crwv-10q-20260812",
+    "page": "24"
+   },
+   "2026-09-30": {
+    "doc": "crwv-10q-20261112",
+    "page": "27"
+   }
+  }
+ },
+ "ex7": {
+  "periods": [
+   "9M 2025",
+   "9M 2026"
+  ],
+  "rows": [
+   {
+    "name": "Cash from operations",
+    "usd_bn": [
+     1.499,
+     5.638
+    ],
+    "printed": [
+     "disclosed",
+     "disclosed"
+    ]
+   },
+   {
+    "name": "Debt issued, net (issuer's caption)",
+    "usd_bn": [
+     7.517,
+     27.048
+    ],
+    "printed": [
+     "disclosed",
+     "disclosed"
+    ]
+   },
+   {
+    "name": "Equity: IPO",
+    "usd_bn": [
+     1.491,
+     0.0
+    ],
+    "printed": [
+     "disclosed",
+     "printed_dash"
+    ]
+   },
+   {
+    "name": "Equity: private placements",
+    "usd_bn": [
+     0.0,
+     2.982
+    ],
+    "printed": [
+     "printed_dash",
+     "disclosed"
+    ]
+   },
+   {
+    "name": "Debt repaid",
+    "usd_bn": [
+     -2.979,
+     -7.563
+    ],
+    "printed": [
+     "disclosed",
+     "disclosed"
+    ]
+   },
+   {
+    "name": "Cash capex",
+    "usd_bn": [
+     -6.249,
+     -23.558
+    ],
+    "printed": [
+     "disclosed",
+     "disclosed"
+    ]
+   },
+   {
+    "name": "Capped calls",
+    "usd_bn": [
+     0.0,
+     -1.058
+    ],
+    "printed": [
+     "printed_dash",
+     "disclosed"
+    ]
+   },
+   {
+    "name": "Joint venture / VIE investments",
+    "usd_bn": [
+     -0.033,
+     -0.96
+    ],
+    "printed": [
+     "disclosed",
+     "disclosed"
+    ]
+   },
+   {
+    "name": "All other flows (calculated residual)",
+    "usd_bn": [
+     -0.312,
+     -0.255
+    ],
+    "printed": [
+     "calculated",
+     "calculated"
+    ]
+   },
+   {
+    "name": "Change in cash and restricted cash",
+    "total": true,
+    "usd_bn": [
+     0.934,
+     2.274
+    ],
+    "printed": [
+     "disclosed",
+     "disclosed"
+    ]
+   }
+  ]
+ },
+ "ex8": [
+  {
+   "name": "DDTL 1.0",
+   "type": "Delayed-draw term loans (DDTL)",
+   "cells": [
+    {
+     "usd_m": 1374.924,
+     "parts": [
+      {
+       "printed": "Delayed Draw Term Loan Facility 1.0",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 1374.924,
+       "doc": "crwv-424b4-20250331",
+       "page": "F-35"
+      }
+     ]
+    },
+    {
+     "usd_m": 2012.5,
+     "parts": [
+      {
+       "printed": "Delayed Draw Term Loan Facility 1.0",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 2012.5,
+       "doc": "crwv-424b4-20250331",
+       "page": "F-35"
+      }
+     ]
+    },
+    {
+     "usd_m": 1897.5,
+     "parts": [
+      {
+       "printed": "DDTL 1.0 Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 1897.5,
+       "doc": "crwv-10q-20250515",
+       "page": "21"
+      }
+     ]
+    },
+    {
+     "usd_m": 1782.5,
+     "parts": [
+      {
+       "printed": "DDTL 1.0 Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 1782.5,
+       "doc": "crwv-10q-20250813",
+       "page": "27"
+      }
+     ]
+    },
+    {
+     "usd_m": 1667.5,
+     "parts": [
+      {
+       "printed": "DDTL 1.0 Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 1667.5,
+       "doc": "crwv-10q-20251113",
+       "page": "29"
+      }
+     ]
+    },
+    {
+     "usd_m": 1553.0,
+     "parts": [
+      {
+       "printed": "DDTL 1.0 Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 1553.0,
+       "doc": "crwv-10k-20260302",
+       "page": "114"
+      }
+     ]
+    },
+    {
+     "usd_m": 1438.0,
+     "parts": [
+      {
+       "printed": "DDTL 1.0 Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 1438.0,
+       "doc": "crwv-10q-20260508",
+       "page": "24"
+      }
+     ]
+    },
+    {
+     "usd_m": 1300.0,
+     "parts": [
+      {
+       "printed": "DDTL 1.0 Facility",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 1300.0,
+       "doc": "crwv-10q-20260812",
+       "page": "27-28"
+      }
+     ]
+    },
+    {
+     "usd_m": 1139.0,
+     "parts": [
+      {
+       "printed": "DDTL 1.0 Facility",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 1139.0,
+       "doc": "crwv-10q-20261112",
+       "page": "30"
+      }
+     ]
+    }
+   ],
+   "security": {
+    "2023-12-31": {
+     "security": "facility-specific",
+     "security_page": "F-40",
+     "guarantee": "facility-specific",
+     "guarantee_page": "F-40",
+     "doc": "crwv-424b4-20250331"
+    },
+    "2024-12-31": {
+     "security": "facility-specific",
+     "security_page": "F-40",
+     "guarantee": "facility-specific",
+     "guarantee_page": "F-40",
+     "doc": "crwv-424b4-20250331"
+    },
+    "2025-03-31": {
+     "security": "facility-specific",
+     "security_page": "41",
+     "guarantee": "facility-specific",
+     "guarantee_page": "85",
+     "doc": "crwv-10q-20250515"
+    },
+    "2025-06-30": {
+     "security": "facility-specific",
+     "security_page": "49",
+     "guarantee": "facility-specific",
+     "guarantee_page": "49",
+     "doc": "crwv-10q-20250813"
+    },
+    "2025-09-30": {
+     "security": "facility-specific",
+     "security_page": "52",
+     "guarantee": "facility-specific",
+     "guarantee_page": "52",
+     "doc": "crwv-10q-20251113"
+    },
+    "2025-12-31": {
+     "security": "group-level (DDTL Facilities)",
+     "security_page": "115",
+     "guarantee": "group-level (DDTL Facilities)",
+     "guarantee_page": "115",
+     "doc": "crwv-10k-20260302"
+    },
+    "2026-03-31": {
+     "security": "not restated",
+     "security_page": "",
+     "guarantee": "group-level (DDTL Facilities)",
+     "guarantee_page": "85",
+     "doc": "crwv-10q-20260508"
+    },
+    "2026-06-30": {
+     "security": "not restated",
+     "security_page": "",
+     "guarantee": "group-level (DDTL Facilities)",
+     "guarantee_page": "93",
+     "doc": "crwv-10q-20260812"
+    },
+    "2026-09-30": {
+     "security": "not restated",
+     "security_page": "",
+     "guarantee": "group-level (DDTL Facilities)",
+     "guarantee_page": "86",
+     "doc": "crwv-10q-20261112"
+    }
+   }
+  },
+  {
+   "name": "DDTL 2.0",
+   "type": "Delayed-draw term loans (DDTL)",
+   "cells": [
+    null,
+    {
+     "usd_m": 3843.819,
+     "parts": [
+      {
+       "printed": "Delayed Draw Term Loan Facility 2.0",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 3843.819,
+       "doc": "crwv-424b4-20250331",
+       "page": "F-35"
+      }
+     ]
+    },
+    {
+     "usd_m": 4386.303,
+     "parts": [
+      {
+       "printed": "DDTL 2.0 Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 4386.303,
+       "doc": "crwv-10q-20250515",
+       "page": "21"
+      }
+     ]
+    },
+    {
+     "usd_m": 4953.967,
+     "parts": [
+      {
+       "printed": "DDTL 2.0 Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 4953.967,
+       "doc": "crwv-10q-20250813",
+       "page": "27"
+      }
+     ]
+    },
+    {
+     "usd_m": 5037.372,
+     "parts": [
+      {
+       "printed": "DDTL 2.0 Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 5037.372,
+       "doc": "crwv-10q-20251113",
+       "page": "29"
+      }
+     ]
+    },
+    {
+     "usd_m": 5037.0,
+     "parts": [
+      {
+       "printed": "DDTL 2.0 Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 5037.0,
+       "doc": "crwv-10k-20260302",
+       "page": "114"
+      }
+     ]
+    },
+    {
+     "usd_m": 4425.0,
+     "parts": [
+      {
+       "printed": "DDTL 2.0 Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 4425.0,
+       "doc": "crwv-10q-20260508",
+       "page": "24"
+      }
+     ]
+    },
+    {
+     "usd_m": 3190.0,
+     "parts": [
+      {
+       "printed": "DDTL 2.0 Facility",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 3190.0,
+       "doc": "crwv-10q-20260812",
+       "page": "27-28"
+      }
+     ]
+    },
+    {
+     "usd_m": 2796.0,
+     "parts": [
+      {
+       "printed": "DDTL 2.0 Facility",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 2796.0,
+       "doc": "crwv-10q-20261112",
+       "page": "30"
+      }
+     ]
+    }
+   ],
+   "security": {
+    "2024-12-31": {
+     "security": "facility-specific",
+     "security_page": "F-41",
+     "guarantee": "facility-specific",
+     "guarantee_page": "F-41",
+     "doc": "crwv-424b4-20250331"
+    },
+    "2025-03-31": {
+     "security": "facility-specific",
+     "security_page": "41",
+     "guarantee": "facility-specific",
+     "guarantee_page": "85",
+     "doc": "crwv-10q-20250515"
+    },
+    "2025-06-30": {
+     "security": "facility-specific",
+     "security_page": "50",
+     "guarantee": "facility-specific",
+     "guarantee_page": "50",
+     "doc": "crwv-10q-20250813"
+    },
+    "2025-09-30": {
+     "security": "facility-specific",
+     "security_page": "53",
+     "guarantee": "facility-specific",
+     "guarantee_page": "53",
+     "doc": "crwv-10q-20251113"
+    },
+    "2025-12-31": {
+     "security": "group-level (DDTL Facilities)",
+     "security_page": "115",
+     "guarantee": "group-level (DDTL Facilities)",
+     "guarantee_page": "115",
+     "doc": "crwv-10k-20260302"
+    },
+    "2026-03-31": {
+     "security": "not restated",
+     "security_page": "",
+     "guarantee": "group-level (DDTL Facilities)",
+     "guarantee_page": "85",
+     "doc": "crwv-10q-20260508"
+    },
+    "2026-06-30": {
+     "security": "not restated",
+     "security_page": "",
+     "guarantee": "group-level (DDTL Facilities)",
+     "guarantee_page": "93",
+     "doc": "crwv-10q-20260812"
+    },
+    "2026-09-30": {
+     "security": "not restated",
+     "security_page": "",
+     "guarantee": "group-level (DDTL Facilities)",
+     "guarantee_page": "86",
+     "doc": "crwv-10q-20261112"
+    }
+   }
+  },
+  {
+   "name": "DDTL 2.1",
+   "type": "Delayed-draw term loans (DDTL)",
+   "cells": [
+    null,
+    null,
+    null,
+    null,
+    {
+     "usd_m": 1241.325,
+     "parts": [
+      {
+       "printed": "DDTL 2.1 Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 1241.325,
+       "doc": "crwv-10q-20251113",
+       "page": "29"
+      }
+     ]
+    },
+    {
+     "usd_m": 2741.0,
+     "parts": [
+      {
+       "printed": "DDTL 2.1 Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 2741.0,
+       "doc": "crwv-10k-20260302",
+       "page": "114"
+      }
+     ]
+    },
+    {
+     "usd_m": 3000.0,
+     "parts": [
+      {
+       "printed": "DDTL 2.1 Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 3000.0,
+       "doc": "crwv-10q-20260508",
+       "page": "24"
+      }
+     ]
+    },
+    {
+     "usd_m": 3000.0,
+     "parts": [
+      {
+       "printed": "DDTL 2.1 Facility",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 3000.0,
+       "doc": "crwv-10q-20260812",
+       "page": "27-28"
+      }
+     ]
+    },
+    {
+     "usd_m": 2494.0,
+     "parts": [
+      {
+       "printed": "DDTL 2.1 Facility",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 2494.0,
+       "doc": "crwv-10q-20261112",
+       "page": "30"
+      }
+     ]
+    }
+   ],
+   "security": {
+    "2025-09-30": {
+     "security": "facility-specific",
+     "security_page": "53",
+     "guarantee": "facility-specific",
+     "guarantee_page": "53",
+     "doc": "crwv-10q-20251113"
+    },
+    "2025-12-31": {
+     "security": "group-level (DDTL Facilities)",
+     "security_page": "115",
+     "guarantee": "group-level (DDTL Facilities)",
+     "guarantee_page": "115",
+     "doc": "crwv-10k-20260302"
+    },
+    "2026-03-31": {
+     "security": "not restated",
+     "security_page": "",
+     "guarantee": "group-level (DDTL Facilities)",
+     "guarantee_page": "85",
+     "doc": "crwv-10q-20260508"
+    },
+    "2026-06-30": {
+     "security": "not restated",
+     "security_page": "",
+     "guarantee": "group-level (DDTL Facilities)",
+     "guarantee_page": "93",
+     "doc": "crwv-10q-20260812"
+    },
+    "2026-09-30": {
+     "security": "not restated",
+     "security_page": "",
+     "guarantee": "group-level (DDTL Facilities)",
+     "guarantee_page": "86",
+     "doc": "crwv-10q-20261112"
+    }
+   }
+  },
+  {
+   "name": "DDTL 3.0",
+   "type": "Delayed-draw term loans (DDTL)",
+   "cells": [
+    null,
+    null,
+    null,
+    null,
+    {
+     "usd_m": 358.696,
+     "parts": [
+      {
+       "printed": "DDTL 3.0 Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 358.696,
+       "doc": "crwv-10q-20251113",
+       "page": "29"
+      }
+     ]
+    },
+    {
+     "usd_m": 340.0,
+     "parts": [
+      {
+       "printed": "DDTL 3.0 Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 340.0,
+       "doc": "crwv-10k-20260302",
+       "page": "114"
+      }
+     ]
+    },
+    {
+     "usd_m": 1700.0,
+     "parts": [
+      {
+       "printed": "DDTL 3.0 Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 1700.0,
+       "doc": "crwv-10q-20260508",
+       "page": "24"
+      }
+     ]
+    },
+    {
+     "usd_m": 2215.0,
+     "parts": [
+      {
+       "printed": "DDTL 3.0 Facility",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 2215.0,
+       "doc": "crwv-10q-20260812",
+       "page": "27-28"
+      }
+     ]
+    },
+    {
+     "usd_m": 2323.0,
+     "parts": [
+      {
+       "printed": "DDTL 3.0 Facility",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 2323.0,
+       "doc": "crwv-10q-20261112",
+       "page": "30"
+      }
+     ]
+    }
+   ],
+   "security": {
+    "2025-09-30": {
+     "security": "facility-specific",
+     "security_page": "30",
+     "guarantee": "facility-specific",
+     "guarantee_page": "53",
+     "doc": "crwv-10q-20251113"
+    },
+    "2025-12-31": {
+     "security": "group-level (DDTL Facilities)",
+     "security_page": "115",
+     "guarantee": "group-level (DDTL Facilities)",
+     "guarantee_page": "115",
+     "doc": "crwv-10k-20260302"
+    },
+    "2026-03-31": {
+     "security": "not restated",
+     "security_page": "",
+     "guarantee": "group-level (DDTL Facilities)",
+     "guarantee_page": "85",
+     "doc": "crwv-10q-20260508"
+    },
+    "2026-06-30": {
+     "security": "not restated",
+     "security_page": "",
+     "guarantee": "group-level (DDTL Facilities)",
+     "guarantee_page": "93",
+     "doc": "crwv-10q-20260812"
+    },
+    "2026-09-30": {
+     "security": "not restated",
+     "security_page": "",
+     "guarantee": "group-level (DDTL Facilities)",
+     "guarantee_page": "86",
+     "doc": "crwv-10q-20261112"
+    }
+   }
+  },
+  {
+   "name": "DDTL 4.0",
+   "type": "Delayed-draw term loans (DDTL)",
+   "cells": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "usd_m": 1260.0,
+     "parts": [
+      {
+       "printed": "DDTL 4.0 Facility(1)",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 1260.0,
+       "doc": "crwv-10q-20260508",
+       "page": "24"
+      }
+     ]
+    },
+    {
+     "usd_m": 2837.0,
+     "parts": [
+      {
+       "printed": "DDTL 4.0 Facility",
+       "section": "non-recourse",
+       "status": "disclosed",
+       "usd_m": 2837.0,
+       "doc": "crwv-10q-20260812",
+       "page": "27-28"
+      }
+     ]
+    },
+    {
+     "usd_m": 4583.0,
+     "parts": [
+      {
+       "printed": "DDTL 4.0 Facility",
+       "section": "non-recourse",
+       "status": "disclosed",
+       "usd_m": 4583.0,
+       "doc": "crwv-10q-20261112",
+       "page": "30"
+      }
+     ]
+    }
+   ],
+   "security": {
+    "2026-03-31": {
+     "security": "facility-specific",
+     "security_page": "25",
+     "guarantee": "facility-specific",
+     "guarantee_page": "25",
+     "doc": "crwv-10q-20260508"
+    },
+    "2026-06-30": {
+     "security": "facility-specific",
+     "security_page": "29",
+     "guarantee": "facility-specific",
+     "guarantee_page": "29",
+     "doc": "crwv-10q-20260812"
+    },
+    "2026-09-30": {
+     "security": "facility-specific",
+     "security_page": "33",
+     "guarantee": "facility-specific",
+     "guarantee_page": "33",
+     "doc": "crwv-10q-20261112"
+    }
+   }
+  },
+  {
+   "name": "DDTL 5.0",
+   "type": "Delayed-draw term loans (DDTL)",
+   "cells": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "usd_m": 1101.0,
+     "parts": [
+      {
+       "printed": "DDTL 5.0 Facility",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 1101.0,
+       "doc": "crwv-10q-20260812",
+       "page": "27-28"
+      }
+     ]
+    },
+    {
+     "usd_m": 2749.0,
+     "parts": [
+      {
+       "printed": "DDTL 5.0 Facility",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 2749.0,
+       "doc": "crwv-10q-20261112",
+       "page": "30"
+      }
+     ]
+    }
+   ],
+   "security": {
+    "2026-06-30": {
+     "security": "facility-specific",
+     "security_page": "29",
+     "guarantee": "facility-specific",
+     "guarantee_page": "30",
+     "doc": "crwv-10q-20260812"
+    },
+    "2026-09-30": {
+     "security": "facility-specific",
+     "security_page": "33",
+     "guarantee": "facility-specific",
+     "guarantee_page": "33",
+     "doc": "crwv-10q-20261112"
+    }
+   }
+  },
+  {
+   "name": "DDTL 5.5",
+   "type": "Delayed-draw term loans (DDTL)",
+   "cells": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "usd_m": 1555.0,
+     "parts": [
+      {
+       "printed": "DDTL 5.5 Facility",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 1555.0,
+       "doc": "crwv-10q-20261112",
+       "page": "30"
+      }
+     ]
+    }
+   ],
+   "security": {
+    "2026-09-30": {
+     "security": "facility-specific",
+     "security_page": "34",
+     "guarantee": "facility-specific",
+     "guarantee_page": "34",
+     "doc": "crwv-10q-20261112"
+    }
+   }
+  },
+  {
+   "name": "2024 Term Loan",
+   "type": "Term loans",
+   "cells": [
+    null,
+    {
+     "usd_m": 1000.0,
+     "parts": [
+      {
+       "printed": "2024 Term Loan Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 1000.0,
+       "doc": "crwv-424b4-20250331",
+       "page": "F-35"
+      }
+     ]
+    },
+    {
+     "usd_m": 1000.0,
+     "parts": [
+      {
+       "printed": "2024 Term Loan Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 1000.0,
+       "doc": "crwv-10q-20250515",
+       "page": "21"
+      }
+     ]
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "security": {}
+  },
+  {
+   "name": "2021 Convertible Senior Secured Notes",
+   "type": "Convertible notes",
+   "cells": [
+    {
+     "usd_m": 55.125,
+     "parts": [
+      {
+       "printed": "2021 Convertible Senior Secured Notes",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 55.125,
+       "doc": "crwv-424b4-20250331",
+       "page": "F-35"
+      }
+     ]
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "security": {}
+  },
+  {
+   "name": "2031 Convertible Senior Notes",
+   "type": "Convertible notes",
+   "cells": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "usd_m": 2588.0,
+     "parts": [
+      {
+       "printed": "2031 Convertible Senior Notes",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 2588.0,
+       "doc": "crwv-10k-20260302",
+       "page": "114"
+      }
+     ]
+    },
+    {
+     "usd_m": 2588.0,
+     "parts": [
+      {
+       "printed": "2031 Convertible Senior Notes",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 2588.0,
+       "doc": "crwv-10q-20260508",
+       "page": "24"
+      }
+     ]
+    },
+    {
+     "usd_m": 2588.0,
+     "parts": [
+      {
+       "printed": "2031 Convertible Senior Notes",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 2588.0,
+       "doc": "crwv-10q-20260812",
+       "page": "27-28"
+      }
+     ]
+    },
+    {
+     "usd_m": 2588.0,
+     "parts": [
+      {
+       "printed": "2031 Convertible Senior Notes",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 2588.0,
+       "doc": "crwv-10q-20261112",
+       "page": "30"
+      }
+     ]
+    }
+   ],
+   "security": {}
+  },
+  {
+   "name": "Convertible promissory notes",
+   "type": "Convertible notes",
+   "cells": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "usd_m": 168.0,
+     "parts": [
+      {
+       "printed": "Convertible Promissory Notes",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 168.0,
+       "doc": "crwv-10k-20260302",
+       "page": "114"
+      }
+     ]
+    },
+    {
+     "usd_m": 171.0,
+     "parts": [
+      {
+       "printed": "Convertible Promissory Notes",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 171.0,
+       "doc": "crwv-10q-20260508",
+       "page": "24"
+      }
+     ]
+    },
+    null,
+    null
+   ],
+   "security": {}
+  },
+  {
+   "name": "2032 Convertible Senior Notes",
+   "type": "Convertible notes",
+   "cells": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "usd_m": 4000.0,
+     "parts": [
+      {
+       "printed": "2032 Convertible Senior Notes",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 4000.0,
+       "doc": "crwv-10q-20260812",
+       "page": "27-28"
+      }
+     ]
+    },
+    {
+     "usd_m": 4000.0,
+     "parts": [
+      {
+       "printed": "2032 Convertible Senior Notes",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 4000.0,
+       "doc": "crwv-10q-20261112",
+       "page": "30"
+      }
+     ]
+    }
+   ],
+   "security": {}
+  },
+  {
+   "name": "2033 Convertible Senior Notes",
+   "type": "Convertible notes",
+   "cells": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "usd_m": 4200.0,
+     "parts": [
+      {
+       "printed": "2033 Convertible Senior Notes",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 4200.0,
+       "doc": "crwv-10q-20261112",
+       "page": "30"
+      }
+     ]
+    }
+   ],
+   "security": {}
+  },
+  {
+   "name": "2022 Senior Secured Notes",
+   "type": "Senior notes",
+   "cells": [
+    {
+     "usd_m": 125.0,
+     "parts": [
+      {
+       "printed": "2022 Senior Secured Notes",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 125.0,
+       "doc": "crwv-424b4-20250331",
+       "page": "F-35"
+      }
+     ]
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "security": {}
+  },
+  {
+   "name": "2030 Senior Notes",
+   "type": "Senior notes",
+   "cells": [
+    null,
+    null,
+    null,
+    {
+     "usd_m": 2000.0,
+     "parts": [
+      {
+       "printed": "2030 Senior Notes",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 2000.0,
+       "doc": "crwv-10q-20250813",
+       "page": "27"
+      }
+     ]
+    },
+    {
+     "usd_m": 2000.0,
+     "parts": [
+      {
+       "printed": "2030 Senior Notes",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 2000.0,
+       "doc": "crwv-10q-20251113",
+       "page": "29"
+      }
+     ]
+    },
+    {
+     "usd_m": 2000.0,
+     "parts": [
+      {
+       "printed": "2030 Senior Notes",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 2000.0,
+       "doc": "crwv-10k-20260302",
+       "page": "114"
+      }
+     ]
+    },
+    {
+     "usd_m": 2000.0,
+     "parts": [
+      {
+       "printed": "2030 Senior Notes",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 2000.0,
+       "doc": "crwv-10q-20260508",
+       "page": "24"
+      }
+     ]
+    },
+    {
+     "usd_m": 2000.0,
+     "parts": [
+      {
+       "printed": "2030 Senior Notes",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 2000.0,
+       "doc": "crwv-10q-20260812",
+       "page": "27-28"
+      }
+     ]
+    },
+    {
+     "usd_m": 2000.0,
+     "parts": [
+      {
+       "printed": "2030 Senior Notes",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 2000.0,
+       "doc": "crwv-10q-20261112",
+       "page": "30"
+      }
+     ]
+    }
+   ],
+   "security": {}
+  },
+  {
+   "name": "2031 9.00% Senior Notes",
+   "type": "Senior notes",
+   "cells": [
+    null,
+    null,
+    null,
+    null,
+    {
+     "usd_m": 1750.0,
+     "parts": [
+      {
+       "printed": "2031 Senior Notes",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 1750.0,
+       "doc": "crwv-10q-20251113",
+       "page": "29"
+      }
+     ]
+    },
+    {
+     "usd_m": 1750.0,
+     "parts": [
+      {
+       "printed": "2031 Senior Notes",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 1750.0,
+       "doc": "crwv-10k-20260302",
+       "page": "114"
+      }
+     ]
+    },
+    {
+     "usd_m": 1750.0,
+     "parts": [
+      {
+       "printed": "2031 Senior Notes",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 1750.0,
+       "doc": "crwv-10q-20260508",
+       "page": "24"
+      }
+     ]
+    },
+    {
+     "usd_m": 1750.0,
+     "parts": [
+      {
+       "printed": "2031 9.00% Senior Notes",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 1750.0,
+       "doc": "crwv-10q-20260812",
+       "page": "27-28"
+      }
+     ]
+    },
+    {
+     "usd_m": 1750.0,
+     "parts": [
+      {
+       "printed": "2031 9.00% Senior Notes",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 1750.0,
+       "doc": "crwv-10q-20261112",
+       "page": "30"
+      }
+     ]
+    }
+   ],
+   "security": {}
+  },
+  {
+   "name": "2031 9.75% Senior Notes",
+   "type": "Senior notes",
+   "cells": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "usd_m": 2750.0,
+     "parts": [
+      {
+       "printed": "2031 9.75% Senior Notes",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 2750.0,
+       "doc": "crwv-10q-20260812",
+       "page": "27-28"
+      }
+     ]
+    },
+    {
+     "usd_m": 2750.0,
+     "parts": [
+      {
+       "printed": "2031 9.75% Senior Notes",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 2750.0,
+       "doc": "crwv-10q-20261112",
+       "page": "30"
+      }
+     ]
+    }
+   ],
+   "security": {}
+  },
+  {
+   "name": "2032 9.625% Senior Notes",
+   "type": "Senior notes",
+   "cells": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "usd_m": 1250.0,
+     "parts": [
+      {
+       "printed": "2032 9.625% Senior Notes",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 1250.0,
+       "doc": "crwv-10q-20260812",
+       "page": "27-28"
+      }
+     ]
+    },
+    {
+     "usd_m": 1250.0,
+     "parts": [
+      {
+       "printed": "2032 9.625% Senior Notes",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 1250.0,
+       "doc": "crwv-10q-20261112",
+       "page": "30"
+      }
+     ]
+    }
+   ],
+   "security": {}
+  },
+  {
+   "name": "2032 EUR Senior Notes",
+   "type": "Senior notes",
+   "cells": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+     "usd_m": 2279.0,
+     "parts": [
+      {
+       "printed": "2032 EUR Senior Notes(1)",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 2279.0,
+       "doc": "crwv-10q-20260812",
+       "page": "27-28"
+      }
+     ]
+    },
+    {
+     "usd_m": 2272.0,
+     "parts": [
+      {
+       "printed": "2032 EUR Senior Notes(1)",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 2272.0,
+       "doc": "crwv-10q-20261112",
+       "page": "30"
+      }
+     ]
+    }
+   ],
+   "security": {}
+  },
+  {
+   "name": "Revolving credit facility",
+   "type": "Revolving credit facility",
+   "cells": [
+    null,
+    null,
+    {
+     "usd_m": 50.0,
+     "parts": [
+      {
+       "printed": "Revolving Credit Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 50.0,
+       "doc": "crwv-10q-20250515",
+       "page": "21"
+      }
+     ]
+    },
+    {
+     "usd_m": 450.0,
+     "parts": [
+      {
+       "printed": "Revolving Credit Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 450.0,
+       "doc": "crwv-10q-20250813",
+       "page": "27"
+      }
+     ]
+    },
+    {
+     "usd_m": 700.0,
+     "parts": [
+      {
+       "printed": "Revolving Credit Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 700.0,
+       "doc": "crwv-10q-20251113",
+       "page": "29"
+      }
+     ]
+    },
+    {
+     "usd_m": 1000.0,
+     "parts": [
+      {
+       "printed": "Revolving Credit Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 1000.0,
+       "doc": "crwv-10k-20260302",
+       "page": "114"
+      }
+     ]
+    },
+    {
+     "usd_m": 1500.0,
+     "parts": [
+      {
+       "printed": "Revolving Credit Facility",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 1500.0,
+       "doc": "crwv-10q-20260508",
+       "page": "24"
+      }
+     ]
+    },
+    null,
+    {
+     "usd_m": 1200.0,
+     "parts": [
+      {
+       "printed": "Revolving Credit Facility",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 1200.0,
+       "doc": "crwv-10q-20261112",
+       "page": "30"
+      }
+     ]
+    }
+   ],
+   "security": {}
+  },
+  {
+   "name": "OEM and software financing",
+   "type": "OEM and software financing",
+   "cells": [
+    null,
+    {
+     "usd_m": 1177.158,
+     "parts": [
+      {
+       "printed": "Original Equipment Manufacturer financing arrangements",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 1177.158,
+       "doc": "crwv-424b4-20250331",
+       "page": "F-35"
+      }
+     ]
+    },
+    {
+     "usd_m": 1225.201,
+     "parts": [
+      {
+       "printed": "OEM Financing Arrangements",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 1225.201,
+       "doc": "crwv-10q-20250515",
+       "page": "21"
+      }
+     ]
+    },
+    {
+     "usd_m": 1728.388,
+     "parts": [
+      {
+       "printed": "OEM Financing Arrangements",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 1728.388,
+       "doc": "crwv-10q-20250813",
+       "page": "27"
+      }
+     ]
+    },
+    {
+     "usd_m": 1185.709,
+     "parts": [
+      {
+       "printed": "OEM Financing Arrangements",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 1185.709,
+       "doc": "crwv-10q-20251113",
+       "page": "29"
+      }
+     ]
+    },
+    {
+     "usd_m": 4165.0,
+     "parts": [
+      {
+       "printed": "OEM and Software License Financing Arrangements",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 4165.0,
+       "doc": "crwv-10k-20260302",
+       "page": "114"
+      }
+     ]
+    },
+    {
+     "usd_m": 5036.0,
+     "parts": [
+      {
+       "printed": "OEM and Software License Financing Arrangements",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 5036.0,
+       "doc": "crwv-10q-20260508",
+       "page": "24"
+      }
+     ]
+    },
+    {
+     "usd_m": 5102.0,
+     "parts": [
+      {
+       "printed": "OEM and Software License Financing Arrangements",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 4220.0,
+       "doc": "crwv-10q-20260812",
+       "page": "27-28"
+      },
+      {
+       "printed": "OEM and Software License Financing Arrangements",
+       "section": "non-recourse",
+       "status": "disclosed",
+       "usd_m": 882.0,
+       "doc": "crwv-10q-20260812",
+       "page": "27-28"
+      }
+     ]
+    },
+    {
+     "usd_m": 7661.0,
+     "parts": [
+      {
+       "printed": "OEM and Software License Financing Arrangements",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 6891.0,
+       "doc": "crwv-10q-20261112",
+       "page": "30"
+      },
+      {
+       "printed": "OEM and Software License Financing Arrangements",
+       "section": "non-recourse",
+       "status": "disclosed",
+       "usd_m": 770.0,
+       "doc": "crwv-10q-20261112",
+       "page": "30"
+      }
+     ]
+    }
+   ],
+   "security": {}
+  },
+  {
+   "name": "Magnetar loan",
+   "type": "Other loans (Magnetar)",
+   "cells": [
+    null,
+    null,
+    {
+     "usd_m": 248.917,
+     "parts": [
+      {
+       "printed": "Magnetar Loan",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 248.917,
+       "doc": "crwv-10q-20250515",
+       "page": "21"
+      }
+     ]
+    },
+    {
+     "usd_m": 256.63,
+     "parts": [
+      {
+       "printed": "Magnetar Loan",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 256.63,
+       "doc": "crwv-10q-20250813",
+       "page": "27"
+      }
+     ]
+    },
+    {
+     "usd_m": 264.666,
+     "parts": [
+      {
+       "printed": "Magnetar Loan",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 264.666,
+       "doc": "crwv-10q-20251113",
+       "page": "29"
+      }
+     ]
+    },
+    {
+     "usd_m": 273.0,
+     "parts": [
+      {
+       "printed": "Magnetar Loan",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 273.0,
+       "doc": "crwv-10k-20260302",
+       "page": "114"
+      }
+     ]
+    },
+    {
+     "usd_m": 281.0,
+     "parts": [
+      {
+       "printed": "Magnetar Loan",
+       "section": "not split",
+       "status": "disclosed",
+       "usd_m": 281.0,
+       "doc": "crwv-10q-20260508",
+       "page": "24"
+      }
+     ]
+    },
+    {
+     "usd_m": 189.0,
+     "parts": [
+      {
+       "printed": "Magnetar Loan",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 189.0,
+       "doc": "crwv-10q-20260812",
+       "page": "27-28"
+      }
+     ]
+    },
+    {
+     "usd_m": 195.0,
+     "parts": [
+      {
+       "printed": "Magnetar Loan",
+       "section": "recourse",
+       "status": "disclosed",
+       "usd_m": 195.0,
+       "doc": "crwv-10q-20261112",
+       "page": "30"
+      }
+     ]
+    }
+   ],
+   "security": {}
+  }
+ ],
+ "ex9": {
+  "dates": [
+   "Dec 2025",
+   "Jun 2026",
+   "Sep 2026"
+  ],
+  "pools": [
+   {
+    "id": "spv",
+    "name": "Certain special-purpose subsidiaries (aggregate, not named)",
+    "noncurrent_bn": [
+     12.7,
+     18.2,
+     22.2
+    ],
+    "current_bn": [
+     1.8,
+     2.6,
+     3.7
+    ],
+    "cite": [
+     {
+      "doc": "crwv-10q-20261112",
+      "page": "34"
+     },
+     {
+      "doc": "crwv-10q-20260812",
+      "page": "30"
+     },
+     {
+      "doc": "crwv-10q-20261112",
+      "page": "34"
+     }
+    ]
+   },
+   {
+    "id": "ccac",
+    "name": "CCAC VIII, the DDTL 4.0 borrower",
+    "noncurrent_bn": [
+     null,
+     3.3,
+     5.2
+    ],
+    "current_bn": [
+     null,
+     0.155,
+     0.233
+    ],
+    "cite": [
+     null,
+     {
+      "doc": "crwv-10q-20260812",
+      "page": "29"
+     },
+     {
+      "doc": "crwv-10q-20261112",
+      "page": "33"
+     }
+    ]
+   }
+  ],
+  "recourse_bn": [
+   20.726,
+   31.405,
+   41.6
+  ],
+  "nonrecourse_bn": [
+   0.647,
+   3.663,
+   5.273
+  ],
+  "recourse_cite": [
+   {
+    "doc": "crwv-10q-20260812",
+    "page": "6"
+   },
+   {
+    "doc": "crwv-10q-20260812",
+    "page": "6"
+   },
+   {
+    "doc": "crwv-10q-20261112",
+    "page": "6"
+   }
+  ]
+ },
+ "cases": {
+  "DDTL 2.0": [
+   {
+    "entry": "Borrower and dates",
+    "text": "CoreWeave Compute Acquisition Co. IV, LLC (CCAC IV). Original credit agreement dated 16 May 2024 for commitments of up to $7.5 billion; the amended facility is described as up to $7.6 billion, subject to collateralization. Contractual terms: quarterly installments due from January 2026, final payment due five years after each loan was funded (terms, not evidence of payments made). Parent guarantee dated 16 May 2024",
+    "document": "S-1 Ex. 10.13; IPO prospectus (424B4); Form 10-K for 2025; S-1 Ex. 10.16",
+    "where": "Ex. 10.13 recitals, p. 1; 424B4 p. 123; 10-K Note 10, p. 115; Ex. 10.16 preamble",
+    "docs": [
+     "crwv-s1-20250303-ex-10-13",
+     "crwv-424b4-20250331",
+     "crwv-10k-20260302",
+     "crwv-s1-20250303-ex-10-16"
+    ]
+   },
+   {
+    "entry": "What the contract permits",
+    "text": "\"to finance the (a) IG Capital Expenditures and (b) Non-IG Capital Expenditures\", including portions of the Acquisition and related transaction costs; the defined expenditure terms refer to infrastructure, ancillary components and installation",
+    "document": "Credit Agreement (S-1 Ex. 10.13)",
+    "where": "§3.11, p. 69; definitions pp. 24 and 31",
+    "docs": [
+     "crwv-s1-20250303-ex-10-13"
+    ]
+   },
+   {
+    "entry": "What the issuer says it financed",
+    "text": "Purpose (prospectus): \"entered into primarily to finance capital expenditures required to perform customer contracts, including the acquisition of GPU servers and related infrastructure\" (pp. 197, 212); intended use, future tense: borrowings \"will be used to finance a portion of the purchase consideration, fees, and expenses relating to the acquisition of computing equipment\" (p. 123). Actual use, stated jointly for DDTLs 1.0, 2.0, 2.1 and 3.0 (10-K): borrowings \"are used to finance a portion of the purchase considerations, fees, and expenses relating to the acquisition of computing equipment\", with capacity sized on the depreciable cost of GPU servers. No statement attributes a GPU purchase amount to DDTL 2.0 alone",
+    "document": "IPO prospectus (424B4); Form 10-K for 2025",
+    "where": "424B4 pp. 197, 212 and 123; 10-K Note 10, p. 115",
+    "docs": [
+     "crwv-424b4-20250331",
+     "crwv-10k-20260302"
+    ]
+   },
+   {
+    "entry": "What was pledged or guaranteed",
+    "text": "Substantially all of CCAC IV's assets and 100% of its equity pledged, subject to exceptions; CoreWeave, Inc. guarantees \"as a primary obligor\", subject to §2.1(b); listed under recourse debt at 30 Sep 2026",
+    "document": "IPO prospectus (424B4); S-1 Ex. 10.16; Form 10-K for 2025; Form 10-Q Q3 2026",
+    "where": "424B4 p. 197; Ex. 10.16 §2.1(a), p. 13; 10-K Note 10, p. 115; 10-Q Note 10, p. 30",
+    "docs": [
+     "crwv-424b4-20250331",
+     "crwv-s1-20250303-ex-10-16",
+     "crwv-10k-20260302",
+     "crwv-10q-20261112"
+    ]
+   },
+   {
+    "entry": "What remains undisclosed",
+    "text": "In the facility sections examined: no CCAC IV-only collateral amount (the Q3 2026 10-Q gives one aggregate for certain special-purpose subsidiaries without naming them), no GPU-only allocation of proceeds, no link to named customers",
+    "document": "Form 10-Q Q3 2026",
+    "where": "Note 10, pp. 30 and 34",
+    "docs": [
+     "crwv-10q-20261112"
+    ]
+   }
+  ],
+  "DDTL 4.0": [
+   {
+    "entry": "Borrower and dates",
+    "text": "CoreWeave Compute Acquisition Co. VIII, LLC (CCAC VIII); signed 30 Mar 2026; $8.5 billion commitment, of which up to approximately $7.5 billion initially drawable, increasing as assets reach stabilization; availability ends on the earlier of commitments reaching zero and 30 Jun 2027; matures 31 Mar 2032",
+    "document": "Form 8-K; Credit Agreement (Ex. 10.1); press release (Ex. 99.1)",
+    "where": "8-K Item 1.01; Ex. 10.1 p. 16; Ex. 99.1 ¶4",
+    "docs": [
+     "crwv-8k-20260331",
+     "crwv-8k-20260331-ex-10-1",
+     "crwv-8k-20260331-ex-99-1"
+    ]
+   },
+   {
+    "entry": "What the contract permits",
+    "text": "\"finance the acquisition and installation of Infrastructure in connection with the Project\"; also liquidity and power reserve accounts and fees, premiums and expenses; top-up draws may fund distributions if the top-up debt-sizing criteria hold. Infrastructure (excerpt) includes \"any graphics processing unit servers and ancillary components, including networking infrastructure and other hardware\". For subsequent draws other than top-up draws, CCAC VIII must deliver purchase orders for the new infrastructure being acquired (§4.02(l); the initial funding and any Top-Up DDTL Draw are excepted). This is evidence the lenders require for a draw; the itemized orders are not in the filed materials examined, so what was bought is not publicly itemized",
+    "document": "Credit Agreement (Ex. 10.1 to 8-K)",
+    "where": "§3.11, p. 63; \"Infrastructure\", p. 26; §6.06(f), p. 82; §4.02(j), (l), (m), (p), p. 70; Schedule 4.02(l) listed p. v",
+    "docs": [
+     "crwv-8k-20260331-ex-10-1"
+    ]
+   },
+   {
+    "entry": "What the issuer says it financed",
+    "text": "Purpose at signing: \"primarily to finance capital expenditures required to perform a customer contract, including the acquisition of GPU servers and related infrastructure\" (8-K). Actual-use category each quarter: borrowings \"are primarily used to finance the acquisition and installation of computing infrastructure and related fees and expenses\" (10-Qs). Neither gives a GPU-only dollar amount",
+    "document": "Form 8-K; Forms 10-Q Q1-Q3 2026",
+    "where": "8-K Item 1.01; 10-Q Note 10, pp. 25, 29 and 32",
+    "docs": [
+     "crwv-8k-20260331",
+     "crwv-10q-20260508",
+     "crwv-10q-20260812",
+     "crwv-10q-20261112"
+    ]
+   },
+   {
+    "entry": "What was pledged or guaranteed",
+    "text": "Substantially all assets of CCAC VIII and its subsidiaries; 100% of CCAC VIII's equity pledged by CCAC VIII Holdco LLC; the Master Services Agreement and data-center leases/licenses are carved back from Excluded Collateral; control agreement over the MSA-revenue account at initial funding. Guarantees: CCAC VIII's subsidiaries guarantee unconditionally; CoreWeave, Inc. guarantees only listed bad acts (the loan is non-recourse except for these carve-outs). Pledged CCAC VIII assets at 30 Sep 2026: $5.2bn non-current (primarily PP&E, net) and $233m current (primarily accounts receivable)",
+    "document": "Form 8-K; Ex. 10.1; Ex. 10.2; Form 10-Q Q3 2026",
+    "where": "8-K Item 1.01; Ex. 10.1 p. 11 and §4.02(n) p. 70; Ex. 10.2 Sch. 1; 10-Q Note 10, p. 33",
+    "docs": [
+     "crwv-8k-20260331",
+     "crwv-8k-20260331-ex-10-1",
+     "crwv-8k-20260331-ex-10-2",
+     "crwv-10q-20261112"
+    ]
+   },
+   {
+    "entry": "What remains undisclosed",
+    "text": "Customer agreement and data-center site identifiers redacted; the form of collateral agreement (Exhibit J) is listed but the attached form is omitted from the filing; in the loan documents and financial statements examined, no GPU-only proceeds figure, no detailed CCAC VIII PP&E composition and no recorded top-up distribution",
+    "document": "Ex. 10.1; Form 8-K; Forms 10-Q Q1-Q3 2026",
+    "where": "Ex. 10.1 pp. 13, 28; Exhibit J listed p. v; 8-K Item 9.01; 10-Q Q1 2026 Note 10 p. 25; Q2 2026 p. 29; Q3 2026 pp. 32-33",
+    "docs": [
+     "crwv-8k-20260331-ex-10-1",
+     "crwv-8k-20260331",
+     "crwv-10q-20260508",
+     "crwv-10q-20260812",
+     "crwv-10q-20261112"
+    ]
+   }
+  ]
+ },
+ "oem": {
+  "2025-12-31 · What was financed": {
+   "text": "The Company entered into various agreements with original equipment manufacturers (the \"OEM Financing Arrangements\"), whereby the Company obtained financing for certain equipment with an aggregate notional balance of $4.8 billion and $1.3 billion as of December 31, 2025 and 2024, respectively.",
+   "doc": "crwv-10k-20260302",
+   "page": "117"
+  },
+  "2025-12-31 · Outstanding OEM equipment financing": {
+   "text": "The Company had an outstanding balance of $3.8 billion and $1.2 billion as of December 31, 2025 and 2024, respectively.",
+   "doc": "crwv-10k-20260302",
+   "page": "117"
+  },
+  "2025-12-31 · What secured it": {
+   "text": "The Company granted a security interest for the financed equipment related to these financing arrangements.",
+   "doc": "crwv-10k-20260302",
+   "page": "117"
+  },
+  "2025-12-31 · Software-licence financing": {
+   "text": "During the year ended December 31, 2025, the Company also entered into various arrangements with a software license vendor (the \"Software License Financing Arrangements\"), whereby the Company obtained financing for certain software licenses with an aggregate notional balance of $431 million as of December 31, 2025, and may elect to finance up to an additional $884 million of optional tranches under the terms of one arrangement that commenced in October 2025.",
+   "doc": "crwv-10k-20260302",
+   "page": "117"
+  },
+  "2026-09-30 · What was financed (Q3 2026)": {
+   "text": "The Company had entered into various agreements with original equipment manufacturers (the \"OEM Financing Arrangements\"), whereby the Company obtained financing for certain equipment.",
+   "doc": "crwv-10q-20261112",
+   "page": "34"
+  },
+  "2026-09-30 · Outstanding OEM equipment financing": {
+   "text": "The Company had an outstanding balance of $7.4 billion and $3.8 billion as of September 30, 2026 and December 31, 2025, respectively.",
+   "doc": "crwv-10q-20261112",
+   "page": "34"
+  },
+  "2026-09-30 · Outstanding software-licence financing": {
+   "text": "The Company had an outstanding balance of $278 million and $368 million as of September 30, 2026 and December 31, 2025, respectively.",
+   "doc": "crwv-10q-20261112",
+   "page": "34"
+  },
+  "2026-09-30 · Security terms restated in Q3 2026?": {
+   "text": "Not restated: the Q3 2026 OEM paragraph (p. 34) gives balances but does not repeat the security-interest sentence.",
+   "doc": "crwv-10q-20261112",
+   "page": "34"
+  }
+ },
+ "notes": [
+  {
+   "issue": "2030 Senior Notes",
+   "what": "actual: cash retained for general corporate purposes; subsequent spending unspecified",
+   "usd_m": null,
+   "usd_m_2": null,
+   "doc": "crwv-10k-20260302",
+   "page": "116"
+  },
+  {
+   "issue": "2031 9.00% Senior Notes",
+   "what": "actual: cash retained for general corporate purposes; subsequent spending unspecified",
+   "usd_m": null,
+   "usd_m_2": null,
+   "doc": "crwv-10k-20260302",
+   "page": "116"
+  },
+  {
+   "issue": "2031 9.75% Senior Notes",
+   "what": "actual: cash retained for general corporate purposes; subsequent spending unspecified",
+   "usd_m": null,
+   "usd_m_2": null,
+   "doc": "crwv-10q-20261112",
+   "page": "36"
+  },
+  {
+   "issue": "2032 9.625% Senior Notes",
+   "what": "actual: cash retained for general corporate purposes; subsequent spending unspecified",
+   "usd_m": null,
+   "usd_m_2": null,
+   "doc": "crwv-10q-20261112",
+   "page": "36"
+  },
+  {
+   "issue": "2032 EUR Senior Notes",
+   "what": "actual: cash retained for general corporate purposes; subsequent spending unspecified",
+   "usd_m": null,
+   "usd_m_2": null,
+   "doc": "crwv-10q-20261112",
+   "page": "36"
+  },
+  {
+   "issue": "2031 Convertible Senior Notes",
+   "what": "actual: part funded capped calls (cost shown); intended: remainder for general corporate purposes",
+   "usd_m": "340",
+   "usd_m_2": null,
+   "doc": "crwv-10k-20260302",
+   "page": "116-117"
+  },
+  {
+   "issue": "2032 Convertible Senior Notes",
+   "what": "actual: part funded capped calls (cost shown); intended: remainder for general corporate purposes",
+   "usd_m": "492",
+   "usd_m_2": null,
+   "doc": "crwv-10q-20261112",
+   "page": "35-36"
+  },
+  {
+   "issue": "2033 Convertible Senior Notes",
+   "what": "actual: part funded capped calls (cost shown); intended: remainder for general corporate purposes",
+   "usd_m": "566",
+   "usd_m_2": null,
+   "doc": "crwv-10q-20261112",
+   "page": "35-36"
+  },
+  {
+   "issue": "Convertible Promissory Notes",
+   "what": "actual: non-cash acquisition consideration",
+   "usd_m": "172",
+   "usd_m_2": "167",
+   "doc": "crwv-10k-20260302",
+   "page": "118; 107"
+  },
+  {
+   "issue": "Convertible Promissory Notes",
+   "what": "settled in shares (no cash proceeds)",
+   "usd_m": null,
+   "usd_m_2": null,
+   "doc": "crwv-10q-20260508",
+   "page": "26"
+  }
+ ],
+ "facts": {
+  "hd_2023": {
+   "shown": "$1.5bn",
+   "exact": "1527.298",
+   "kind": "bn",
+   "source": "leverage_table.csv · 2023-12-31 · B_headline",
+   "doc": "crwv-424b4-20250331",
+   "page": "F-4, F-35",
+   "note": "",
+   "evidence_ref": "1.04"
+  },
+  "hd_2026": {
+   "shown": "$47.5bn",
+   "exact": "47522.000",
+   "kind": "bn",
+   "source": "leverage_table.csv · 2026-09-30 · B_headline",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": "",
+   "evidence_ref": "1.03"
+  },
+  "hd_multiple": {
+   "shown": "31",
+   "exact": "31.11508035759884449531132759",
+   "kind": "x0",
+   "source": "leverage_table.csv · B_headline 2026-09-30 ÷ 2023-12-31",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": ""
+  },
+  "borr_2023": {
+   "shown": "$1.5bn",
+   "exact": "1523.254",
+   "kind": "bn",
+   "source": "leverage_table.csv · 2023-12-31 · A_borrowings_carrying",
+   "doc": "crwv-424b4-20250331",
+   "page": "F-4, F-35",
+   "note": "",
+   "evidence_ref": "1.01"
+  },
+  "borr_2026": {
+   "shown": "$46.9bn",
+   "exact": "46873.000",
+   "kind": "bn",
+   "source": "leverage_table.csv · 2026-09-30 · A_borrowings_carrying",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": "",
+   "evidence_ref": "1.02"
+  },
+  "lid_2023": {
+   "shown": "$2.0bn",
+   "exact": "1999.740",
+   "kind": "bn",
+   "source": "leverage_table.csv · 2023-12-31 · C_lease_inclusive",
+   "doc": "crwv-424b4-20250331",
+   "page": "F-4, F-35",
+   "note": "",
+   "evidence_ref": "1.06"
+  },
+  "lid_2026": {
+   "shown": "$66.2bn",
+   "exact": "66219.000",
+   "kind": "bn",
+   "source": "leverage_table.csv · 2026-09-30 · C_lease_inclusive",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": "",
+   "evidence_ref": "1.05"
+  },
+  "opl_2023": {
+   "shown": "$472m",
+   "exact": "472.442",
+   "kind": "m",
+   "source": "leverage_table.csv · 2023-12-31 · operating_leases",
+   "doc": "crwv-424b4-20250331",
+   "page": "F-4, F-35",
+   "note": ""
+  },
+  "opl_2024": {
+   "shown": "$2.6bn",
+   "exact": "2602.016",
+   "kind": "bn",
+   "source": "leverage_table.csv · 2024-12-31 · operating_leases",
+   "doc": "crwv-424b4-20250331",
+   "page": "F-4, F-35",
+   "note": "",
+   "evidence_ref": "1.07"
+  },
+  "opl_2026": {
+   "shown": "$18.7bn",
+   "exact": "18697.000",
+   "kind": "bn",
+   "source": "leverage_table.csv · 2026-09-30 · operating_leases",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": "",
+   "evidence_ref": "1.08"
+  },
+  "fin_2026": {
+   "shown": "$649m",
+   "exact": "649.000",
+   "kind": "m",
+   "source": "leverage_table.csv · 2026-09-30 · finance_leases",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": "",
+   "evidence_ref": "1.39"
+  },
+  "assets_2023": {
+   "shown": "$5.0bn",
+   "exact": "4976.975",
+   "kind": "bn",
+   "source": "leverage_table.csv · 2023-12-31 · total_assets",
+   "doc": "crwv-424b4-20250331",
+   "page": "F-4, F-35",
+   "note": ""
+  },
+  "assets_2026": {
+   "shown": "$91.5bn",
+   "exact": "91481.000",
+   "kind": "bn",
+   "source": "leverage_table.csv · 2026-09-30 · total_assets",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": ""
+  },
+  "assets_multiple": {
+   "shown": "18",
+   "exact": "18.38084378563283922462941847",
+   "kind": "x0",
+   "source": "leverage_table.csv · total_assets 2026-09-30 ÷ 2023-12-31",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": ""
+  },
+  "hd_pct_2023": {
+   "shown": "30.7%",
+   "exact": "30.68727490091873075512736149970614680604",
+   "kind": "pct",
+   "source": "fig1_debt_leverage.csv (unrounded) · 1b · B · 2023-12-31",
+   "doc": "crwv-424b4-20250331",
+   "page": "F-4, F-35",
+   "note": "",
+   "evidence_ref": "1.09"
+  },
+  "hd_pct_2024": {
+   "shown": "45.0%",
+   "exact": "44.96406272579784920863189936587482284551",
+   "kind": "pct",
+   "source": "fig1_debt_leverage.csv (unrounded) · 1b · B · 2024-12-31",
+   "doc": "crwv-424b4-20250331",
+   "page": "F-4, F-35",
+   "note": "",
+   "evidence_ref": "1.10"
+  },
+  "hd_pct_2026": {
+   "shown": "51.9%",
+   "exact": "51.9473989134355767864365278035876302183",
+   "kind": "pct",
+   "source": "fig1_debt_leverage.csv (unrounded) · 1b · B · 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": "",
+   "evidence_ref": "1.11"
+  },
+  "lid_pct_2023": {
+   "shown": "40.2%",
+   "exact": "40.17982810843936326784844207575886959448",
+   "kind": "pct",
+   "source": "fig1_debt_leverage.csv (unrounded) · 1b · C · 2023-12-31",
+   "doc": "crwv-424b4-20250331",
+   "page": "F-4, F-35",
+   "note": "",
+   "evidence_ref": "1.12"
+  },
+  "lid_pct_2024": {
+   "shown": "59.6%",
+   "exact": "59.55540748715316258723700342277645563611",
+   "kind": "pct",
+   "source": "fig1_debt_leverage.csv (unrounded) · 1b · C · 2024-12-31",
+   "doc": "crwv-424b4-20250331",
+   "page": "F-4, F-35",
+   "note": "",
+   "evidence_ref": "1.13"
+  },
+  "lid_pct_2026": {
+   "shown": "72.4%",
+   "exact": "72.3855226768399995627507351253265705447",
+   "kind": "pct",
+   "source": "fig1_debt_leverage.csv (unrounded) · 1b · C · 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": "",
+   "evidence_ref": "1.14"
+  },
+  "hd_pp_since24": {
+   "shown": "+7.0 pp",
+   "exact": "6.983336187637727577804628438",
+   "kind": "pp",
+   "source": "fig1_debt_leverage.csv (unrounded) · B 2026-09-30 − 2024-12-31",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": "",
+   "evidence_ref": "1.15"
+  },
+  "lid_pp_since24": {
+   "shown": "+12.8 pp",
+   "exact": "12.83011518968683697551373170",
+   "kind": "pp",
+   "source": "fig1_debt_leverage.csv (unrounded) · C 2026-09-30 − 2024-12-31",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": "",
+   "evidence_ref": "1.16"
+  },
+  "q3_change": {
+   "shown": "+6.2 pp",
+   "exact": "6.159154460340987452065177080",
+   "kind": "pp",
+   "source": "leverage_table.csv · B and total_assets, 2026-06-30 and 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": "",
+   "evidence_ref": "1.17"
+  },
+  "q3_debt_eff": {
+   "shown": "+13.4 pp",
+   "exact": "13.37217564302970015631661219",
+   "kind": "pp",
+   "source": "leverage_table.csv · (B 2026-09-30 − B 2026-06-30) ÷ assets 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": "",
+   "evidence_ref": "1.18"
+  },
+  "q3_asset_eff": {
+   "shown": "−7.2 pp",
+   "exact": "-7.213021182688712704251435110",
+   "kind": "pp",
+   "source": "leverage_table.csv · B 2026-06-30 × (1/assets 2026-09-30 − 1/assets 2026-06-30)",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": "",
+   "evidence_ref": "1.19"
+  },
+  "de_2026": {
+   "shown": "11.8",
+   "exact": "11.80670807453416149068322981",
+   "kind": "x1",
+   "source": "leverage_table.csv · B_headline ÷ issuer_equity, 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": "",
+   "evidence_ref": "1.20"
+  },
+  "equity_2026": {
+   "shown": "$4.0bn",
+   "exact": "4025.000",
+   "kind": "bn",
+   "source": "leverage_table.csv · 2026-09-30 · issuer_equity",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": ""
+  },
+  "netdebt_2026": {
+   "shown": "$43.3bn",
+   "exact": "43338.000",
+   "kind": "bn",
+   "source": "leverage_table.csv · 2026-09-30 · net_debt_B",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": "",
+   "evidence_ref": "1.21"
+  },
+  "restricted_2026": {
+   "shown": "$2.3bn",
+   "exact": "2282.000",
+   "kind": "bn",
+   "source": "leverage_table.csv · 2026-09-30 · restricted_cash_total_not_deducted",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": "",
+   "evidence_ref": "1.22"
+  },
+  "recourse_2026": {
+   "shown": "$41.6bn",
+   "exact": "41600.000",
+   "kind": "bn",
+   "source": "leverage_table.csv · 2026-09-30 · recourse_carrying",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": "",
+   "evidence_ref": "1.25"
+  },
+  "nonrec_2026": {
+   "shown": "$5.3bn",
+   "exact": "5273.000",
+   "kind": "bn",
+   "source": "leverage_table.csv · 2026-09-30 · nonrecourse_carrying",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": "",
+   "evidence_ref": "1.24"
+  },
+  "nonrec_2025": {
+   "shown": "$0.6bn",
+   "exact": "647.000",
+   "kind": "bn",
+   "source": "leverage_table.csv · 2025-12-31 · nonrecourse_carrying",
+   "doc": "crwv-10q-20260812",
+   "page": "6",
+   "note": "December 2025 comparative column of the June 2026 10-Q",
+   "evidence_ref": "1.23"
+  },
+  "nonrec_share_2026": {
+   "shown": "11.2%",
+   "exact": "11.24954664732361914108335289",
+   "kind": "pct",
+   "source": "leverage_table.csv · nonrecourse_carrying ÷ A_borrowings_carrying, 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": ""
+  },
+  "ddtl_share_2023": {
+   "shown": "88.4%",
+   "exact": "88.41676371612727315988113558",
+   "kind": "pct",
+   "source": "instrument_mix.csv · DDTL · 2023-12-31 · share_full_precision",
+   "doc": "crwv-424b4-20250331",
+   "page": "F-35",
+   "note": "",
+   "evidence_ref": "1.33"
+  },
+  "ddtl_share_2026": {
+   "shown": "37.1%",
+   "exact": "37.13082833385959372697610778",
+   "kind": "pct",
+   "source": "instrument_mix.csv · DDTL · 2026-09-30 · share_full_precision",
+   "doc": "crwv-10q-20261112",
+   "page": "30-31",
+   "note": "",
+   "evidence_ref": "1.34"
+  },
+  "conv_share_2026": {
+   "shown": "22.7%",
+   "exact": "22.70918850647300284180612567",
+   "kind": "pct",
+   "source": "instrument_mix.csv · Convertible notes · 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "30-31",
+   "note": "",
+   "evidence_ref": "1.35"
+  },
+  "senior_share_2026": {
+   "shown": "21.1%",
+   "exact": "21.09672666035154194295337333",
+   "kind": "pct",
+   "source": "instrument_mix.csv · Senior notes · 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "30-31",
+   "note": "",
+   "evidence_ref": "1.36"
+  },
+  "oem_share_2026": {
+   "shown": "16.1%",
+   "exact": "16.12672350278918008630670456",
+   "kind": "pct",
+   "source": "instrument_mix.csv · OEM and software financing · 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "30-31",
+   "note": "",
+   "evidence_ref": "1.37"
+  },
+  "ddtl_usd_2026": {
+   "shown": "$17.6bn",
+   "exact": "17639.0",
+   "kind": "bn",
+   "source": "instrument_mix.csv · DDTL · 2026-09-30 · usd_millions",
+   "doc": "crwv-10q-20261112",
+   "page": "30-31",
+   "note": "",
+   "evidence_ref": "1.38"
+  },
+  "ddtl_usd_2023": {
+   "shown": "$1.4bn",
+   "exact": "1374.924",
+   "kind": "bn",
+   "source": "instrument_mix.csv · DDTL · 2023-12-31 · usd_millions",
+   "doc": "crwv-424b4-20250331",
+   "page": "F-35",
+   "note": ""
+  },
+  "principal_2026": {
+   "shown": "$47.5bn",
+   "exact": "47505",
+   "kind": "bn",
+   "source": "instrument_mix.csv · sum of usd_millions, 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "30-31",
+   "note": ""
+  },
+  "ddtl20_2026": {
+   "shown": "$2.80bn",
+   "exact": "2796.0",
+   "kind": "bn2",
+   "source": "instrument_lines.csv · DDTL 2.0 Facility · 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "30",
+   "note": "",
+   "evidence_ref": "3.01"
+  },
+  "ddtl21_2026": {
+   "shown": "$2.49bn",
+   "exact": "2494.0",
+   "kind": "bn2",
+   "source": "instrument_lines.csv · DDTL 2.1 Facility · 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "30",
+   "note": "",
+   "evidence_ref": "3.02"
+  },
+  "ddtl40_2026": {
+   "shown": "$4.58bn",
+   "exact": "4583.0",
+   "kind": "bn2",
+   "source": "instrument_lines.csv · DDTL 4.0 Facility · 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "30",
+   "note": "",
+   "evidence_ref": "3.03"
+  },
+  "ddtl40_2026q1": {
+   "shown": "$1.26bn",
+   "exact": "1260.0",
+   "kind": "bn2",
+   "source": "instrument_lines.csv · DDTL 4.0 Facility(1) · 2026-03-31",
+   "doc": "crwv-10q-20260508",
+   "page": "24",
+   "note": "",
+   "evidence_ref": "3.04"
+  },
+  "n_lanes_2026": {
+   "shown": "18",
+   "exact": "18",
+   "kind": "x0",
+   "source": "instrument_lines.csv · count of lines with principal at 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "30-31",
+   "note": ""
+  },
+  "n_lanes_2023": {
+   "shown": "3",
+   "exact": "3",
+   "kind": "x0",
+   "source": "instrument_lines.csv · count of lines with principal at 2023-12-31",
+   "doc": "crwv-424b4-20250331",
+   "page": "F-35",
+   "note": ""
+  },
+  "ppe_2023": {
+   "shown": "$3.6bn",
+   "exact": "3600.786",
+   "kind": "bn",
+   "source": "fig3_ppe_composition.csv · sum of groups · 2023-12-31",
+   "doc": "crwv-424b4-20250331",
+   "page": "F-30",
+   "note": "",
+   "evidence_ref": "2.01"
+  },
+  "ppe_2026": {
+   "shown": "$64.6bn",
+   "exact": "64554",
+   "kind": "bn",
+   "source": "fig3_ppe_composition.csv · sum of groups · 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "23",
+   "note": "",
+   "evidence_ref": "2.02"
+  },
+  "ppe_multiple": {
+   "shown": "18",
+   "exact": "17.92775244071711009762868440",
+   "kind": "x0",
+   "source": "fig3_ppe_composition.csv · gross 2026-09-30 ÷ 2023-12-31",
+   "doc": "crwv-10q-20261112",
+   "page": "23",
+   "note": ""
+  },
+  "tech_2023": {
+   "shown": "$1.3bn",
+   "exact": "1298.127",
+   "kind": "bn",
+   "source": "fig3_ppe_composition.csv · GPU proxy · 2023-12-31",
+   "doc": "crwv-424b4-20250331",
+   "page": "F-30",
+   "note": ""
+  },
+  "tech_2026": {
+   "shown": "$47.0bn",
+   "exact": "47023",
+   "kind": "bn",
+   "source": "fig3_ppe_composition.csv · GPU proxy · 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "23",
+   "note": ""
+  },
+  "tech_share_2023": {
+   "shown": "36.1%",
+   "exact": "36.05121215201347705750911051",
+   "kind": "pct",
+   "source": "fig3_ppe_composition.csv · GPU proxy ÷ gross · 2023-12-31",
+   "doc": "crwv-424b4-20250331",
+   "page": "F-30",
+   "note": "",
+   "evidence_ref": "2.03"
+  },
+  "tech_share_2024": {
+   "shown": "71.0%",
+   "exact": "71.01375348844973274466896558",
+   "kind": "pct",
+   "source": "fig3_ppe_composition.csv · GPU proxy ÷ gross · 2024-12-31",
+   "doc": "crwv-424b4-20250331",
+   "page": "F-30",
+   "note": "",
+   "evidence_ref": "2.04"
+  },
+  "tech_share_2025": {
+   "shown": "61.6%",
+   "exact": "61.58628207772310774579417224",
+   "kind": "pct",
+   "source": "fig3_ppe_composition.csv · GPU proxy ÷ gross · 2025-12-31",
+   "doc": "crwv-10k-20260302",
+   "page": "108",
+   "note": "",
+   "evidence_ref": "2.05"
+  },
+  "tech_share_2026": {
+   "shown": "72.8%",
+   "exact": "72.84289122285218576695479753",
+   "kind": "pct",
+   "source": "fig3_ppe_composition.csv · GPU proxy ÷ gross · 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "23",
+   "note": "",
+   "evidence_ref": "2.06"
+  },
+  "dc_2026": {
+   "shown": "$16.6bn",
+   "exact": "16590",
+   "kind": "bn",
+   "source": "fig3_ppe_composition.csv · data-center group · 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "23",
+   "note": ""
+  },
+  "ppe_d_2526": {
+   "shown": "$30.6bn",
+   "exact": "30613",
+   "kind": "bn",
+   "source": "fig3_ppe_composition.csv · gross 2026-09-30 − 2025-12-31",
+   "doc": "crwv-10q-20261112",
+   "page": "23",
+   "note": "",
+   "evidence_ref": "2.10"
+  },
+  "tech_d_2526": {
+   "shown": "$26.1bn",
+   "exact": "26120",
+   "kind": "bn",
+   "source": "fig3_ppe_composition.csv · GPU proxy 2026-09-30 − 2025-12-31",
+   "doc": "crwv-10q-20261112",
+   "page": "23",
+   "note": "",
+   "evidence_ref": "2.11"
+  },
+  "dc_d_2526": {
+   "shown": "$4.4bn",
+   "exact": "4372",
+   "kind": "bn",
+   "source": "fig3_ppe_composition.csv · data-center group 2026-09-30 − 2025-12-31",
+   "doc": "crwv-10q-20261112",
+   "page": "23",
+   "note": "",
+   "evidence_ref": "2.12"
+  },
+  "tech_d_q3": {
+   "shown": "$13.2bn",
+   "exact": "13200",
+   "kind": "bn",
+   "source": "fig3_ppe_composition.csv · GPU proxy 2026-09-30 − 2026-06-30",
+   "doc": "crwv-10q-20261112",
+   "page": "23",
+   "note": "",
+   "evidence_ref": "2.14"
+  },
+  "cip_d_q3": {
+   "shown": "$2.6bn",
+   "exact": "2579",
+   "kind": "bn",
+   "source": "routes_dated.csv · Construction in progress 2026-06-30 − 2026-09-30 (a fall)",
+   "doc": "crwv-10q-20261112",
+   "page": "23",
+   "note": "",
+   "evidence_ref": "2.13"
+  },
+  "tech_minus_hd": {
+   "shown": "$499m",
+   "exact": "499.000",
+   "kind": "m",
+   "source": "leverage_table.csv B_headline − fig3_ppe_composition.csv GPU proxy, 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": ""
+  },
+  "signed_2024": {
+   "shown": "$15.0bn",
+   "exact": "15000",
+   "kind": "bn",
+   "source": "routes_dated.csv · signed not commenced · 2024-12-31",
+   "doc": "crwv-424b4-20250331",
+   "page": "F-33",
+   "note": ""
+  },
+  "signed_2026": {
+   "shown": "$47.4bn",
+   "exact": "47400",
+   "kind": "bn",
+   "source": "routes_dated.csv · signed not commenced · 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "27",
+   "note": "",
+   "evidence_ref": "1.29"
+  },
+  "excluded_ceiling_2026": {
+   "shown": "$16.9bn",
+   "exact": "16900",
+   "kind": "bn",
+   "source": "routes_dated.csv · excluded lease contractual maximum · 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "27",
+   "note": "",
+   "evidence_ref": "1.32"
+  },
+  "rou_2026": {
+   "shown": "$18.9bn",
+   "exact": "18922",
+   "kind": "bn",
+   "source": "routes_dated.csv · operating-lease ROU assets · 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "6",
+   "note": ""
+  },
+  "cfo_9m26": {
+   "shown": "$5.6bn",
+   "exact": "5638",
+   "kind": "bn",
+   "source": "sources_uses.csv · 9M2026 · Cash from operations",
+   "doc": "crwv-10q-20261112",
+   "page": "12",
+   "note": "",
+   "evidence_ref": "2.18"
+  },
+  "cfo_9m25": {
+   "shown": "$1.5bn",
+   "exact": "1499",
+   "kind": "bn",
+   "source": "sources_uses.csv · 9M2025 · Cash from operations",
+   "doc": "crwv-10q-20261112",
+   "page": "12",
+   "note": ""
+  },
+  "defrev_9m26": {
+   "shown": "$3.5bn",
+   "exact": "3492",
+   "kind": "bn",
+   "source": "sources_uses.csv · 9M2026 · deferred revenue memo",
+   "doc": "crwv-10q-20261112",
+   "page": "12",
+   "note": "",
+   "evidence_ref": "2.19"
+  },
+  "debtiss_9m26": {
+   "shown": "$27.0bn",
+   "exact": "27048",
+   "kind": "bn",
+   "source": "sources_uses.csv · 9M2026 · Proceeds from issuance of debt, net",
+   "doc": "crwv-10q-20261112",
+   "page": "12",
+   "note": "",
+   "evidence_ref": "2.17"
+  },
+  "debtiss_9m25": {
+   "shown": "$7.5bn",
+   "exact": "7517",
+   "kind": "bn",
+   "source": "sources_uses.csv · 9M2025 · Proceeds from issuance of debt, net",
+   "doc": "crwv-10q-20261112",
+   "page": "12",
+   "note": ""
+  },
+  "debtrep_9m26": {
+   "shown": "$7.6bn",
+   "exact": "7563",
+   "kind": "bn",
+   "source": "sources_uses.csv · 9M2026 · Repayments of debt (shown as a positive amount)",
+   "doc": "crwv-10q-20261112",
+   "page": "12",
+   "note": "",
+   "evidence_ref": "2.22"
+  },
+  "netborrow_9m26": {
+   "shown": "$19.5bn",
+   "exact": "19485",
+   "kind": "bn",
+   "source": "sources_uses.csv · 9M2026 · debt issued + debt repaid",
+   "doc": "crwv-10q-20261112",
+   "page": "12",
+   "note": "",
+   "evidence_ref": "2.25"
+  },
+  "netborrow_over_cfo": {
+   "shown": "3.5",
+   "exact": "3.456012770485987938985455835",
+   "kind": "x1",
+   "source": "sources_uses.csv · 9M2026 · (debt issued + repaid) ÷ cash from operations",
+   "doc": "crwv-10q-20261112",
+   "page": "12",
+   "note": "",
+   "evidence_ref": "2.26"
+  },
+  "capex_9m26": {
+   "shown": "$23.6bn",
+   "exact": "23558",
+   "kind": "bn",
+   "source": "sources_uses.csv · 9M2026 · cash capex (shown as a positive amount)",
+   "doc": "crwv-10q-20261112",
+   "page": "12",
+   "note": "",
+   "evidence_ref": "2.16"
+  },
+  "capex_9m25": {
+   "shown": "$6.2bn",
+   "exact": "6249",
+   "kind": "bn",
+   "source": "sources_uses.csv · 9M2025 · cash capex (shown as a positive amount)",
+   "doc": "crwv-10q-20261112",
+   "page": "12",
+   "note": "",
+   "evidence_ref": "2.15"
+  },
+  "capex_multiple": {
+   "shown": "3.8",
+   "exact": "3.769883181309009441510641703",
+   "kind": "x1",
+   "source": "sources_uses.csv · cash capex 9M2026 ÷ 9M2025",
+   "doc": "crwv-10q-20261112",
+   "page": "12",
+   "note": ""
+  },
+  "privplace_9m26": {
+   "shown": "$3.0bn",
+   "exact": "2982",
+   "kind": "bn",
+   "source": "sources_uses.csv · 9M2026 · Equity: private placements",
+   "doc": "crwv-10q-20261112",
+   "page": "12",
+   "note": ""
+  },
+  "cappedcalls_9m26": {
+   "shown": "$1.1bn",
+   "exact": "1058",
+   "kind": "bn",
+   "source": "sources_uses.csv · 9M2026 · Capped calls (shown as a positive amount)",
+   "doc": "crwv-10q-20261112",
+   "page": "12",
+   "note": ""
+  },
+  "ppeliab_9m26": {
+   "shown": "$11.8bn",
+   "exact": "11833",
+   "kind": "bn",
+   "source": "sources_uses.csv · 9M2026 · non-cash: liabilities related to PP&E additions",
+   "doc": "crwv-10q-20261112",
+   "page": "12",
+   "note": "",
+   "evidence_ref": "2.20"
+  },
+  "rouacq_9m26": {
+   "shown": "$10.9bn",
+   "exact": "10865",
+   "kind": "bn",
+   "source": "sources_uses.csv · 9M2026 · non-cash: operating-lease ROU assets acquired",
+   "doc": "crwv-10q-20261112",
+   "page": "12",
+   "note": "",
+   "evidence_ref": "2.21"
+  },
+  "spv_nc_2025": {
+   "shown": "$12.7bn",
+   "exact": "12700",
+   "kind": "bn",
+   "source": "collateral_dated.csv · special-purpose subsidiaries · 2025-12-31 · non-current",
+   "doc": "crwv-10q-20261112",
+   "page": "34",
+   "note": ""
+  },
+  "spv_c_2025": {
+   "shown": "$1.8bn",
+   "exact": "1800",
+   "kind": "bn",
+   "source": "collateral_dated.csv · special-purpose subsidiaries · 2025-12-31 · current",
+   "doc": "crwv-10q-20261112",
+   "page": "34",
+   "note": ""
+  },
+  "spv_nc_2026q2": {
+   "shown": "$18.2bn",
+   "exact": "18200",
+   "kind": "bn",
+   "source": "collateral_dated.csv · special-purpose subsidiaries · 2026-06-30 · non-current",
+   "doc": "crwv-10q-20260812",
+   "page": "30",
+   "note": ""
+  },
+  "spv_c_2026q2": {
+   "shown": "$2.6bn",
+   "exact": "2600",
+   "kind": "bn",
+   "source": "collateral_dated.csv · special-purpose subsidiaries · 2026-06-30 · current",
+   "doc": "crwv-10q-20260812",
+   "page": "30",
+   "note": ""
+  },
+  "spv_nc_2026": {
+   "shown": "$22.2bn",
+   "exact": "22200",
+   "kind": "bn",
+   "source": "collateral_dated.csv · special-purpose subsidiaries · 2026-09-30 · non-current",
+   "doc": "crwv-10q-20261112",
+   "page": "34",
+   "note": ""
+  },
+  "spv_c_2026": {
+   "shown": "$3.7bn",
+   "exact": "3700",
+   "kind": "bn",
+   "source": "collateral_dated.csv · special-purpose subsidiaries · 2026-09-30 · current",
+   "doc": "crwv-10q-20261112",
+   "page": "34",
+   "note": ""
+  },
+  "ccac_nc_2026": {
+   "shown": "$5.2bn",
+   "exact": "5200",
+   "kind": "bn",
+   "source": "collateral_dated.csv · CCAC VIII · 2026-09-30 · non-current",
+   "doc": "crwv-10q-20261112",
+   "page": "33",
+   "note": ""
+  },
+  "ccac_c_2026": {
+   "shown": "$233m",
+   "exact": "233",
+   "kind": "m",
+   "source": "collateral_dated.csv · CCAC VIII · 2026-09-30 · current",
+   "doc": "crwv-10q-20261112",
+   "page": "33",
+   "note": ""
+  },
+  "oem_2024": {
+   "shown": "$1.2bn",
+   "exact": "1200",
+   "kind": "bn",
+   "source": "oem_case.csv · Outstanding OEM equipment financing · 2025-12-31 row · amount_2 (Dec 2024)",
+   "doc": "crwv-10k-20260302",
+   "page": "117",
+   "note": "",
+   "evidence_ref": "3.13"
+  },
+  "oem_2025": {
+   "shown": "$3.8bn",
+   "exact": "3800",
+   "kind": "bn",
+   "source": "oem_case.csv · Outstanding OEM equipment financing · 2025-12-31 row · amount_1",
+   "doc": "crwv-10k-20260302",
+   "page": "117",
+   "note": "",
+   "evidence_ref": "3.14"
+  },
+  "oem_2026": {
+   "shown": "$7.4bn",
+   "exact": "7400",
+   "kind": "bn",
+   "source": "oem_case.csv · Outstanding OEM equipment financing · 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "34",
+   "note": "",
+   "evidence_ref": "3.15"
+  },
+  "software_2026": {
+   "shown": "$278m",
+   "exact": "278",
+   "kind": "m",
+   "source": "oem_case.csv · Outstanding software-licence financing · 2026-09-30",
+   "doc": "crwv-10q-20261112",
+   "page": "34",
+   "note": "",
+   "evidence_ref": "3.16"
+  },
+  "capped_2031": {
+   "shown": "$340m",
+   "exact": "340",
+   "kind": "m",
+   "source": "note_issue_uses.csv · 2031 Convertible Senior Notes · capped-call cost",
+   "doc": "crwv-10k-20260302",
+   "page": "116-117",
+   "note": "",
+   "evidence_ref": "3.19"
+  },
+  "capped_2032": {
+   "shown": "$492m",
+   "exact": "492",
+   "kind": "m",
+   "source": "note_issue_uses.csv · 2032 Convertible Senior Notes · capped-call cost",
+   "doc": "crwv-10q-20261112",
+   "page": "35-36",
+   "note": "",
+   "evidence_ref": "3.20"
+  },
+  "capped_2033": {
+   "shown": "$566m",
+   "exact": "566",
+   "kind": "m",
+   "source": "note_issue_uses.csv · 2033 Convertible Senior Notes · capped-call cost",
+   "doc": "crwv-10q-20261112",
+   "page": "35-36",
+   "note": "",
+   "evidence_ref": "3.21"
+  },
+  "promissory_face": {
+   "shown": "$172m",
+   "exact": "172",
+   "kind": "m",
+   "source": "note_issue_uses.csv · Convertible Promissory Notes · face",
+   "doc": "crwv-10k-20260302",
+   "page": "118",
+   "note": "",
+   "evidence_ref": "3.17"
+  },
+  "promissory_fv": {
+   "shown": "$167m",
+   "exact": "167",
+   "kind": "m",
+   "source": "note_issue_uses.csv · Convertible Promissory Notes · fair value",
+   "doc": "crwv-10k-20260302",
+   "page": "107",
+   "note": "",
+   "evidence_ref": "3.18"
+  }
+ }
+}

@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Infrastructure and Neocloud Financing: CoreWeave | Nicholas Beroud</title>
+<meta name="description" content="How CoreWeave borrowed to build AI computing capacity: debt rose from {{hd_2023|plain}} to {{hd_2026|plain}} in under three years, faster than its assets. What its SEC filings show the loans financed, what lenders can claim, and where the evidence stops.">
+<link href="https://nicholasberoud.github.io/projects/ai-infrastructure-financing.html" rel="canonical">
+<meta property="og:type" content="article"><meta property="og:site_name" content="Nicholas Beroud"><meta property="og:title" content="CoreWeave: Borrowing at the Speed of the AI Build-Out"><meta property="og:description" content="Debt up from {{hd_2023|plain}} to {{hd_2026|plain}}, from {{hd_pct_2023|plain}} to {{hd_pct_2026|plain}} of assets. What the filings show the loans paid for, and what they cannot."><meta property="og:url" content="https://nicholasberoud.github.io/projects/ai-infrastructure-financing.html"><meta property="og:image" content="https://nicholasberoud.github.io/assets/presentation-banner.jpeg"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1117"><link rel="icon" href="../assets/favicon.svg?v=2" type="image/svg+xml"><link rel="stylesheet" href="../assets/style.css?v=20261119-portfolio"><link rel="stylesheet" href="../assets/neocloud-2026-11/neocloud.css?v={{VERSION}}"></head>
+<body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="nav-inner"><a class="wordmark" href="../index.html">Nicholas Beroud</a><nav aria-label="Main navigation"><a href="../research.html">Projects</a><a href="../thesis.html">Thesis</a><a href="../index.html#experience">Experience</a><a href="../assets/nicholas-beroud-resume.pdf" type="application/pdf">CV</a></nav></div></header>
+<main id="main"><article class="article neocloud"><a class="back" href="../research.html">← Projects</a>
+<!-- DRAFT FOR NICHOLAS TO REWRITE: the prose below is a first draft in plain style. Every number is generated from the case-study data; edit the words in scripts/neocloud/coreweave.template.html and re-run scripts/neocloud/render_page.py. -->
+<p class="eyebrow">Research assistant work · Neocloud financing study</p>
+<h1>AI Infrastructure and Neocloud Financing</h1>
+<p class="subtitle">Borrowing, Leverage and the Assets Behind the AI Build-Out</p>
+
+<nav class="nc-companies" aria-label="Companies in the study">
+<a class="is-current" href="#coreweave" aria-current="page"><b>CoreWeave</b><span>Case study complete</span></a>
+<span class="is-next"><b>Nebius</b><span>Next</span></span>
+<span class="is-next"><b>Lambda</b><span>Not started</span></span>
+<span class="is-next"><b>Crusoe</b><span>Not started</span></span>
+<span class="is-next"><b>Nscale</b><span>Not started</span></span>
+</nav>
+
+<section id="coreweave" class="nc-case" aria-labelledby="cw-title">
+<p class="nc-kicker">Case study 1 of 5 · CoreWeave, Inc.</p>
+<h2 id="cw-title" class="nc-case-title">Borrowing at the Speed of the AI Build-Out</h2>
+<p class="nc-dek">CoreWeave’s debt grew about {{hd_multiple}} times in under three years, faster than its assets. Its filings say far more clearly what lenders can claim than what the loans actually bought.</p>
+<p class="byline"><span>By Nicholas Beroud</span><span>Research assistant to Professor Pedro Gete</span><span>Filings to 12 November 2026</span></p>
+<p class="contribution-note">The questions and interpretation are mine. Source archiving, data preparation and checks were developed with AI assistance under my direction. Every number on this page is generated from the study’s data files; hover over a figure to see the filing and page it comes from.</p>
+
+<div class="opener">
+<p>A GPU-cloud company sells computing time by the hour but pays for its chips up front, and those chips lose value fast. Something has to bridge that gap. For CoreWeave, the first company in this study, that something has mostly been debt. At the end of 2023 it owed {{hd_2023}}. By September 2026 it owed {{hd_2026}}.</p>
+<p>The size of the debt is only half the story. A lender or bond investor wants to know what the money bought and what they could claim if things went wrong. CoreWeave’s filings answer the second question much better than the first. This case study follows the money across nine reporting dates, using nothing but what the company filed with the SEC, and marks exactly where the evidence runs out.</p>
+</div>
+
+<section class="glance" aria-labelledby="cw-glance">
+<p class="glance-head" id="cw-glance">At a glance · 30 September 2026</p>
+<ul class="stats">
+<li class="stat"><span class="stat-num">{{hd_2026|plain}}</span><span class="stat-label">Headline Debt (borrowings plus finance leases), up from {{hd_2023}} in December 2023. That is {{hd_pct_2026}} of total assets, up from {{hd_pct_2023}}.</span></li>
+<li class="stat"><span class="stat-num">{{lid_2026|plain}}</span><span class="stat-label">Lease-Inclusive Debt, once operating leases are counted: {{lid_pct_2026}} of total assets. Operating leases ({{opl_2026}}) are the whole difference.</span></li>
+<li class="stat"><span class="stat-num">{{tech_2026|plain}}</span><span class="stat-label">Technology equipment at cost, our proxy for GPU servers: {{tech_share_2026}} of {{ppe_2026}} gross property and equipment. Within {{tech_minus_hd}} of Headline Debt.</span></li>
+<li class="stat"><span class="stat-num">{{debtiss_9m26|plain}}</span><span class="stat-label">Raised from new debt in the first nine months of 2026, net of issuance costs, against {{capex_9m26}} spent on equipment and {{cfo_9m26}} of operating cash flow.</span></li>
+</ul>
+<p class="glance-read"><strong>What this shows:</strong> how fast CoreWeave borrowed, in what forms, what it built, and what secures the debt, all from its own filings. <strong>What it doesn’t:</strong> which loan paid for which GPU. The filings never give a GPU-only dollar amount, and collateral describes what lenders can claim, not what the loans bought. Nothing here is a forecast, a credit rating or investment advice.</p>
+</section>
+
+<nav class="nc-toc" aria-label="Contents of the CoreWeave case study"><ol>
+<li><a href="#cw-debt">Debt outran assets</a></li>
+<li><a href="#cw-leases">Debt that doesn’t look like debt</a></li>
+<li><a href="#cw-stack">One loan type to a full capital stack</a></li>
+<li><a href="#cw-built">What the money built</a></li>
+<li><a href="#cw-cash">Following the cash</a></li>
+<li><a href="#cw-financed">Financed versus pledged</a></li>
+<li><a href="#cw-limits">Where the evidence stops</a></li>
+<li><a href="#cw-method">How the numbers were built</a></li>
+</ol></nav>
+
+<h2 id="cw-debt"><span class="num">01</span>Debt outran assets</h2>
+<p>Start with the narrowest sensible definition of debt: what CoreWeave borrowed, at the value on its balance sheet, plus finance leases, which are loans in all but name. We call this <strong>Headline Debt</strong>. It rose from {{hd_2023}} in December 2023 to {{hd_2026}} in September 2026.</p>
+<p>A growing company is supposed to borrow more. The question is whether borrowing grew faster than the business it was paying for. Here it did. Total assets grew about {{assets_multiple}} times, from {{assets_2023}} to {{assets_2026}}, while Headline Debt grew about {{hd_multiple}} times. Debt went from {{hd_pct_2023}} of total assets to {{hd_pct_2026}}.</p>
+
+<figure class="exhibit nc-exhibit" id="ex-1">
+<span class="exhibit-label">Exhibit 1</span>
+<span class="exhibit-title">Debt under two definitions, nine reporting dates</span>
+<p class="nc-sub">Toggle the definition and switch between dollars and share of total assets. Hollow markers: June and September 2026 borrowings are the sum of four balance-sheet lines, because no combined total is printed.</p>
+<div class="nc-chart" data-nc-chart="ex1"></div>
+<figcaption><b>Note:</b> Headline Debt = borrowings at carrying value + finance-lease liabilities. Lease-Inclusive Debt adds operating-lease liabilities. Ratios use unrounded inputs. The time axis is to scale: December 2023 to December 2024 is one year, later points are quarters. Research note Figure 1. <br><b>Sources:</b> {{SRC ex1}} · <a href="../assets/neocloud-2026-11/coreweave/exhibit-1-debt-leverage.csv">Chart data (CSV)</a></figcaption>
+{{TABLE ex1}}
+</figure>
+
+<p><strong>The definition matters.</strong> Count operating leases as debt too, and CoreWeave owed {{lid_2026}}, or {{lid_pct_2026}} of its assets. Since December 2024 the debt-to-assets ratio rose {{hd_pp_since24}} on the headline measure, but {{lid_pp_since24}} once leases are included. The next section explains why.</p>
+<p>The third quarter of 2026 shows the mechanics. Headline Debt to total assets rose {{q3_change}} in three months. Splitting that change exactly: new borrowing alone would have added {{q3_debt_eff}}, and the larger asset base took back {{q3_asset_eff}}. With stockholders’ equity of {{equity_2026}}, Headline Debt was {{de_2026}} times equity. Net of unrestricted cash and marketable securities it was {{netdebt_2026}}, and that does not deduct {{restricted_2026}} of restricted cash, which is not freely available.</p>
+
+<h2 id="cw-leases"><span class="num">02</span>The debt that doesn’t look like debt</h2>
+<p>CoreWeave leases much of the data-center space its GPUs sit in. Under US accounting rules a lease that has started shows up on the balance sheet as a liability: the present value of the rent still to be paid. Most of CoreWeave’s are <em>operating</em> leases, which credit analysts often leave out of debt. That choice alone is worth {{opl_2026}}.</p>
+
+<figure class="exhibit nc-exhibit" id="ex-2">
+<span class="exhibit-label">Exhibit 2</span>
+<span class="exhibit-title">What CoreWeave owes, layer by layer</span>
+<p class="nc-sub">The number above each bar is Lease-Inclusive Debt. Hover for each layer.</p>
+<div class="nc-chart" data-nc-chart="ex2"></div>
+<figcaption><b>Note:</b> All three layers are balance-sheet liabilities. Both lease layers are present values of remaining lease payments. Research note Figure 2. <br><b>Sources:</b> {{SRC ex2}} · <a href="../assets/neocloud-2026-11/coreweave/exhibit-2-debt-layers.csv">Chart data (CSV)</a></figcaption>
+{{TABLE ex2}}
+</figure>
+
+<p>Operating-lease liabilities grew from {{opl_2024}} in December 2024 to {{opl_2026}}. Finance leases, the kind already inside Headline Debt, never exceeded {{fin_2026}}. So the entire gap between the two debt measures is operating leases.</p>
+<p>The balance sheet only counts leases that have started. CoreWeave also discloses leases it has <em>signed</em> but that have not yet begun: an estimated {{signed_2026}} of future payments in September 2026, up from {{signed_2024}} in December 2024. That figure is undiscounted, so it is measured on a different basis from the balance-sheet liability, and the two must never be added. One more lease, with payments still uncertain, is left out of the estimate altogether; its contractual maximum is {{excluded_ceiling_2026}}.</p>
+
+<figure class="exhibit nc-exhibit" id="ex-3">
+<span class="exhibit-label">Exhibit 3</span>
+<span class="exhibit-title">Leases on the balance sheet, and signed leases still to come</span>
+<p class="nc-sub">Shown side by side, never stacked: present value against an undiscounted estimate.</p>
+<div class="nc-chart" data-nc-chart="ex6"></div>
+<figcaption><b>Note:</b> n.d.: not disclosed in that filing. The September 2026 estimate includes one equipment lease whose liability is already counted in finance leases. Research note Figure 6. <br><b>Sources:</b> {{SRC ex6}} · <a href="../assets/neocloud-2026-11/coreweave/exhibit-6-leases.csv">Chart data (CSV)</a></figcaption>
+{{TABLE ex6}}
+</figure>
+
+<h2 id="cw-stack"><span class="num">03</span>From one kind of loan to a full capital stack</h2>
+<p>In December 2023 CoreWeave’s debt table had {{n_lanes_2023}} lines, and delayed-draw term loans made up {{ddtl_share_2023}} of the principal. A delayed-draw term loan is a committed loan the borrower draws in instalments as it buys equipment, rather than all at once. It suits a company that orders GPUs in batches against signed customer contracts.</p>
+<p>By September 2026 the table had {{n_lanes_2026}} lines. Delayed-draw loans still grew, to {{ddtl_usd_2026}}, but their share fell to {{ddtl_share_2026}}. The rest came from the bond market and from suppliers: convertible notes ({{conv_share_2026}}), senior notes ({{senior_share_2026}}), and equipment and software financing ({{oem_share_2026}}).</p>
+
+<figure class="exhibit nc-exhibit" id="ex-4">
+<span class="exhibit-label">Exhibit 4</span>
+<span class="exhibit-title">Debt mix by instrument, share of listed principal</span>
+<p class="nc-sub">Hover a bar for each instrument’s share and dollar amount.</p>
+<div class="nc-chart" data-nc-chart="ex3"></div>
+<figcaption><b>Note:</b> Shares of the principal listed in each debt table, before aggregate discounts and issuance costs; each date’s lines sum exactly to the reported principal total, and printed dashes count as zero. The filings do not break carrying value down by instrument. The Magnetar line includes accrued redemption premiums. Research note Figure 3. <br><b>Sources:</b> {{SRC ex3}} · <a href="../assets/neocloud-2026-11/coreweave/exhibit-3-instrument-mix.csv">Chart data (CSV)</a></figcaption>
+{{TABLE ex3}}
+</figure>
+
+<p>Exhibit 5 shows every line of every debt table, so you can watch the stack being built. Each bar is the principal listed at that date (bar width grows with the amount). The dots on the delayed-draw loans show what each filing said about their security: by 2026 the older facilities’ pledged assets are no longer restated facility by facility. That is a change in what is disclosed, not evidence that the security was released.</p>
+
+<figure class="exhibit nc-exhibit nc-exhibit--wide" id="ex-5">
+<span class="exhibit-label">Exhibit 5</span>
+<span class="exhibit-title">Every debt line, December 2023 to September 2026</span>
+<p class="nc-sub">Hover a cell for the amount, the name as printed and the security statement. ● facility-specific security statement · ◐ stated for the DDTL facilities together · ○ not restated in that filing · dashed outline: listed as non-recourse.</p>
+<div class="nc-chart nc-chart--tall" data-nc-chart="ex8"></div>
+<figcaption><b>Note:</b> Lines renamed between filings are kept in one row (for example “Delayed Draw Term Loan Facility 1.0” became “DDTL 1.0 Facility”, and the July 2025 9.00% notes were printed as “2031 Senior Notes” until March 2026). From June 2026 the debt table splits OEM and software financing into recourse and non-recourse sections; the row shows their sum. Bar widths use a square-root scale. New in this page; built from the same debt tables as Exhibit 4. <br><b>Sources:</b> {{SRC ex8}} · <a href="../assets/neocloud-2026-11/coreweave/exhibit-8-facility-timeline.csv">Chart data (CSV)</a></figcaption>
+{{TABLE ex8}}
+</figure>
+
+<p>The stack also changed shape in a way that matters to creditors. Most of the debt is <strong>recourse</strong>: if a borrower defaults, lenders can pursue CoreWeave itself. At September 2026 that was {{recourse_2026}}. A growing slice, {{nonrec_2026}} or {{nonrec_share_2026}} of borrowings, is <strong>non-recourse</strong>: lenders can claim only the borrowing subsidiary and the assets pledged to them. In December 2025 it was {{nonrec_2025}}. The largest non-recourse loan is DDTL 4.0, which section 6 looks at closely.</p>
+
+<h2 id="cw-built"><span class="num">04</span>What the money built</h2>
+<p>On the other side of the balance sheet, gross property and equipment rose from {{ppe_2023}} to {{ppe_2026}}. CoreWeave reports it in categories, the largest being “technology equipment”. The filings never say what is inside it, but for a GPU cloud the obvious candidate is GPU servers and networking, so we use it as a <em>proxy</em> for GPUs, not an equivalent. It was {{tech_share_2026}} of gross property and equipment in September 2026.</p>
+
+<figure class="exhibit nc-exhibit" id="ex-6">
+<span class="exhibit-label">Exhibit 6</span>
+<span class="exhibit-title">Gross property and equipment, by group</span>
+<p class="nc-sub">Hover for each group’s amount and share.</p>
+<div class="nc-chart" data-nc-chart="ex4"></div>
+<figcaption><b>Note:</b> Groups are built from the issuer’s own categories. Technology equipment is our GPU proxy, not an equivalent. The data-center group (data-center equipment and leasehold improvements, construction in progress, land) is a grouping, not an ownership measure: construction in progress can hold equipment not yet in service. Research note Figure 4. <br><b>Sources:</b> {{SRC ex4}} · <a href="../assets/neocloud-2026-11/coreweave/exhibit-4-ppe-composition.csv">Chart data (CSV)</a></figcaption>
+{{TABLE ex4}}
+</figure>
+
+<p>The build-out accelerated in 2026. From December 2025 to September 2026 gross property and equipment rose {{ppe_d_2526}}: {{tech_d_2526}} in technology equipment and {{dc_d_2526}} in the data-center group. These are changes in accounting categories, not purchases. In the third quarter technology equipment rose {{tech_d_q3}} while construction in progress fell {{cip_d_q3}}, which is consistent with equipment moving into service, but the filing does not give the transfer amounts.</p>
+<p>Now put the two sides together. In September 2026 Headline Debt was {{hd_2026}} and technology equipment {{tech_2026}}: within {{tech_minus_hd}} of each other, and the two have moved almost in step since 2023.</p>
+
+<figure class="exhibit nc-exhibit" id="ex-7">
+<span class="exhibit-label">Exhibit 7</span>
+<span class="exhibit-title">Headline Debt and the equipment it sits beside</span>
+<p class="nc-sub">Balances at each date, on a time axis. Hover for the gap between debt and equipment.</p>
+<div class="nc-chart" data-nc-chart="ex5"></div>
+<figcaption><b>Note:</b> These are balances, not flows. They show that debt and equipment grew together, not which borrowing paid for which asset. Research note Figure 5. <br><b>Sources:</b> {{SRC ex5}} · <a href="../assets/neocloud-2026-11/coreweave/exhibit-5-debt-and-equipment.csv">Chart data (CSV)</a></figcaption>
+{{TABLE ex5}}
+</figure>
+
+<p>It is tempting to read Exhibit 7 as “the debt bought the GPUs”. The chart cannot show that. Money is fungible: equipment was also paid for with operating cash flow and equity, some borrowed money bought capped calls, some notes were issued to pay for an acquisition, and operating-leased assets sit outside this line entirely. The match is a striking fact about the balance sheet, not a measurement of what the loans financed.</p>
+
+<h2 id="cw-cash"><span class="num">05</span>Following the cash</h2>
+<p>Balances show the result; the cash-flow statement shows the flows. In the first nine months of 2026 CoreWeave raised {{debtiss_9m26}} from new debt (the issuer’s caption: proceeds net of issuance costs) and repaid {{debtrep_9m26}}, so net new borrowing was {{netborrow_9m26}}. That is {{netborrow_over_cfo}} times its {{cfo_9m26}} of operating cash flow, and {{defrev_9m26}} of that operating cash flow was the net increase in deferred revenue: cash received before the service is delivered. Cash spent on property and equipment was {{capex_9m26}}, {{capex_multiple}} times the {{capex_9m25}} of a year earlier.</p>
+
+<figure class="exhibit nc-exhibit" id="ex-8">
+<span class="exhibit-label">Exhibit 8</span>
+<span class="exhibit-title">Where the cash came from and where it went</span>
+<p class="nc-sub">First nine months of 2025 (lighter) and of 2026, signs as printed: inflows right, outflows left.</p>
+<div class="nc-chart" data-nc-chart="ex7"></div>
+<figcaption><b>Note:</b> “All other flows” is calculated: the change in cash, cash equivalents and restricted cash less every listed line. “No line”: the statement has no separate line that period. Research note Figure 7. <br><b>Sources:</b> {{SRC ex7}} · <a href="../assets/neocloud-2026-11/coreweave/exhibit-7-sources-uses.csv">Chart data (CSV)</a></figcaption>
+{{TABLE ex7}}
+</figure>
+
+<p>Two things sit outside these bars. Equipment bought on credit from suppliers does not pass through cash at all: the statement separately reports {{ppeliab_9m26}} of liabilities related to property and equipment additions, which is shown beside cash capex, not added to it. And {{rouacq_9m26}} of new operating-lease assets arrived without any cash changing hands. Like the balances, these are consolidated flows: they do not say which purchase each borrowing paid for.</p>
+
+<h2 id="cw-financed"><span class="num">06</span>What the loans bought, and what lenders can claim</h2>
+<p>These are two different questions, and the filings treat them very differently. <strong>Financed</strong> means what the borrowed money was spent on. <strong>Pledged</strong> means which assets the lenders can seize if the loan is not repaid. A loan can be secured by assets it did not buy, and a contract that <em>permits</em> spending on GPUs does not prove that it was spent on them. Below, CoreWeave’s financing is ranked by how strong the evidence of use is, from strongest to weakest.</p>
+
+<ol class="nc-ladder">
+<li class="nc-rung nc-rung--strong"><p class="nc-rung-tag">Strongest: financed and pledged both named</p>
+<h3>Equipment-maker (OEM) financing</h3>
+<p>The 10-K says CoreWeave entered into agreements with original equipment manufacturers “whereby the Company obtained financing for certain equipment”, and “granted a security interest for the financed equipment”. It is the one category where the filings name both what was financed and what secures it, and they are the same equipment. The balance was {{oem_2024}} in December 2024, {{oem_2025}} in December 2025 and {{oem_2026}} in September 2026, plus {{software_2026}} of software-licence financing.</p>
+<p class="nc-rung-limit">Limit: balances owed, not purchases; no GPU-only split; the September 2026 filing does not repeat the security sentence.</p></li>
+<li class="nc-rung"><p class="nc-rung-tag">Strong on contract, silent on amounts</p>
+<h3>DDTL 4.0: the non-recourse project loan</h3>
+<p>Signed on 30 March 2026 by a special-purpose subsidiary, CoreWeave Compute Acquisition Co. VIII (CCAC VIII). The credit agreement lets it “finance the acquisition and installation of Infrastructure”, a term that includes “any graphics processing unit servers”, and for each later draw other than top-up draws the borrower must give lenders purchase orders for the new equipment. Each quarter CoreWeave says the borrowings “are primarily used to finance the acquisition and installation of computing infrastructure”. Principal rose from {{ddtl40_2026q1}} in March to {{ddtl40_2026}} in September 2026, secured by substantially all of CCAC VIII’s assets: {{ccac_nc_2026}} non-current and {{ccac_c_2026}} current.</p>
+<p class="nc-rung-limit">Limit: the purchase orders are not filed, the customer and sites are redacted, and no GPU-only amount is given.</p></li>
+<li class="nc-rung"><p class="nc-rung-tag">Permitted use and stated purpose</p>
+<h3>DDTL 2.0 and its 2.1 tranche</h3>
+<p>Borrowed by CCAC IV under a May 2024 agreement that permits capital expenditure on infrastructure. CoreWeave says the delayed-draw loans finance “a portion of the purchase considerations, fees, and expenses relating to the acquisition of computing equipment”, a statement it makes for four facilities together. Listed principal in September 2026: {{ddtl20_2026}}, plus {{ddtl21_2026}} for the 2.1 tranche. Substantially all of CCAC IV’s assets and its equity are pledged, and CoreWeave guarantees the loan, so it is recourse.</p>
+<p class="nc-rung-limit">Limit: no amount is attributed to this facility alone, and no CCAC IV-only collateral value is disclosed.</p></li>
+<li class="nc-rung nc-rung--weak"><p class="nc-rung-tag">Cash, purpose general</p>
+<h3>Senior notes</h3>
+<p>For every senior-note issue outstanding in September 2026, the filings say the proceeds were “retained for general corporate purposes”. What the cash was later spent on is not disclosed.</p></li>
+<li class="nc-rung nc-rung--weak"><p class="nc-rung-tag">Part of the money bought a hedge</p>
+<h3>Convertible notes</h3>
+<p>Each of the three convertible issues paid for capped calls, options that limit dilution if the notes convert: {{capped_2031}}, {{capped_2032}} and {{capped_2033}}. That is borrowed money spent on protecting shareholders, not on equipment. The rest was for general corporate purposes.</p></li>
+<li class="nc-rung nc-rung--weak"><p class="nc-rung-tag">No cash at all</p>
+<h3>Convertible promissory notes</h3>
+<p>{{promissory_face}} of notes (fair value {{promissory_fv}}) were issued to former shareholders of an acquired company as part of the purchase price, and later settled in shares.</p></li>
+</ol>
+
+<p>The pledged side is better documented. The filings report the carrying value of assets securing the debt of “certain special-purpose subsidiaries”, the separate companies that hold financed equipment and customer contracts. That pool rose from {{spv_nc_2025}} of non-current and {{spv_c_2025}} of current assets in December 2025 to {{spv_nc_2026}} and {{spv_c_2026}} in September 2026.</p>
+
+<figure class="exhibit nc-exhibit" id="ex-9">
+<span class="exhibit-label">Exhibit 9</span>
+<span class="exhibit-title">What secures the debt</span>
+<p class="nc-sub">The two collateral pools CoreWeave reports, at the three dates it prints them, beside its own recourse split.</p>
+<div class="nc-chart" data-nc-chart="ex9"></div>
+<figcaption><b>Note:</b> The special-purpose pool is an aggregate; the filings do not name its members. Whether it overlaps with CCAC VIII is not established, so the pools are shown apart and must not be added. Pledged assets describe the lenders’ security, not what the loans paid for. March 2026 prints no recourse split. Research note Figure 8. <br><b>Sources:</b> {{SRC ex9}} · <a href="../assets/neocloud-2026-11/coreweave/exhibit-9-collateral.csv">Chart data (CSV)</a></figcaption>
+{{TABLE ex9}}
+</figure>
+
+<h2 id="cw-limits"><span class="num">07</span>Where the evidence stops</h2>
+<p>These are the questions an investor would most like answered that the filings examined do not answer. They are listed because the gaps are findings too.</p>
+<ul class="nc-gaps">
+<li><b>How much went on GPUs.</b> No GPU-only dollar amount for any facility, for OEM financing or in total.</li>
+<li><b>What each borrowing subsidiary owns.</b> No breakdown of a borrower’s property and equipment by category.</li>
+<li><b>DDTL 2.0’s collateral on its own.</b> No CCAC IV-only collateral amount.</li>
+<li><b>Who the DDTL 4.0 customer is, and where.</b> Customer and data-center sites are redacted; the attached form of collateral agreement (Exhibit J) is omitted; the purchase orders delivered for draws are not filed.</li>
+<li><b>Which subsidiaries are in the pledged pool.</b> The aggregate is reported without naming its members.</li>
+<li><b>Where the senior-note cash went.</b> Retained for general corporate purposes; later spending is not itemized.</li>
+<li><b>The bond documents.</b> The senior and convertible notes were sold privately; their offering memoranda are not SEC filings and were not searched.</li>
+</ul>
+<p>Coverage: EDGAR was checked on 20 November 2026. After the 10-Q filed on 12 November 2026, the only CoreWeave filing was a Form 4, which does not bear on these findings.</p>
+
+<h2 id="cw-method"><span class="num">08</span>How the numbers were built</h2>
+<div class="evidence-grid">
+<section><h3>Sources and checks</h3><ul>
+<li>SEC filings only: CoreWeave’s IPO prospectus, quarterly and annual reports, current reports and the credit agreements filed as exhibits. No market data, news or analyst estimates.</li>
+<li>Each original document is archived unchanged, with a checksum.</li>
+<li>Every figure is traced to a printed page of a named filing, and each was checked against that original in a separate, AI-assisted source check, independent of the step that prepared it.</li>
+<li>Nine balance-sheet dates, December 2023 to September 2026. December 2023 comes from the IPO prospectus, filed later.</li>
+<li>A missing disclosure is a gap in coverage, never a zero.</li>
+</ul></section>
+<section><h3>How this page is generated</h3><ul>
+<li>A script reads the study’s data files and writes every chart and every number on this page; none is typed by hand.</li>
+<li>{{N_FACTS}} numbers appear in the text. Each is listed in <a href="../assets/neocloud-2026-11/coreweave/numbers.csv">numbers.csv</a> with its exact value, source file and cell, filing and printed page{{N_XREF_SENTENCE}}</li>
+<li>Charts are drawn in your browser from the same data. Every exhibit has a data table and a CSV download, so it can be read without the chart.</li>
+<li><a href="../assets/neocloud-2026-11/coreweave/provenance.json">Provenance</a>: research commit and file checksums.</li>
+</ul></section>
+</div>
+
+<h3 class="nc-def-head">Definitions</h3>
+<div class="nc-defs">
+<details><summary>Carrying value versus principal</summary><p><b>Principal</b> is the amount borrowed that is still owed. <b>Carrying value</b> is what the balance sheet shows: principal less unamortized discounts and issuance costs. Debt levels and ratios here use carrying value; the instrument mix uses principal, because that is the only basis on which every line is listed. At September 2026 principal was {{principal_2026}} and borrowings at carrying value {{borr_2026}}.</p></details>
+<details><summary>Finance leases versus operating leases</summary><p>Under US GAAP (ASC 842) a lease that in substance transfers control of the asset is a <b>finance lease</b>: economically a loan to buy it, so it is counted in Headline Debt. Other leases are <b>operating leases</b>; their liability is still on the balance sheet, but many analysts leave it out of debt. Lease-Inclusive Debt counts both. Leases signed but not yet started are on neither.</p></details>
+<details><summary>Recourse versus non-recourse</summary><p>With <b>recourse</b> debt, lenders can claim against CoreWeave’s general credit if the borrower defaults; CoreWeave guarantees it. With <b>non-recourse</b> debt, lenders can claim only the borrowing subsidiary and the collateral pledged to them, apart from limited guarantees for listed bad acts. The classification is CoreWeave’s own.</p></details>
+<details><summary>Financed versus pledged</summary><p><b>Financed</b>: what a borrowing actually paid for. <b>Pledged</b>: the assets lenders hold as security. <b>Permitted use</b>: what a contract allows the money to be spent on. The three can differ, and this study never infers one from another, or from debt and equipment growing at the same time.</p></details>
+<details><summary>The GPU proxy</summary><p>CoreWeave’s “technology equipment” category, at gross cost. The filings do not define its contents, so it is a proxy for GPU servers and related hardware, not a measure of them.</p></details>
+<details><summary>Net debt</summary><p>Headline Debt less cash and cash equivalents and short-term marketable securities. Restricted cash is shown, not deducted, because it is not freely available.</p></details>
+</div>
+
+<h3 class="nc-def-head">Filings cited</h3>
+{{DOCS}}
+</section>
+
+<section class="nc-next" aria-labelledby="nc-next-head">
+<h2 id="nc-next-head"><span class="num">Next</span>Four more neoclouds</h2>
+<p>The same questions, asked of four more companies that rent out GPU capacity. CoreWeave came first because, as a listed company, it files detailed statements and its credit agreements are on record. Several of the others are private, so which comparable figures their disclosures can support is itself part of the research.</p>
+<ul class="nc-next-grid">
+<li><b>Nebius</b><span>Next case study</span></li>
+<li><b>Lambda</b><span>Not started</span></li>
+<li><b>Crusoe</b><span>Not started</span></li>
+<li><b>Nscale</b><span>Not started</span></li>
+</ul>
+<p>When the next company is complete, it gets its own tab above and a comparison of the measures that line up across companies: debt to total assets on both definitions, the lease share of debt, the recourse split and the equipment share of property and equipment.</p>
+</section>
+
+<p class="source-note">The research question and scope were set with Professor Pedro Gete, for whom I work as a part-time research assistant. The same work is the basis of my MSc in Finance capstone at IE New York College. Source archiving, data preparation and checks are AI-assisted under my direction. Nothing here is investment advice.</p>
+</article></main>
+<footer class="site-footer"><span>© 2026 Nicholas Beroud</span><span><a href="mailto:nicholasberoud@gmail.com">Get in touch</a> · <a href="#main">Back to top ↑</a></span></footer>
+<script type="application/json" id="neocloud-data">{{DATA}}</script>
+<script src="../assets/neocloud-2026-11/neocloud.js?v={{VERSION}}" defer></script>
+</body></html>
