@@ -31,7 +31,7 @@ OUT = ROOT / 'assets/neocloud-2026-11/coreweave'
 
 S3 = 'research/coreweave/stage3/rq1_results'
 FIG = 'research/coreweave/stage5/rq1_note/out'
-WB = 'research/coreweave/stage5/pedro_workbook'
+WB = '{wb}'  # the stage 5 workbook folder, found in main() by the workbook's file name
 INPUTS = {
     'leverage_table': f'{S3}/leverage_table.csv',
     'instrument_mix': f'{S3}/instrument_mix.csv',
@@ -163,6 +163,11 @@ def main():
     ap.add_argument('--research', required=True, type=Path)
     args = ap.parse_args()
     research = args.research.resolve()
+    wb_dir = next((research / 'research/coreweave/stage5').glob('*/CoreWeave_RQ1_Debt_and_Leverage.xlsx')).parent.relative_to(research).as_posix()
+    for k in INPUTS:
+        INPUTS[k] = INPUTS[k].replace('{wb}', wb_dir)
+    global WORKBOOK
+    WORKBOOK = WORKBOOK.replace('{wb}', wb_dir)
     commit = subprocess.run(['git', '-C', str(research), 'rev-parse', 'HEAD'], capture_output=True, text=True, check=True).stdout.strip()
 
     t = {k: read(v, research) for k, v in INPUTS.items()}
@@ -592,8 +597,8 @@ def main():
 
     prov = {'research_repository': 'nicholasberoud/ai-compute-economics (private)', 'research_commit': commit,
             'generated': date.today().isoformat(), 'script': 'scripts/neocloud/extract_coreweave.py',
-            'inputs': {INPUTS[k]: hashlib.sha256((research / INPUTS[k]).read_bytes()).hexdigest() for k in INPUTS},
-            'workbook_read_for_links_and_pages_only': {WORKBOOK: hashlib.sha256((research / WORKBOOK).read_bytes()).hexdigest()},
+            'inputs': {Path(INPUTS[k]).name: hashlib.sha256((research / INPUTS[k]).read_bytes()).hexdigest() for k in INPUTS},
+            'workbook_read_for_links_and_pages_only': {Path(WORKBOOK).name: hashlib.sha256((research / WORKBOOK).read_bytes()).hexdigest()},
             'cross_checked_against_evidence_index': len(xref), 'numbers': len(F.items)}
     (OUT / 'provenance.json').write_text(json.dumps(prov, indent=1) + '\n')
     print(f'wrote {OUT.relative_to(ROOT)}: {len(F.items)} numbers, {len(xref)} cross-checked against the Evidence Index')
