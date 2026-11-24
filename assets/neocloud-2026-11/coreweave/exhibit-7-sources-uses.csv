@@ -1,0 +1,21 @@
+exhibit,series,period_end,value,unit,filing,printed_page,sec_url,source_file
+7,Cash from operations,9M 2025,1.499,"USD billions, signs as printed",Form 10-Q for Q3 2026,12,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,sources_uses.csv
+7,Cash from operations,9M 2026,5.638,"USD billions, signs as printed",Form 10-Q for Q3 2026,12,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,sources_uses.csv
+7,"Debt issued, net (issuer's caption)",9M 2025,7.517,"USD billions, signs as printed",Form 10-Q for Q3 2026,12,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,sources_uses.csv
+7,"Debt issued, net (issuer's caption)",9M 2026,27.048,"USD billions, signs as printed",Form 10-Q for Q3 2026,12,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,sources_uses.csv
+7,Equity: IPO,9M 2025,1.491,"USD billions, signs as printed",Form 10-Q for Q3 2026,12,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,sources_uses.csv
+7,Equity: IPO,9M 2026,0.0,"USD billions, signs as printed",Form 10-Q for Q3 2026,12,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,sources_uses.csv
+7,Equity: private placements,9M 2025,0.0,"USD billions, signs as printed",Form 10-Q for Q3 2026,12,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,sources_uses.csv
+7,Equity: private placements,9M 2026,2.982,"USD billions, signs as printed",Form 10-Q for Q3 2026,12,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,sources_uses.csv
+7,Debt repaid,9M 2025,-2.979,"USD billions, signs as printed",Form 10-Q for Q3 2026,12,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,sources_uses.csv
+7,Debt repaid,9M 2026,-7.563,"USD billions, signs as printed",Form 10-Q for Q3 2026,12,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,sources_uses.csv
+7,Cash capex,9M 2025,-6.249,"USD billions, signs as printed",Form 10-Q for Q3 2026,12,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,sources_uses.csv
+7,Cash capex,9M 2026,-23.558,"USD billions, signs as printed",Form 10-Q for Q3 2026,12,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,sources_uses.csv
+7,Capped calls,9M 2025,0.0,"USD billions, signs as printed",Form 10-Q for Q3 2026,12,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,sources_uses.csv
+7,Capped calls,9M 2026,-1.058,"USD billions, signs as printed",Form 10-Q for Q3 2026,12,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,sources_uses.csv
+7,Joint venture / VIE investments,9M 2025,-0.033,"USD billions, signs as printed",Form 10-Q for Q3 2026,12,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,sources_uses.csv
+7,Joint venture / VIE investments,9M 2026,-0.96,"USD billions, signs as printed",Form 10-Q for Q3 2026,12,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,sources_uses.csv
+7,All other flows (calculated residual),9M 2025,-0.312,"USD billions, signs as printed",Form 10-Q for Q3 2026,12,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,sources_uses.csv
+7,All other flows (calculated residual),9M 2026,-0.255,"USD billions, signs as printed",Form 10-Q for Q3 2026,12,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,sources_uses.csv
+7,Change in cash and restricted cash,9M 2025,0.934,"USD billions, signs as printed",Form 10-Q for Q3 2026,12,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,sources_uses.csv
+7,Change in cash and restricted cash,9M 2026,2.274,"USD billions, signs as printed",Form 10-Q for Q3 2026,12,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm,sources_uses.csv

@@ -1,0 +1,121 @@
+/* Neocloud financing study (November 2026). Theme: violet (debt), aqua (equipment), gold (leases), magenta (finance leases, convertibles).
+   Categorical steps validated on #0d1117 for lightness, chroma, colour-blind separation and 3:1 contrast. */
+.neocloud { --nc-debt: #9085e9; --nc-tech: #199e70; --nc-opl: #c98500; --nc-fin: #d55181; --nc-dc: #3987e5; }
+.neocloud h1 { font-size: clamp(32px, 4.5vw, 44px); line-height: 1.16; letter-spacing: -.6px; margin-bottom: 8px; }
+.neocloud .eyebrow { color: var(--nc-tech); }
+.neocloud .subtitle { font-size: 20px; line-height: 1.5; color: var(--text); margin: 0 0 22px; }
+.neocloud .byline { display: flex; flex-wrap: wrap; gap: 4px 16px; font: 12px/1.6 var(--mono); color: var(--muted); margin: 10px 0 6px; }
+.neocloud .opener p:first-child::first-letter { color: var(--nc-debt); }
+.neocloud .stat:nth-child(1) .stat-num { color: var(--nc-debt); }
+.neocloud .stat:nth-child(2) .stat-num { color: var(--nc-opl); }
+.neocloud .stat:nth-child(3) .stat-num { color: var(--nc-tech); }
+.neocloud .stat:nth-child(4) .stat-num { color: var(--nc-fin); }
+.neocloud .glance { border-top: 3px solid var(--nc-debt); }
+.neocloud .glance-head { color: var(--nc-debt); }
+.neocloud h2 { margin-top: 64px; padding-top: 22px; }
+.neocloud h2 .num { color: var(--nc-tech); }
+.neocloud .exhibit-label { color: var(--nc-tech); }
+
+/* company tabs */
+.nc-companies { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; margin: 8px 0 40px; border: 1px solid var(--rule-strong); border-radius: 10px; overflow: hidden; }
+.nc-companies > * { display: block; padding: 11px 14px; border-left: 1px solid var(--rule-strong); text-decoration: none; }
+.nc-companies > :first-child { border-left: 0; }
+.nc-companies b { display: block; font-size: 15px; color: var(--bright); }
+.nc-companies span { display: block; font: 11px/1.5 var(--mono); color: var(--muted); }
+.nc-companies .is-current { background: #9085e91f; box-shadow: inset 0 -3px 0 var(--nc-debt); }
+.nc-companies .is-current span { color: var(--nc-tech); }
+.nc-companies .is-next b { color: var(--muted); font-weight: 500; }
+
+.nc-kicker { margin: 0 0 6px; font: 500 12px/1.6 var(--mono); color: var(--nc-tech); letter-spacing: .04em; }
+.article .nc-case-title { margin: 0 0 12px; padding: 0; border: 0; font-size: clamp(27px, 3.6vw, 34px); line-height: 1.2; color: var(--bright); }
+.article .nc-dek { font-size: 20px; line-height: 1.55; color: var(--bright); margin: 0 0 10px; max-width: 62ch; }
+
+.nc-toc { margin: 30px 0 10px; padding: 16px 20px; background: var(--panel); border: 1px solid var(--rule); border-radius: 8px; }
+.nc-toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 30px; }
+.article .nc-toc li { font-size: 14.5px; line-height: 1.5; margin: 3px 0; break-inside: avoid; }
+
+/* numbers with sources */
+.nc-fact { white-space: nowrap; text-decoration: underline dotted transparent; text-underline-offset: 3px; cursor: help; }
+.nc-fact:hover { text-decoration-color: var(--muted); }
+
+/* exhibits */
+.nc-exhibit { margin: 38px 0; padding: 18px 0 6px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.article .nc-sub { margin: -6px 0 12px; font-size: 14px; line-height: 1.55; color: var(--muted); }
+.nc-chart { position: relative; min-height: 120px; outline: none; }
+.nc-chart:focus-visible { outline: 2px solid var(--nc-tech); outline-offset: 4px; border-radius: 4px; }
+.nc-chart svg { display: block; overflow: visible; font-family: var(--sans); }
+.nc-chart:not(.nc-live)::before { content: 'Interactive chart: needs JavaScript. The data table below has every value.'; display: block; padding: 18px 0; color: var(--muted); font-size: 13px; }
+.nc-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 0 0 10px; font-size: 13px; color: var(--text); }
+.nc-legend span { display: inline-flex; align-items: center; gap: 7px; }
+.nc-legend i { display: inline-block; width: 16px; height: 10px; border-radius: 2px; }
+.nc-controls { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 0 0 12px; }
+.nc-controls [role="group"] { display: inline-flex; border: 1px solid var(--rule-strong); border-radius: 8px; overflow: hidden; }
+.nc-controls button { min-height: 34px; padding: 0 12px; border: 0; border-left: 1px solid var(--rule-strong); background: transparent; color: var(--text); font: 500 13px/1 var(--sans); cursor: pointer; }
+.nc-controls button:first-child { border-left: 0; }
+.nc-controls button[aria-pressed="true"] { background: #9085e933; color: var(--bright); }
+.nc-controls button:hover { background: #9085e91f; }
+.nc-controls button:focus-visible { outline: 2px solid var(--nc-tech); outline-offset: -2px; }
+.nc-exhibit figcaption { font-size: 13px; line-height: 1.65; margin-top: 12px; }
+.nc-exhibit figcaption a { font-family: var(--sans); }
+.nc-table { margin: 10px 0 8px; }
+.nc-table summary { cursor: pointer; font: 12px/1.6 var(--mono); color: var(--link); padding: 4px 0; }
+.nc-table .table-wrap { margin: 8px 0; }
+.nc-table .data-table td, .nc-table .data-table th { white-space: nowrap; }
+.nc-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 26px; }
+.article .nc-panel-title { margin: 0 0 8px; font-size: 13.5px; font-weight: 600; color: var(--bright); }
+
+/* tooltip */
+.nc-tip { position: absolute; z-index: 50; max-width: 320px; padding: 10px 12px; background: #161b22f5; border: 1px solid var(--rule-strong); border-radius: 8px; box-shadow: 0 8px 24px #0009; font: 12.5px/1.5 var(--sans); color: var(--text); pointer-events: none; }
+.nc-tip-head { font-weight: 600; color: var(--bright); margin-bottom: 6px; }
+.nc-tip-row { display: grid; grid-template-columns: 10px 1fr auto; align-items: center; gap: 8px; }
+.nc-tip-row b { font: 600 12.5px/1.5 var(--mono); color: var(--bright); }
+.nc-key { width: 10px; height: 10px; border-radius: 2px; box-sizing: border-box; }
+.nc-tip-total { display: flex; justify-content: space-between; gap: 12px; margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--rule-strong); }
+.nc-tip-total b { font-family: var(--mono); color: var(--bright); }
+.nc-tip-note { margin-top: 4px; font-size: 12px; color: var(--text); }
+.nc-tip-src { margin-top: 8px; font: 11px/1.5 var(--mono); color: var(--muted); }
+
+/* evidence ladder */
+.nc-ladder { list-style: none; padding: 0 !important; margin: 28px 0; counter-reset: rung; }
+.nc-rung { position: relative; margin: 0 0 14px; padding: 16px 20px 14px 56px; background: var(--panel); border: 1px solid var(--rule); border-radius: 8px; counter-increment: rung; }
+.nc-rung::before { content: counter(rung); position: absolute; left: 18px; top: 16px; width: 24px; height: 24px; border-radius: 50%; background: #199e7033; color: var(--nc-tech); font: 600 13px/24px var(--mono); text-align: center; }
+.nc-rung--strong { border-color: #199e7088; }
+.nc-rung--weak::before { background: #6e768133; color: var(--muted); }
+.article .nc-rung h3 { margin: 2px 0 8px; font-size: 18px; }
+.article .nc-rung p { font-size: 15.5px; line-height: 1.65; margin: 0 0 8px; }
+.article .nc-rung-tag { margin: 0 !important; font: 11.5px/1.5 var(--mono) !important; color: var(--nc-tech) !important; letter-spacing: .03em; }
+.nc-rung--weak .nc-rung-tag { color: var(--muted) !important; }
+.article .nc-rung-limit { font-size: 14px !important; color: var(--muted) !important; margin-bottom: 0 !important; }
+
+.nc-gaps { list-style: none; padding: 0 !important; border-top: 1px solid var(--rule); }
+.article .nc-gaps li { padding: 11px 0 11px 30px; border-bottom: 1px solid var(--rule); position: relative; font-size: 16px; }
+.nc-gaps li::before { content: '?'; position: absolute; left: 2px; top: 11px; width: 20px; height: 20px; border: 1px solid var(--nc-opl); border-radius: 50%; color: var(--nc-opl); font: 600 12px/18px var(--mono); text-align: center; }
+.article .nc-def-head { margin-top: 34px; }
+.nc-defs details { border-bottom: 1px solid var(--rule); }
+.nc-defs summary { cursor: pointer; padding: 12px 0; font-weight: 600; color: var(--bright); }
+.article .nc-defs p { font-size: 15.5px; margin: 0 0 14px; }
+.nc-docs th a { font-weight: 400; }
+
+.nc-next { margin-top: 56px; padding: 22px 26px; border: 1px dashed var(--rule-strong); border-radius: 10px; }
+.article .nc-next h2 { margin: 0 0 12px; padding: 0; border: 0; }
+.nc-next-grid { list-style: none; padding: 0 !important; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 18px 0; }
+.article .nc-next-grid li { margin: 0; padding: 12px 14px; background: var(--panel); border: 1px solid var(--rule); border-radius: 8px; font-size: 15px; }
+.nc-next-grid b { display: block; color: var(--bright); }
+.nc-next-grid span { font: 11px/1.5 var(--mono); color: var(--muted); }
+
+
+@media (min-width: 1060px) {
+  .neocloud .nc-exhibit { width: 920px; margin-left: -100px; }
+}
+@media (max-width: 640px) {
+  .nc-companies { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .nc-companies > :nth-child(4) { border-left: 0; }
+  .nc-companies > :nth-child(n+4) { border-top: 1px solid var(--rule-strong); }
+  .nc-toc ol { columns: 1; }
+  .nc-pair { grid-template-columns: 1fr; }
+  .nc-next-grid { grid-template-columns: 1fr 1fr; }
+  .nc-rung { padding: 14px 16px 12px 48px; }
+  .nc-rung::before { left: 14px; }
+  .article .nc-dek { font-size: 18px; }
+  .neocloud .stats { grid-template-columns: 1fr; }
+}
