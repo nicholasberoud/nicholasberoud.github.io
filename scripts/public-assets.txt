@@ -116,3 +116,7 @@ assets/neocloud-2026-11/coreweave/numbers.csv
 assets/neocloud-2026-11/coreweave/provenance.json
 assets/neocloud-2026-11/neocloud.css
 assets/neocloud-2026-11/neocloud.js
+assets/neocloud-2026-11/coreweave/card-debt-and-equipment.png
+assets/neocloud-2026-11/coreweave/card-debt-and-equipment.svg
+assets/neocloud-2026-11/coreweave/card-debt-over-assets.png
+assets/neocloud-2026-11/coreweave/card-debt-over-assets.svg
