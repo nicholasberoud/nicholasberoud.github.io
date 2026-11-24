@@ -16,7 +16,7 @@ The two older note outlines remain in source and are excluded from deployment. P
 
 ## Content and evidence
 
-- The résumé link retains `assets/nicholas-beroud-resume.pdf`, based on the supplied November 2026 CV, with the public repo-advisor entry corrected to September–October 2026 and past tense. Original application documents are unchanged.
+- The résumé link retains `assets/nicholas-beroud-resume.pdf`. Since 24 November 2026 it is Nicholas's CV of 23 November 2026 (adds the Columbia SIPA course development role); the public file carries no application or employer name. Original application documents are unchanged.
 - `projects/us-treasury-markets.html` integrates the complete pricing study and annual foreign-ownership investigation into one research article. The monthly follow-up remains separate. It explicitly connects the post-2008 pricing puzzle to investigating ownership, without claiming a joint causal test. Existing article URLs and evidence are retained. The undergraduate thesis stays separate. `projects/term-premium.html` remains a legacy redirect; `projects/fima.html` stays in source and is not deployed.
 - Existing quantitative article assets in `assets/term-premium/` are generated outputs from a private research repository. Preserve their dates, definitions, numerical results and captions. Public results downloads do not constitute a release of the full research pipeline.
 - `research.html` lists the featured Treasury project and the other research and collaborative projects. It is not an automatic Notion mirror.
